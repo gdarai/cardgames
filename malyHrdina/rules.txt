@@ -1,0 +1,111 @@
+<T>Maly' Hrdina
+Hra na hrdiny pro nejmens'i'.
+
+<C>Motivace
+Hra na hrdiny osekana' na nejza'kladne'js'i' u''roven' aby ji' mohli hra't i nejmens'i'.
+
+<C>Teorie
+Hru je potr'eba ude'lat ru'zne' sloz'itou podle u'rovne' hra'c'e. Zac'i't jednoduchy'm poraz'eni'm potvor pr'i'mo ve me'ste'. Konc'it ne'jaky'm cestova'ni'm mezi me'sty. Na zac'a'tku mi't jen za'kladni' dovednosti, zdravi', si'la, s'ikovnost. Na konci mi't povola'ni' a dovednosti.
+<C1>Prohra
+Je vu'bec za'hodno, aby postava prohra'la? Urc'ite' je dobre'' kdyz' mu''z'e selhat v maly'ch u'kolech a postupne' se bude riziko prohry zve'ts'ovat. Na zac'a'tku bych ude'lal hru bez collectables, takz'e nebude co ztratit a prohru postavy bych ude'lal, z'e bude muset boj (ten jeden co prohra'la) bojovat znovu. Postupne' se bude i prohra me'nit, ale zac'al bych ti'mhle.
+<C1>Vy'cvik
+Na zac'a'tku bych nede'lal z'a'dny' vy'cvik. Postupem na prvni' u'roven' bych zac'al druhou fa'zi hry. V te'' prvni' bych hledal zbran', nebo kousky brne'ni' a peni'ze a diamanti'ky.
+
+<C>Obecne'' principy
+Tohle budou obecna' pravidla, ktera' budou postupne' zapojovana' do hry jak se hra'c' bude zleps'ovat.
+<C1>Ve me'ste'
+Pr'ed dobrodruz'stvi'm, nebo po ne'm mu'z'e hra'c' ude'lat vy'cvik, nebo nakupovat a proda'vat ve me'ste'. Jsou ru'zne'' druhy vy'cviku.
+<C2>Klenotni'k
+Ve me'ste' je klenotni'k ktery' vykupuje diamanti'ky za ru'znou cenu.
+<C2>Obchodni'k
+Ve me'ste' je obchodni'k ktery' ma' vybaveni' na prodej.
+<C2>Dovednosti
+V za'kladu ma' postava dovednosti na stupni 2, vy'cvikem je jde zleps'it az' na stupen' 5. Cena zleps'eni' je 3, 5 a 7. Plati' se peni'ze i body dovednosti.
+<C1>Mapa
+Mapa se bude skla'dat z pr'edem definovane''ho poc'tu c'a'sti' (sklepeni'). Kaz'da' c'a'st je rozde'lena' logicky'mi pr'eka'z'kami (za'tarasy), ktere'' se musi' pr'ekonat. A da'l je c'lene'na' odde'lovac'i (pru'chody).
+<P>
+Kaz'da' c'a'st obsahuje jeden vy'chod (hlavni' dver'e) a v pokladech se skry'va' k vy'chodu kli'c' (kli'c').
+<C2>Poli'c'ko mapy
+Poli'c'ko mapy je tedy karta. Pr'edstavuje kousek bludis'te' ve ktere''m postava je.
+<I0>
+<I>Je na ni' volna' chodba - tedy nic hra'c' tudy mu'z'e volne' procha'zet
+<I>Nebo pru''chod - tady mu'z'e proji't do dals'i' c'a'sti sklepeni' pokud zaplati' cenu
+<I>Nebo hlavni' dver'e - tady hra'c' mu'z'e ji't do dals'i'ho podzemi' pokud uz' ma' kli'c'
+<I>Nebo dver'e do mi'stnosti - tady mu'ze ji't da'l, nebo prozkoumat mi'stnost
+<I>Na karte' se dver'mi je pak z'eton, pokud se dver'e jes'te' neprozkoumaly
+<I1>
+<C2>Hranice patra
+V momente' kdy hra'c' najde pru'chod, tak uz' patro skoro prozkoumal. To znamena' z'e da'l uz' mu'z'e prozkoumat na kaz'dou stranu jen 2 karty a pak uz' patro skonc'i'. Hlavni' dver'e tuhle vlastnost nemaji'. Jestli uz' hra'c' nas'el nebo nenas'el hlavni' dver'e nema' z'a'dny' vliv na tvar patra ve ktere''m je.
+<C2>V mi'stnosti
+V kaz'de'' mi'stnosti si hra'c' ta'hne poklad. Kaz'dy' poklad ma' variantu s obludou a bez obludy. Poklady jsou:
+<I0>
+<I>Kli'c' do dals'i'ho sklepeni'
+<I>Peni'zky (1 2 c'i 3)
+<I>Diamanti'k (Na'hodne' taz'eny', cena 1, 2 c'i 3)
+<I>Zvla's'tni' mi'sto (Ta'hne se jedna z nepouz'ity'ch karet zvla's'tni'ho mi'sta)
+<I1>
+Pokud hra'c' ta'hne variantu s obludou, da' na kartu pokladu i kartu na'hodne' vytaz'ene'' obludy.
+<C2>Me'sto
+Me'sto je cosi kalo patro nula. Je cele'' zna'me'' hned od zac'a'tku. A je v ne'm vchod do jeskyne'.
+Ve me'ste' je kupec. Pro zac'a'tek ma' kupec fixni' ceny za diamanti'ky a proda'va' N. na'hodny'ch pr'edme'tu'.
+<P>
+Ve me'ste' je take' trene''r, u ktere''ho hra'c' mu'z'e zvednout vlastnosti. Plati' se pene'zi a body dovednosti.
+<P>
+Ve me'ste' je i zadavatel (princezna) u ktere'' se zi'ska' odme'na za splne'ny' hlavni' u''kol.
+<C1>Nami'cha'ni' u''kolu
+Prvni' co se musi' domluvit je jak te'zky' bude u'kol. Ma'me ru'zne'' obti'z'nosti, podle toho, kolik sklepeni' u'kol bude mi't. Da'l se musi' urc'it, co ten u'kol vlastne' bude. Co se ztratilo a jaka' obluda a co to ve sklepeni' hli'da'.
+<P>
+Da'l je potr'eba nami'chat obludy, poklady, specia'lni' mi'stnosti a sklepeni'.
+Je potr'eba vybrat, ktere'' karty ve sklepeni' budou (kolik mi'stnosti' v kaz'de''m sklepeni') a podle toho odpoc'i'tat poklady. Jeden z pokladu' musi' by't samozr'ejme' kli'c' k dals'i'mu sklepeni'. Postup pr'i'pravy je na'sleduji'ci':
+<I0>
+<I> Vyber ktere' zvla's'tni' mi'stnosti chces' v dobrodruz'stvi' mi't. (Na'hodne' jen podle poc'tu, nebo ci'lene'). Ud'elej z nich hroma'dku a na'hodne' vyber stejne' mnoz'stvi' karet zvla's'tni' mi'stnosti (na'hodne' s obludou c'i bez)
+<I> Vyber kolik pokladu' (zvla's't' kolik pokladu' s obludou a kolik pokladu' bez obludy) bude v dobrodruz'stvi'. Pr'idej je k vybrany'm karta'm zvla's'tni'ch mi'stnosti'.
+<I> Rozde'l tuhle hroma'dku mi'stnosti' na asi tak stejne'' di'ly, podle toho kolik bude sklepeni'. do kaz'de'' hroma'dky pr'idej mi'stnost s obludou a kli'c'em a kaz'dou hroma'dku zami'chej.
+<I> Pod kaz'dou hroma'dkou mi'stnosti' ude'lej hroma'dku chodeb s dver'mi o stejne''m mnoz'stvi' karet.
+<I> Pr'idej ke dver'i'm i kartu chodby s hlavni'mi dver'mi.
+<I> Nami'chej si hroma'dku vy'pln'ovy'ch chodeb podle prvidla te'' ktere'' u'rovne'.
+<I> Rozde'l vy'pln'ove'' chodby na asi tak stejne' velke'' hroma'dky podle toho kolik sklepeni' ma's'.
+<I> Do kaz'de'' zami'chej karty chodeb s dver'mi pro to ktere'' sklepeni'.
+<I> Pr'iprav i hroma'dku karet me'sta a kartu u'kolu.
+<I> Na za've'r tedy budes' mi't vedle sebe hroma'dku me'sta, pak hroma'dku chodeb pro kaz'de'' sklepeni' a na za've'r kartu u'kolu. Nad kaz'dou hroma'dkou chodeb sklepeni' budes' mi't pr'i'slus'nou hroma'dku karet mi'stnosti' pro to ktere'' sklepeni'.
+<I1>
+<C1>Soubojovy' syste'm
+Postava ma' obranu a u'tok. Hodi' se kostkou na ktere' je X +0 +0 +1 +1 +2. Pr'ic'te se u'tok a kdyz' je to vi'c nez' obrana nepr'i'tele, trefili jsme.
+<I0>
+<I> X znamena' vz'dy vedle.
+<I> +0 +1 a +2 se pr'ic'i'ta' k u'toc'ne''mu c'i'slu
+<I1>
+Nejdr'i'v u'toc'i' hra'c' az' pak obluda. Kaz'dy' za'sah v za'kladu sebere 1 z'ivot. Kdyz' je z'ivot ne'koho 0, je souboj na konci.
+<C1>Parametry postavy
+Postava ma' Zdravi', Si'lu a Rychlost. Zdravi' da'va' kolik ma' z'ivotu', Si'la da'va' U'toc'ne'' c'i'slo a Rychlost obranne' c'i'slo.
+<C1>Parametry vybaveni'
+V za'kladu zbrane' da'vaji' bonus k u'toc'ne''mu c'i'slu a brne'ni' bonus k obranne''mu c'i'slu. Budou ru'zne'' zbrane', ne'ktere'' i se stejny'mi dovednostmi jen ru'znou cenou.
+
+<C>U'roven' Nula
+Hra'c' je u'plne' novy'. Chodi' a zbi'ra' diamanti'ky. Ty vyme'n'uje za peni'ze a kupuje si vybaveni'. Zabi'ji' jednoduche'' nepr'a'tele a zbi'ra' body tre''ninku. Ty investuje do zleps'ova'ni' za'kladni'ch vlastnosti', aby mohl vybaveni' pouz'i'vat.
+<C1>Ve me'ste'
+Jediny' dovoleny' vy'cvik je zleps'ova'ni' za'kladni'ch dovednosti' na 3, 4 nebo 5.
+<P>
+Obchodni'k ma' k dispozici pochodne' a zbrane' a brne'ni' u'rovne' nula.
+<P>
+Klenotni'k vykupuje z'lute' diamanti'ky za 3, ostatni' za 2 peni'zky.
+<C1>Jak sestavit mapu
+<C2>Karta dobrodruz'stvi'
+Pro prvni'ch pa'r dobrodruz'stvi' zkuste jednu z te'hlech karet:
+<I0>
+<I>Obr'i' krysa ktera' pravidelne' luxuje za'soby ji'dla.
+<I>Lupic' ktery' okra'da' mi'stni' kupce.
+<I>Medve'd ktery' stras'i' mi'stni' me's't'any.
+<I>C'arode'jnice ktera' stras'i' mi'stni' de'ti.
+<I1>
+Kdyz' je odehrajete vs'echny, urc'ite' budete pr'ipraveni na u'roven' jedna.
+<C2>Kolik sklepeni'
+Pro prvni' 2 hry hrajte s jedni'm sklepeni'm. Pak uz' se dve'ma.
+<C2>Specia'lni' mi'stnosti
+Dejte do hry jednu zbrojnici a tolik zahrad, kolik sklepeni' budete hra't.
+<C2>Poklady a volne'' chodby
+Na prvni' hru dejte 5 pokladu', na druhou 7 pak 9 a 11. V balastu pouz'i'vej proste' jen volne'' chodby. Pokaz'de'' pr'idej stejne'' mnoz'stvi' balastu jako je pokladu'. A tolik pru'chodu', kolik sklepeni' ma's' plus 1.
+<C2>Obludy
+Obludy vyber zvi'r'ata a stras'idla u'roven' 0 a 1. A ude'lej hroma'dky po tr'ech, kde v kaz'de'' budou u'rovne' 0,0,1. Pro c'tvrtou hru to mu'zes' zme'nit na 0,1,1. Celkem dej na sebe tolik hroma'dek, kolik je c'i'slo hry + 1.
+<C1>Pravidla prozkouma'va'ni'
+Proji't pru'chodem nestoji' v prvni' hr'e nic. V dals'i'ch pak 1 pochoden' kaz'dy'.
