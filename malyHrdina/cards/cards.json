@@ -1,0 +1,15 @@
+[
+  {
+    "_out":"_OUT_podzemi.tex",
+    "_card":"png/card_100x150",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "img"
+      ]
+    },
+    "values":"csv_chodba.csv"
+  }
+]
