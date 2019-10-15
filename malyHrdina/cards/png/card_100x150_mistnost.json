@@ -1,0 +1,20 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[5, 10],[95,30]],
+	  "padding":[[0,0], [0,0]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "itmTop":{
+    "type":"img",
+    "position":[[10,45],[60,105]]
+  },
+  "itmBot":{
+    "type":"img",
+    "position":[[30,75],[90,135]]
+  }
+}

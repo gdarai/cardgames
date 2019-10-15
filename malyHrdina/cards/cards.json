@@ -1,7 +1,7 @@
 [
   {
     "_out":"_OUT_podzemi.tex",
-    "_card":"png/card_100x150",
+    "_card":"png/card_100x150_chodba",
     "_onOneLine":6,
     "_randomize":"False",
     "_list":{
@@ -25,5 +25,32 @@
       ]
     },
     "values":"csv_mesto.csv"
+  },
+  {
+    "_out":"_OUT_podzemi.tex",
+    "_card":"png/card_100x150_mistnost",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "itmBot",
+        "itmTop"
+      ]
+    },
+    "values":"csv_mistnost.csv"
+  },
+  {
+    "_out":"_OUT_podzemi.tex",
+    "_card":"png/card_100x150_mistnost2",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "img"
+      ]
+    },
+    "values":"csv_mistnost2.csv"
   }
 ]
