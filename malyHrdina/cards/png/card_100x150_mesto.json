@@ -1,0 +1,20 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[5, 10],[95,30]],
+	  "padding":[[0,0], [0,0]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "head":{
+    "type":"img",
+    "position":[[20,30],[80,80]]
+  },
+  "item":{
+    "type":"img",
+    "position":[[30,100],[70,140]]
+  }
+}
