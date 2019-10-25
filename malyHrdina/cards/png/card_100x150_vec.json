@@ -1,0 +1,36 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[5, 10],[95,30]],
+	  "padding":[[0,0], [0,0]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "price":{
+    "type":"text",
+    "position":[[65, 115],[90,140]],
+	  "padding":[[0,0], [0,0]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "value":{
+    "type":"text",
+    "position":[[55, 35],[85, 55]],
+	  "padding":[[0,0], [0,0]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[5,70],[65,130]]
+  }
+}

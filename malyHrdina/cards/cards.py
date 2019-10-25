@@ -576,11 +576,12 @@ def printImages(IMAGES):
 # SVG 2 PNG
 svgFiles = getFiles(SVG_DIRECTORY+'/.*.svg')
 print('\nConverting '+str(len(svgFiles))+' svg''s')
-for fileName in svgFiles:
-	pngFileName = fileName[:-3]+'png'
-	print(SVG_DIRECTORY+'/'+fileName+' --> '+PNG_DIRECTORY+'/'+pngFileName)
-	command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
-	os.system(command)
+if(True):
+	for fileName in svgFiles:
+		pngFileName = fileName[:-3]+'png'
+		print(SVG_DIRECTORY+'/'+fileName+' --> '+PNG_DIRECTORY+'/'+pngFileName)
+		command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
+		os.system(command)
 
 ########
 # Settings file

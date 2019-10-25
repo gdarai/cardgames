@@ -109,3 +109,60 @@ Na prvni' hru dejte 5 pokladu', na druhou 7 pak 9 a 11. V balastu pouz'i'vej pro
 Obludy vyber zvi'r'ata a stras'idla u'roven' 0 a 1. A ude'lej hroma'dky po tr'ech, kde v kaz'de'' budou u'rovne' 0,0,1. Pro c'tvrtou hru to mu'zes' zme'nit na 0,1,1. Celkem dej na sebe tolik hroma'dek, kolik je c'i'slo hry + 1.
 <C1>Pravidla prozkouma'va'ni'
 Proji't pru'chodem nestoji' v prvni' hr'e nic. V dals'i'ch pak 1 pochoden' kaz'dy'.
+<C>List vs'ech karet
+V tomto dodatku jsou podrobne' posa'ny vs'echny karty ktere'' ve hr'e jsou.
+<C1>Pr'edme'ty
+Co jde koupit u obchodni'ka, nebo naji't v dungeonu
+<C2>Zbrane'
+<B0> l | c | c || c
+<B> Jme''no & Cena & U'c'inek & Popis
+<BL>
+<B> Klacek & 0 & +0 & Co sis nas'el v lese
+<B> Hu'l & 1 & +1 & Upravena', dobr'e opracovana'
+<B> Okovana' hu'l & 1 & +2 & S touhle uz' si hra'l kova'r'
+<B> Palice & 1 & +1 & Dobr'e opracovana'
+<B> Dy'ka & 2 & +1 & Lehka', prakticka'
+<B> Mec' & 3 & +2 & Zbran' hrdiny
+<B> Dlouhy' mec' & 5 & +3 & Zbran' ryti'r'e
+<B> Sekera & 2 & +2 & Pa'dna' ale ostra'
+<B1>
+<C2>Brne'ni'
+<B0> l | c | c || c
+<B> Jme''no & Cena & U'c'inek & Popis
+<BL>
+<B> Koz'ena' zbroj & 5 & +1 & Kvalitne' us'ita' z vepr'ovice
+<B> Pros'i'vana' zbroj & 3 & +1 & Vrstvena' a tuz'ena' lojem
+<B> S'upinova' zbroj & 7 & +2 & Pos'ita' z'elezny'mi s'upinami
+<B> Krouz'kova' zbroj & 10 & +2 & Kvalitni' z'eleza'r'ska' pra'ce
+<B1>
+<C1>Obludy
+Vs'echo co na va's mu'z'e v dobrodruz'stvi' skoc'it
+<C2>Zvi'r'ata
+<B0> l | c  | c | c || c
+<B> Jme''no & U'roven' & Zdravi' & Boj & Popis
+<BL>
+<B> Krysa & 0 & 1 & 0/0 & Bydli' tu
+<B> Pavouk & 0 & 1 & 0/1 & Bydli' tu
+<B> Stonoz'ka & 1 & 2 & 0/1 & Bydli' tu
+<B> Vlk & 1 & 1 & 2/1 & Bydli' tu
+<B> Medve'd & 2 & 2 & 2/1 & Bydli' tu
+<B> Krokody'l & 2 & 2 & 1/2 & Bydli' tu
+<B1>
+<C2>Humanoidi
+<B0> l | c  | c | c || c
+<B> Jme''no & U'roven' & Zdravi' & Boj & Popis
+<BL>
+<B> Skr'et & 1 & 2 & 1/0 & Bydli' tu
+<B> Goblin & 1 & 2 & 1/1 & Bydli' tu
+<B> Skr'et s mec'em & 2 & 2 & 2/0 & Bydli' tu
+<B> Goblin s palici' & 2 & 2 & 2/1 & Bydli' tu
+<B1>
+<C2>Stras'idla
+<B0> l | c  | c | c || c
+<B> Jme''no & U'roven' & Zdravi' & Boj & Popis
+<BL>
+<B> Zombi'k & 0 & 1 & 1/0 & Pr'ekvapive' rychly'
+<B> Kostlivec & 0 & 1 & 0/1 & Bydli' tu
+<B> Ghu'l & 1 & 2 & 1/0 & Bydli' tu
+<B> Bahn'a'k & 1 & 1 & 2/1 & Bydli' tu
+<B1>

@@ -52,5 +52,36 @@
       ]
     },
     "values":"csv_mistnost2.csv"
+  },
+  {
+    "_out":"_OUT_podzemi.tex",
+    "_card":"png/card_100x150_vec",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "price",
+        "value",
+        "img"
+      ]
+    },
+    "values":"csv_veci.csv"
+  },
+  {
+    "_out":"_OUT_podzemi.tex",
+    "_card":"png/card_100x150_obluda",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "level",
+        "life",
+        "combat",
+        "img"
+      ]
+    },
+    "values":"csv_obludy.csv"
   }
 ]
