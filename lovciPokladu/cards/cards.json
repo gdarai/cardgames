@@ -1,0 +1,16 @@
+[
+  {
+    "_out":"_OUT_karticky.tex",
+    "_card":"png/card_200x200_more",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "img"
+      ]
+    },
+    "values":"csv_karticky.csv"
+  }
+]

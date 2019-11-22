@@ -1,0 +1,26 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[10, 10],[190,30]],
+	  "padding":[[0,0], [0,0]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[10, 170],[190,190]],
+	  "padding":[[0,0], [0,0]],
+    "font":"HERSHEY_SIMPLEX",
+    "size":5,
+	  "line":2,
+	  "color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[35,35],[165,165]]
+  }
+}

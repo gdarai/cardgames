@@ -1,0 +1,32 @@
+Mame pole 9x9 = 81 karticek
+
+Poklady:
+--------
+1   Ruzice 8
+1   Poklad Truhla
+3   Poklad Mec
+5   Poklad Diamant
+8   Poklad Perla
+12  Poklad Mince
+
+Zbyva 51
+
+Nebezpeci:
+--------
+2 Zraloci
+4 Chobotnice
+4 Rejnoci
+
+Zbyva 41
+
+Ruzice+Util 2/3 a Ryby 1/3
+
+12  Ryb
+3   Konik
+4   Hvezdice
+
+Zbyva 22
+
+8   Ruzice 1
+8   Ruzice 2
+6   Ruzice 4
