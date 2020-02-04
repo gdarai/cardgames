@@ -1,7 +1,7 @@
-1,(M)|Kostel||Skryti 2|Pruzkum 1|Vzduch 2 (+1)|Zeme 1 (+0)|Zaloha 2 (+0)
-2,(M)|Bytovka||Skryti 1|Pruzkum 3|Vzduch 1 (+1)|Zeme 1 (+1)|Zaloha 2 (+1)
-3,(M)|Domek||Skryti 1|Pruzkum 1|Vzduch 1 (+1)|Zeme 1 (+0)|Zaloha 1 (+1)
-2,(M)|Male namesti||Skryti 0|Pruzkum 0|Vzduch 2 (+0)|Zeme 2 (+1)|Zaloha 0 (+0)
-2,(M)|Skladiste||Skryti 1|Pruzkum 3|Vzduch 1 (+0)|Zeme 1 (+0)|Zaloha 2 (+1)
-2,(M)|Garaze||Skryti 0|Pruzkum 2|Vzduch 1 (+0)|Zeme 1 (+1)|Zaloha 1 (+1)
-2,(M)|Maly Obhod||Skryti 1|Pruzkum 2|Vzduch 1 (+1)|Zeme 1 (+0)|Zaloha 1 (+1)
+1,M,Kostel,2,1,2 (+1),1 (+0),2 (+0),,Poboreny kostelik
+2,M,Bytovka,1,3,1 (+1),1 (+0),2 (+1),,S dvorkem
+3,M,Domek,1,1 v,1 (+1),1 (+0),1 (+1),,Zarostla zahradka
+2,M,Male namesti,0,0,2 (+0),2 (+1),0 (+0),,S kasnou
+2,M,Skladiste,1,3 v,1 (+0),1 (+0),2 (+1),,Zdi sama dira
+2,M,Garaze,0,2 z,1 (+0),1 (+1),1 (+1),,Odolavaji casu
+2,M,Maly obchod,1,2 v,1 (+1),1 (+0),1 (+1),,Dvere dokoran

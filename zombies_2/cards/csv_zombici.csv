@@ -1,6 +1,6 @@
-1,(X0)|Lina zombie||Pomala a lina|1/1/2|Zraneni 1
-1,(X0)|Rychla zombie||Cila a hladova|2/2/1|Zraneni 1
-1,(X0)|Ozbrojena zombie||Ma nejaky klacek|1/1/2|Zraneni 2
-1,(X0)|Pliziva zombie||Ticha a smrtici|1/1/3|Zraneni 1
-1,(X0)|Zombie vlk||Rychly jako blesk|1/3/1|Zraneni 1
-1,(X0)|Zombie s kamenem||Schovej hlavu|2/1/2|Zraneni 1
+1,Zombie,X,0,Lina,1,1,2,,Pomala a lina
+1,Zombie,X,0,Rychla,2,2,1,,Cila a hladova
+1,Zombie,X,0,Ozbrojena,1,1,2,,Zraneni 2|Ma nejaky klacek
+1,Zombie,X,0,Pliziva,1,1,3,,Ticha a smrtici
+1,Zombie,X,0,Vlk,1,3,1,,Rychly jako blesk
+1,Zombie,X,0,S Kamenem,2,1,2,,Schovej hlavu

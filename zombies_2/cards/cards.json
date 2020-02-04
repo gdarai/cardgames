@@ -1,26 +1,42 @@
 [
   {
     "_out":"_OUT_prostredi.tex",
-    "_card":"png/card_100x150",
+    "_card":"png/card_100x150_lokace",
     "_onOneLine":6,
     "_randomize":"True",
     "_yspace":10,
     "_list":{
       "values":[
-        "txt"
+        "code",
+        "name",
+        "hide",
+        "search",
+        "enemy_a",
+        "enemy_l",
+        "enemy_s",
+        "img",
+        "text"
       ]
     },
     "values":"csv_mista.csv"
   },
   {
     "_out":"_OUT_obludy.tex",
-    "_card":"png/card_100x150",
+    "_card":"png/card_100x150_nepritel",
     "_onOneLine":6,
     "_randomize":"True",
     "_yspace":10,
     "_list":{
       "values":[
-        "txt"
+        "category",
+        "code",
+        "level",
+        "name",
+        "enemy_a",
+        "enemy_l",
+        "enemy_s",
+        "img",
+        "text"
       ]
     },
     "values":"csv_zombici.csv"

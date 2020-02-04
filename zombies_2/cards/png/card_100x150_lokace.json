@@ -1,12 +1,86 @@
 {
-  "txt":{
+  "code":{
     "type":"text",
-    "position":[[0, 0],[100,150]],
-    "padding":[[5,5], [5,5]],
+    "position":[[2, 2],[20,15]],
+    "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
     "align":"center"
+  },
+  "name":{
+    "type":"text",
+    "position":[[22, 2],[98,15]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[20,17],[80,77]]
+  },
+  "text":{
+    "type":"text",
+    "position":[[2, 50],[98,77]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "hide":{
+    "type":"text",
+    "position":[[20, 79],[55,95]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "search":{
+    "type":"text",
+    "position":[[60, 79],[98,95]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "enemy_a":{
+    "type":"text",
+    "position":[[20, 97],[98,113]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "enemy_l":{
+    "type":"text",
+    "position":[[20, 115],[98,130]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "enemy_s":{
+    "type":"text",
+    "position":[[20, 132],[98,148]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
   }
 }
