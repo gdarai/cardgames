@@ -1,19 +1,19 @@
-12,More,Konec tahu,png/karty_rybicky.png
-4,Ruzice 1,Vyber smer,png/karty_ruzice1.png
-4,Ruzice 1x,Vyber smer,png/karty_ruzice1x.png
-4,Ruzice 2,Vyber smer,png/karty_ruzice2.png
-4,Ruzice 2x,Vyber smer,png/karty_ruzice2x.png
-3,Ruzice 4,Vyber smer,png/karty_ruzice4.png
-3,Ruzice 4x,Vyber smer,png/karty_ruzice4x.png
-1,Ruzice 8,Vyber smer,png/karty_ruzice8.png
-2,Zralok,Sezrani,png/karty_zralok.png
-4,Chobotnice,Zdrzeni,png/karty_chobotnice.png
-3,Konik,Jdi do L,png/karty_konik.png
-4,Hvezdice,2x stejne,png/karty_hvezdice.png
-4,Rejnok,Vyhozeni,png/karty_rejnok.png
-12,Poklad,1-Zluty,png/karty_mince.png
-8,Poklad,2-Bily,png/karty_perla.png
-5,Poklad,4-Modry,png/karty_diamantik.png
+12,More,Konec tahu,icons/karty_rybicky.png
+4,Ruzice 1,Vyber smer,icons/karty_ruzice1.png
+4,Ruzice 1x,Vyber smer,icons/karty_ruzice1x.png
+4,Ruzice 2,Vyber smer,icons/karty_ruzice2.png
+4,Ruzice 2x,Vyber smer,icons/karty_ruzice2x.png
+3,Ruzice 4,Vyber smer,icons/karty_ruzice4.png
+3,Ruzice 4x,Vyber smer,icons/karty_ruzice4x.png
+1,Ruzice 8,Vyber smer,icons/karty_ruzice8.png
+2,Zralok,Sezrani,icons/karty_zralok.png
+4,Chobotnice,Zdrzeni,icons/karty_chobotnice.png
+3,Konik,Jdi do L,icons/karty_konik.png
+4,Hvezdice,2x stejne,icons/karty_hvezdice.png
+4,Rejnok,Vyhozeni,icons/karty_rejnok.png
+12,Poklad,1-Zluty,icons/karty_mince.png
+8,Poklad,2-Bily,icons/karty_perla.png
+5,Poklad,4-Modry,icons/karty_diamantik.png
 3,Poklad,8-Cerveny,png/karty_mec.png
-1,Poklad,10-Medaile,png/karty_truhla.png
+1,Poklad,10-Medaile,icons/karty_truhla.png
 3,,,

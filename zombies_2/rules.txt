@@ -19,8 +19,9 @@ V zakladu jsou v kazdem kole nasledujici kroky:
 <I>
 
 <C1>Druhy ohrozeni
-Ve hre budou 3 druhy ohrozeni pred kteryi by se hraci meli branit: Ze Vzduchu, Ze Zeme a Ze Zalohy. V zakladu vlastne kazdy hrac zacina rozhodnutim, cemu se bude venovat, v ktere casti tymu se bude angazovat: Vzduch, Zeme, Zaloha nebo Pruzkum. Kazde ohrozeni
-
+Ve hre budou 3 Smery ohrozeni pred kteryi by se hraci meli branit: Ze Vzduchu, Ze Zeme a Ze Zalohy. V zakladu vlastne kazdy hrac zacina rozhodnutim, cemu se bude venovat, v ktere casti tymu se bude angazovat: Vzduch, Zeme, Zaloha nebo Pruzkum.
+V kazde misi je tazenych 6 karet nepratel. 3 bezne a 3 vazne, vzdy dvojice pro kazdy druh ohrozeni. Podle toho jake je to prostredi, tak se lisi jaci nepratele muzou byt kde. To ze jsou nepratele tazeni neznamena, ze je hraci znaji. Pokud na to nemaji dovednost tak hraci karty otocej vzdycky az kdyz je poprve potkaj.
+Na kazde karte lokace je napsano, kolik se tahne karet ohrozeni pro ktery Smer. Karta ohrozeni obsahuje bud nic, nebo nepritel X nebo nepritel !!! (Slaby nebo silny).
 
 <C>Teorie
 Hru je potr'eba ude'lat ru'zne' sloz'itou podle u''rovne' hra'c'e. Zac'i't jednoduchy'm poraz'eni'm potvor pr'i'mo ve me'ste'. Konc'it ne'jaky'm cestova'ni'm mezi me'sty. Na zac'a'tku mi't jen za'kladni' dovednosti, zdravi', si'la, s'ikovnost. Na konci mi't povola'ni' a dovednosti.

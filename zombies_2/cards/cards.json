@@ -11,5 +11,18 @@
       ]
     },
     "values":"csv_mista.csv"
+  },
+  {
+    "_out":"_OUT_obludy.tex",
+    "_card":"png/card_100x150",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_yspace":10,
+    "_list":{
+      "values":[
+        "txt"
+      ]
+    },
+    "values":"csv_zombici.csv"
   }
 ]
