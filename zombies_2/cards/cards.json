@@ -4,7 +4,6 @@
     "_card":"png/card_100x150_lokace",
     "_onOneLine":6,
     "_randomize":"True",
-    "_yspace":10,
     "_list":{
       "values":[
         "code",
@@ -25,7 +24,6 @@
     "_card":"png/card_100x150_nepritel",
     "_onOneLine":6,
     "_randomize":"True",
-    "_yspace":10,
     "_list":{
       "values":[
         "category",
@@ -40,5 +38,29 @@
       ]
     },
     "values":"csv_zombici.csv"
+  },
+  {
+    "_out":"_OUT_pro_hrace.tex",
+    "_card":"png/card_100x150_dovednost",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "code",
+        "level",
+        "when",
+        "name",
+        "img",
+        "text"
+      ]
+    },
+    "values":"csv_dovednosti.csv"
+  },
+  {
+    "_out":"_OUT_pro_hrace.tex",
+    "_card":"png/card_100x150_postava",
+    "_onOneLine":6,
+    "_count":4,
+    "_randomize":"False"
   }
 ]

@@ -16,6 +16,7 @@ canPrint = True
 SETTING = 'cards.json'
 DIRECTORY = 'print'
 BREAK_CHAR = '|'
+FIXED_SPACE = '_'
 Y_SPACE = 5
 TEX_FILE = 'cards.tex'
 A4_WIDTH = 21
@@ -301,6 +302,7 @@ def printCardFile(setting, name):
 			checkField(cardName, props, 'line', 'int', 1)
 			checkField(cardName, props, 'fixed', 'int', 1)
 			checkField(cardName, props, 'color', 'list', [0, 0, 0])
+			checkField(cardName, props, 'fixed_space', 'string', FIXED_SPACE)
 
 			font = FONTS[props['font']]
 			thickness = props['line']
@@ -319,7 +321,8 @@ def printCardFile(setting, name):
 			size = []
 			sizeCheck = 0
 			sizeTotal = [0, -setting['_yspace']]
-			for ln in theText:
+			for ln0 in theText:
+				ln = ln0.replace(props['fixed_space'], ' ')
 				oneSize, _ = cv2.getTextSize(ln, font, 1, thickness)
 				size.append(oneSize)
 				sizeCheck = max(sizeCheck, oneSize[1]*oneSize[0])
@@ -333,7 +336,8 @@ def printCardFile(setting, name):
 			oneSizeY = int(finSizeY / len(theText))
 			shiftY = oneSizeY
 
-			for ln in theText:
+			for ln0 in theText:
+				ln = ln0.replace(props['fixed_space'], ' ')
 				finSize, _ = cv2.getTextSize(ln, font, imgScale, thickness)
 				finPos = (align(tgtPos[0][0], tgtPos[1][0], finSize[0]), ALIGN_CENTER(tgtPos[0][1], tgtPos[1][1], finSizeY)+shiftY)
 				img = cv2.putText(img, ln, finPos, font, imgScale, color, thickness, cv2.LINE_AA)

@@ -1,7 +1,7 @@
-1,M,Kostel,2,1,2 (+1),1 (+0),2 (+0),,Poboreny kostelik
-2,M,Bytovka,1,3,1 (+1),1 (+0),2 (+1),,S dvorkem
-3,M,Domek,1,1 v,1 (+1),1 (+0),1 (+1),,Zarostla zahradka
-2,M,Male namesti,0,0,2 (+0),2 (+1),0 (+0),,S kasnou
-2,M,Skladiste,1,3 v,1 (+0),1 (+0),2 (+1),,Zdi sama dira
-2,M,Garaze,0,2 z,1 (+0),1 (+1),1 (+1),,Odolavaji casu
-2,M,Maly obchod,1,2 v,1 (+1),1 (+0),1 (+1),,Dvere dokoran
+1,M,Kostel,2,1,2 (+1),1 (+0),2 (+0),png/house.png,Poboreny kostelik
+2,M,Bytovka,1,3,1 (+1),1 (+0),2 (+1),png/house.png,S dvorkem
+3,M,Domek,1,1 v,1 (+1),1 (+0),1 (+1),png/house.png,Zarostla zahradka
+2,M,Male namesti,0,0,2 (+0),2 (+1),0 (+0),png/house.png,S kasnou
+2,M,Skladiste,1,3 v,1 (+0),1 (+0),2 (+1),png/house.png,Zdi sama dira
+2,M,Garaze,0,2 z,1 (+0),1 (+1),1 (+1),png/house.png,Odolavaji casu
+2,M,Maly obchod,1,2 v,1 (+1),1 (+0),1 (+1),png/house.png,Dvere dokoran
