@@ -1,0 +1,18 @@
+4,Z,Pistole,png/gun.png,M,1,2,1,2,2m,oo
+1,Z,Kulovnice,png/gun.png,L,2,3,3,1,2m,spec
+2,Z,Samopal,png/gun.png,V,2,2,2,2,3m,vojenska
+1,Z,Kuse,png/gun.png,T,2,2,3,1,2j,oo
+2,Z,Luk,png/gun.png,L,1,2,2,1,3j,oo
+2,Z,Brokovnice,png/gun.png,L,2,2,3,2,2m,spec
+2,Z,Kr. Brokovnice,png/gun.png,V,2,2,3,3,2m,spec
+1,Z,Palcat,png/gun.png,V,1,1,2,2,x,spec
+3,Z,Maceta,png/gun.png,M,1,1,1,3,x,oo
+2,Z,Auto. Pistole,png/gun.png,V,2,1,2,3,2m,spec
+1,Z,Utocna puska,png/gun.png,L,2,2,3,1,3mm,vojenska
+1,Z,Kulomet,png/gun.png,T,3,3,3,1,3mm,vojenska
+3,Z,Mot. Pila,png/gun.png,V,2,1,3,3,4m,spec
+3,Z,Sekera,png/gun.png,V,1,1,2,2,x,oo
+1,Z,Kopi,png/gun.png,L,1,1,3,1,x,spec
+2,Z,Kyj,png/gun.png,T,2,1,3,2,x,spec
+1,Z,Bazuka,png/gun.png,T,3,3,4,1,1mm,vojenska
+2,Z,Granat,png/gun.png,M,2,0,4,4,1jm,vojenska

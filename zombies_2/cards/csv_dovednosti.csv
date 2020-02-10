@@ -1,9 +1,9 @@
-1,S,x,Trening,Silna,png/question.png,+1_Zk na_kazdou dovednost
+1,S,x,Trening,Silna,png/question.png,+1_Zk na_kazdou dovednost urovne 1
 1,S,x,Zacatek hry,Slaba,png/question.png,-1_Zivot -1_Sila
 1,S,x,Zacatek hry,Neduziva,png/question.png,-2_Zivoty
 1,S,x,Po misi,Zapometliva,png/question.png,-1 Material po kazde misi
 1,S,x,Pri pruzkumu,Lehkovazna,png/question.png,-1_Pri prozkoumavani
-1,S,x,Trening,Zbrkla,png/question.png,Nemuze_mit dovednosti s_uplatnenim mimo misi
+1,S,x,Trening,Zbrkla,png/question.png,Muze mit jen_1 dovednost nad uroven_1
 2,D,1,Pred misi,Pruzkum,png/question.png,Odhal jednoho nepritele_X
 2,D,2,Pred misi,Pruzkum 2,png/question.png,Odhal dva nepratele_X
 2,D,2,Pred misi,Pruzkum !,png/question.png,Odhal jednoho nepritele_!!!
@@ -28,9 +28,10 @@
 2,D,2,1x za misi,Resuscitace 2,png/question.png,Doplneni az 4_zivotu tymu (dohromady) a_vyleci postihy
 2,D,1,3 kola,Bojove kryti,png/question.png,Stoji 1_Material|+1_k_boji_A_a_Z pro vsechny
 2,D,1,Mimo misi,Stavba skryse,png/question.png,Stoji 2 Materialy|Vyleci 1_zivot kazdemu
-2,D,2,Mimo misi,Planovani,png/question.png,Je mozne pokazde znovu nalosovat jednu z misi
+2,D,2,Mimo misi,Strategie,png/question.png,Je mozne pokazde znovu nalosovat jednu z misi
 2,D,2,Mimo misi,Vyroba munice,png/question.png,1_naboje zdarma (pro jednu postavu)
 2,D,2,Mimo misi,Oprava vybaveni,png/question.png,Jedna oprava je po_kazde misi zadarmo
 2,D,1,Mimo misi,Lov jidla,png/question.png,Misto sberu muze ulovit 2 jidla
 2,D,1,Mimo misi,Shaneni materialu,png/question.png,Pri_sberu donese 1_jidlo a_1_material
 2,D,2,Mimo misi,Organizace,png/question.png,Unese 1_vec navic (musi mit silu)
+2,D,2,Pred kolem,Taktika,png/question.png,Muze pred naplanovanim karet rict 1_vetu

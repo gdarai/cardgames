@@ -6,14 +6,16 @@
     "_randomize":"True",
     "_list":{
       "values":[
+        "category",
         "code",
+        "level",
+        "img",
         "name",
         "hide",
         "search",
         "enemy_a",
         "enemy_l",
         "enemy_s",
-        "img",
         "text"
       ]
     },
@@ -55,6 +57,66 @@
       ]
     },
     "values":"csv_dovednosti.csv"
+  },
+  {
+    "_out":"_OUT_veci.tex",
+    "_card":"png/card_100x150_zbran",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "name",
+        "img",
+        "weight",
+        "price",
+        "enemy_a",
+        "enemy_l",
+        "enemy_s",
+        "ammo",
+        "home"
+      ]
+    },
+    "values":"csv_zbrane.csv"
+  },
+  {
+    "_out":"_OUT_veci.tex",
+    "_card":"png/card_100x150_vybaveni",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "name",
+        "img",
+        "price",
+        "weight",
+        "home",
+        "text"
+      ]
+    },
+    "values":"csv_vybaveni.csv"
+  },
+  {
+    "_out":"_OUT_pro_hrace.tex",
+    "_card":"png/card_100x150_zbran",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "code",
+        "name",
+        "img",
+        "weight",
+        "price",
+        "enemy_a",
+        "enemy_l",
+        "enemy_s",
+        "ammo",
+        "home"
+      ]
+    },
+    "values":"csv_zbrane_0.csv"
   },
   {
     "_out":"_OUT_pro_hrace.tex",

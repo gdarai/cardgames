@@ -9,7 +9,7 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "level":{
+  "weight":{
     "type":"text",
     "position":[[80, 2],[98,15]],
     "padding":[[2,2], [2,2]],
@@ -19,7 +19,7 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "category":{
+  "home":{
     "type":"text",
     "position":[[25, 2],[75,15]],
     "padding":[[2,2], [2,2]],
@@ -31,21 +31,11 @@
   },
   "img":{
     "type":"img",
-    "position":[[30,37],[70,77]]
-  },
-  "text":{
-    "type":"text",
-    "position":[[2, 50],[98,77]],
-    "padding":[[2,2], [2,2]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
-    "align":"center"
+    "position":[[15,32],[60,77]]
   },
   "name":{
     "type":"text",
-    "position":[[2, 17],[98,35]],
+    "position":[[2, 17],[98,30]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -53,54 +43,25 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "hide":{
+  "price":{
     "type":"text",
-    "position":[[20, 79],[55,95]],
+    "position":[[80, 32],[98,47]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
+    "align":"center"
   },
-  "search":{
+  "text":{
     "type":"text",
-    "position":[[60, 79],[98,95]],
+    "position":[[2, 80],[98,148]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
-  },
-  "enemy_a":{
-    "type":"text",
-    "position":[[20, 97],[98,113]],
-    "padding":[[2,2], [2,2]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
-    "align":"left"
-  },
-  "enemy_l":{
-    "type":"text",
-    "position":[[20, 115],[98,130]],
-    "padding":[[2,2], [2,2]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
-    "align":"left"
-  },
-  "enemy_s":{
-    "type":"text",
-    "position":[[20, 132],[98,148]],
-    "padding":[[2,2], [2,2]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
-    "align":"left"
+    "fixed":0,
+    "align":"center"
   }
 }

@@ -17,7 +17,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="card_100x150_lokace.svg">
+   sodipodi:docname="card_100x150_zbran.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -37,16 +37,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="47.562131"
-     inkscape:cy="79.332456"
+     inkscape:cx="44.784212"
+     inkscape:cy="72.00885"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="1271"
-     inkscape:window-height="882"
-     inkscape:window-x="429"
-     inkscape:window-y="413"
+     inkscape:window-width="642"
+     inkscape:window-height="813"
+     inkscape:window-x="2592"
+     inkscape:window-y="58"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -97,39 +97,20 @@
        x="1.326727"
        y="1015.4745"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
-    <rect
-       id="rect14-6"
-       width="96.989403"
-       height="17.703863"
-       x="0.96958435"
-       y="997.61743"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
-    <rect
-       id="rect14-7"
-       width="96.989403"
-       height="17.703863"
-       x="1.5052986"
-       y="979.76025"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 40.003079,980.04073 v 16.96429"
-       id="path4559"
-       inkscape:connector-curvature="0" />
     <image
        sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/boot.png"
-       y="1016.0527"
-       x="2.9761984"
+       y="1033.9829"
+       x="33.533314"
        id="image4597"
        xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/boot.png"
        style="image-rendering:optimizeQuality"
        preserveAspectRatio="none"
-       height="16.190472"
-       width="16.190472" />
+       height="15.937934"
+       width="15.937934" />
     <image
        sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/fist.png"
        y="1033.9098"
-       x="2.6190512"
+       x="64.490891"
        id="image4608"
        xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/fist.png"
        style="image-rendering:optimizeQuality"
@@ -138,38 +119,38 @@
        width="15.654756" />
     <image
        sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/wing.png"
-       y="998.01697"
-       x="2.4404771"
+       y="1034.1299"
+       x="2.6930153"
        id="image4619"
        xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/wing.png"
        style="image-rendering:optimizeQuality"
        preserveAspectRatio="none"
-       height="16.547615"
-       width="16.547615" />
+       height="15.537462"
+       width="15.537462" />
     <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/shield.png"
-       y="980.5509"
-       x="2.7679894"
-       id="image4630"
-       xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/shield.png"
+       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/dolar.png"
+       y="1016.2256"
+       x="54.217457"
+       id="image843"
+       xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/dolar.png"
        style="image-rendering:optimizeQuality"
        preserveAspectRatio="none"
-       height="15.903096"
-       width="15.903096" />
+       height="15.479666"
+       width="15.479666" />
     <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/search.png"
-       y="980.39221"
-       x="40.662041"
-       id="image4641"
-       xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/search.png"
+       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/bullet.png"
+       y="1016.5099"
+       x="3.2047563"
+       id="image854"
+       xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/bullet.png"
        style="image-rendering:optimizeQuality"
        preserveAspectRatio="none"
-       height="15.903096"
-       width="15.903096" />
+       height="15.479666"
+       width="15.479666" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 77.529207,904.73414 v 13.92857"
-       id="path10-3"
+       d="m 78.53936,904.22906 v 13.92857"
+       id="path10-5"
        inkscape:connector-curvature="0" />
   </g>
 </svg>
