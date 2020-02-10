@@ -30,3 +30,7 @@
 2,D,1,Mimo misi,Stavba skryse,png/question.png,Stoji 2 Materialy|Vyleci 1_zivot kazdemu
 2,D,2,Mimo misi,Planovani,png/question.png,Je mozne pokazde znovu nalosovat jednu z misi
 2,D,2,Mimo misi,Vyroba munice,png/question.png,1_naboje zdarma (pro jednu postavu)
+2,D,2,Mimo misi,Oprava vybaveni,png/question.png,Jedna oprava je po_kazde misi zadarmo
+2,D,1,Mimo misi,Lov jidla,png/question.png,Misto sberu muze ulovit 2 jidla
+2,D,1,Mimo misi,Shaneni materialu,png/question.png,Pri_sberu donese 1_jidlo a_1_material
+2,D,2,Mimo misi,Organizace,png/question.png,Unese 1_vec navic (musi mit silu)

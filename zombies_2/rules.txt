@@ -19,9 +19,15 @@ V zakladu jsou v kazdem kole nasledujici kroky:
 <I>
 
 <C1>Druhy ohrozeni
-Ve hre budou 3 Smery ohrozeni pred kteryi by se hraci meli branit: Ze Vzduchu, Ze Zeme a Ze Zalohy. V zakladu vlastne kazdy hrac zacina rozhodnutim, cemu se bude venovat, v ktere casti tymu se bude angazovat: Vzduch, Zeme, Zaloha nebo Pruzkum.
-V kazde misi je tazenych 6 karet nepratel. 3 bezne a 3 vazne, vzdy dvojice pro kazdy druh ohrozeni. Podle toho jake je to prostredi, tak se lisi jaci nepratele muzou byt kde. To ze jsou nepratele tazeni neznamena, ze je hraci znaji. Pokud na to nemaji dovednost tak hraci karty otocej vzdycky az kdyz je poprve potkaj.
-Na kazde karte lokace je napsano, kolik se tahne karet ohrozeni pro ktery Smer. Karta ohrozeni obsahuje bud nic, nebo nepritel X nebo nepritel !!! (Slaby nebo silny).
+Ve hre budou 3 Smery ohrozeni pred kteryi by se hraci meli branit: Ze Vzduchu, Ze Zeme a Ze Zalohy. V zakladu vlastne kazdy hrac zacina rozhodnutim, cemu se bude venovat, v ktere casti tymu se bude angazovat: Vzduch, Zeme, Stin nebo Pruzkum.
+V kazde misi je tazenych 6 karet nepratel. 3 bezne a 3 vazne. Podle toho jake je to prostredi, tak se lisi jaci nepratele muzou byt kde. To ze jsou nepratele tazeni neznamena, ze je hraci znaji. Pokud na to nemaji dovednost tak hraci karty otocej vzdycky az kdyz je poprve potkaj.
+Na kazde karte lokace je napsano, kolik se tahne karet Ohrozeni pro ktery Smer. Karta Ohrozeni obsahuje bud nic, nebo nepritel A/B/C nebo nepritel !A!/!B!/!C! (Slaby nebo silny). Balicek s kartami ohrozeni se zamicha pred kazdym kolem hry. Slozeni tohohle balicku vlastne naznacuje jak moc drzna hra bude.
+
+<C>Uprava pro 2 hrace
+Pro dva hrace je hra jednodussi o to, ze se musi mene hracu domluvit. Je proto potreba hru nejak upravit, aby se kompenzovala obtiznost. Rekneme ze za kazdeho hrace ve hre se prida do balicku Ohrozeni jedna dalsi karta NIC. Takze rozdil mezi 2 a 4 hraci budou 2 dalsi karty NIC v tomhle baliku.
+
+
+
 
 <C>Teorie
 Hru je potr'eba ude'lat ru'zne' sloz'itou podle u''rovne' hra'c'e. Zac'i't jednoduchy'm poraz'eni'm potvor pr'i'mo ve me'ste'. Konc'it ne'jaky'm cestova'ni'm mezi me'sty. Na zac'a'tku mi't jen za'kladni' dovednosti, zdravi', si'la, s'ikovnost. Na konci mi't povola'ni' a dovednosti.
