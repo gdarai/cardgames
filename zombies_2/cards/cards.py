@@ -354,6 +354,9 @@ def printCardFile(setting, name):
 			pos = props['position']
 			size = [pos[1][0]-pos[0][0], pos[1][1]-pos[0][1]]
 			pos = pos[0]
+			if os.path.exists(fileName) == False:
+				print('Trying to read file '+fileName+' which does not exist')
+				print props
 			theImg = cv2.imread(fileName)
 			# RGB to RGBA
 			if theImg.shape[2] == 3:

@@ -22,6 +22,61 @@
     "values":"csv_mista.csv"
   },
   {
+    "_out":"_OUT_prostredi.tex",
+    "_card":"png/card_100x150_mise",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "home",
+        "name",
+        "text",
+        "img",
+        "easy",
+        "hard"
+      ]
+    },
+    "values":"csv_mise.csv"
+  },
+  {
+    "_out":"_OUT_prostredi.tex",
+    "_card":"png/card_100x150_ukol",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "home",
+        "name",
+        "type",
+        "typeimg",
+        "img",
+        "text"
+      ]
+    },
+    "values":"csv_ukoly.csv"
+  },
+  {
+    "_out":"_OUT_prostredi.tex",
+    "_card":"png/card_100x150_kampan",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "home",
+        "name",
+        "part1",
+        "part2",
+        "part3",
+        "part4",
+        "part5"
+      ]
+    },
+    "values":"csv_kampane.csv"
+  },
+  {
     "_out":"_OUT_obludy.tex",
     "_card":"png/card_100x150_nepritel",
     "_onOneLine":6,
@@ -98,7 +153,47 @@
     "values":"csv_vybaveni.csv"
   },
   {
-    "_out":"_OUT_pro_hrace.tex",
+    "_out":"_OUT_veci.tex",
+    "_card":"png/card_100x150_vozidlo",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "name",
+        "home",
+        "price",
+        "carry",
+        "heal",
+        "fuel",
+        "scrap",
+        "img",
+        "text"
+      ]
+    },
+    "values":"csv_vozidla.csv"
+  },
+  {
+    "_out":"_OUT_veci.tex",
+    "_card":"png/card_100x150_brneni",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "name",
+        "home",
+        "price",
+        "carry",
+        "life",
+        "img",
+        "text"
+      ]
+    },
+    "values":"csv_brneni.csv"
+  },
+  {
+    "_out":"_OUT_obludy.tex",
     "_card":"png/card_100x150_zbran",
     "_onOneLine":6,
     "_randomize":"False",
@@ -131,7 +226,7 @@
     "values":"csv_karty.csv"
   },
   {
-    "_out":"_OUT_pro_hrace.tex",
+    "_out":"_OUT_obludy.tex",
     "_card":"png/card_100x150_postava",
     "_onOneLine":6,
     "_count":4,

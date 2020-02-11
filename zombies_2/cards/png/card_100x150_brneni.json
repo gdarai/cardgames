@@ -9,17 +9,7 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "level":{
-    "type":"text",
-    "position":[[80, 2],[98,15]],
-    "padding":[[2,2], [2,2]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
-    "align":"center"
-  },
-  "category":{
+  "home":{
     "type":"text",
     "position":[[25, 2],[75,15]],
     "padding":[[2,2], [2,2]],
@@ -31,57 +21,57 @@
   },
   "img":{
     "type":"img",
-    "position":[[25,15],[75,65]]
+    "position":[[15,32],[60,77]]
+  },
+  "name":{
+    "type":"text",
+    "position":[[2, 17],[98,30]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "price":{
+    "type":"text",
+    "position":[[80, 30],[98,45]],
+    "padding":[[2,0], [2,0]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "carry":{
+    "type":"text",
+    "position":[[80, 45],[98,60]],
+    "padding":[[2,0], [2,0]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "life":{
+    "type":"text",
+    "position":[[80, 60],[98,75]],
+    "padding":[[2,0], [2,0]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
   },
   "text":{
     "type":"text",
-    "position":[[2, 65],[98,113]],
+    "position":[[2, 80],[98,148]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
     "fixed":0,
-    "align":"center"
-  },
-  "name":{
-    "type":"text",
-    "position":[[2, 115],[98,130]],
-    "padding":[[2,2], [2,2]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
-    "align":"center"
-  },
-  "enemy_a":{
-    "type":"text",
-    "position":[[20, 132],[30,148]],
-    "padding":[[0,0], [0,0]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
-    "align":"center"
-  },
-  "enemy_l":{
-    "type":"text",
-    "position":[[50, 132],[60,148]],
-    "padding":[[0,0], [0,0]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
-    "align":"center"
-  },
-  "enemy_s":{
-    "type":"text",
-    "position":[[85, 132],[95,148]],
-    "padding":[[0,0], [0,0]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
     "align":"center"
   }
 }

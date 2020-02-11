@@ -1,16 +1,21 @@
-16,Munice|||Typ|M
-16,Munice|||Typ|L
-16,Munice|||Typ|V
-1,Nepritel X|||||||
-1,Nepritel Y|||||||
-1,Nepritel Z|||||||
-1,Nepritel !X|||||||
-1,Nepritel !Y|||||||
-1,Nepritel !Z|||||||
-12,Bez|nepritele
-6,Nepritel||X
-6,Nepritel||Y
-6,Nepritel||Z
-6,Nepritel||!X
-6,Nepritel||!Y
-6,Nepritel||!Z
+8,Munice|||Typ|M
+8,Munice|||Typ|L
+8,Munice|||Typ|T
+1,Nepritel_X|||||||
+1,Nepritel_Y|||||||
+1,Nepritel_Z|||||||
+1,Nepritel_!X!|||||||||
+1,Nepritel_!Y!|||||||||
+1,Nepritel_!Z!|||||||||
+8,Bez|nepritele
+2,Nepritel||X
+2,Nepritel||Y
+2,Nepritel||Z
+1,Nepritel||!X!
+1,Nepritel||!Y!
+1,Nepritel||!Z!
+1,Pruzkum|Informator
+1,Pruzkum|Predmet
+1,Pruzkum|Jidlo
+1,Pruzkum|Material
+1,Pruzkum|Civilista
