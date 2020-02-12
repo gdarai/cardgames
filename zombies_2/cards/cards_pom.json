@@ -1,0 +1,22 @@
+[
+  {
+    "_out":"_OUT_supp.tex",
+    "_card":"png/card_100x150_it",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "img"
+      ]
+    },
+    "values":"csv_pom.csv"
+  },
+  {
+    "_out":"_OUT_supp.tex",
+    "_card":"png/card_100x150_kampan",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_count":12
+  }
+]
