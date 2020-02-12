@@ -1,86 +1,35 @@
 {
-  "cards":[
-    {
-      "count":    1,
-      "pack":     5,
-      "search":   1,
-      "searchLvl":1,
-    },
-    {
-      "count":    2,
-      "pack":     4,
-      "search":   3,
-      "searchLvl":1,
-    },
-    {
-      "count":    3,
-      "pack":     3,
-      "search":   2,
-      "searchLvl":2,
-    },
-    {
-      "count":    2,
-      "pack":     1,
-      "search":   0,
-      "searchLvl":1,
-    },
-    {
-      "count":    2,
-      "pack":     2,
-      "search":   2,
-      "searchLvl":2,
-    },
-    {
-      "count":    2,
-      "pack":     3,
-      "search":   2,
-      "searchLvl":3,
-    },
-    {
-      "count":    2,
-      "pack":     2,
-      "search":   2,
-      "searchLvl":2,
-    },
-    {
-      "count":    1,
-      "pack":     0,
-      "search":   2,
-      "searchLvl":2,
-    }
-  ],
+  "general":{
+    "runs": 100
+  },
   "scenarios":[
     {
       "name":"Pruzkum",
-      "minLocs":6,
-      "searchCnt":0,
-      "searchLvl":[],
-      "pack":[],
-      "searchProb":1
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","A","L","Z",""]
+      },
+      "conditions":{
+        "minLocs":6,
+        "searchCnt":0,
+        "searchLvl":[],
+        "searchType":[],
+        "searchProb":100
+      }
     },
     {
       "name":"Zasoby",
-      "minLocs":6,
-      "searchCnt":0,
-      "searchLvl":[],
-      "pack":[],
-      "searchProb":1
-    },
-    {
-      "name":"Pruzkum",
-      "minLocs":6,
-      "searchCnt":0,
-      "searchLvl":[],
-      "pack":[],
-      "searchProb":1
-    },
-    {
-      "name":"Pruzkum",
-      "minLocs":6,
-      "searchCnt":0,
-      "searchLvl":[],
-      "pack":[],
-      "searchProb":1
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","A","L","Z",""]
+      },
+      "conditions":{
+        "minLocs":0,
+        "searchCnt":2,
+        "searchLvl":["3","4","5"],
+        "searchType":[1,2,3],
+        "searchProb":100
+      }
     }
   ]
 }
