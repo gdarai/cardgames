@@ -1,8 +1,8 @@
-6,A,Kolo,oo,2,3,x,x,x,png/question.png,Neco malo uveze
-3,A,Vozik,oo,2,10,x,x,1m,png/question.png,Uveze vic ale musite ho tahnout
-2,A,Kun,oo,3,6,x,1j,3j,png/question.png,Tenhle jede sam. Kdyz nakrmis tak jede
-1,A,Povoz,oo,3,15,1,1j,5j,png/question.png,Kombinace voziku a kone
-1,A,Motorka,oo,3,8,x,1m,1m,png/question.png,Mechanicky kun
-3,A,Auto,oo,3,15,1,2m,2m,png/question.png,Zigulik
-3,A,Autobus,oo,4,30,4,3m,3m,png/question.png,Zeby skolni oranzovej?
-1,A,Humvee,spec,4,20,3,2m,2m,png/question.png,S prekvapive velkou korbou
+6,A,Kolo,oo,2,3,x,x,x,icons/boot.png,Neco malo uveze
+3,A,Vozik,oo,2,10,x,x,1m,icons/boot.png,Uveze vic ale musite ho tahnout
+2,A,Kun,oo,3,6,x,1j,3j,icons/boot.png,Tenhle jede sam. Kdyz nakrmis tak jede
+1,A,Povoz,oo,3,15,1,1j,5j,icons/boot.png,Kombinace voziku a kone
+1,A,Motorka,oo,3,8,x,1m,1m,icons/boot.png,Mechanicky kun
+3,A,Auto,oo,3,15,1,2m,2m,icons/boot.png,Zigulik
+3,A,Autobus,oo,4,30,4,3m,3m,icons/boot.png,Zeby skolni oranzovej?
+1,A,Humvee,spec,4,20,3,2m,2m,icons/boot.png,S prekvapive velkou korbou

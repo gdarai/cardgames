@@ -1,22 +1,86 @@
 [
   {
-    "_out":"_OUT_supp.tex",
-    "_card":"png/card_100x150_it",
-    "_onOneLine":6,
-    "_randomize":"False",
-    "_list":{
-      "values":[
-        "name",
-        "img"
-      ]
-    },
-    "values":"csv_pom.csv"
-  },
-  {
-    "_out":"_OUT_supp.tex",
-    "_card":"png/card_100x150_kampan",
+    "_out":"_OUT_veci.tex",
+    "_card":"png/card_100x150_zbran",
     "_onOneLine":6,
     "_randomize":"True",
-    "_count":12
+    "symbol":{ "reg": "[ABCD][12345678]" },
+    "_list":{
+      "values":[
+        "code",
+        "name",
+        "img",
+        "weight",
+        "price",
+        "enemy_a",
+        "enemy_l",
+        "enemy_s",
+        "ammo",
+        "home",
+        "text"
+      ]
+    },
+    "values":"csv_zbrane.csv"
+  },
+  {
+    "_out":"_OUT_veci.tex",
+    "_card":"png/card_100x150_vybaveni",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "symbol":{ "reg": "[ABCD][12345678]" },
+    "_list":{
+      "values":[
+        "code",
+        "name",
+        "img",
+        "price",
+        "weight",
+        "home",
+        "text"
+      ]
+    },
+    "values":"csv_vybaveni.csv"
+  },
+  {
+    "_out":"_OUT_veci.tex",
+    "_card":"png/card_100x150_vozidlo",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "symbol":{ "reg": "[ABCD][12345678]" },
+    "_list":{
+      "values":[
+        "code",
+        "name",
+        "home",
+        "price",
+        "carry",
+        "heal",
+        "fuel",
+        "scrap",
+        "img",
+        "text"
+      ]
+    },
+    "values":"csv_vozidla.csv"
+  },
+  {
+    "_out":"_OUT_veci.tex",
+    "_card":"png/card_100x150_brneni",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "symbol":{ "reg": "[ABCD][12345678]" },
+    "_list":{
+      "values":[
+        "code",
+        "name",
+        "home",
+        "price",
+        "carry",
+        "life",
+        "img",
+        "text"
+      ]
+    },
+    "values":"csv_brneni.csv"
   }
 ]

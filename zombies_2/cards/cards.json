@@ -118,6 +118,7 @@
     "_card":"png/card_100x150_zbran",
     "_onOneLine":6,
     "_randomize":"True",
+    "symbol":{ "reg": "[ABCD][12345678]" },
     "_list":{
       "values":[
         "code",
@@ -129,7 +130,8 @@
         "enemy_l",
         "enemy_s",
         "ammo",
-        "home"
+        "home",
+        "text"
       ]
     },
     "values":"csv_zbrane.csv"
@@ -139,6 +141,7 @@
     "_card":"png/card_100x150_vybaveni",
     "_onOneLine":6,
     "_randomize":"True",
+    "symbol":{ "reg": "[ABCD][12345678]" },
     "_list":{
       "values":[
         "code",
@@ -157,6 +160,7 @@
     "_card":"png/card_100x150_vozidlo",
     "_onOneLine":6,
     "_randomize":"True",
+    "symbol":{ "reg": "[ABCD][12345678]" },
     "_list":{
       "values":[
         "code",
@@ -178,6 +182,7 @@
     "_card":"png/card_100x150_brneni",
     "_onOneLine":6,
     "_randomize":"True",
+    "symbol":{ "reg": "[ABCD][12345678]" },
     "_list":{
       "values":[
         "code",
@@ -197,6 +202,7 @@
     "_card":"png/card_100x150_zbran",
     "_onOneLine":6,
     "_randomize":"False",
+    "symbol":{ "reg": "-x-" },
     "_list":{
       "values":[
         "code",
@@ -208,7 +214,8 @@
         "enemy_l",
         "enemy_s",
         "ammo",
-        "home"
+        "home",
+        "text"
       ]
     },
     "values":"csv_zbrane_0.csv"
@@ -231,5 +238,39 @@
     "_onOneLine":6,
     "_count":4,
     "_randomize":"False"
+  },
+  {
+    "_out":"_OUT_pro_hrace.tex",
+    "_card":"png/card_100x150_it",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "img"
+      ]
+    },
+    "values":"csv_pom.csv"
+  },
+  {
+    "_out":"_OUT_pro_hrace.tex",
+    "_card":"png/card_100x150_kampan",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_count":14
+  },
+  {
+    "_out":"_OUT_hledani.tex",
+    "_card":"png/card_100x100_nalez",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "top",
+        "middle",
+        "bottom"
+      ]
+    },
+    "values":"csv_nalezy.csv"
   }
 ]

@@ -1,5 +1,5 @@
-5,B,Pracovni,oo,1,1,0,png/question.png,Hodne kvalitni bunda
-5,B,Policejni,spec,1,2,0,png/question.png,Teoreticky neprustrelna
-3,B,Takticka,spec,1,2,1,png/question.png,Se spoustou kapes
-3,B,Vojenska,vojenska,2,4,0,png/question.png,Maskacova vesta
-2,B,Specialni,vojenska,2,6,0,png/question.png,Brneni specialnich jednotek
+5,B,Pracovni,oo,1,1,0,icons/shield.png,Hodne kvalitni bunda
+5,B,Policejni,spec,1,2,0,icons/shield.png,Teoreticky neprustrelna
+3,B,Takticka,spec,1,2,1,icons/shield.png,Se spoustou kapes
+3,B,Vojenska,vojenska,2,4,0,icons/shield.png,Maskacova vesta
+2,B,Specialni,vojenska,2,6,0,icons/shield.png,Brneni specialnich jednotek

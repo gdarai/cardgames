@@ -1,15 +1,15 @@
-3,V,Past,png/question.png,1,1,spec,1x za misi|+1_Z/S|mimo misi|+1 jidlo
-3,V,Past 2,png/question.png,2,2,spec,1x za misi|+2_Z/S|mimo misi|+1 jidlo
-3,V,Baterka,png/question.png,1,1,oo,4x za misi|Pri pruzkumu|+1_P a_-1_S
-3,V,Noktovizor,png/question.png,2,1,vojenska,2x za misi|+1_P/S
-3,V,Lep. Opasek,png/question.png,1,x,spec,Nosnost +1_vec|Nepocita se do limitu
-3,V,Lep. Batoh,png/question.png,2,x,spec,Postava nesmi mit T|Nosnost +2_veci|Nepocita se do limitu
-3,V,Lekarna,png/question.png,1,2,oo,1x za misi|+2_Zivoty nebo Resuscitace
-3,V,Nastroje,png/question.png,1,2,oo,Jedna oprava zdarma ci skrap_+1
-3,V,Koreni,png/question.png,1,2,oo,Mimo misi|+1_Jidlo
-3,V,Prikryvky,png/question.png,1,2,oo,Mimo misi|+1_Leceni
-3,V,Dalekohled,png/question.png,1,1,oo,Pred misi|odhali jedno X|a 1x za misi|Odhali nepritele A
-3,V,Kompas,png/question.png,1,1,oo,Po misi|+1_k_zaverecnym bodum
-3,V,Box na Munici,png/question.png,2,2,vojenska,Unese dalsi 2_zasobniky pro jednu ze_zbrani
-3,Z,Stit,png/question.png,1,T,oo,Jako T_zbran|Pridava 3_zivoty zbroje
-2,Z,Policejni Stit,png/question.png,2,T,spec,Jako T_zbran|Pridava 5_zivotu zbroje
+3,V,Past,icons/search.png,1,1,spec,1x za misi|+1_Z/S|mimo misi|+1 jidlo
+3,V,Past 2,icons/search.png,2,2,spec,1x za misi|+2_Z/S|mimo misi|+1 jidlo
+3,V,Baterka,icons/search.png,1,1,oo,4x za misi|Pri pruzkumu|+1_P a_-1_S
+3,V,Noktovizor,icons/search.png,2,1,vojenska,2x za misi|+1_P/S
+3,V,Lep. Opasek,icons/search.png,1,x,spec,Nosnost +1_vec|Nepocita se do limitu
+3,V,Lep. Batoh,icons/search.png,2,x,spec,Postava nesmi mit T|Nosnost +2_veci|Nepocita se do limitu
+3,V,Lekarna,icons/search.png,1,2,oo,1x za misi|+2_Zivoty nebo Resuscitace
+3,V,Nastroje,icons/search.png,1,2,oo,Jedna oprava zdarma ci skrap_+1
+3,V,Koreni,icons/search.png,1,2,oo,Mimo misi|+1_Jidlo
+3,V,Prikryvky,icons/search.png,1,2,oo,Mimo misi|+1_Leceni
+3,V,Dalekohled,icons/search.png,1,1,oo,Pred misi|odhali jedno X|a 1x za misi|Odhali nepritele A
+3,V,Kompas,icons/search.png,1,1,oo,Po misi +1 k_zaverecnym bodum
+3,V,Box na Munici,icons/search.png,2,2,vojenska,Unese dalsi 2_zasobniky pro jednu ze_zbrani
+3,Z,Stit,icons/search.png,1,T,oo,Jako T_zbran|Pridava 3_zivoty zbroje
+2,Z,Policejni Stit,icons/search.png,2,T,spec,Jako T_zbran|Pridava 5_zivotu zbroje

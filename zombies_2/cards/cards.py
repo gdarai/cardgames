@@ -114,6 +114,19 @@ class ANALYZE_REG_RANGE:
 	def getCount(self):
 		return self.count
 
+class ANALYZE_REG_ITEMIZE:
+	def __init__(self, source):
+		self.source = source
+		if len(self.source) < 1:
+			print('!! Regexp error, itemize ['+str(source)+'] is not understanded')
+			exit()
+	def getValue(self, index):
+		value = self.source[index]
+		return value
+	def getCount(self):
+		return len(self.source)
+
+
 class ANALYZE_REG_FULL:
 	def __init__(self, script, counterName, isMaster):
 		self.script = script
@@ -161,8 +174,7 @@ def ANALYZE_REG(regStr, counterName, isMaster):
 			if len(regSplit) == 2:
 				script.append(ANALYZE_REG_RANGE(regSplit[0], regSplit[1]))
 			else:
-				print('!! Regexp error, range ['+nextStr+'] is not understanded')
-				exit()
+				script.append(ANALYZE_REG_ITEMIZE(nextStr))
 		else:
 			nextStr = (regStr.split('['))[0]
 			regStr = regStr[len(nextStr):]
