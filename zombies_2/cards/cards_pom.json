@@ -1,86 +1,86 @@
 [
   {
-    "_out":"_OUT_veci.tex",
-    "_card":"png/card_100x150_zbran",
+    "_out":"_OUT_supp.tex",
+    "_card":"png/card_100x150_lokace",
     "_onOneLine":6,
     "_randomize":"True",
-    "symbol":{ "reg": "[ABCD][12345678]" },
     "_list":{
       "values":[
+        "category",
         "code",
-        "name",
+        "level",
         "img",
-        "weight",
-        "price",
+        "name",
+        "hide",
+        "search",
         "enemy_a",
         "enemy_l",
         "enemy_s",
-        "ammo",
-        "home",
         "text"
       ]
     },
-    "values":"csv_zbrane.csv"
+    "values":"csv_mista.csv"
   },
   {
-    "_out":"_OUT_veci.tex",
-    "_card":"png/card_100x150_vybaveni",
+    "_out":"_OUT_supp.tex",
+    "_card":"png/card_100x150_mise",
     "_onOneLine":6,
     "_randomize":"True",
-    "symbol":{ "reg": "[ABCD][12345678]" },
     "_list":{
       "values":[
         "code",
-        "name",
-        "img",
-        "price",
-        "weight",
         "home",
-        "text"
+        "name",
+        "text",
+        "img",
+        "easy",
+        "hard"
       ]
     },
-    "values":"csv_vybaveni.csv"
+    "values":"csv_mise.csv"
   },
   {
-    "_out":"_OUT_veci.tex",
-    "_card":"png/card_100x150_vozidlo",
+    "_out":"_OUT_supp.tex",
+    "_card":"png/card_100x150_it",
     "_onOneLine":6,
     "_randomize":"True",
-    "symbol":{ "reg": "[ABCD][12345678]" },
     "_list":{
       "values":[
-        "code",
         "name",
-        "home",
-        "price",
-        "carry",
-        "heal",
-        "fuel",
-        "scrap",
-        "img",
-        "text"
+        "img"
       ]
     },
-    "values":"csv_vozidla.csv"
+    "values":"csv_pom.csv"
   },
   {
-    "_out":"_OUT_veci.tex",
-    "_card":"png/card_100x150_brneni",
+    "_out":"_OUT_frajeriny.tex",
+    "_card":"png/card_100x150_frajerina",
     "_onOneLine":6,
     "_randomize":"True",
-    "symbol":{ "reg": "[ABCD][12345678]" },
     "_list":{
       "values":[
+        "home",
         "code",
         "name",
-        "home",
-        "price",
-        "carry",
-        "life",
         "img",
+        "effect",
         "text"
       ]
     },
-    "values":"csv_brneni.csv"
+    "values":"csv_frajeriny.csv"
+  },
+  {
+    "_out":"_OUT_hledani.tex",
+    "_card":"png/card_100x100_nalez",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "top",
+        "middle",
+        "bottom"
+      ]
+    },
+    "values":"csv_nalezy.csv"
   }
 ]

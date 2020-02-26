@@ -1,4 +1,7 @@
-4,Vzduch,icons/wing.png
-4,Zeme,icons/boot.png
-4,Zaloha,icons/fist.png
-4,Pruzkum,icons/search.png
+5,Vzduch,icons/wing.png
+5,Zeme,icons/boot.png
+5,Zaloha,icons/mask.png
+5,Pruzkum,icons/search.png
+4,Frajerina|Boj +1,icons/fist.png
+4,Frajerina|Kryt +1,icons/shield.png
+4,Frajerina|Pomoc +1,icons/life.png

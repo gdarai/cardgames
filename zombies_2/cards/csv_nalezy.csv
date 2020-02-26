@@ -1,6 +1,6 @@
 4,Jidlo,,
-4,Jidlo,Jidlo,
-4,Material,Jidlo,
-4,Material,Material,Jidlo
-4,Vec,Material,
-4,Vec,Material,Jidlo
+4,SPEC,Jidlo,[Jidlo]
+4,SPEC,Material,[Jidlo]
+4,SPEC,Material,[Material]
+4,-Vec-,Material,
+4,-Vec-,Material,[Jidlo]

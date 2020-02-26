@@ -8,7 +8,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="100"
@@ -17,9 +16,17 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="card_100x150_vozidlo.svg">
+   sodipodi:docname="card_100x150_frajerina.svg">
   <defs
      id="defs4">
+    <linearGradient
+       id="linearGradient831"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#e4e4e4;stop-opacity:1;"
+         offset="0"
+         id="stop829" />
+    </linearGradient>
     <linearGradient
        id="linearGradient4526"
        osb:paint="solid">
@@ -37,17 +44,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="44.784212"
+     inkscape:cx="3.8730342"
      inkscape:cy="72.00885"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="523"
-     inkscape:window-height="1094"
-     inkscape:window-x="1290"
-     inkscape:window-y="170"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="2493"
+     inkscape:window-height="1385"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -56,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -83,62 +90,5 @@
        d="m 20.887601,904.68359 v 13.92857"
        id="path10"
        inkscape:connector-curvature="0" />
-    <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/dolar.png"
-       y="931.87781"
-       x="67.601982"
-       id="image843"
-       xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/dolar.png"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
-       height="15.479666"
-       width="15.479666" />
-    <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/weight.png"
-       y="947.35748"
-       x="68.569855"
-       id="image4662"
-       xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/weight.png"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
-       height="14.511794"
-       width="14.511794" />
-    <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/life.png"
-       y="961.86926"
-       x="68.569855"
-       id="image4673"
-       xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/life.png"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
-       height="14.511794"
-       width="14.511794" />
-    <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/boot.png"
-       y="976.38104"
-       x="68.569855"
-       id="image4684"
-       xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/boot.png"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
-       height="14.511794"
-       width="14.511794" />
-    <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/mask.png"
-       y="990.89282"
-       x="68.569855"
-       id="image4695"
-       xlink:href="file:///home/tr949/cardgames/zombies_2/cards/icons/mask.png"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
-       height="14.511794"
-       width="14.511794" />
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect22"
-       width="24.748737"
-       height="22.98097"
-       x="2.0380592"
-       y="953.93774" />
   </g>
 </svg>
