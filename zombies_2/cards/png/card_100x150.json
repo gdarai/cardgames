@@ -6,6 +6,7 @@
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
+    "fixed":0,
     "color":[0,0,0],
     "align":"center"
   }

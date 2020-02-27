@@ -50,7 +50,7 @@
         "img"
       ]
     },
-    "values":"csv_pom.csv"
+    "values":"csv_hracovyKarty.csv"
   },
   {
     "_out":"_OUT_frajeriny.tex",

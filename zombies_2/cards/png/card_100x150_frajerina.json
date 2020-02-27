@@ -21,7 +21,7 @@
   },
   "img":{
     "type":"img",
-    "position":[[25,32],[70,77]]
+    "position":[[35,32],[65,62]]
   },
   "name":{
     "type":"text",
@@ -35,7 +35,7 @@
   },
   "effect":{
     "type":"text",
-    "position":[[2, 80],[98,110]],
+    "position":[[2, 62],[98,100]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -46,7 +46,7 @@
   },
   "text":{
     "type":"text",
-    "position":[[2, 110],[98,148]],
+    "position":[[2, 100],[98,148]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,

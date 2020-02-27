@@ -1,0 +1,20 @@
+4,Zasobniky|||Mala zbran||----------||Dlouha zbran||----------||Tezka zbran
+1,Nepritel_A|||||||
+1,Nepritel_B|||||||
+1,Nepritel_C|||||||
+1,Nepritel_A|Tezky|||||||
+1,Nepritel_B|Tezky|||||||
+1,Nepritel_C|Tezky|||||||
+1,Material||----------||Jidlo||----------||Predmety
+1,Ohrozeni_V|Vduch||||||
+1,Ohrozeni_Z|Zem||||||
+1,Ohrozeni_S|Stin||||||
+1,Bezna|Ohrozeni
+1,Tezka|Ohrozeni
+3,Jidlo 1x
+5,Jidlo 4x
+3,Material 1x
+5,Material 4x
+1,Faze kola|1||----------|Nahlas|----------|Tahni lokaci|||||
+1,Faze kola|2||----------|Potichu|----------|Odkryj nepratele||Planuj akcni karty (i frajeriny)
+1,Faze kola|3||----------|Nahlas|----------|Odkryj karty||Pridej dovednosti||Vyhodnot
