@@ -1,5 +1,127 @@
 [
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_mista.csv",
+    "sheet":"Lokace",
+    "range":[[2,1],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_zombici.csv",
+    "sheet":"Nepritel",
+    "range":[[2,1],[12,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_zombici.csv",
+    "_opp":"a",
+    "sheet":"Nepritel",
+    "range":[[14,1],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_dovednosti.csv",
+    "sheet":"Dovednosti",
+    "range":[[4,0],[10,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "_opp":"a",
+    "target":"csv_dovednosti.csv",
+    "sheet":"Dovednosti",
+    "range":[[14,0],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_popisky.csv",
+    "sheet":"Popisky",
+    "range":[[1,2],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_hracovyKarty.csv",
+    "sheet":"Pro Hrace",
+    "range":[[2,3],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_zbrane_0.csv",
+    "sheet":"Zbrane",
+    "range":[[5,2],[8,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_zbrane.csv",
+    "sheet":"Zbrane",
+    "range":[[11,2],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_vybaveni.csv",
+    "sheet":"Vybaveni",
+    "range":[[2,1],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_vozidla.csv",
+    "sheet":"Vozidla",
+    "range":[[2,1],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_brneni.csv",
+    "sheet":"Zbroj",
+    "range":[[2,2],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_mise.csv",
+    "sheet":"Mise",
+    "range":[[2,1],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_ukoly.csv",
+    "sheet":"Ukoly",
+    "range":[[2,3],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_kampane.csv",
+    "sheet":"Kampane",
+    "range":[[2,2],[0,0]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_nalezy.csv",
+    "sheet":"Pruzkum",
+    "range":[[2,1],[0,5]]
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_frajeriny.csv",
+    "sheet":"Frajeriny",
+    "range":[[2,2],[0,0]]
+  },
+  {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_prostredi.tex",
     "_card":"png/card_100x150_lokace",
     "_onOneLine":6,
@@ -22,6 +144,7 @@
     "values":"csv_mista.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_kampan.tex",
     "_card":"png/card_100x150_mise",
     "_onOneLine":6,
@@ -40,6 +163,7 @@
     "values":"csv_mise.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_kampan.tex",
     "_card":"png/card_100x150_ukol",
     "_onOneLine":6,
@@ -58,6 +182,7 @@
     "values":"csv_ukoly.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_kampan.tex",
     "_card":"png/card_100x150_kampan",
     "_onOneLine":6,
@@ -77,6 +202,7 @@
     "values":"csv_kampane.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_obludy.tex",
     "_card":"png/card_100x150_nepritel",
     "_onOneLine":6,
@@ -97,6 +223,7 @@
     "values":"csv_zombici.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_pro_hrace.tex",
     "_card":"png/card_100x150_dovednost",
     "_onOneLine":6,
@@ -114,6 +241,7 @@
     "values":"csv_dovednosti.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_veci.tex",
     "_card":"png/card_100x150_zbran",
     "_onOneLine":6,
@@ -137,6 +265,7 @@
     "values":"csv_zbrane.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_veci.tex",
     "_card":"png/card_100x150_vybaveni",
     "_onOneLine":6,
@@ -156,6 +285,7 @@
     "values":"csv_vybaveni.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_veci.tex",
     "_card":"png/card_100x150_vozidlo",
     "_onOneLine":6,
@@ -178,6 +308,7 @@
     "values":"csv_vozidla.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_veci.tex",
     "_card":"png/card_100x150_brneni",
     "_onOneLine":6,
@@ -198,6 +329,7 @@
     "values":"csv_brneni.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_pro_hrace.tex",
     "_card":"png/card_100x150_zbran",
     "_onOneLine":6,
@@ -221,6 +353,7 @@
     "values":"csv_zbrane_0.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_pro_hrace.tex",
     "_card":"png/card_100x150",
     "_onOneLine":6,
@@ -233,6 +366,7 @@
     "values":"csv_popisky.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_pro_hrace.tex",
     "_card":"png/card_100x150_postava",
     "_onOneLine":6,
@@ -240,6 +374,7 @@
     "_randomize":"False"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_pro_hrace.tex",
     "_card":"png/card_100x150_it",
     "_onOneLine":6,
@@ -253,6 +388,7 @@
     "values":"csv_hracovyKarty.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_pro_hrace.tex",
     "_card":"png/card_100x150_kampan",
     "_onOneLine":6,
@@ -260,6 +396,7 @@
     "_count":6
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_hledani.tex",
     "_card":"png/card_100x100_nalez",
     "_onOneLine":6,
@@ -274,6 +411,7 @@
     "values":"csv_nalezy.csv"
   },
   {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_frajeriny.tex",
     "_card":"png/card_100x150_frajerina",
     "_onOneLine":6,

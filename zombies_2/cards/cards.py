@@ -8,6 +8,7 @@ import copy
 import cv2
 import numpy as np
 import csv
+from pyexcel_ods import get_data
 
 ########
 # Globals
@@ -201,23 +202,26 @@ def writeLine(f, intention, text):
     f.write('\t'*intention+text+'\n');
 
 def checkField(cardName, props, fieldName, values, defaultVal):
+	return checkFieldRaw('Card', cardName, props, fieldName, values, defaultVal)
+
+def checkFieldRaw(objectType, objectName, props, fieldName, values, defaultVal):
 	if fieldName not in props:
 		if defaultVal is None:
-			print('!! Card '+cardName+' is missing mandatory field '+fieldName)
+			print('!! '+objectType+' '+objectName+' is missing mandatory field '+fieldName)
 			exit()
 		props[fieldName] = defaultVal
-		return
+		return props[fieldName]
 	else:
 		value = props[fieldName]
 		if isinstance(values, list):
 			if value not in values:
-				print('!! Card '+cardName+' field '+fieldName+' must be one of '+str(values))
+				print('!! '+objectType+' '+objectName+' field '+fieldName+' must be one of '+str(values))
 				exit()
 		else:
 			if not VALTYPE[values](value):
-				print('!! Card '+cardName+' field '+fieldName+' must be '+values)
+				print('!! '+objectType+' '+objectName+' field '+fieldName+' must be '+values)
 				exit()
-	return
+	return props[fieldName]
 
 def int_to_bool_list(num, maxL):
     return [bool(num & (1<<n)) for n in range(maxL)]
@@ -288,6 +292,49 @@ def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
 		nextIndex = nextIndex + 1
 
 	return bestAnalysis['text']
+
+def printCsvTable(setting, name):
+	targetFile = checkFieldRaw('Export', '??', setting, 'target', 'string', None)
+	sheetName = checkFieldRaw('Export', setting['target'], setting, 'sheet', 'string', None)
+	cellRange = checkFieldRaw('Export', setting['target'], setting, 'range', 'list', None)
+	operation = checkFieldRaw('Export', setting['target'], setting, '_opp', 'string', 'w')
+
+	if '_sourceOds' not in setting:
+		print('!! No source ODS file specified yet, need _sourceOds entry key.')
+		exit()
+
+	if sheetName not in setting['_sourceOds']:
+		print('!! The source ODS file does not contain sheet '+sheetName)
+		print(setting['_sourceOds'].keys())
+		exit()
+
+	sheet = setting['_sourceOds'][sheetName]
+	cellRange = setting['range']
+	if (len(cellRange) < 2) or (len(cellRange[0]) < 2) or (len(cellRange[1]) < 2):
+		print('!! The cell range \'range\' must be 2x2 vector spread [ [x0, y0], [x1, y1] ]')
+		print(cellRange)
+		exit()
+
+	if cellRange[1][0] <= 0: cellRange[1][0] = len(sheet) - 1
+	if cellRange[1][1] <= 0: cellRange[1][1] = len(sheet[cellRange[0][0]])
+	lineLength = cellRange[1][1] - cellRange[0][1]
+	if len(sheet) <= cellRange[1][0]:
+		print('!! The end cell row '+str(cellRange[1][0])+' ('+str(cellRange[1])+') is out of table range (max is '+str(len(sheet)-1)+')')
+		print(sheet)
+		exit()
+
+	print('\nPrinting '+targetFile+'\n')
+
+	f = open(targetFile,setting['_opp'])
+	for line in sheet[cellRange[0][0]:cellRange[1][0]+1]:
+		cells = line[cellRange[0][1]:cellRange[1][1]]
+		if len(cells) == 0:
+			continue;
+		if len(cells) < lineLength:
+			cells = cells + [''] * (lineLength - len(cells))
+		strCells = ','.join(map(str, cells))
+		writeLine(f,0,strCells)
+	f.close()
 
 def printCardFile(setting, name):
 	cardName = setting['_card']
@@ -454,10 +501,30 @@ def readOneParameter(setting, paramName, paramSource):
 	return setting
 
 def readParameters(setting, source):
+	if '_process' in source:
+		setting['_process'] = source['_process'].upper()
+
+	if '_sourceOds' in source:
+		setting['_process'] = 'EXPORT_TABLE'
+		fileName = source['_sourceOds']
+		print('!! Swapping ods input to file '+fileName)
+		odsFiles = getFiles(fileName)
+		if len(odsFiles) != 1:
+			print('!! Isn\'t the input file '+fileName+' missing?')
+			exit()
+		setting['_sourceOds'] = get_data(fileName)
+
+	if setting['_process'] == 'EXPORT_TABLE':
+		setting['_cardParamNames'] = []
+		for paramName in setting['_exportTableParams']:
+			if paramName in source:
+				setting[paramName] = source[paramName]
+
 	if '_onOneLine' in source:
 		setting['_onOneLine'] = source['_onOneLine']
 
 	if '_card' in source:
+		setting['_process'] = 'PRINT_CARDS'
 		if setting['_card'] != '':
 			print('!! multiple cards assinged in this branch, rewriting '+setting['_card']+' with '+source['_card'])
 		setting['_card'] = source['_card']
@@ -567,6 +634,14 @@ def readAndProcess(level, name, source, setting):
 	if '_sub' in source:
 		readAndProcessList(newLevel, name, source['_sub'], copy.deepcopy(setting))
 	else:
+		if setting['_process'] == 'EXPORT_TABLE':
+			missing = checkParameters(setting)
+			if len(missing) > 0:
+				print(separator+' -Missing '+str(missing))
+			print(separator+' -Printing table')
+			printCsvTable(setting, name)
+			return;
+
 		if setting['_card'] == '':
 			print('!! Almost printing but still missing the mandatory "_card" key.')
 			exit()
@@ -633,9 +708,10 @@ setting['_card'] = ''
 setting['_lists'] = dict()
 setting['_out'] = TEX_FILE
 setting['_randomize'] = True
+setting['_process'] = 'PRINT_CARDS'
+setting['_exportTableParams'] = ['sheet', 'range', 'target', '_opp']
 
-
-readAndProcessList(0, "img", source, setting)
+readAndProcessList(0, "INPUT", source, setting)
 
 for fileName in IMAGES.keys():
 	IMGS = IMAGES[fileName]
