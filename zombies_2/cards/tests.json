@@ -7,7 +7,7 @@
       "name":"Pruzkum",
       "buildings":{
         "file":"csv_mista.csv",
-        "struct":["count","","","lvl","","name","","search","A","L","Z",""]
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
       },
       "conditions":{
         "minLocs":6,
@@ -21,13 +21,13 @@
       "name":"Zasoby",
       "buildings":{
         "file":"csv_mista.csv",
-        "struct":["count","","","lvl","","name","","search","A","L","Z",""]
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
       },
       "conditions":{
-        "minLocs":0,
+        "minLocs":4,
         "searchCnt":2,
-        "searchLvl":["3","4","5"],
-        "searchType":[1,2,3],
+        "searchLvl":["C","D","E"],
+        "searchType":[1, 2, 3],
         "searchProb":100
       }
     }

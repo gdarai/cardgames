@@ -500,9 +500,18 @@ def readOneParameter(setting, paramName, paramSource):
 	setting[paramName] = newParam
 	return setting
 
+def printSvgFile(fileName):
+	pngFileName = fileName[:-3]+'png'
+	print(SVG_DIRECTORY+'/'+fileName+' --> '+PNG_DIRECTORY+'/'+pngFileName)
+	command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
+	os.system(command)
+
 def readParameters(setting, source):
 	if '_process' in source:
 		setting['_process'] = source['_process'].upper()
+
+	if setting['_process'] == 'CONVERT_SVGS':
+		return setting;
 
 	if '_sourceOds' in source:
 		setting['_process'] = 'EXPORT_TABLE'
@@ -634,6 +643,13 @@ def readAndProcess(level, name, source, setting):
 	if '_sub' in source:
 		readAndProcessList(newLevel, name, source['_sub'], copy.deepcopy(setting))
 	else:
+		if setting['_process'] == 'CONVERT_SVGS':
+			svgFiles = getFiles(SVG_DIRECTORY+'/.*.svg')
+			print('\nConverting '+str(len(svgFiles))+' svg''s')
+			for fileName in svgFiles:
+				printSvgFile(fileName)
+			return;
+
 		if setting['_process'] == 'EXPORT_TABLE':
 			missing = checkParameters(setting)
 			if len(missing) > 0:
@@ -664,18 +680,6 @@ def printImages(IMAGES):
 			writeLine(f,0,'\\newline')
 			imgWidth = str(A4_TEXT_W / onOneLine)
 		writeLine(f,1,'\\includegraphics[width='+imgWidth+'cm]{'+DIRECTORY+'/'+img['file']+'}')
-
-
-########
-# SVG 2 PNG
-svgFiles = getFiles(SVG_DIRECTORY+'/.*.svg')
-print('\nConverting '+str(len(svgFiles))+' svg''s')
-if(True):
-	for fileName in svgFiles:
-		pngFileName = fileName[:-3]+'png'
-		print(SVG_DIRECTORY+'/'+fileName+' --> '+PNG_DIRECTORY+'/'+pngFileName)
-		command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
-		os.system(command)
 
 ########
 # Settings file

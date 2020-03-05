@@ -1,8 +1,8 @@
-1,Mesto,M,E,png/house.png,Kostel,3,1,1 / 0 +1,0 / 1 +0,1 / 1 +0,Poboreny kostelik
-2,Mesto,M,D,png/house.png,Bytovka,4,3,0 / 1 +1,0 / 1 +0,1 / 1 +0,S dvorkem
-3,Mesto,M,C,png/house.png,Domek,3,2 s,0 / 1 +1,0 / 1 +0,1 / 0 +1,Zarostla zahradka
-2,Mesto,M,A,png/house.png,Male namesti,1,0,1 / 1 +0,1 / 1 +0,0 / 0 +0,S kasnou
-2,Mesto,M,B,png/house.png,Skladiste,2,2 s,0 / 1 +0,0 / 1 +0,1 / 1 +0,Zdi sama dira
-2,Mesto,M,C,png/house.png,Garaze,2,2 V,0 / 1 +0,0 / 1 +0,1 / 0 +1,Odolavaji casu
-2,Mesto,M,B,png/house.png,Maly obchod,2,2 s,0 / 1 +1,0 / 1 +0,0 / 1 +1,Dvere dokoran
-1,Mesto,M,--,png/house.png,Pristav,2,2 s,0 / 1 +1,1 / 0 +0,1 / 1 +0,Tvuj cil
+1,Mesto,M,E,png/house.png,Kostel,3,1,1,0,+1,0,1,+0,1,1,+0,Poboreny kostelik
+2,Mesto,M,D,png/house.png,Bytovka,4,3,0,1,+1,0,1,+0,1,1,+0,S dvorkem
+3,Mesto,M,C,png/house.png,Domek,3,2 s,0,1,+1,0,1,+0,1,0,+1,Zarostla zahradka
+2,Mesto,M,A,png/house.png,Male namesti,1,0,1,1,+0,1,1,+0,0,0,+0,S kasnou
+2,Mesto,M,B,png/house.png,Skladiste,2,2 s,0,1,+0,0,1,+0,1,1,+0,Zdi sama dira
+2,Mesto,M,C,png/house.png,Garaze,2,2 V,0,1,+0,0,1,+0,1,0,+1,Odolavaji casu
+2,Mesto,M,B,png/house.png,Maly obchod,2,2 s,0,1,+1,0,1,+0,0,1,+1,Dvere dokoran
+1,Mesto,M,--,png/house.png,Pristav,2,2 s,0,1,+1,1,0,+0,1,1,+0,Tvuj cil

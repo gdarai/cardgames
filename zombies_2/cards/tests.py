@@ -10,7 +10,8 @@ import numpy as np
 import csv
 
 SETTING = 'tests.json'
-
+EXPORT_SETTING = 'cards-export.json'
+CARDS_PRG = 'cards.py'
 ########
 # Superglobals
 
@@ -44,9 +45,7 @@ def getBuildings( config ):
 				newBuilding['searchType'] = switcher.get(newBuilding['searchType'], 1)
 				continue
 			if title == 'count': row[idx] = int(row[idx])
-			if title == 'A': row[idx] = int(row[idx][0:1])
-			if title == 'L': row[idx] = int(row[idx][0:1])
-			if title == 'Z': row[idx] = int(row[idx][0:1])
+			if title in ["V0","V1","V+","Z0","Z1","Z+","S0","S1","S+"]: row[idx] = int(row[idx])
 			newBuilding[title] = row[idx]
 		for idx in range(newBuilding['count']): buildings.append(newBuilding)
 	sourceCsv.close()
@@ -65,7 +64,9 @@ def newTestState( ):
 def changeTestState( state, building, conditions ):
 	state['step_cnt'] = state['step_cnt'] + 1
 	state['search_cnt'] = state['search_cnt'] + building['search']
-	state['enemy_cnt'] = state['enemy_cnt'] + building['A'] + building['L'] + building['Z']
+	state['enemy_cnt'] = state['enemy_cnt'] + 2* (building['V0'] + building['Z0'] + building['S0'])
+	state['enemy_cnt'] = state['enemy_cnt'] + building['V1'] + building['Z1'] + building['S1']
+	state['enemy_cnt'] = state['enemy_cnt'] + building['V+'] + building['Z+'] + building['S+']
 	for i in range(building['search']):
 		if random.randint(0, 100) < conditions['searchProb']:
 			if building['search'] in conditions['searchType']:
@@ -81,6 +82,12 @@ def checkTestState( state, buildingCount, conditions ):
 			return -1
 	return 0
 
+def npMin(field, list):
+	return '%.0f' % np.min([c[field] for c in list])
+
+def npMax(field, list):
+	return '%.0f' % np.max([c[field] for c in list])
+
 def npMean(field, list):
 	return '%.2f' % np.mean([c[field] for c in list])
 
@@ -91,12 +98,17 @@ def printTestStatistics( tests ):
 	failed = np.sum([c['result'] < 0 for c in tests])
 	trivial = np.sum([c['step_cnt'] < 3 for c in tests])
 	print('Summary\t\tfailed: '+str(failed)+'\ttrivial: '+str(trivial))
-	print('Steps\t\tav: '+npMean('step_cnt', tests)+'\tdev: '+npStd('step_cnt', tests))
-	print('Enemy\t\tav: '+npMean('enemy_cnt', tests)+'\tdev: '+npStd('enemy_cnt', tests))
-	print('Search\t\tav: '+npMean('search_cnt', tests)+'\tdev: '+npStd('search_cnt', tests))
+	print('Steps\t\tx: ('+npMin('step_cnt', tests)+', '+npMax('step_cnt', tests)+')\tav: '+npMean('step_cnt', tests)+'\tdev: '+npStd('step_cnt', tests))
+	print('Enemy\t\tx: ('+npMin('enemy_cnt', tests)+', '+npMax('enemy_cnt', tests)+')\tav: '+npMean('enemy_cnt', tests)+'\tdev: '+npStd('enemy_cnt', tests))
+	print('Search\t\tx: ('+npMin('search_cnt', tests)+', '+npMax('search_cnt', tests)+')\tav: '+npMean('search_cnt', tests)+'\tdev: '+npStd('search_cnt', tests))
 
 ########
 # Settings file
+EXPORT_SETTING = 'cards-export.json'
+CARDS_PRG = 'cards.py'
+print('\nPrinting CSV files --> ('+CARDS_PRG+' '+EXPORT_SETTING+')')
+os.system('python '+CARDS_PRG+' '+EXPORT_SETTING)
+
 if(len(sys.argv) > 1):
 	SETTING = sys.argv[1]
 

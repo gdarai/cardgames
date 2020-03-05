@@ -121,6 +121,9 @@
     "range":[[2,2],[0,0]]
   },
   {
+    "_process":"CONVERT_SVGS"
+  },
+  {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_prostredi.tex",
     "_card":"png/card_100x150_lokace",

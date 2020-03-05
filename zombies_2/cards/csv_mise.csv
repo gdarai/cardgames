@@ -1,5 +1,5 @@
 M,Mise,Pruzkum,Probojovat_se []_lokacemi.,png/question.png,6,8
-M,Mise,Zasoby,Prohledat_2x budovu na_lokaci_[].,png/question.png,C-E,D-E
+M,Mise,Zasoby,Prohledat_2x budovu na_lokaci_[] ve vzdalenosti 4+.,png/question.png,C-E,D-E
 M,Mise,Boss,Najit a_porazit tezkeho nepritele_C na vzdalenosti 3+.,png/question.png,-,Boj +2
 M,Mise,Konvoj,Lokace C-E maji vozidlo konvoje. Na kazde +Nepritel_Z. Najit []_konvoju.,png/question.png,3,4
 M,Mise,Sabotaz,Lokace [] maji nepratelske bunkry a_+Nepritel_C. Najit 4_bunkry.,png/question.png,B-E,C-E
