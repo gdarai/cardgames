@@ -296,8 +296,10 @@ def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
 def printCsvTable(setting, name):
 	targetFile = checkFieldRaw('Export', '??', setting, 'target', 'string', None)
 	sheetName = checkFieldRaw('Export', setting['target'], setting, 'sheet', 'string', None)
-	cellRange = checkFieldRaw('Export', setting['target'], setting, 'range', 'list', None)
+	tableIdx = checkFieldRaw('Export', setting['target'], setting, 'table', 'int', 1)
+	tableIdxMem = tableIdx
 	operation = checkFieldRaw('Export', setting['target'], setting, '_opp', 'string', 'w')
+	skipTitle = checkFieldRaw('Export', setting['target'], setting, 'skipTitle', 'int', 1)
 
 	if '_sourceOds' not in setting:
 		print('!! No source ODS file specified yet, need _sourceOds entry key.')
@@ -309,29 +311,52 @@ def printCsvTable(setting, name):
 		exit()
 
 	sheet = setting['_sourceOds'][sheetName]
-	cellRange = setting['range']
-	if (len(cellRange) < 2) or (len(cellRange[0]) < 2) or (len(cellRange[1]) < 2):
-		print('!! The cell range \'range\' must be 2x2 vector spread [ [x0, y0], [x1, y1] ]')
-		print(cellRange)
+	maxLen = np.max([len(ln) for ln in sheet])
+
+	if maxLen == 0:
+		print('!! The sheet '+sheetName+' has no content')
 		exit()
 
-	if cellRange[1][0] <= 0: cellRange[1][0] = len(sheet) - 1
-	if cellRange[1][1] <= 0: cellRange[1][1] = len(sheet[cellRange[0][0]])
-	lineLength = cellRange[1][1] - cellRange[0][1]
-	if len(sheet) <= cellRange[1][0]:
-		print('!! The end cell row '+str(cellRange[1][0])+' ('+str(cellRange[1])+') is out of table range (max is '+str(len(sheet)-1)+')')
-		print(sheet)
+	table = []
+	keepTitle = skipTitle != 1
+	lastWasNotTable = True
+
+	for ln in sheet:
+		res = 0
+		isTheTable = tableIdx == 0
+		isTableLine = len(ln) == maxLen
+		if lastWasNotTable:
+			res = 100
+			if isTableLine:
+				res = 110
+				lastWasNotTable = False
+				tableIdx = tableIdx - 1
+				if tableIdx == 0: isTheTable = True
+				if isTheTable and keepTitle:
+					res = 111
+					table.append(ln)
+		else:
+			res = 200
+			if isTableLine:
+				res = 210
+				if isTheTable:
+					res = 211
+					table.append(ln)
+			else:
+				res = 220
+				lastWasNotTable = True
+
+
+	if len(table) == 0:
+		print('!! The sheet '+sheetName+' has no table '+str(tableIdxMem))
 		exit()
 
-	print('\nPrinting '+targetFile+'\n')
+	firstNonempty = 0
+	while table[0][firstNonempty] == '' and firstNonempty<len(table[0]): firstNonempty = firstNonempty + 1
 
 	f = open(targetFile,setting['_opp'])
-	for line in sheet[cellRange[0][0]:cellRange[1][0]+1]:
-		cells = line[cellRange[0][1]:cellRange[1][1]]
-		if len(cells) == 0:
-			continue;
-		if len(cells) < lineLength:
-			cells = cells + [''] * (lineLength - len(cells))
+	for line in table:
+		cells = line[firstNonempty:]
 		strCells = ','.join(map(str, cells))
 		writeLine(f,0,strCells)
 	f.close()
@@ -713,7 +738,7 @@ setting['_lists'] = dict()
 setting['_out'] = TEX_FILE
 setting['_randomize'] = True
 setting['_process'] = 'PRINT_CARDS'
-setting['_exportTableParams'] = ['sheet', 'range', 'target', '_opp']
+setting['_exportTableParams'] = ['sheet', 'table', 'target', '_opp', 'skipTitle']
 
 readAndProcessList(0, "INPUT", source, setting)
 
