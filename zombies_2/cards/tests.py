@@ -59,25 +59,43 @@ def newTestState( ):
 	state['step_cnt'] = 0
 	state['search_cnt'] = 0
 	state['enemy_cnt'] = 0
+	state['fight'] = 0
 	return state
 
 def changeTestState( state, building, conditions ):
 	state['step_cnt'] = state['step_cnt'] + 1
 	state['search_cnt'] = state['search_cnt'] + building['search']
-	state['enemy_cnt'] = state['enemy_cnt'] + 2* (building['V0'] + building['Z0'] + building['S0'])
-	state['enemy_cnt'] = state['enemy_cnt'] + building['V1'] + building['Z1'] + building['S1']
+	enemyHard = building['V0'] + building['Z0'] + building['S0']
+	enemyEasy = building['V1'] + building['Z1'] + building['S1']
+	state['enemy_cnt'] = state['enemy_cnt'] + 2* (enemyHard)
+	state['enemy_cnt'] = state['enemy_cnt'] + enemyEasy
 	state['enemy_cnt'] = state['enemy_cnt'] + building['V+'] + building['Z+'] + building['S+']
-	for i in range(building['search']):
-		if random.randint(0, 100) < conditions['searchProb']:
-			if building['search'] in conditions['searchType']:
+	if state['step_cnt'] >= conditions['minLocs']:
+		for i in range(enemyEasy):
+			if random.randint(0, 100) < conditions['fightProb'][0]: state['fight'] = state['fight'] + 1
+
+		for i in range(enemyHard):
+			if random.randint(0, 100) < conditions['fightProb'][1]: state['fight'] = state['fight'] + 1
+
+		for i in range(building['search']):
+			if random.randint(0, 100) < conditions['searchProb']:
+				if building['search'] in conditions['searchType']:
+					if building['lvl'] in conditions['searchLvl']:
+						if state['step_cnt'] >= conditions['minLocs']:
+							state['search'] = state['search'] + 1
+
+		if len(conditions['searchType']) == 0:
+			if random.randint(0, 100) < conditions['searchProb']:
 				if building['lvl'] in conditions['searchLvl']:
 					if state['step_cnt'] >= conditions['minLocs']:
 						state['search'] = state['search'] + 1
+						state['enemy_cnt'] = state['enemy_cnt'] + conditions['fightPlus']
 
 def checkTestState( state, buildingCount, conditions ):
 	if state['search'] >= conditions["searchCnt"]:
-		if state['step_cnt'] >= conditions['minLocs']:
-			return 1
+		if state['fight'] >= conditions["fightCnt"]:
+			if state['step_cnt'] >= conditions['minLocs']:
+				return 1
 	if buildingCount == 0:
 			return -1
 	return 0

@@ -14,7 +14,10 @@
         "searchCnt":0,
         "searchLvl":[],
         "searchType":[],
-        "searchProb":100
+        "searchProb":100,
+        "fightPlus":0,
+        "fightProb":[100, 100],
+        "fightCnt": 0
       }
     },
     {
@@ -28,7 +31,60 @@
         "searchCnt":2,
         "searchLvl":["C","D","E"],
         "searchType":[1, 2, 3],
-        "searchProb":100
+        "searchProb":100,
+        "fightProb":[100, 100],
+        "fightCnt": 0
+      }
+    },
+    {
+      "name":"Boss",
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
+      },
+      "conditions":{
+        "minLocs":3,
+        "searchCnt":0,
+        "searchLvl":[],
+        "searchType":[],
+        "searchProb":100,
+        "fightPlus":0,
+        "fightProb":[0, 25],
+        "fightCnt": 1
+      }
+    },
+    {
+      "name":"Konvoj",
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
+      },
+      "conditions":{
+        "minLocs":3,
+        "searchCnt":3,
+        "searchLvl":["C","D","E"],
+        "searchType":[],
+        "fightPlus":0,
+        "searchProb":100,
+        "fightProb":[0, 0],
+        "fightCnt": 0
+      }
+    },
+    {
+      "name":"Sabotaz",
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
+      },
+      "conditions":{
+        "minLocs":0,
+        "searchCnt":4,
+        "searchLvl":["B","C","D","E"],
+        "searchType":[],
+        "searchProb":100,
+        "fightPlus":1,
+        "fightProb":[0, 0],
+        "fightCnt": 0
       }
     }
   ]
