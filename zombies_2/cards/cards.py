@@ -9,6 +9,7 @@ import cv2
 import numpy as np
 import csv
 from pyexcel_ods import get_data
+from six import string_types
 
 ########
 # Globals
@@ -61,7 +62,7 @@ def VALTYPE_FLOAT(variable):
 def VALTYPE_IMG(variable):
 	return isinstance(variable, complex)
 def VALTYPE_STR(variable):
-	return isinstance(variable, basestring)
+	return isinstance(variable, string_types)
 def VALTYPE_LIST(variable):
 	return isinstance(variable, list)
 
@@ -440,7 +441,7 @@ def printCardFile(setting, name):
 			pos = pos[0]
 			if os.path.exists(fileName) == False:
 				print('Trying to read file '+fileName+' which does not exist')
-				print props
+				print(props)
 			theImg = cv2.imread(fileName)
 			# RGB to RGBA
 			if theImg.shape[2] == 3:
@@ -591,10 +592,11 @@ def readParameters(setting, source):
 					expLen = min(expLen, len(theData))
 				for idx in range(0, expLen):
 					setting = readOneParameter(setting, theList[idx], theData[idx])
-			elif isinstance(theData, basestring) == True:
-				sourceCsv = open(theData, 'rb')
+			elif isinstance(theData, string_types) == True:
+				sourceCsv = open(theData, 'r')
 				lineReader = csv.reader(sourceCsv, delimiter=',', quotechar='|')
 				tableData = []
+				print(lineReader)
 				for row in lineReader:
 					tableData.append(row)
 				tableData = np.array(tableData)

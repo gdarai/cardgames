@@ -73,9 +73,9 @@
     "color":[0,0,0],
     "align":"left"
   },
-  "enemy_a":{
+  "enemy_a0":{
     "type":"text",
-    "position":[[20, 97],[98,113]],
+    "position":[[20, 97],[40,113]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -83,9 +83,9 @@
     "color":[0,0,0],
     "align":"left"
   },
-  "enemy_l":{
+  "enemy_a1":{
     "type":"text",
-    "position":[[20, 115],[98,130]],
+    "position":[[45, 97],[65,113]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -93,9 +93,69 @@
     "color":[0,0,0],
     "align":"left"
   },
-  "enemy_s":{
+  "enemy_a+":{
     "type":"text",
-    "position":[[20, 132],[98,148]],
+    "position":[[70, 97],[98,113]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "enemy_l0":{
+    "type":"text",
+    "position":[[20, 115],[40,130]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "enemy_l1":{
+    "type":"text",
+    "position":[[45, 115],[65,130]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "enemy_l+":{
+    "type":"text",
+    "position":[[70, 115],[98,130]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "enemy_s0":{
+    "type":"text",
+    "position":[[20, 132],[40,148]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "enemy_s1":{
+    "type":"text",
+    "position":[[45, 132],[65,148]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"left"
+  },
+  "enemy_s+":{
+    "type":"text",
+    "position":[[70, 132],[98,148]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
