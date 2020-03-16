@@ -27,7 +27,7 @@ def getFiles( wildch ):
 			filtered.append(f)
 	return filtered
 
-def getBuildings( config ):
+def getBuildings( config, setting ):
 	sourceCsv = open(config['file'])
 	lineReader = csv.reader(sourceCsv, delimiter=',', quotechar='|')
 	buildings = []
@@ -37,6 +37,7 @@ def getBuildings( config ):
 			if title == '': continue
 			if title == 'search':
 				newBuilding['search'] = int(row[idx][0:1])
+				if newBuilding['search'] > setting['maxSearch'] : newBuilding['search'] = setting['maxSearch']
 				newBuilding['searchType'] = row[idx][-1]
 				switcher = {
 					's': 2,
@@ -96,6 +97,8 @@ def checkTestState( state, buildingCount, conditions ):
 		if state['fight'] >= conditions["fightCnt"]:
 			if state['step_cnt'] >= conditions['minLocs']:
 				return 1
+	if state['step_cnt'] >= conditions['maxLocs']:
+		return 2
 	if buildingCount == 0:
 			return -1
 	return 0
@@ -114,8 +117,9 @@ def npStd(field, list):
 
 def printTestStatistics( tests ):
 	failed = np.sum([c['result'] < 0 for c in tests])
+	full = np.sum([c['result'] == 2 for c in tests])
 	trivial = np.sum([c['step_cnt'] < 3 for c in tests])
-	print('Summary\t\tfailed: '+str(failed)+'\ttrivial: '+str(trivial))
+	print('Summary\t\tfailed: '+str(failed)+'\ttrivial: '+str(trivial)+'\tfull: '+str(full))
 	print('Steps\t\tx: ('+npMin('step_cnt', tests)+', '+npMax('step_cnt', tests)+')\tav: '+npMean('step_cnt', tests)+'\tdev: '+npStd('step_cnt', tests))
 	print('Enemy\t\tx: ('+npMin('enemy_cnt', tests)+', '+npMax('enemy_cnt', tests)+')\tav: '+npMean('enemy_cnt', tests)+'\tdev: '+npStd('enemy_cnt', tests))
 	print('Search\t\tx: ('+npMin('search_cnt', tests)+', '+npMax('search_cnt', tests)+')\tav: '+npMean('search_cnt', tests)+'\tdev: '+npStd('search_cnt', tests))
@@ -145,7 +149,7 @@ print('Loading done\n')
 
 for test in source['scenarios']:
 	print('\n=========\nTest: '+test['name']+'\n=========\n')
-	buildings0 = getBuildings(test['buildings'])
+	buildings0 = getBuildings(test['buildings'], source['general'])
 	res = []
 	for idx in range(setting['runs']):
 		state = newTestState()

@@ -1,6 +1,7 @@
 {
   "general":{
-    "runs": 100
+    "runs": 100,
+    "maxSearch": 1
   },
   "scenarios":[
     {
@@ -11,6 +12,7 @@
       },
       "conditions":{
         "minLocs":6,
+        "maxLocs":15,
         "searchCnt":0,
         "searchLvl":[],
         "searchType":[],
@@ -28,6 +30,7 @@
       },
       "conditions":{
         "minLocs":4,
+        "maxLocs":15,
         "searchCnt":2,
         "searchLvl":["C","D","E"],
         "searchType":[1, 2, 3],
@@ -44,6 +47,7 @@
       },
       "conditions":{
         "minLocs":3,
+        "maxLocs":15,
         "searchCnt":0,
         "searchLvl":[],
         "searchType":[],
@@ -61,6 +65,7 @@
       },
       "conditions":{
         "minLocs":3,
+        "maxLocs":15,
         "searchCnt":3,
         "searchLvl":["C","D","E"],
         "searchType":[],
@@ -78,11 +83,102 @@
       },
       "conditions":{
         "minLocs":0,
+        "maxLocs":15,
         "searchCnt":4,
         "searchLvl":["B","C","D","E"],
         "searchType":[],
         "searchProb":100,
         "fightPlus":1,
+        "fightProb":[0, 0],
+        "fightCnt": 0
+      }
+    },
+    {
+      "name":"Civilisti",
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
+      },
+      "conditions":{
+        "minLocs":0,
+        "maxLocs":10,
+        "searchCnt":4,
+        "searchLvl":["A","B","C","D","E"],
+        "searchType":[1, 2, 3],
+        "searchProb":50,
+        "fightPlus":0,
+        "fightProb":[0, 0],
+        "fightCnt": 0
+      }
+    },
+    {
+      "name":"Artefakt",
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
+      },
+      "conditions":{
+        "minLocs":0,
+        "maxLocs":15,
+        "searchCnt":1,
+        "searchLvl":["A","B","C","D","E"],
+        "searchType":[1, 2, 3],
+        "searchProb":33,
+        "fightPlus":0,
+        "fightProb":[0, 0],
+        "fightCnt": 0
+      }
+    },
+    {
+      "name":"Utok",
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
+      },
+      "conditions":{
+        "minLocs":0,
+        "maxLocs":15,
+        "searchCnt":0,
+        "searchLvl":[],
+        "searchType":[],
+        "searchProb":100,
+        "fightPlus":0,
+        "fightProb":[25, 25],
+        "fightCnt": 5
+      }
+    },
+    {
+      "name":"Zakladna",
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
+      },
+      "conditions":{
+        "minLocs":4,
+        "maxLocs":15,
+        "searchCnt":1,
+        "searchLvl":["D","E"],
+        "searchType":[],
+        "searchProb":100,
+        "fightPlus":0,
+        "fightProb":[0, 0],
+        "fightCnt": 0
+      }
+    },
+    {
+      "name":"Specialni Misto",
+      "buildings":{
+        "file":"csv_mista.csv",
+        "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
+      },
+      "conditions":{
+        "minLocs":6,
+        "maxLocs":9,
+        "searchCnt":1,
+        "searchLvl":["E"],
+        "searchType":[],
+        "searchProb":100,
+        "fightPlus":0,
         "fightProb":[0, 0],
         "fightCnt": 0
       }
