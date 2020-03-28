@@ -120,5 +120,26 @@
     "target":"csv_frajeriny.csv",
     "sheet":"Frajeriny",
     "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_bonusy.csv",
+    "sheet":"Bonusy",
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_prostredi.csv",
+    "sheet":"Prostredi",
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_udalosti.csv",
+    "sheet":"Udalosti",
+    "table":1
   }
 ]

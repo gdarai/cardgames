@@ -4,34 +4,40 @@
 1,S,x,Po misi,Zapometliva,png/question.png,-1 Material po kazde misi
 1,S,x,Pri pruzkumu,Lehkovazna,png/question.png,-1_Pri prozkoumavani
 1,S,x,Trening,Zbrkla,png/question.png,Muze mit jen_1 dovednost nad uroven_1
-1,D,1,Pred misi,Pruzkum,png/question.png,Odhal jednoho nepritele_X
-1,D,2,Pred misi,Pruzkum 2,png/question.png,Odhal dva nepratele_X
-1,D,2,Pred misi,Pruzkum !,png/question.png,Odhal jednoho nepritele_!!!
-1,D,3,Pred misi,Pruzkum ! 2,png/question.png,Odhal jednoho nepritele_X a_jednoho_!!!
-1,D,0,2x za misi,Hlidka,png/question.png,Tahni karty utoku_V pred planovanim hracu
-1,D,2,1x za misi,Hlidka 2,png/question.png,Tahni karty utoku_V_a_Z pred planovanim hracu
-1,D,1,2 kola,Pruzny plan,png/question.png,Zmen plany hrace s_postihem_-1
-1,D,2,2x za misi,Pruzny plan 2,png/question.png,Zmen plany hrace bez postihu
-1,D,0,Bez omezeni,Utok padnou zbrani,png/question.png,Bonus_+1 k_utoku zbrani na blizko
-1,D,2,2x za misi,Drtivy utok,png/question.png,Bonus_+2 k_utoku zbrani na blizko
-1,D,1,2 kola,Kryci palba,png/question.png,Stoji 1_munici|+1_k_utoku palnou zbrani
-1,D,2,2x za misi,Prorazeni krytu,png/question.png,+1_k_utoku palnou zbrani
-1,D,1,2x za misi,Lepsi pruzkum,png/question.png,+1_pri pruzkumu k_najdenemu jidlu a_materialu
-1,D,1,1x za misi,Pruzkum bojem,png/question.png,Boj do stinu_-1 a_zaroven pruzkum_-1
-1,D,2,3 kola,Pruzkum bojem 2,png/question.png,Boj do stinu_+0 a_zaroven pruzkum_-1
-1,D,3,3 kola,Skryty pruzkum,png/question.png,Tahni karty utoku_S pred hraci|Pruzkum_-1 a boj do stinu_+1
-1,D,0,2 kola,Strelecka pozice,png/question.png,Bonus_+1 k_utoku_V palnou zbrani
-1,D,2,2x za misi,Strelecka pozice 2,png/question.png,Bonus_+1 k_utoku_V_ci_Z palnou zbrani
-1,D,2,2 kola,Vyckavani,png/question.png,Postih_-1 ted a bonus_+1 pro pristi kolo
+1,D,0,2x za misi,Hlidka,png/question.png,Tahni karty utoku_V ci_Z pred planovanim hracu
 1,D,0,2x za misi,Prvni pomoc,png/question.png,Doplneni az 3_zivotu jednomu hraci
-1,D,1,1x za misi,Resuscitace,png/question.png,Doplneni 1_zivot kazdemu v_tymu a_vyleci postihy
-1,D,2,1x za misi,Resuscitace 2,png/question.png,Doplneni az 4_zivotu tymu (dohromady) a_vyleci postihy
+1,D,0,2 kola,Strelecka pozice,png/question.png,Bonus_+1 k_utoku_V ci_Z palnou zbrani
+1,D,0,Bez omezeni,Utok padnou zbrani,png/question.png,Bonus_+1 k_utoku zbrani na blizko
 1,D,1,3 kola,Bojove kryti,png/question.png,Stoji 1_Material|+1_k_boji_V_a_Z pro vsechny
-1,D,1,Mimo misi,Stavba skryse,png/question.png,Stoji 2 Materialy|Vyleci 1_zivot kazdemu
-1,D,2,Mimo misi,Strategie,png/question.png,Je mozne pokazde znovu nalosovat jednu z misi
-1,D,2,Mimo misi,Vyroba munice,png/question.png,1_naboje zdarma (pro jednu postavu)
-1,D,2,Mimo misi,Oprava vybaveni,png/question.png,Jedna oprava je po_kazde misi zadarmo
+1,D,1,2 kola,Kryci palba,png/question.png,Stoji 1_munici|+1_k_utoku palnou zbrani
+1,D,1,2x za misi,Lepsi pruzkum,png/question.png,+1_pri pruzkumu
 1,D,1,Mimo misi,Lov jidla,png/question.png,Misto sberu muze ulovit 2 jidla
+1,D,1,Pred misi,Pruzkum,png/question.png,Odhal pred misi 1 zakladniho nepritele
+1,D,1,1x za misi,Pruzkum bojem,png/question.png,Boj do stinu_-1 a_zaroven pruzkum_-1
+1,D,1,2 kola,Pruzny plan,png/question.png,Zmen plany hrace s_postihem_-1
+1,D,1,1x za misi,Resuscitace,png/question.png,Doplni 1 zivot vyleci 1 nakazu a 1 zraneni
 1,D,1,Mimo misi,Shaneni materialu,png/question.png,Pri_sberu donese 1_jidlo a_1_material
+1,D,1,Mimo misi,Stavba skryse,png/question.png,Stoji 2 Materialy|Vyleci 1_zivot kazdemu|Vyleci 1_zraneni
+1,D,1,Pred misi,Pruzkum !,png/question.png,Odhal pred misi jednoho vazneho nepritele
+1,D,1,1x za misi,Hrac stesteny,png/question.png,Tahni znova kartu nahody
+1,D,1,1x za misi,Showman,png/question.png,Dopln jine postave az 2_odvahy
+1,D,1,1x za misi,Epidemiolog,png/question.png,Za 1_jidlo zabran nakaze postavy v misi
+1,D,1,Bez omezeni,Odolnost,png/question.png,Pri otrave ci zraneni tahni kartu. Cervene – nic se nestalo
+1,D,2,2x za misi,Drtivy utok,png/question.png,Bonus_+2 k_utoku zbrani na blizko
+1,D,2,1x za misi,Hlidka 2,png/question.png,Tahni karty utoku_V_a_Z pred planovanim hracu
+1,D,2,Mimo misi,Oprava vybaveni,png/question.png,Jedna oprava je po_kazde misi zadarmo
 1,D,2,Mimo misi,Organizace,png/question.png,Unese 1_vec navic (musi mit silu)
-1,D,2,Pred kolem,Taktika,png/question.png,Muze pri planovani karet rict 1_vetu zadarmo
+1,D,2,2x za misi,Prorazeni krytu,png/question.png,+1_k_utoku palnou zbrani
+1,D,2,Pred misi,Pruzkum 2,png/question.png,Odhal pred misi dva zakladni nepratele
+1,D,2,3 kola,Pruzkum bojem 2,png/question.png,Boj do stinu_+0 a_zaroven pruzkum_-1
+1,D,2,2x za misi,Pruzny plan 2,png/question.png,Zmen plany hrace bez postihu
+1,D,2,1x za misi,Resuscitace 2,png/question.png,Doplneni az 4_zivotu tymu (dohromady) a_vyleci nakazu
+1,D,2,Mimo misi,Strategie,png/question.png,Je mozne pokazde znovu nalosovat jednu z misi
+1,D,2,3x za misi,Strelecka pozice 2,png/question.png,Bonus_+1 k_utoku_V_ci_Z palnou zbrani
+1,D,2,Pred kolem,Taktika,png/question.png,Muze pri planovani karet rict zadarmo 1_vetu
+1,D,2,2 kola,Vyckavani,png/question.png,Postih_-1 ted a bonus_+1 pro pristi kolo
+1,D,2,Mimo misi,Vyroba munice,png/question.png,1_naboje zdarma (pro jednu postavu)
+1,D,2,3 kola,Pruzkum v misi,png/question.png,Vybirej dalsi lokaci a udalost ze 2 karet
+1,D,2,3 kola,Skryty pruzkum,png/question.png,Tahni karty utoku_S pred hraci|Pruzkum_-1 a boj do stinu_+1
+1,D,2,Mimo misi,Oportunista,png/question.png,Zaverecny bonus mise vyber vzdy ze 2 karet
+1,D,2,Mimo misi,Trener,png/question.png,Za 2_materialy muze po misi vyrobit dalsi 1 dovednost navic

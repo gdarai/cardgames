@@ -1,42 +1,20 @@
 [
   {
-    "_process":"EXPORT_TABLE",
-    "_sourceOds":"cards.ods",
-    "target":"csv_mista.csv",
-    "sheet":"Lokace",
-    "skipTitle":0,
-    "table":1
-  },
-  {
-    "_process":"CONVERT_SVGS"
-  },
-  {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_prostredi.tex",
-    "_card":"png/card_100x150_lokace",
+    "_out":"_OUT_frajeriny.tex",
+    "_card":"png/card_100x150_TaC",
     "_onOneLine":6,
     "_randomize":"True",
     "_list":{
       "values":[
-        "category",
         "code",
-        "level",
-        "img",
+        "home",
         "name",
-        "hide",
-        "search",
-        "enemy_a1",
-        "enemy_a0",
-        "enemy_a+",
-        "enemy_l1",
-        "enemy_l0",
-        "enemy_l+",
-        "enemy_s1",
-        "enemy_s0",
-        "enemy_s+",
+        "img",
+        "effect",
         "text"
       ]
     },
-    "values":"csv_mista.csv"
+    "values":"csv_udalosti.csv"
   }
 ]
