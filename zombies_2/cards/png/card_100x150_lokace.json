@@ -1,17 +1,7 @@
 {
-  "code":{
+   "code":{
     "type":"text",
     "position":[[2, 2],[20,15]],
-    "padding":[[2,2], [2,2]],
-    "font":"HERSHEY_PLAIN",
-    "size":4,
-    "line":1,
-    "color":[0,0,0],
-    "align":"center"
-  },
-  "level":{
-    "type":"text",
-    "position":[[80, 2],[98,15]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -29,13 +19,9 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "img":{
-    "type":"img",
-    "position":[[30,37],[70,77]]
-  },
-  "text":{
+  "level":{
     "type":"text",
-    "position":[[2, 50],[98,77]],
+    "position":[[80, 2],[98,15]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -43,9 +29,13 @@
     "color":[0,0,0],
     "align":"center"
   },
+  "img":{
+    "type":"img",
+    "position":[[2,32],[42,72]]
+  },
   "name":{
     "type":"text",
-    "position":[[2, 17],[98,35]],
+    "position":[[2, 17],[98,30]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -55,7 +45,7 @@
   },
   "hide":{
     "type":"text",
-    "position":[[20, 79],[55,95]],
+    "position":[[72, 30],[98,45]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -65,7 +55,7 @@
   },
   "search":{
     "type":"text",
-    "position":[[60, 79],[98,95]],
+    "position":[[72, 45],[98,60]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -75,92 +65,103 @@
   },
   "enemy_a0":{
     "type":"text",
-    "position":[[20, 97],[40,113]],
-    "padding":[[2,2], [2,2]],
+    "position":[[72, 65],[81,80]],
+    "padding":[[0,0], [0,1]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
+    "align":"center"
   },
   "enemy_a1":{
     "type":"text",
-    "position":[[45, 97],[65,113]],
-    "padding":[[2,2], [2,2]],
+    "position":[[88, 65],[98,80]],
+    "padding":[[0,0], [0,1]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
+    "align":"center"
   },
   "enemy_a+":{
     "type":"text",
-    "position":[[70, 97],[98,113]],
-    "padding":[[2,2], [2,2]],
+    "position":[[40, 65],[56,80]],
+    "padding":[[0,0], [0,1]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
+    "align":"center"
   },
-  "enemy_l0":{
+ "enemy_l0":{
     "type":"text",
-    "position":[[20, 115],[40,130]],
-    "padding":[[2,2], [2,2]],
+    "position":[[72, 80],[81,95]],
+    "padding":[[0,0], [0,1]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
-  },
+    "align":"center"
+  }, 
   "enemy_l1":{
     "type":"text",
-    "position":[[45, 115],[65,130]],
-    "padding":[[2,2], [2,2]],
+    "position":[[88, 80],[98,95]],
+    "padding":[[0,0], [0,1]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
-  },
+    "align":"center"
+  }, 
   "enemy_l+":{
     "type":"text",
-    "position":[[70, 115],[98,130]],
-    "padding":[[2,2], [2,2]],
+    "position":[[40, 80],[56,95]],
+    "padding":[[0,0], [0,1]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
+    "align":"center"
   },
   "enemy_s0":{
     "type":"text",
-    "position":[[20, 132],[40,148]],
-    "padding":[[2,2], [2,2]],
+    "position":[[72, 95],[81,110]],
+    "padding":[[0,0], [0,1]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
+    "align":"center"
   },
   "enemy_s1":{
     "type":"text",
-    "position":[[45, 132],[65,148]],
-    "padding":[[2,2], [2,2]],
+    "position":[[88, 95],[98,110]],
+    "padding":[[0,0], [0,1]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
+    "align":"center"
   },
   "enemy_s+":{
     "type":"text",
-    "position":[[70, 132],[98,148]],
+    "position":[[40, 95],[56,110]],
+    "padding":[[0,0], [0,1]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[2, 115],[98,148]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
     "color":[0,0,0],
-    "align":"left"
+    "fixed":0,
+    "align":"center"
   }
 }
