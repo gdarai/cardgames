@@ -1,20 +1,42 @@
 [
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_zombici.csv",
+    "sheet":"Nepritel",
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_zombici.csv",
+    "_opp":"a",
+    "sheet":"Nepritel",
+    "table":2
+  },
+  {
+    "_process":"CONVERT_SVGS"
+  },
+  {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_frajeriny.tex",
-    "_card":"png/card_100x150_TaC",
+    "_out":"_OUT_obludy.tex",
+    "_card":"png/card_100x150_nepritel",
     "_onOneLine":6,
     "_randomize":"True",
     "_list":{
       "values":[
+        "category",
         "code",
-        "home",
+        "level",
         "name",
+        "enemy_a",
+        "enemy_l",
+        "enemy_s",
         "img",
-        "effect",
+        "extra",
         "text"
       ]
     },
-    "values":"csv_udalosti.csv"
+    "values":"csv_zombici.csv"
   }
 ]

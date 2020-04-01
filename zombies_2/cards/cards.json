@@ -248,6 +248,7 @@
         "enemy_l",
         "enemy_s",
         "img",
+        "extra",
         "text"
       ]
     },
