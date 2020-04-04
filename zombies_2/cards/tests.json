@@ -46,8 +46,8 @@
         "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
       },
       "conditions":{
-        "minLocs":3,
-        "maxLocs":15,
+        "minLocs":4,
+        "maxLocs":10,
         "searchCnt":0,
         "searchLvl":[],
         "searchType":[],
@@ -118,10 +118,10 @@
         "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
       },
       "conditions":{
-        "minLocs":0,
+        "minLocs":3,
         "maxLocs":15,
         "searchCnt":1,
-        "searchLvl":["A","B","C","D","E"],
+        "searchLvl":["B","C","D"],
         "searchType":[1, 2, 3],
         "searchProb":33,
         "fightPlus":0,
@@ -172,12 +172,12 @@
         "struct":["count","","","lvl","","name","","search","V0","V1","V+","Z0","Z1","Z+","S0","S1","S+",""]
       },
       "conditions":{
-        "minLocs":6,
+        "minLocs":5,
         "maxLocs":9,
         "searchCnt":1,
-        "searchLvl":["E"],
+        "searchLvl":["A", "B", "C", "D", "E"],
         "searchType":[],
-        "searchProb":100,
+        "searchProb":25,
         "fightPlus":0,
         "fightProb":[0, 0],
         "fightCnt": 0
