@@ -2,41 +2,25 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_zombici.csv",
-    "sheet":"Nepritel",
+    "target":"csv_pribeh.csv",
+    "sheet":"Pribehy",
     "table":1
   },
   {
-    "_process":"EXPORT_TABLE",
-    "_sourceOds":"cards.ods",
-    "target":"csv_zombici.csv",
-    "_opp":"a",
-    "sheet":"Nepritel",
-    "table":2
-  },
-  {
-    "_process":"CONVERT_SVGS"
-  },
-  {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_obludy.tex",
-    "_card":"png/card_100x150_nepritel",
+    "_out":"_OUT_kampan.tex",
+    "_card":"png/card_100x150_pribeh",
     "_onOneLine":6,
-    "_randomize":"True",
+    "_randomize":"False",
     "_list":{
       "values":[
-        "category",
         "code",
-        "level",
-        "name",
-        "enemy_a",
-        "enemy_l",
-        "enemy_s",
-        "img",
-        "extra",
+        "category",
+        "page",
+        "next",
         "text"
       ]
     },
-    "values":"csv_zombici.csv"
+    "values":"csv_pribeh.csv"
   }
 ]
