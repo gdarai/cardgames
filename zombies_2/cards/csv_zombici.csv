@@ -17,8 +17,8 @@
 1,Zombie,!!,1,S vybusninou,3,2,4,png/monster.png,Zraneni 4,Ma granat
 1,Zombie,!!,1,Morova,3,3,3,png/monster.png,Vzdy da otravu,S fialovou kuzi
 1,Zombie,!!,1,S Kyjem,2,2,4,png/monster.png,Zraneni 2,Ma velky klacek
-1,Zombie,!!,1,S Posilami,2,2,2,png/monster.png,Preidej posilu_X,Skupinka
-1,Zombie,!!,2,Alfa,2,2,2,png/monster.png,Pridej 2 posily_X,Podrztasky
+1,Zombie,!!,1,S Posilami,2,2,2,png/monster.png,Preidej posilu_A,Skupinka
+1,Zombie,!!,2,Alfa,2,2,2,png/monster.png,Pridej 2 posily_A,Podrztasky
 1,Zombie,!!,2,Medved,2,4,5,png/monster.png,Zranuje za 3,Brum
 1,Zombie,!!,2,Uhor,3,3,5,png/monster.png,Kdyz zrani tak ubere i 1 odvahu,Jiskri a kouse
 1,Zombie,!!,2,Bijec,4,4,4,png/monster.png,Zranuje za 2,Chodici tank

@@ -7,7 +7,7 @@ Stale se pokousim o hru, ktera by byla trochu jako prepis arkadove strilecky z p
 <C>Hlavni mechanizmus
 Zacneme hrou pro 4 hrace. Hraci maji misi = ukol. Ukol pro ne v zakladu znamena prochazet prostredim a neco v nem splnit. Zabit konkretniho nepritele, najit konkretni predmet, projit konkretni pocet policek. Hraje se v kolech kde kazde kolo jsou hraci v novem prostredi, na novem policku. Na zadnem policku se nemuzou zdrzovat dele nez prave to jedno kolo... tim se ma simulovat ta dynamicita arkadove hry. Hraci si vlastne musi vybirat, jestli prohledavaji, delaji nejakou podpurnou akci nebo bojuji.
 
-<C1>Zakladni pohoba kola
+<C1>Zakladni podoba kola
 V zakladu jsou v kazdem kole nasledujici kroky:
 <I0>
 <I>Otoci se Misto
@@ -26,6 +26,22 @@ Na kazde karte lokace je napsano, kolik se tahne karet Ohrozeni pro ktery Smer. 
 <C>Uprava pro 2 hrace
 Pro dva hrace je hra jednodussi o to, ze se musi mene hracu domluvit. Je proto potreba hru nejak upravit, aby se kompenzovala obtiznost. Rekneme ze za kazdeho hrace ve hre se prida do balicku Ohrozeni jedna dalsi karta NIC. Takze rozdil mezi 2 a 4 hraci budou 2 dalsi karty NIC v tomhle baliku.
 
+<C>Sledovane charakteristiky
+Jedna hra trva tak 1.5h... s vysvetlovanim pravidel i 2h+. Uceni se hry je dobre rozdelit do 3 fazi.
+<I0>
+<I>Od zacatku - povolani postav, zakladni zbran, lokace, zakladni mise, prohledavani, boj, domlouvani a frajeriny, zaverecny bonus a odmeny, cteni pribehu.
+<I>Od mise 2 - Vyber mise, vyber ctvrti, udalosti a slabiny postav
+<I>Od mise 3 - Osobni cile a vedlejsi ukoly
+<I1>
+
+
+<C>Baby verze hry
+Ukazalo se, ze pravidla hry prijdou ruznym hracum z ruznych duvodu velmi tezka. Nedokazi se domluvit, nebo maji problem pocitat. Zmatkuji kdyz je ticha cast hry. Proto je potreba vymyslet ruzne slozita pravidla od te Baby verze az po Hardcore.
+
+<C1>Frajeriny
+Frajeriny by meli byt vzdy vybrane tajne a nikdy by nemelo jit 'Pridat' frajerinu navic ve fazi vyhodnocovani. Hardcore verze frajerin je ze kdyz uz nekdo frajerinu dal, tak si vzdy tahne kartu frajeriny, vzdy za ni zaplati a pouze pokud nesplni podminky na karte tak frajerina presto nebude. Baby verze je ze se pri vyhodnocovani hraci muzou dohodnout zda frajerinu fakt udelali nebo ne a kdyz ne, nezaplati za ni.
+
+<C1>
 
 
 

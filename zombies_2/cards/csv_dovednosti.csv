@@ -4,10 +4,10 @@
 1,S,x,Po misi,Zapometliva,png/question.png,-1 Material po kazde misi
 1,S,x,Pri pruzkumu,Lehkovazna,png/question.png,-1_Pri prozkoumavani
 1,S,x,Trening,Zbrkla,png/question.png,Muze mit jen_1 dovednost nad uroven_1
-1,D,0,2x za misi,Hlidka,png/question.png,Tahni karty utoku_V ci_Z pred planovanim hracu
-1,D,0,2x za misi,Prvni pomoc,png/question.png,Doplneni az 3_zivotu jednomu hraci
-1,D,0,2 kola,Strelecka pozice,png/question.png,Bonus_+1 k_utoku_V ci_Z palnou zbrani
-1,D,0,Bez omezeni,Utok padnou zbrani,png/question.png,Bonus_+1 k_utoku zbrani na blizko
+1,PV,0,2x za misi,Pruzkumnik,png/house.png,Tahni karty utoku_V ci_Z pred planovanim hracu
+1,PV,0,2x za misi,Doktor,png/house.png,Doplneni az 3_zivotu jednomu hraci
+1,PV,0,2 kola,Strelec,png/house.png,Bonus_+1 k_utoku_V ci_Z palnou zbrani
+1,PV,0,Bez omezeni,Bojovnik,png/house.png,Bonus_+1 k_utoku zbrani na blizko
 1,D,1,3 kola,Bojove kryti,png/question.png,Stoji 1_Material|+1_k_boji_V_a_Z pro vsechny
 1,D,1,2 kola,Kryci palba,png/question.png,Stoji 1_munici|+1_k_utoku palnou zbrani
 1,D,1,2x za misi,Lepsi pruzkum,png/question.png,+1_pri pruzkumu

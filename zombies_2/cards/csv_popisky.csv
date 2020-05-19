@@ -5,16 +5,17 @@
 1,Nepritel_A|Tezky|||||||
 1,Nepritel_B|Tezky|||||||
 1,Nepritel_C|Tezky|||||||
-1,Material||----------||Jidlo||----------||Predmety
-1,Ohrozeni_V|Vduch||||||
-1,Ohrozeni_Z|Zem||||||
-1,Ohrozeni_S|Stin||||||
-1,Bezna|Ohrozeni
-1,Tezka|Ohrozeni
-1,Lokace|||||||
-1,Udalosti|||||||
+1,Material|(zluty)||----------||Jidlo|(cervene)||----------||Predmety|(Bile)
+1,()|||||||Dovednosti
+1,()|||||||Odlozene
+1,()|||||||Pribeh
+1,()|||||||Frajeriny
+1,()|||||||Prohledavani
+1,()|||||||Predmety
+1,()|||||||Lokace
+1,()|||||||Udalosti
 1,Ctvrt||----------||Zaverecny|bonus||----------||Vyzva
-1,Predmety|||||||
 1,Faze kola|1||----------|Nahlas|----------|Tahni lokaci|||||
 1,Faze kola|2||----------|Potichu|----------|Odkryj nepratele||Planuj akcni karty (i frajeriny)
 1,Faze kola|3||----------|Nahlas|----------|Odkryj karty||Pridej dovednosti||Vyhodnot
+1,Obtiznost||Domlouvani|pri fazi 2||Frajeriny|jde zrusit||

@@ -143,6 +143,13 @@
     "table":1
   },
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_zetony.csv",
+    "sheet":"Zetony",
+    "table":1
+  },
+  {
     "_process":"CONVERT_SVGS"
   },
   {
@@ -349,8 +356,8 @@
         "name",
         "home",
         "price",
-        "carry",
         "life",
+        "carry",
         "img",
         "text"
       ]
@@ -399,7 +406,7 @@
     "_out":"_OUT_pro_hrace.tex",
     "_card":"png/card_100x150_postava",
     "_onOneLine":6,
-    "_count":4,
+    "_count":8,
     "_randomize":"False"
   },
   {
@@ -438,6 +445,21 @@
       ]
     },
     "values":"csv_nalezy.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_zetony.tex",
+    "_card":"png/card_100x100_zeton",
+    "_onOneLine":8,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "text",
+        "text2",
+        "img"
+      ]
+    },
+    "values":"csv_zetony.csv"
   },
   {
     "_process":"PRINT_CARDS",

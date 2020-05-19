@@ -2,25 +2,45 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_pribeh.csv",
-    "sheet":"Pribehy",
+    "target":"csv_nalezy.csv",
+    "sheet":"Pruzkum",
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_zetony.csv",
+    "sheet":"Zetony",
     "table":1
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_kampan.tex",
-    "_card":"png/card_100x150_pribeh",
+    "_out":"_OUT_hledani.tex",
+    "_card":"png/card_100x100_nalez",
     "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "top",
+        "middle",
+        "bottom"
+      ]
+    },
+    "values":"csv_nalezy.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_zetony.tex",
+    "_card":"png/card_100x100_zeton",
+    "_onOneLine":8,
     "_randomize":"False",
     "_list":{
       "values":[
-        "code",
-        "category",
-        "page",
-        "next",
-        "text"
+        "text",
+        "text2",
+        "img"
       ]
     },
-    "values":"csv_pribeh.csv"
+    "values":"csv_zetony.csv"
   }
 ]

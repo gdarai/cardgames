@@ -45,16 +45,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="-41.583831"
-     inkscape:cy="8.6217783"
+     inkscape:cx="51.602741"
+     inkscape:cy="50.038032"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="2493"
-     inkscape:window-height="1385"
-     inkscape:window-x="67"
-     inkscape:window-y="27"
+     inkscape:window-width="1280"
+     inkscape:window-height="915"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -110,25 +110,25 @@
        y="980.3219"
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
     <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/mask.png"
-       y="1034.4354"
-       x="3.0338602"
-       id="image885"
+       sodipodi:absref="/home/holecci/cardgames/zombies_2/cards/svg/../icons/mask.png"
        xlink:href="../icons/mask.png"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
+       width="14.640405"
        height="14.640405"
-       width="14.640405" />
-    <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/life.png"
-       y="1016.2526"
-       x="2.7813237"
-       id="image896"
-       xlink:href="../icons/life.png"
-       style="image-rendering:optimizeQuality"
        preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image885"
+       x="3.0338602"
+       y="1034.4354" />
+    <image
+       sodipodi:absref="/home/holecci/cardgames/zombies_2/cards/svg/../icons/life.png"
+       xlink:href="../icons/life.png"
+       width="16.408173"
        height="16.408173"
-       width="16.408173" />
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image896"
+       x="2.7813237"
+       y="1016.2526" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:7.66274071px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:#e4e4e4;stroke-width:0.192;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -142,15 +142,12 @@
          style="fill:#a4a4a4;fill-opacity:1;stroke:#e4e4e4;stroke-width:0.192;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Zdravi</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:7.66274071px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:#e4e4e4;stroke-width:0.192;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:7.66279984px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:#e4e4e4;stroke-width:0.192;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;-inkscape-font-specification:'sans-serif, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
        x="20.18005"
        y="1041.0627"
        id="text905"><tspan
          sodipodi:role="line"
-         id="tspan903"
-         x="20.18005"
-         y="1041.0627"
-         style="fill:#a4a4a4;fill-opacity:1;stroke:#e4e4e4;stroke-width:0.192;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Sila</tspan></text>
+         id="tspan32">Sila = Vule</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:7.66274071px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a4a4a4;fill-opacity:1;stroke:#e4e4e4;stroke-width:0.192;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
