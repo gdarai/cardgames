@@ -1,0 +1,53 @@
+<T>Zombie Country 3
+Treti pokus o reinkarnaci hry zombies.
+
+<C>Problemy ktere se tato verze pokusi vyresit
+
+Jedna mise se hraje prilis dlouho.
+
+ - Pokud nechceme primo zmenit cely princip mise, musime optimalizovat jak mise probiha.
+   - Domluva
+   - Tah Nepratel
+   - Planovani Akci
+   - Vyhodnoceni Kola
+
+ - Pojdme take zkusit casovy limit na kolo. Hraci se budou moct vzdy domlouvat, ale kdyz jim dojde cas, tak proste dohoda zkoncila a je to.
+ - Takze domluva odpada. Pusti se cas, Tahnou se nepratele a vylozi se karty. (Naplanuji akce)
+ - Po skonceni casoveho limitu se to vyhodnoti a pripravi se dalsi lokace.
+
+Soubojovy system je jednoduchy. Vede k situaci ja patrim sem a ty tamhle. Jdi. Neni potreba se domlouvat.
+
+ - Udelat aby hrac / dovednost / zbran byl dobry proti nejakemu druhu nepritele, ne jen proti nejake lokaci.
+   - Priklad aby Sekera byla +2, na blizko ( tedy -1 do vzduchu, +1 proti pancerovanemu )
+   - Priklad aby Pistole byla +2, kratka ( +0, +0 )
+   - Priklad aby SMG byl +2, s rozptylem ( +1 zem, -1 proti pancerovemu )
+ - Zaridit, aby bylo vyhodne, pokud se budou budovat kombinace utoku mezi hraci
+ - Chce to rozsirit zakladni odolnost nepritele z 1 - 3 na 3 - 5 aby ten rozdil min - max nebyl tak velky.
+
+Lokace jsou - Vzduch, Zem, Stin
+Druhy nepratel jsou - Maly, Velky, Odolny, Rychly, Skupina, Toxicky
+
+Vse muze odehrat jeden hrac, hraci maji vsechny dovednosti/moznosti odkryte.
+
+ - Moznosti hrace to chce udelat nejednoznacne. Lze lepe docasne blokovat dovednosti a to i ty kde a jak bude hrac utocit / bojovat.
+ - Kazde kolo ma hrac vicero akci (3?) a v akci se muze
+   - presunout do zem nebo boj
+   - presunout do vzduch nebo boj
+   - presunout do stin nebo boj
+   - frajersky presunout
+   - bojovat
+   - frajersky bojovat (+1)
+   - podporovat v boji nekoho v jine lokaci (+1)
+   - pouzivat dovednost
+   - nabijet
+   - prohledavat 2x
+   - odpocivat 2x
+   - Balicek karet unavy
+
+Hra neni zajimava pro 2 hrace. Byla zalozena na domlouvani, pro 2 hrace to neni dostatecne.
+
+ - Zkouselo se ze budou 2 hraci ovladat 4 postavy. To nefungovalo. Moc karet, potreba karty pokladat. Je potreba hrat vzdy jen s jednema kartama na ruce.
+ - Zkusme metodu hry ze space alerta. Pokud clovek hraje za vicero postav, ma vic karet na ruce a obnovuje tu jednu ruku obema postavama zaroven.
+ - Kdy hrac poklada karty na stul a zveda je? Kdykoliv chce behem planovaci faze.
+ - Kdy karty odhazuje? Po vyhodnocovaci fazi.
+ - Kdy si lize nove karty? Po Odhozeni. Kazdy hrac ma zasobnik karet. Z jednoho konce do nej vzdy prida odehrane karty a z druheho si lizne nove, pokud na to ma pravo.
