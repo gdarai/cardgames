@@ -24,8 +24,11 @@ Soubojovy system je jednoduchy. Vede k situaci ja patrim sem a ty tamhle. Jdi. N
  - Zaridit, aby bylo vyhodne, pokud se budou budovat kombinace utoku mezi hraci
  - Chce to rozsirit zakladni odolnost nepritele z 1 - 3 na 3 - 5 aby ten rozdil min - max nebyl tak velky.
 
+ - Co s kombinacemi utoku? Pokud hraci utoci stejnou barvou zbrane, prekazeji si a maji dohromady -1 k boji.
+   - Jake mame druhy utoku ? Na blizko, Vrhaci zbran, Mala strelna zbran, Velka strelna zbran
+
 Lokace jsou - Vzduch, Zem, Stin
-Druhy nepratel jsou - Maly, Velky, Odolny, Rychly, Skupina, Toxicky
+Druhy nepratel jsou - Maly, Velky, Zakerny, Odolny, Rychly, Skupina, Toxicky
 
 Vse muze odehrat jeden hrac, hraci maji vsechny dovednosti/moznosti odkryte.
 
