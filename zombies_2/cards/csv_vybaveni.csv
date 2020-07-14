@@ -13,3 +13,5 @@
 3,V,Box na Munici,icons/search.png,2,2,vojenska,Unese dalsi 2_zasobniky pro jednu ze_zbrani
 3,Z,Stit,icons/search.png,1,T,oo,Jako T_zbran|Pridava 3_zivoty zbroje
 2,Z,Policejni Stit,icons/search.png,2,T,spec,Jako T_zbran|Pridava 5_zivotu zbroje
+2,V,Protijed,icons/search.png,2,1,oo,Ochrani 1 postavu pred efektem nakazy
+2,V,Stimulant,icons/search.png,2,1,oo,1x za misi|doplni postave 2 odvahy

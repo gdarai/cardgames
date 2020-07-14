@@ -21,14 +21,6 @@
   <defs
      id="defs4">
     <linearGradient
-       id="linearGradient888"
-       osb:paint="solid">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop886" />
-    </linearGradient>
-    <linearGradient
        id="linearGradient4526"
        osb:paint="solid">
       <stop
@@ -44,18 +36,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="46.29944"
-     inkscape:cy="79.332456"
+     inkscape:zoom="2.8"
+     inkscape:cx="32.808193"
+     inkscape:cy="74.43864"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="2493"
-     inkscape:window-height="1385"
-     inkscape:window-x="67"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="710"
+     inkscape:window-height="687"
+     inkscape:window-x="425"
+     inkscape:window-y="135"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -83,66 +75,43 @@
        ry="0.53752363" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 19.372372,904.68359 v 13.92857"
+       d="m 2.5,918.61216 h 95"
+       id="path8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 20.887601,904.68359 v 13.92857"
        id="path10"
        inkscape:connector-curvature="0" />
-    <rect
-       id="rect14"
-       width="96.989403"
-       height="17.703863"
-       x="1.7857143"
-       y="1033.4336"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
     <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/boot.png"
-       y="1033.7303"
-       x="33.028236"
-       id="image4597"
-       xlink:href="../icons/boot.png"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
-       height="16.190472"
-       width="16.190472" />
-    <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/mask.png"
-       y="1033.9098"
-       x="64.490891"
-       id="image4608"
-       xlink:href="../icons/mask.png"
-       style="image-rendering:optimizeQuality"
-       preserveAspectRatio="none"
-       height="15.654756"
-       width="15.654756" />
-    <image
-       sodipodi:absref="/home/tr949/cardgames/zombies_2/cards/icons/wing.png"
-       y="1034.1299"
-       x="2.4404771"
-       id="image4619"
+       sodipodi:absref="/home/holecci/cardgames/zombies_2/cards/svg/../icons/wing.png"
        xlink:href="../icons/wing.png"
-       style="image-rendering:optimizeQuality"
+       width="14.511794"
+       height="14.511794"
        preserveAspectRatio="none"
-       height="15.537462"
-       width="15.537462" />
-    <rect
-       style="fill-opacity:1;stroke:#000000;stroke-opacity:1;fill:none;stroke-width:1.0015748;stroke-miterlimit:4;stroke-dasharray:none"
-       id="rect884"
-       width="18.147486"
-       height="15.025002"
-       x="1.2248864"
-       y="903.58716" />
-    <rect
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect884-7"
-       width="18.147486"
-       height="15.025002"
-       x="80.627625"
-       y="903.58716" />
-    <rect
-       id="rect14-5"
-       width="96.989403"
-       height="17.703863"
-       x="1.7857113"
-       y="1015.7297"
-       style="fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1" />
+       style="image-rendering:optimizeQuality"
+       id="image4673"
+       x="67.855576"
+       y="932.08441" />
+    <image
+       sodipodi:absref="/home/holecci/cardgames/zombies_2/cards/svg/../icons/boot.png"
+       xlink:href="../icons/boot.png"
+       width="14.511794"
+       height="14.511794"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image4684"
+       x="67.855576"
+       y="946.59619" />
+    <image
+       sodipodi:absref="/home/holecci/cardgames/zombies_2/cards/svg/../icons/mask.png"
+       xlink:href="../icons/mask.png"
+       width="14.511794"
+       height="14.511794"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       id="image4695"
+       x="67.855576"
+       y="961.10797" />
   </g>
 </svg>

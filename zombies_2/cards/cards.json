@@ -103,13 +103,6 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_kampane.csv",
-    "sheet":"Kampane",
-    "table":1
-  },
-  {
-    "_process":"EXPORT_TABLE",
-    "_sourceOds":"cards.ods",
     "target":"csv_nalezy.csv",
     "sheet":"Pruzkum",
     "table":1
@@ -119,6 +112,41 @@
     "_sourceOds":"cards.ods",
     "target":"csv_frajeriny.csv",
     "sheet":"Frajeriny",
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_bonusy.csv",
+    "sheet":"Bonusy",
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_prostredi.csv",
+    "sheet":"Prostredi",
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_udalosti.csv",
+    "sheet":"Udalosti",
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_pribeh.csv",
+    "sheet":"Pribehy",
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_zetony.csv",
+    "sheet":"Zetony",
     "table":1
   },
   {
@@ -139,9 +167,15 @@
         "name",
         "hide",
         "search",
-        "enemy_a",
-        "enemy_l",
-        "enemy_s",
+        "enemy_a1",
+        "enemy_a0",
+        "enemy_a+",
+        "enemy_l1",
+        "enemy_l0",
+        "enemy_l+",
+        "enemy_s1",
+        "enemy_s0",
+        "enemy_s+",
         "text"
       ]
     },
@@ -149,7 +183,7 @@
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_kampan.tex",
+    "_out":"_OUT_prostredi.tex",
     "_card":"png/card_100x150_mise",
     "_onOneLine":6,
     "_randomize":"True",
@@ -171,7 +205,7 @@
     "_out":"_OUT_kampan.tex",
     "_card":"png/card_100x150_ukol",
     "_onOneLine":6,
-    "_randomize":"True",
+    "_randomize":"False",
     "_list":{
       "values":[
         "code",
@@ -188,22 +222,19 @@
   {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_kampan.tex",
-    "_card":"png/card_100x150_kampan",
+    "_card":"png/card_100x150_pribeh",
     "_onOneLine":6,
-    "_randomize":"True",
+    "_randomize":"False",
     "_list":{
       "values":[
         "code",
-        "home",
-        "name",
-        "part1",
-        "part2",
-        "part3",
-        "part4",
-        "part5"
+        "category",
+        "page",
+        "next",
+        "text"
       ]
     },
-    "values":"csv_kampane.csv"
+    "values":"csv_pribeh.csv"
   },
   {
     "_process":"PRINT_CARDS",
@@ -221,6 +252,7 @@
         "enemy_l",
         "enemy_s",
         "img",
+        "extra",
         "text"
       ]
     },
@@ -324,8 +356,8 @@
         "name",
         "home",
         "price",
-        "carry",
         "life",
+        "carry",
         "img",
         "text"
       ]
@@ -374,7 +406,7 @@
     "_out":"_OUT_pro_hrace.tex",
     "_card":"png/card_100x150_postava",
     "_onOneLine":6,
-    "_count":4,
+    "_count":8,
     "_randomize":"False"
   },
   {
@@ -416,14 +448,29 @@
   },
   {
     "_process":"PRINT_CARDS",
+    "_out":"_OUT_zetony.tex",
+    "_card":"png/card_100x100_zeton",
+    "_onOneLine":8,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "text",
+        "text2",
+        "img"
+      ]
+    },
+    "values":"csv_zetony.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_frajeriny.tex",
-    "_card":"png/card_100x150_frajerina",
+    "_card":"png/card_100x150_TaC",
     "_onOneLine":6,
     "_randomize":"True",
     "_list":{
       "values":[
-        "home",
         "code",
+        "home",
         "name",
         "img",
         "effect",
@@ -431,5 +478,59 @@
       ]
     },
     "values":"csv_frajeriny.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_prostredi.tex",
+    "_card":"png/card_100x150_TaC",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "home",
+        "name",
+        "img",
+        "effect",
+        "text"
+      ]
+    },
+    "values":"csv_prostredi.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_frajeriny.tex",
+    "_card":"png/card_100x150_TaC",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "home",
+        "name",
+        "img",
+        "effect",
+        "text"
+      ]
+    },
+    "values":"csv_bonusy.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_frajeriny.tex",
+    "_card":"png/card_100x150_TaC",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "home",
+        "name",
+        "img",
+        "effect",
+        "text"
+      ]
+    },
+    "values":"csv_udalosti.csv"
   }
 ]

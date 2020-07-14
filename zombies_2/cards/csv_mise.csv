@@ -1,10 +1,10 @@
 M,Mise,Pruzkum,Probojovat_se []_lokacemi.,png/question.png,6,8
 M,Mise,Zasoby,Prohledat_2x budovu na_lokaci_[] ve vzdalenosti 4+.,png/question.png,C-E,D-E
-M,Mise,Boss,Najit a_porazit tezkeho nepritele_C na vzdalenosti 3+.,png/question.png,-,Boj +2
-M,Mise,Konvoj,Lokace C-E maji vozidlo konvoje. Na kazde +Nepritel_Z. Najit []_konvoju.,png/question.png,3,4
+M,Mise,Boss,Najit a_porazit tezkeho nepritele_C na vzdalenosti 4+.,png/question.png,-,Boj +2
+M,Mise,Konvoj,Lokace C-E ve vzdalenosti 3+ maji vozidlo konvoje. Na kazde +Nepritel_Z. Najit []_konvoju.,png/question.png,3,4
 M,Mise,Sabotaz,Lokace [] maji nepratelske bunkry a_+Nepritel_C. Najit 4_bunkry.,png/question.png,B-E,C-E
-M,Mise,Civilisti,SPEC v kartach nalezu jsou civilisti. Najit jich [].,png/question.png,4,5
-M,Mise,Artefakt,Najit v budove [] kartu predmetu.,png/question.png,C-E,D-E
-M,Mise,Utok,Najit a porazit [] nepratel C beznych i_tezkych.,png/question.png,5,6
+M,Mise,Civilisti,SPEC v kartach nalezu jsou civilisti. Najit je 4. Max [] lokaci.,png/question.png,10,12
+M,Mise,Artefakt,Najit v budove [] ve vzdalenosti 3+ kartu predmetu.,png/question.png,B-D,B-C
+M,Mise,Utok,Najit a porazit [] nepratel C beznych i_tezkych.,png/question.png,5,7
 M,Mise,Zakladna,Najit zakladnu na lokaci_[]. Ve vzdalenosti 4+.,png/question.png,D-E,E
-M,Mise,Specialni misto,Zamichat []_Lokaci a pak pridat SPEC lokaci do dalsich 4_Lokaci. Ukol je Spec najit.,png/question.png,5,7
+M,Mise,Specialni misto,Zamichat []_Lokaci a pak pridat SPEC lokaci do dalsich 4_Lokaci. Ukol je Spec najit.,png/question.png,4,6

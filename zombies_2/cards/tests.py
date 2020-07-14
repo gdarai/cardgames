@@ -46,6 +46,7 @@ def getBuildings( config, setting ):
 				newBuilding['searchType'] = switcher.get(newBuilding['searchType'], 1)
 				continue
 			if title == 'count': row[idx] = int(row[idx])
+			if (title in ["V+","Z+","S+"]) and row[idx] == '': row[idx] = '0'
 			if title in ["V0","V1","V+","Z0","Z1","Z+","S0","S1","S+"]: row[idx] = int(row[idx])
 			newBuilding[title] = row[idx]
 		for idx in range(newBuilding['count']): buildings.append(newBuilding)

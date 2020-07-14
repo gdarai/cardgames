@@ -1,20 +1,28 @@
-1,Zombie,X,1,Lina,1,1,2,png/monster.png,Pomala a lina
-1,Zombie,X,1,Rychla,2,2,1,png/monster.png,Cila a hladova
-1,Zombie,X,1,Ozbrojena,1,1,2,png/monster.png,Zraneni 2|Ma nejaky klacek
-1,Zombie,X,1,Pliziva,1,1,3,png/monster.png,Ticha a smrtici
-1,Zombie,X,1,Vlk,1,3,1,png/monster.png,Rychly jako blesk
-1,Zombie,X,1,S Kamenem,2,1,2,png/monster.png,Schovej hlavu
-1,Zombie,X,2,S Pistoli,2,3,2,png/monster.png,Ma pistoli. Zbrane na blizko maji_-1
-1,Zombie,X,2,Puma,2,2,3,png/monster.png,Rychla a ticha
-1,Zombie,X,2,Zakerna,3,1,2,png/monster.png,Ma ostre drapy|Skvele splha
-1,Zombie,X,2,Nakazena,2,1,2,png/monster.png,Kdyz zrani tak da i otravu za_1j
-1,Zombie,!X!,1,Obrnena,3,3,4,png/monster.png,Tezkou zbrani ji date za_+1
-1,Zombie,!X!,1,Ozbrojena,4,3,2,png/monster.png,Ma pusku. Zbrane na blizko maji_-1
-1,Zombie,!X!,1,S vybusninou,3,2,4,png/monster.png,Zraneni 4|Ma granat
-1,Zombie,!X!,1,Morova,3,3,3,png/monster.png,Navic vzdy da otravu za_1j
-1,Zombie,!X!,1,S Kyjem,2,2,4,png/monster.png,Zraneni 2|Ma velky klacek
-1,Zombie,!X!,1,S Posilami,2,2,2,png/monster.png,Ma navic posilu_X
-1,Zombie,!X!,2,Alfa,2,2,2,png/monster.png,Ma sebou 2 posily_X
-1,Zombie,!X!,2,Medved,2,4,5,png/monster.png,Zraneni 3
-1,Zombie,!X!,2,Uhor,3,3,5,png/monster.png,Paralyzuje postavu
-1,Zombie,!X!,2,Bijec,4,4,4,png/monster.png,Zraneni 2|Chodici tank
+1,Zombie,X,1,Lina,1,1,2,png/monster.png,Nic extra,Pomala a lina
+1,Zombie,X,1,Rychla,2,2,1,png/monster.png,Nic extra,Cila a hladova
+1,Zombie,X,1,Ozbrojena,1,1,2,png/monster.png,Zranuje za 2,Ma nejaky klacek
+1,Zombie,X,1,Pliziva,1,1,3,png/monster.png,Nic extra,Ticha a smrtici
+1,Zombie,X,1,Vlk,1,3,1,png/monster.png,Nic extra,Rychly jako blesk
+1,Zombie,X,1,S Kamenem,2,1,2,png/monster.png,Nic extra,Schovej hlavu
+1,Zombie,X,2,S Pistoli,2,3,2,png/monster.png,Zbrane na blizko maji_-1,Ma pistoli
+1,Zombie,X,2,Puma,2,2,3,png/monster.png,Nic extra,Rychla a ticha
+1,Zombie,X,2,Zakerna,3,1,2,png/monster.png,Nic extra,Ma ostre drapy|Skvele splha
+1,Zombie,X,2,Nakazena,2,1,2,png/monster.png,Kdyz zrani tak da i otravu,Ta nevypada zdrave
+1,Zombie,X,3,S Puskou,3,4,2,png/monster.png,Zbrane na blizko maji_-1,Ostrazita a nebezpecna
+1,Zombie,X,3,Stin,4,2,3,png/monster.png,Zbrane nadalku maji_-1,Jako by tu nebyl. A najednou Utok.
+1,Zombie,X,3,Plizivec,2,3,4,png/monster.png,Obrana mista je o 1 mensi,Domy jsou prazdne. Kdo v nich byl zemrel.
+1,Zombie,X,3,Panther,4,3,4,png/monster.png,Nic extra,Vrrrau
+1,Zombie,!!,1,Obrnena,3,3,4,png/monster.png,Tezkou zbrani ji date za_+1,A nejsou jen na ozdobu
+1,Zombie,!!,1,Ozbrojena,4,3,2,png/monster.png,Zbrane na blizko maji_-1,Ma pusku
+1,Zombie,!!,1,S vybusninou,3,2,4,png/monster.png,Zraneni 4,Ma granat
+1,Zombie,!!,1,Morova,3,3,3,png/monster.png,Vzdy da otravu,S fialovou kuzi
+1,Zombie,!!,1,S Kyjem,2,2,4,png/monster.png,Zraneni 2,Ma velky klacek
+1,Zombie,!!,1,S Posilami,2,2,2,png/monster.png,Preidej posilu_A,Skupinka
+1,Zombie,!!,2,Alfa,2,2,2,png/monster.png,Pridej 2 posily_A,Podrztasky
+1,Zombie,!!,2,Medved,2,4,5,png/monster.png,Zranuje za 3,Brum
+1,Zombie,!!,2,Uhor,3,3,5,png/monster.png,Kdyz zrani tak ubere i 1 odvahu,Jiskri a kouse
+1,Zombie,!!,2,Bijec,4,4,4,png/monster.png,Zranuje za 2,Chodici tank
+1,Zombie,!!,3,Komando,3,3,3,png/monster.png,Bojuj s touto kartou 2x,Bojuji jako tym
+1,Zombie,!!,3,Zablesk,4,5,4,png/monster.png,Navic zrani a vzdy ubere i 1 odvahu,Jeji zables je posledni co uvidis
+1,Zombie,!!,3,Hulk,5,6,5,png/monster.png,Tezkou zbrani ji date za_+1,Chodici hora zkazy
+1,Zombie,!!,3,S kulometem,5,5,3,png/monster.png,Zbrane na blizko maji_-1,Vylozene nefer
