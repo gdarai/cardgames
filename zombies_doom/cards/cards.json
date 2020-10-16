@@ -1,0 +1,29 @@
+[
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_pro_hrace.csv",
+    "sheet":"Pro Hrace",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"CONVERT_SVGS"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_pro_hrace.tex",
+    "_card":"png/card_100x150_pro_hrace",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "price",
+        "img"
+      ]
+    },
+    "values":"csv_pro_hrace.csv"
+  }
+]

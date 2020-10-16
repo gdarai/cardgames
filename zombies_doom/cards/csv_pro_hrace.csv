@@ -1,0 +1,11 @@
+1,Vzduch,Presun nebo Boj,Navic 1 karta,icons/wing.png
+1,Zeme,Presun nebo Boj,Navic 1 karta,icons/boot.png
+1,Stin,Presun nebo Boj,Navic 1 karta,icons/mask.png
+1,Frajerina|Presun,Presun a Boj,+1 Karta unavy,icons/shield.png
+1,Boj,Boj +0,Nic navic,png/gun.png
+1,Frajerina|Boj,Boj +1,+1 Karta unavy,png/gun.png
+1,Podpora|partakovi,Boj -1 v jine zone,+1 Karta unavy,png/gun.png
+1,Nabiti zbrane,Preklopit zasobnik,Nic navic,icons/bullet.png
+2,Pruzkum,Tahnout kartu pruzkumu,Navic 1 karta,icons/search.png
+2,Odpocinek,Tahnout 2 nove karty,Nic navic,icons/life.png
+6,Unava,Tahnout 2 nove karty,Do balicku unavy,icons/life.png
