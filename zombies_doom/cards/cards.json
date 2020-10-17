@@ -39,5 +39,43 @@
       ]
     },
     "values":"csv_loot.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_zombici.tex",
+    "_card":"png/card_100x150_zombik",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "type",
+        "use",
+        "name",
+        "text",
+        "img"
+      ]
+    },
+    "values":"csv_zombici.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_karty.tex",
+    "_card":"png/card_100x150_karta",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "code",
+        "type",
+        "use",
+        "name",
+        "text",
+        "effect",
+        "location",
+        "img"
+      ]
+    },
+    "values":"csv_karty.csv"
   }
 ]
