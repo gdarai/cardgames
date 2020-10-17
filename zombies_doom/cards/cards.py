@@ -289,7 +289,7 @@ def analyzeFasterTextSplit(theText, tgtSize, yspace, font, lineTh, separator, li
 			breakIdx1 = toSplit.rfind(' ', 0, avLineLength)
 			breakIdx2 = toSplit.find(' ', avLineLength)
 			if breakIdx2 < 0: breakIdx2 = len(toSplit) - 1
-			
+
 			dist1 = abs(avLineLength - breakIdx1)
 			dist2 = abs(avLineLength - breakIdx2)
 
@@ -304,7 +304,7 @@ def analyzeFasterTextSplit(theText, tgtSize, yspace, font, lineTh, separator, li
 				toSplit = ""
 			lineCount = lineCount - 1
 	return finalSplit
-	
+
 def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
 	data = dict()
 	data['size'] = [float(tgtSize[1][0]-tgtSize[0][0]), float(tgtSize[1][1]-tgtSize[0][1])]
@@ -577,6 +577,12 @@ def printSvgFile(fileName):
 	command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
 	os.system(command)
 
+def sortingFn(source):
+	def sortFn(item):
+		if 'order' in source[item]: return source[item]['order']
+		return item
+	return sortFn
+
 def readParameters(setting, source):
 	if '_process' in source:
 		setting['_process'] = source['_process'].upper()
@@ -615,6 +621,7 @@ def readParameters(setting, source):
 			exit()
 		setting['_cardParams'] = json.load(open(setting['_card']+'.json'))
 		setting['_cardParamNames'] = list(setting['_cardParams'].keys())
+		setting['_cardParamNames'].sort(key=sortingFn(setting['_cardParams']))
 
 	if '_list' in source:
 		newLists = source['_list'].keys()

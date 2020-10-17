@@ -9,9 +9,19 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "home":{
+  "type":{
     "type":"text",
-    "position":[[25, 2],[75,15]],
+    "position":[[25, 2],[65,15]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "use":{
+    "type":"text",
+    "position":[[70, 2],[98,15]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -22,10 +32,6 @@
   "img":{
     "type":"img",
     "position":[[15,32],[45,62]]
-  },
-  "typeimg":{
-    "type":"img",
-    "position":[[65,32],[85,52]]
   },
   "name":{
     "type":"text",

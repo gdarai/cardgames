@@ -25,5 +25,19 @@
   },
   {
     "_process":"CONVERT_SVGS"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_loot.tex",
+    "_card":"png/card_100x100_zeton",
+    "_onOneLine":10,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "img",
+        "text"
+      ]
+    },
+    "values":"csv_loot.csv"
   }
 ]
