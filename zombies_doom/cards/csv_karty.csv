@@ -1,0 +1,19 @@
+6,+,Vladce zombiku,i,Pridej kamkoliv 5 zombiku,Objevilo se 8 novych zombiku,,New.png
+6,+,Horlaviny,i,Zlikviduj zombiky (1 / 3),Zombici ani Hrac nebojuji,Benzinka,New.png
+6,+,Manipulace,i,Posun 2 zombiky,Posun se o 4 pole,,New.png
+6,+,Lekarske zasoby,i,Dopln zdavi na (max / max +1),Nesmis do budov,Lekarna,New.png
+6,+,Kulicky,do,Zombici se nehybou (+ zadne skozeni*),Nehrajes,Hrackarstvi,New.png
+6,+,Granat,i,Vybij budovu (-1 zdravi / nic),Ztrat vybaveni nebo 2 naboje,Army Shop,New.png
+6,B,Motorova pila,zbr,Zere munici A; B i C (+0 / +1),Mas jen mensi polovinu akci,Zahradnictvi,New.png
+6,+,Skateboard,i/b,+2 akce (ihned / bonus),Ovladnuti pohybu hrace,Skate Shop,New.png
+6,+,Bedna,i,+3 libovolne munice (dopln*),Hod 3+; vrat 2 zombiky,Army Shop,New.png
+6,B,Pozarni sekera,zbr,Zbran na blizko (+1 / +2),Vrat se na zacatek,Pozarni Stanice,New.png
+6,+,Klidny kout,x,+2 zdravi,Zdvojnasob zombiky v budove,,New.png
+3,+,Klicky od auta,x,Posun 8 poli po silnici; zombiky odstran,Hrac se nehybe; ale muze hrat,,New.png
+3,x,Davka adrenalinu,!!!,Dvakrat tolik akci nebo +2 do boju,Hrac se nehybe; ale muze hrat,,New.png
+6,D,Brokovnice,zbr,Zbran +1; ma vlastni 3 munice (dopln*),Napln budovu zombiky,Sportovni Obchod,New.png
+6,D,Puska,zbr,Zbran (+1 / +2); pouziva munici B,Nebudes tahnout zombiky,Zelezarstvi,New.png
+6,D,Samopal,zbr,Zbran (+1 / +2); pouziva munici C,Nesmis zbirat veci,Policejni Stanice,New.png
+6,+,Neprustrelna vesta,bon,Chrani pred zranenim; ma 2 zdravi,Prvni boj v kole -1,,New.png
+6,+,Vesta s kapsama,bon,Pridava (1 / 2) misto na vybaveni,Pridej co nejbliz 3 zombiky,Zahradnictvi,New.png
+6,+,Nabojova vesta,bon,Vejdou se do ni 2 naboje nad max,Pridej co nejbliz 2 zombiky,,New.png

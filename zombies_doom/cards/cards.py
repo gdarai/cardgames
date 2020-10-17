@@ -18,6 +18,7 @@ canPrint = True
 SETTING = 'cards.json'
 DIRECTORY = 'print'
 BREAK_CHAR = '|'
+COMMA_CHAR = ';'
 FIXED_SPACE = '_'
 Y_SPACE = 5
 TEX_FILE = 'cards.tex'
@@ -269,6 +270,41 @@ def getNewTextAnalysis(index, data):
 	result['text'] = out
 	return result
 
+def analyzeFasterTextSplit(theText, tgtSize, yspace, font, lineTh, separator, lines):
+	data = dict()
+	data['size'] = [float(tgtSize[1][0]-tgtSize[0][0]), float(tgtSize[1][1]-tgtSize[0][1])]
+	data['space'] = yspace
+	data['font'] = font
+	data['line'] = lineTh
+	data['text'] = theText.split(separator)
+	totalLength = len(theText)
+	finalSplit = []
+	for textBlock in data['text']:
+		length = len(textBlock)
+		lineCount = max(int(length * lines / totalLength), 1)
+		avLineLength = int(length / lineCount)
+
+		toSplit = textBlock
+		while ( len(toSplit) > 0 ) or ( lineCount > 0 ):
+			breakIdx1 = toSplit.rfind(' ', 0, avLineLength)
+			breakIdx2 = toSplit.find(' ', avLineLength)
+			if breakIdx2 < 0: breakIdx2 = len(toSplit) - 1
+			
+			dist1 = abs(avLineLength - breakIdx1)
+			dist2 = abs(avLineLength - breakIdx2)
+
+			if (dist1 < dist2 and breakIdx1 > 0):
+				finalSplit.append(toSplit[0:breakIdx1])
+				toSplit = toSplit[breakIdx1+1:]
+			elif (dist2 <= dist1 and breakIdx2 > 0):
+				finalSplit.append(toSplit[0:breakIdx2])
+				toSplit = toSplit[breakIdx2+1:]
+			else:
+				finalSplit.append(toSplit)
+				toSplit = ""
+			lineCount = lineCount - 1
+	return finalSplit
+	
 def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
 	data = dict()
 	data['size'] = [float(tgtSize[1][0]-tgtSize[0][0]), float(tgtSize[1][1]-tgtSize[0][1])]
@@ -281,7 +317,8 @@ def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
 		data['text'][i] = data['text'][i].split(' ')
 		data['maxBitIdx'] = data['maxBitIdx'] + len(data['text'][i]) - 1
 	data['maxIdx'] = 2 ** data['maxBitIdx']
-
+	if data['maxIdx'] > 1000000:
+		print('Analyzing longer text: '+theText+'\nThat means '+str(data['maxIdx'])+' combinations. This might take a moment.\nOr turn off the auto analysis and split the text yourself')
 	bestAnalysis = dict()
 	nextIndex = 0
 	bestAnalysis['score'] = 0
@@ -358,8 +395,11 @@ def printCsvTable(setting, name):
 	f = open(targetFile,setting['_opp'])
 	for line in table:
 		cells = line[firstNonempty:]
-		strCells = ','.join(map(str, cells))
-		writeLine(f,0,strCells)
+		strCells = map(str, cells)
+		replFunc = lambda ln: ln.replace(',', ';')
+		fixedCells = map(replFunc, strCells)
+		cellLine = ','.join(fixedCells)
+		writeLine(f,0,cellLine)
 	f.close()
 
 def printCardFile(setting, name):
@@ -388,6 +428,7 @@ def printCardFile(setting, name):
 			checkField(cardName, props, 'fixed', 'int', 1)
 			checkField(cardName, props, 'color', 'list', [0, 0, 0])
 			checkField(cardName, props, 'fixed_space', 'string', FIXED_SPACE)
+			checkField(cardName, props, 'comma_char', 'string', COMMA_CHAR)
 
 			font = FONTS[props['font']]
 			thickness = props['line']
@@ -399,6 +440,8 @@ def printCardFile(setting, name):
 			theText = setting[fieldName].nextVal()
 			if props['fixed'] == 1:
 				theText = theText.split(setting['_break'])
+			elif props['fixed'] > 1:
+				theText = analyzeFasterTextSplit(theText, tgtPos, setting['_yspace'], font, thickness, setting['_break'], props['fixed'])
 			else:
 				theText = analyzeTextSplit(theText, tgtPos, setting['_yspace'], font, thickness, setting['_break'])
 
@@ -407,7 +450,8 @@ def printCardFile(setting, name):
 			sizeCheck = 0
 			sizeTotal = [0, -setting['_yspace']]
 			for ln0 in theText:
-				ln = ln0.replace(props['fixed_space'], ' ')
+				ln1 = ln0.replace(props['fixed_space'], ' ')
+				ln = ln1.replace(props['comma_char'], ',')
 				oneSize, _ = cv2.getTextSize(ln, font, 1, thickness)
 				size.append(oneSize)
 				sizeCheck = max(sizeCheck, oneSize[1]*oneSize[0])
@@ -422,7 +466,8 @@ def printCardFile(setting, name):
 			shiftY = oneSizeY
 
 			for ln0 in theText:
-				ln = ln0.replace(props['fixed_space'], ' ')
+				ln1 = ln0.replace(props['fixed_space'], ' ')
+				ln = ln1.replace(props['comma_char'], ',')
 				finSize, _ = cv2.getTextSize(ln, font, imgScale, thickness)
 				finPos = (align(tgtPos[0][0], tgtPos[1][0], finSize[0]), ALIGN_CENTER(tgtPos[0][1], tgtPos[1][1], finSizeY)+shiftY)
 				img = cv2.putText(img, ln, finPos, font, imgScale, color, thickness, cv2.LINE_AA)

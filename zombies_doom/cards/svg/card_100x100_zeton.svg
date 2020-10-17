@@ -10,14 +10,14 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="100"
-   height="150"
-   viewBox="0 0 100 150"
-   id="svg2"
+   height="100"
+   viewBox="0 0 26.458333 26.458334"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="card_100x150_it.svg">
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="card_100x100_zeton.svg">
   <defs
-     id="defs4" />
+     id="defs2" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,19 +26,19 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="77.569483"
-     inkscape:cy="78.912098"
-     inkscape:document-units="px"
+     inkscape:cx="53.222705"
+     inkscape:cy="43.589987"
+     inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="1627"
-     inkscape:window-height="1026"
-     inkscape:window-x="53"
-     inkscape:window-y="24"
+     inkscape:window-width="1280"
+     inkscape:window-height="915"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
      inkscape:window-maximized="1" />
   <metadata
-     id="metadata7">
+     id="metadata5">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -53,14 +53,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-902.36216)">
+     transform="translate(0,-270.54165)">
     <rect
-       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:2.44977283;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect3344"
-       width="97.550232"
-       height="147.55023"
-       x="1.2248864"
-       y="903.58716"
-       ry="0.53752363" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#010101;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect815"
+       width="26.17485"
+       height="26.222065"
+       x="0.14174108"
+       y="270.68338"
+       ry="0.14221989" />
   </g>
 </svg>

@@ -15,7 +15,7 @@
    version="1.1"
    id="svg4633"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="minus.svg">
+   sodipodi:docname="trap.svg">
   <defs
      id="defs4627" />
   <sodipodi:namedview
@@ -26,14 +26,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="68.022608"
+     inkscape:cx="36.236894"
      inkscape:cy="32.912215"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="2493"
-     inkscape:window-height="1385"
+     inkscape:window-width="1613"
+     inkscape:window-height="995"
      inkscape:window-x="67"
      inkscape:window-y="27"
      inkscape:window-maximized="1" />
@@ -45,7 +45,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -56,14 +56,14 @@
      transform="translate(0,-270.54165)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:71.62052917px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.79051316"
-       x="0.13797177"
-       y="303.35959"
+       style="font-style:normal;font-weight:normal;font-size:33.14916611px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.82872915"
+       x="-0.45387998"
+       y="294.00302"
        id="text819"><tspan
          sodipodi:role="line"
          id="tspan817"
-         x="0.13797177"
-         y="303.35959"
-         style="stroke-width:1.79051316">-</tspan></text>
+         x="-0.45387998"
+         y="294.00302"
+         style="stroke-width:0.82872915">+</tspan></text>
   </g>
 </svg>
