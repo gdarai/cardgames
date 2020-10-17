@@ -2,39 +2,48 @@
 Pokus o urychleni - hry zombies
 
 <C>Jake problemy hra ma?
-
-- Nedostatek munice & zdravi = malo akce
-- System se skodicima kartama je neprehledny
-- Dosahnout 25 killu nebylo mozne, moc umirani + vzdy 1/2 ztrata
-- System s jednim druhem zombiku se brzo ohral
+<I0>
+<I>Nedostatek munice a zdravi = malo akce
+<I>System se skodicima kartama je neprehledny
+<I>Dosahnout 25 killu nebylo mozne, moc umirani + vzdy 1/2 ztrata
+<I>System s jednim druhem zombiku se brzo ohral
+<I1>
 
 <C>Navrhovane principialni zmeny
 
-- Pridat vic druhu nepratel (prozatim 2, kdyz mame 2 druhy figurek)
-- Udelat system zbrani napaditejsi
-- Pridat vic zbrani a munice na plochu
-- Pridat aby zbran nebyla podminena budovou (bonus nikoliv podminka)
-- Konec via heliport zmenit, aby to bylo jen nejake + na killy
-- Zmenit system skozeni, aby byl deterministicky
-- Umoznit ustup z boje
+<I0>
+<I>Pridat vic druhu nepratel (prozatim 2, kdyz mame 2 druhy figurek)
+<I>Udelat system zbrani napaditejsi
+<I>Pridat vic zbrani a munice na plochu
+<I>Pridat aby zbran nebyla podminena budovou (bonus nikoliv podminka)
+<I>Konec via heliport zmenit, aby to bylo jen nejake + na killy
+<I>Zmenit system skozeni, aby byl deterministicky
+<I>Umoznit ustup z boje
+<I1>
 
 <C>Zmeny do podrobna
 
 <C1>Vytezstvi ve hre
 Cil je ziskat 30 trofeji zombiku a tim udelat dojem na pilota vrtulniku. Hrac ktery dosahne heliportu (ne jen ten prvni, ale kazdy v momente kdy vstoupi na prvni policko heliportu) dostane zeton v hodnote 10 zabitych zombiku o ktery nemuze prijit a nepocita se mu do zombiku v pripade smrti.
 <C1>Zacatek hry
-Je jiny nez u zakladni hry. Kazdyhrac dostane desku (kartu) na pocitani munice a zdravi a prislusne pocitaci zetony. A opet se zamicha balik dilku mapy. Namesti odkryte jako startovaci policko a helipad ve spodni polovine baliku. Hraci karty zamichejte a dejte je aby byly dobre dosazitelne. Dropy zamichejte (pytlik zetonu) a dejte je prvnimu hraci.
+Je jiny nez u zakladni hry. Kazdyhrac dostane desku (kartu) na pocitani munice a zdravi (s vyznacenim maxima) a prislusne pocitaci zetony. A opet se zamicha balik dilku mapy. Namesti odkryte jako startovaci policko a helipad ve spodni polovine baliku. Hraci karty zamichejte a dejte je aby byly dobre dosazitelne. Dropy zamichejte (pytlik zetonu) a dejte je prvnimu hraci.
+<C1>Do zacatku
+Kazdy hrac ma do zacatku automaticky pistoli ( +0 ), munice A. 3 kusy munice a vsechna 4 zdravi.
+<C1>Pokud hrac umre
+Jeho tah ihned konci, zahodi zbytek karet a necha si jen mensi polovinu trofeji. Nepocita se do toho bonus za helipad. Hrac odstrani svou figurku z herniho planu a dokonci tah zombiku. Do jeho pristiho tahu na nej nejde sesilat skodici karty. Pristi svuj tah opet zacina na namesti se stejnymi vecmi se kterymi zacal minule.
 <C1>Kolo hrace
 Hrac postupne udela nasledujici akce:
 
-- Tahne novou desku a polozi ji podle pravidel.
-- Bojuj se zombikem pokud nejaky je na policku kde jsi.
-- Odkryj svou nadilku skodicich karet ktere ti rozdaly protihraci a zarid se podle nich.
-- Hod akcni kostkou abys vedel kolik mas pohybu.
-- Pohni se az tolikrat, kolik ti dovolila akcni kostka. (Muzes i min, nemusis vubec) Nektere akce take muzes spalit specialnimi zpusoby. Bojuj se vsemi zombiky ktere potkas na ceste. Vykladej karty a pouzivej je, pokud nejake vhodne mas.
-- Pohni tolika zombiky kolik jsi mel (nikoliv vyuzil) akci.
-- Karty ktere jsi nevylozil muzes (nemusis) nyni pouzit jako skodici karty, dej je skryte pred ktere hrace chces.
-- Zahod karty ktere se ti nelibi a dolizni si zase do 3 karet.
+<I0>
+<I>Tahne novou desku a polozi ji podle pravidel.
+<I>Bojuj se zombikem pokud nejaky je na policku kde jsi.
+<I>Odkryj svou nadilku skodicich karet ktere ti rozdaly protihraci a zarid se podle nich.
+<I>Hod akcni kostkou abys vedel kolik mas pohybu.
+<I>Pohni se az tolikrat, kolik ti dovolila akcni kostka. (Muzes i min, nemusis vubec) Nektere akce take muzes spalit specialnimi zpusoby. Bojuj se vsemi zombiky ktere potkas na ceste. Vykladej karty a pouzivej je, pokud nejake vhodne mas.
+<I>Pohni tolika zombiky kolik jsi mel (nikoliv vyuzil) akci.
+<I>Karty ktere jsi nevylozil muzes (nemusis) nyni pouzit jako skodici karty, dej je skryte pred ktere hrace chces.
+<I>Zahod karty ktere se ti nelibi a dolizni si zase do 3 karet.
+<I1>
 
 <C1>Pokladani dilku mapy
 Dilek mapy se nove musi pokladat tak, aby navazovala alespon na jednu silnici (nemusi navazovat na vsechny) na soucasne mesto a aby ho uplne neuzavirala. Tj po umisteni desky musi zustat otevrena cesta kam jde polozit dalsi cestu, ne nutne z teto posledni desky. Mesto muze byt zavrene, pokud jde pokladat dalsi desky dovnitr. Pokud to neni mozne, deska se uplne vyradi a tahne se nova. Jedina ktera se takto nevyrazuje je helipad. Ten se umisti i kdyby tim uplne uzavrel mesto. v takovem pripade je to posledni deska mesta a ostatni hraci uz tento krok preskakuji. Pokud uz desky dosly, ostatni hraci tento krok take preskakuji.
@@ -47,26 +56,33 @@ V tenhle moment se take
 Oproti puvodni hre je ted na kazdem dilku mapy uprostred policko pro 'regenerativni loot'. V tenhle moment, kdyz hrac pridava loot na novy dilek mapy, ujisti se ze dava jeden i sem. A zaroven prida looty na vsecha ostatni policka regenerativnich lootu na ostatnich dilcich mapy.
 
 <C1>Moznosti na akcni kostce
-Hody 2-5 jsou normalni hody davajici 2 - 5 akci.
-Hod 1 (trap) da 2 akce, ale zaroven k tomu hrac tahne novou kartu obtiznosti, ktera odted bude platit.
-Hod 6 (boost) da 5 akci, ale zaroven si hrac doplni zdravi na sve maximum.
+<I0>
+<I>Hody 2-5 jsou normalni hody davajici 2 - 5 akci.
+<I>Hod 1 (trap) da 2 akce, ale zaroven k tomu hrac tahne novou kartu obtiznosti, ktera odted bude platit.
+<I>Hod 6 (boost) da 5 akci, ale zaroven si hrac doplni zdravi na sve maximum.
+<I1>
 
 <C1>Karty
-Kazda karta ma 2 vyuziti ktere jsou na ni napsane. Muze byt vylozena pred hrace a pouzita jako zbran nebo jednorazovy boost. Kazdy hrac muze mit vylozenou jednu od kazde zbrane, jedno vozidlo a jednu utilitu. Utilit ani vozidel vylozenych vic byt nemuze. Pokud chces vylozit jine nez ktere mas, musis to stare nejdriv pouzit nebo zahodit. Kartu jde vylozit kdykoliv behem sveho tahu. I v ramci cteni skodicich karet, I v ramci boje. Vylozenou kartu si nejde vzit zpet do ruky.
+Kazda karta ma 2 vyuziti ktere jsou na ni napsane. Muze byt vylozena pred hrace a pouzita jako zbran nebo jednorazovy boost. Kazdy hrac muze mit vylozenou jednu zbran B a jednu D (na blizko a na dalku), take jednu vestu a az 2 utility. Utilit ani zbrani vylozenych vic byt nemuze. Pokud chces vylozit jine nez ktere mas, musis to stare nejdriv pouzit nebo zahodit. Kartu jde vylozit kdykoliv behem sveho tahu. I v ramci cteni skodicich karet, I v ramci boje. Vylozenou kartu si nejde vzit zpet do ruky.
+
+<C2>Manipulace s kartami
+Karty z ruky se davaji protihracum jako 'skodici karty' a nebo se vykladaji a nebo zahazuji. Vylozene karty se zahazuji a nebo pouzivaji.
 
 <C2>Skodici strana
 Kazda karta jde pouzit na skozeni protihracum. Pokud ji tak chces pouzit, nemuzes ji mit vylozenou, skozeni se dela z ruky.
 Skozeni je cilene. Kartu pokladas pred konkretniho hrace a uz si ji nemuzes vzit ci presunout jinam. Skodici karty navic nevyhodnocujes ty, ani hrac ktery je dostal, ale hrac ktery hraje PRED tim hracem co je dostal. A to pro pripad ze by bylo potreba jeste nejak dodatecne manipulovat s mapou.
 
 <C1>Zbrane, munice, loot
-Ve hre jsou 3 strelne zbrane, pistole, puska a samopal. To znamena ze v lootu je zsdravi, a 3 druhy munice. I zdravi i munice ma sve maximum (3 zdravi, 5ks od kazde munice) co hrac muze mit. Maximum se muze menit podle toho jakou utilitu zrovna ma hrac vylozenou. Pokud ale zmeni kartu utility a treba snizi maximum munice, ihned musi prebytecnou munici take odhodit. Jaka munice ci zdravi je v jakem lootu se hrac dozvi kdyz se loot otoci (kdyz prvni hrac vstoupi na dany dil mapy). Krome munice a zdravi jsou v lootu jeste vyjimecne i boosty.
+Ve hre jsou 3 strelne zbrane, pistole (tu ma hrac vzdy k dispozici od zacatku), puska a samopal. To znamena ze v lootu je zsdravi, a 3 druhy munice. I zdravi i munice ma sve maximum (3 zdravi, 5ks od kazde munice) co hrac muze mit. Maximum se muze menit podle toho jakou utilitu zrovna ma hrac vylozenou. Pokud ale zmeni kartu utility a treba snizi maximum munice, ihned musi prebytecnou munici take odhodit. Jaka munice ci zdravi je v jakem lootu se hrac dozvi kdyz se loot otoci (kdyz prvni hrac vstoupi na dany dil mapy). Krome munice a zdravi jsou v lootu jeste vyjimecne i boosty.
 
 <C2>Boosty
-- Berserk - Vsechny souboje jsou tohle kolo automaticky vyhrane
-- Regenerace - Dopl zdravi na maximum
-- Ammo box - Dopln si jednu munici na maximum
-- Adrenalin - Tohle kolo mas +4 akcni body
-- Past - Prejit pres tohle policko stoji 1 zdravi
+<I0>
+<I>Berserk - Vsechny souboje jsou tohle kolo automaticky vyhrane
+<I>Regenerace - Dopl zdravi na maximum
+<I>Ammo box - Dopln si jednu munici na maximum
+<I>Adrenalin - Tohle kolo mas +4 akcni body
+<I>Past - Prejit pres tohle policko stoji 1 zdravi
+<I1>
 
 <C1>Akce mimo kolo
 Mimo sve kolo uz hrac nedela zadnou akci, maximalne pomaha nasledujicimu hraci vyhodnotit jeho skodici karty. Dej si bramburky, odpocin si.
@@ -77,4 +93,4 @@ Kdyz hrac dokonci svuj pohyb a pak pohne tolika zombikama kolik ma na kostce akc
 <C1>Souboj
 Je to vzdy jeden hrac proti jednomu zombikovi. Zombik muze byt vylepseny jednou z karet vylepseni. V zakladu je ale potreba hodit na kostce 4 - 6 aby zombik padl, tezsi zombik musi padnout 2x. Bonus na zbrani muze zjednodusit trefu. Pokud hrac hodi min, musi to dorovnat munici, jako ve starych pravidlech. O tom kterou zbrani hrac bojuje rozhoduje az po hodu kostkou. Kdyz musi zombika porazit vickrat, vybira zbran a hazi kostkou vickrat. Pokud hrac boj prohraje, ztrati 1 zivot a hazi kostkou znovu. Pokud ma volnou akci, muze se rozhodnout hazet prestat a z boje 'utect'. Ale nesmi na policko kde je jiny zombik.
 
-<C>Vsechny karty
+<C>Vysvetlivky ke kartam
