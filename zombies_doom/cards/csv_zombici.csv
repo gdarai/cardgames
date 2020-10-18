@@ -1,9 +1,9 @@
-3,O,Zombik,--,Rychle,Zombici maji boj +1,png/new.png
-3,O,Zombik,--,S Krunyrem,Zombici se musi porazit 2x,png/new.png
-3,O,Zombik,--,Prizraky,Vzdy zahodit navic 1 naboj,png/new.png
-3,O,Zombik,--,Zvedavy,Pohybuji se o 2,png/new.png
-3,O,Zombik,--,Zurive,Nici vybaveni na kterem stoji,png/new.png
-3,O,Zombik,--,Agresivni,Na zacatku tahu se presunou k hraci,png/new.png
-3,O,Zombik,--,Ostre zuby,Kousou za 2 zivoty,png/new.png
-3,O,Zombik,--,Zbabele,Vraci se do zasoby,png/new.png
-3,O,Zombik,--,Ozivovaci,Kdyz zrani; osvobodi trofej,png/new.png
+3,O,Zombik,,Rychle,Zombici maji boj +1,png/kill.png
+3,O,Zombik,,S Krunyrem,Zombici se musi porazit 2x,png/kill.png
+3,O,Zombik,,Prizraky,Vzdy zahodit navic 1 naboj,png/kill.png
+3,O,Zombik,,Zvedavy,Pohybuji se o 2,png/kill.png
+3,O,Zombik,,Zurive,Nici vybaveni na kterem stoji,png/kill.png
+3,O,Zombik,,Agresivni,Na zacatku tahu se presunou k hraci,png/kill.png
+3,O,Zombik,,Ostre zuby,Kousou za 2 zivoty,png/kill.png
+3,O,Zombik,,Zbabele,Vraci se do zasoby,png/kill.png
+3,O,Zombik,,Ozivovaci,Kdyz zrani; osvobodi trofej,png/kill.png

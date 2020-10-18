@@ -1,0 +1,32 @@
+{
+  "code":{
+    "type":"text",
+    "position":[[2, 2],[20,15]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "type":{
+    "type":"text",
+    "position":[[25, 2],[98,15]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[2, 17],[98,145]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "color":[0,0,0],
+    "fixed":1,
+    "align":"center"
+  }
+}

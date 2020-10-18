@@ -49,7 +49,7 @@ Hrac postupne udela nasledujici akce:
 Dilek mapy se nove musi pokladat tak, aby navazovala alespon na jednu silnici (nemusi navazovat na vsechny) na soucasne mesto a aby ho uplne neuzavirala. Tj po umisteni desky musi zustat otevrena cesta kam jde polozit dalsi cestu, ne nutne z teto posledni desky. Mesto muze byt zavrene, pokud jde pokladat dalsi desky dovnitr. Pokud to neni mozne, deska se uplne vyradi a tahne se nova. Jedina ktera se takto nevyrazuje je helipad. Ten se umisti i kdyby tim uplne uzavrel mesto. v takovem pripade je to posledni deska mesta a ostatni hraci uz tento krok preskakuji. Pokud uz desky dosly, ostatni hraci tento krok take preskakuji.
 
 <C2>Osazeni noveho dilku
-Na novy kus mapy je potreba dat loot a zombiky. Kolik jich ma byt je napsane na tom dilku. Umistuje je hrac ktery dilek prilozil. Nejprve se umistuji zombici a az pak loot. Loot se dava skryte. Otoci se az kdyz na dilek mapy vstoupi prvni hrac.
+Na novy kus mapy je potreba dat loot a zombiky. Kolik jich ma byt je napsane na tom dilku. Pri pouzivani puvodnich dilku mapy sectete kolik je tam napsano zdravi a naboju a tolik umistete lootu. Umistuje je hrac ktery dilek prilozil. Nejprve se umistuji zombici a az pak loot. Loot se dava skryte. Otoci se az kdyz na dilek mapy vstoupi prvni hrac.
 V tenhle moment se take
 
 <C2>Regenerativni loot
@@ -94,3 +94,26 @@ Kdyz hrac dokonci svuj pohyb a pak pohne tolika zombikama kolik ma na kostce akc
 Je to vzdy jeden hrac proti jednomu zombikovi. Zombik muze byt vylepseny jednou z karet vylepseni. V zakladu je ale potreba hodit na kostce 4 - 6 aby zombik padl, tezsi zombik musi padnout 2x. Bonus na zbrani muze zjednodusit trefu. Pokud hrac hodi min, musi to dorovnat munici, jako ve starych pravidlech. O tom kterou zbrani hrac bojuje rozhoduje az po hodu kostkou. Kdyz musi zombika porazit vickrat, vybira zbran a hazi kostkou vickrat. Pokud hrac boj prohraje, ztrati 1 zivot a hazi kostkou znovu. Pokud ma volnou akci, muze se rozhodnout hazet prestat a z boje 'utect'. Ale nesmi na policko kde je jiny zombik.
 
 <C>Vysvetlivky ke kartam
+<C1>Typ karet
+Karty maji nekolik typu podle toho kam u hrace patri kdyz si je vylozi. Zbrane na (B) blizko a na (D) dalku, pak (V) vesty. B, V, i D muze mit hrac vylozenou vzdy jen jednu. A pak utility (+) ty muze mit vylozene v zakladu max 2.
+
+<C1>Pouziti karet
+Karty se pouzivaji (IH) ihned, to znamena kdyz je hrac zahraje, hned plati a hrac kartu odhodi. Kdyz je tam nejaky bonus do boje pak je to mysleno na vsechny bojove hody na celek kolo. Pak jsou tu (ZBR) zbrane, tady je hrac ma, dokud je nenahradi jinou zbrani stejneho typu, nebo neodhodi z vlastni vule. Pak jsou zde (BON) bonusy. Ty plati od momentu co je hrac vylozi, do te doby dokud je nenahradi jinou kartou. A pak tu jsou karty co plati (DO) do pristiho tahu, tedy po cele kolo do pristiho tahu tohohle hrace. A nakonec jsou tu (!!!) expresni karty, ktere se musi zahrat pred tahem hrace (pred hodem na akce). A pak tu muze byt kombinace. Napriklad (I/B) znamena, ze karta je v zakladu IH ale po upgradu se chova jako BON.
+
+<C1>Upgrade karty
+Nektere karty jde upgradovat. Pozna se to podle toho, ze maji vedle obrazku napsane jmeno budovy kde jdou upgradovat. Tj, pokud budete mit kartu vylozenou a budete na policku tehle budovy (pozor, jde pouze 1x za tah hrace a je to akce, tj stoji to 1 akcni bod). Upgrade karty kartu vetsinou znatelne zlepsi.
+
+<C2>Mapovani starych budov
+Nektere stare budovy jsem prejmenoval a nektere sloucil. Cil je aby byly vyuzity vsechny:
+<I0>
+<I>Pumpa - Gas Station
+<I>Lekarna - Hospital, DRUG STORE
+<I>Hrackarstvi - Toy Shop
+<I>Army Shop - Army Surplus
+<I>Zahradnictvi - Florist Shop, Lawn & Garden Store
+<I>Skate Shop - Skate Shop
+<I>Pozarni Stanice - Fire Station
+<I>Sport Shop - Sporting Goods Store
+<I>Zelezarstvi - Hardware Store
+<I>Policejni Stanice - Police Station
+<I1>

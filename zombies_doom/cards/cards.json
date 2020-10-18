@@ -18,8 +18,24 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
+    "target":"csv_kills.csv",
+    "sheet":"Loot",
+    "skipTitle":1,
+    "table":2
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
     "target":"csv_zombici.csv",
     "sheet":"Zombici",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_proHrace.csv",
+    "sheet":"Pro Hrace",
     "skipTitle":1,
     "table":1
   },
@@ -30,7 +46,7 @@
     "_process":"PRINT_CARDS",
     "_out":"_OUT_loot.tex",
     "_card":"png/card_100x100_zeton",
-    "_onOneLine":10,
+    "_onOneLine":17,
     "_randomize":"True",
     "_list":{
       "values":[
@@ -39,6 +55,20 @@
       ]
     },
     "values":"csv_loot.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_proHrace.tex",
+    "_card":"png/card_100x100_zeton",
+    "_onOneLine":10,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "img",
+        "text"
+      ]
+    },
+    "values":"csv_kills.csv"
   },
   {
     "_process":"PRINT_CARDS",
@@ -77,5 +107,20 @@
       ]
     },
     "values":"csv_karty.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_proHrace.tex",
+    "_card":"png/card_100x150_proHrace",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "code",
+        "type",
+        "text"
+      ]
+    },
+    "values":"csv_proHrace.csv"
   }
 ]

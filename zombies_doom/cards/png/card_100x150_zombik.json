@@ -31,7 +31,7 @@
   },
   "img":{
     "type":"img",
-    "position":[[15,32],[45,62]]
+    "position":[[20,32],[80,92]]
   },
   "name":{
     "type":"text",
@@ -45,7 +45,7 @@
   },
   "text":{
     "type":"text",
-    "position":[[2, 65],[98,148]],
+    "position":[[2, 85],[98,145]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
