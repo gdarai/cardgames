@@ -53,7 +53,10 @@ Na novy kus mapy je potreba dat loot a zombiky. Kolik jich ma byt je napsane na 
 V tenhle moment se take
 
 <C2>Regenerativni loot
-Oproti puvodni hre je ted na kazdem dilku mapy uprostred policko pro 'regenerativni loot'. V tenhle moment, kdyz hrac pridava loot na novy dilek mapy, ujisti se ze dava jeden i sem. A zaroven prida looty na vsecha ostatni policka regenerativnich lootu na ostatnich dilcich mapy.
+Oproti puvodni hre je ted na kazdem dilku mapy uprostred policko pro 'regenerativni loot'. V tenhle moment, kdyz hrac pridava loot na novy dilek mapy, ujisti se ze dava vzdy jeden sem. A zaroven prida looty na vsecha ostatni policka regenerativnich lootu na ostatnich dilcich mapy.
+
+<C2>Posunuti zombiku
+Kdyz hrac posouva zombiky, posouva tolika zombiky, kolik mel (hozenych) akci. (Bez specialnich efektu karet atd.) Pokud se hrac vyhnul hodu na akce hodi si na zombiky zvlast. Navic nakonec prida 1 zombika na kazdou kartu kde zadny zombik neni.
 
 <C1>Moznosti na akcni kostce
 <I0>
@@ -72,14 +75,17 @@ Karty z ruky se davaji protihracum jako 'skodici karty' a nebo se vykladaji a ne
 Kazda karta jde pouzit na skozeni protihracum. Pokud ji tak chces pouzit, nemuzes ji mit vylozenou, skozeni se dela z ruky.
 Skozeni je cilene. Kartu pokladas pred konkretniho hrace a uz si ji nemuzes vzit ci presunout jinam. Skodici karty navic nevyhodnocujes ty, ani hrac ktery je dostal, ale hrac ktery hraje PRED tim hracem co je dostal. A to pro pripad ze by bylo potreba jeste nejak dodatecne manipulovat s mapou.
 
+<C2>Zahozeni karty
+Kazdou kartu jde z ruky i zhodit a vymenit za tajne killy. Tajne killy se odkryvaji kdyz hrac umre a normalne se puli stejne jako ostatni killy. K tajnym killum slouzi velke buff zetony +0 +1 a +2.
+
 <C1>Zbrane, munice, loot
 Ve hre jsou 3 strelne zbrane, pistole (tu ma hrac vzdy k dispozici od zacatku), puska a samopal. To znamena ze v lootu je zsdravi, a 3 druhy munice. I zdravi i munice ma sve maximum (3 zdravi, 5ks od kazde munice) co hrac muze mit. Maximum se muze menit podle toho jakou utilitu zrovna ma hrac vylozenou. Pokud ale zmeni kartu utility a treba snizi maximum munice, ihned musi prebytecnou munici take odhodit. Jaka munice ci zdravi je v jakem lootu se hrac dozvi kdyz se loot otoci (kdyz prvni hrac vstoupi na dany dil mapy). Krome munice a zdravi jsou v lootu jeste vyjimecne i boosty.
 
 <C2>Boosty
 <I0>
-<I>Berserk - Vsechny souboje jsou tohle kolo automaticky vyhrane
-<I>Regenerace - Dopl zdravi na maximum
-<I>Ammo box - Dopln si jednu munici na maximum
+<I>X Berserk - Vsechny souboje jsou tohle kolo automaticky vyhrane
+<I>Z Regenerace - Dopl zdravi na maximum
+<I>N Ammo box - Dopln si jednu munici na maximum
 <I>Adrenalin - Tohle kolo mas +4 akcni body
 <I>Past - Prejit pres tohle policko stoji 1 zdravi
 <I1>
@@ -91,7 +97,7 @@ Mimo sve kolo uz hrac nedela zadnou akci, maximalne pomaha nasledujicimu hraci v
 Kdyz hrac dokonci svuj pohyb a pak pohne tolika zombikama kolik ma na kostce akcnich bodu. Sam si vybira kteryma zombikama a v jakem poradi. V zakladu se zombikem pohybuje o 1 pole. Zombikem se pohybuje v kuse. Nejde jit uhlopricne. Nejde jit na policko kde uz jiny zombik je. Jde jit na/pres policka s hracema.
 
 <C1>Souboj
-Je to vzdy jeden hrac proti jednomu zombikovi. Zombik muze byt vylepseny jednou z karet vylepseni. V zakladu je ale potreba hodit na kostce 4 - 6 aby zombik padl, tezsi zombik musi padnout 2x. Bonus na zbrani muze zjednodusit trefu. Pokud hrac hodi min, musi to dorovnat munici, jako ve starych pravidlech. O tom kterou zbrani hrac bojuje rozhoduje az po hodu kostkou. Kdyz musi zombika porazit vickrat, vybira zbran a hazi kostkou vickrat. Pokud hrac boj prohraje, ztrati 1 zivot a hazi kostkou znovu. Pokud ma volnou akci, muze se rozhodnout hazet prestat a z boje 'utect'. Ale nesmi na policko kde je jiny zombik.
+Je to vzdy jeden hrac proti jednomu zombikovi. Zombik muze byt vylepseny jednou z karet vylepseni. V zakladu je ale potreba hodit na kostce 5 - 6 aby zombik padl. Tezsi zombik ma pak navic efekt dle zrovna aktivni karty. Bonus na zbrani muze zjednodusit trefu. Pokud hrac hodi min, musi to dorovnat munici, jako ve starych pravidlech. O tom kterou zbrani hrac bojuje rozhoduje az po hodu kostkou. Kdyz musi zombika porazit vickrat, vybira zbran a hazi kostkou vickrat. Pokud hrac boj prohraje, ztrati 1 zivot a hazi kostkou znovu. Pokud ma volnou akci, muze se rozhodnout hazet prestat a z boje 'utect'. Ale nesmi na policko kde je jiny zombik. Pokud hrac strili (chce pouzit bonus zbrane co ma munici) musi vzdy aspon 1 munici zaplatit.
 
 <C>Vysvetlivky ke kartam
 <C1>Typ karet
@@ -103,7 +109,7 @@ Karty se pouzivaji (IH) ihned, to znamena kdyz je hrac zahraje, hned plati a hra
 <C1>Upgrade karty
 Nektere karty jde upgradovat. Pozna se to podle toho, ze maji vedle obrazku napsane jmeno budovy kde jdou upgradovat. Tj, pokud budete mit kartu vylozenou a budete na policku tehle budovy (pozor, jde pouze 1x za tah hrace a je to akce, tj stoji to 1 akcni bod). Upgrade karty kartu vetsinou znatelne zlepsi.
 
-<C2>Mapovani starych budov
+<C>Mapovani starych budov
 Nektere stare budovy jsem prejmenoval a nektere sloucil. Cil je aby byly vyuzity vsechny:
 <I0>
 <I>Pumpa - Gas Station
@@ -116,4 +122,16 @@ Nektere stare budovy jsem prejmenoval a nektere sloucil. Cil je aby byly vyuzity
 <I>Sport Shop - Sporting Goods Store
 <I>Zelezarstvi - Hardware Store
 <I>Policejni Stanice - Police Station
+<I1>
+
+<C>Ladeni hry
+<C1>Prvni iterace odhalila nasledujici nedostatky:
+<I0>
+<I>Chybi lamakarta s planem kola
+<I>Chybi lamakarta se zetony a pravidly
+<I>Pocitadlo potrebuje vylepsit
+<I>Karty co potrebujou vic pouziti potrebujou take nejake pocitadlo
+<I>Zombiku je porad malo, snadno dojdou
+<I>Moc munice, chce to pritvrdit (+1 obtiznost)
+<I>Vystrel vzdy musi stat aspon 1 naboj
 <I1>

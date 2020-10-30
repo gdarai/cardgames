@@ -6,7 +6,8 @@
 16,png/bulletC.png,4
 16,icons/life.png,1
 16,icons/life.png,3
-4,png/trap.png,-1
+8,png/trap.png,-1
+8,png/trap.png,+3
 4,png/buff.png,X
 4,png/buff.png,Z
 4,png/buff.png,N

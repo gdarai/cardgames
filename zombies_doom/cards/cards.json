@@ -26,6 +26,14 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
+    "target":"csv_kills_tajne.csv",
+    "sheet":"Loot",
+    "skipTitle":1,
+    "table":3
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
     "target":"csv_zombici.csv",
     "sheet":"Zombici",
     "skipTitle":1,
@@ -69,6 +77,20 @@
       ]
     },
     "values":"csv_kills.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_proHrace.tex",
+    "_card":"png/card_100x100_zeton",
+    "_onOneLine":10,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "img",
+        "text"
+      ]
+    },
+    "values":"csv_kills_tajne.csv"
   },
   {
     "_process":"PRINT_CARDS",
