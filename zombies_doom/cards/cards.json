@@ -104,6 +104,8 @@
         "type",
         "use",
         "name",
+        "str",
+        "cnt",
         "text",
         "img"
       ]

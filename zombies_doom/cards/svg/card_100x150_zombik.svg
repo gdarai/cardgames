@@ -8,6 +8,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="100"
@@ -16,7 +17,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="card_100x150_karta.svg">
+   sodipodi:docname="card_100x150_zombik.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -27,6 +28,28 @@
          offset="0"
          id="stop4524" />
     </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0.84171948,0,0,0.84171948,0.43130043,707.00609)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient1058"
+       id="linearGradient1060"
+       x1="3.7131259"
+       y1="284.00308"
+       x2="22.890623"
+       y2="284.00308"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1058">
+      <stop
+         style="stop-color:#333333;stop-opacity:1;"
+         offset="0"
+         id="stop1054" />
+      <stop
+         style="stop-color:#333333;stop-opacity:0;"
+         offset="1"
+         id="stop1056" />
+    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -35,17 +58,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="44.784212"
-     inkscape:cy="72.00885"
+     inkscape:zoom="3.7439394"
+     inkscape:cx="109.58255"
+     inkscape:cy="72.588205"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="2493"
-     inkscape:window-height="1385"
-     inkscape:window-x="67"
-     inkscape:window-y="27"
+     inkscape:window-width="1280"
+     inkscape:window-height="915"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
@@ -55,7 +78,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -82,5 +105,50 @@
        d="m 20.887601,904.68359 v 13.92857"
        id="path10"
        inkscape:connector-curvature="0" />
+    <path
+       style="opacity:1;fill:url(#linearGradient1060);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.66811484;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 3.9148084,939.28062 c 6.1707826,-1.3934 9.0571196,-1.4929 15.4269616,0 0,0 -1.228423,14.6307 -7.962303,14.6307 -6.1908576,0 -7.4646586,-14.6307 -7.4646586,-14.6307 z"
+       id="path822-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <g
+       transform="matrix(0.84378272,0,0,0.84378272,76.194782,707.07004)"
+       id="g31">
+      <ellipse
+         ry="5.4160409"
+         rx="7.1150579"
+         cy="288.45493"
+         cx="13.542161"
+         id="path855"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.32619461;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="284.90698"
+         x="8.095314"
+         height="5.7966442"
+         width="10.893694"
+         id="rect821"
+         style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="7.7954869"
+         rx="10.144128"
+         cy="281.30905"
+         cx="13.54216"
+         id="path815"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="2.9482934"
+         rx="2.3486404"
+         cy="281.15915"
+         cx="9.1447058"
+         id="path817"
+         style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="2.9482934"
+         rx="2.3486404"
+         cy="281.10916"
+         cx="17.190048"
+         id="path817-6"
+         style="fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.26458332;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
   </g>
 </svg>
