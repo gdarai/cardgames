@@ -1,1 +1,19 @@
-12,+,Karta,Ihned,Vladce zombiku,,png/ucho.png,Pridej kamkoliv 5 zombiku,Objevilo se 8 novych zombiku
+8,+,Karta,Hned,Vladce zombiku,,-----,png/ucho.png,Pridej kamkoliv 8 novych zombiku,Pridej kamkoliv 5 zombiku
+4,+,Karta,Hned,Horlaviny,Pumpa,1  /  2  /  3,png/darek.png,Zlikviduj zombika ve svem okoli; 1 (3) pouziti,Zombici s tebou nebojuji a ty s nimi take ne
+4,+,Karta,Hned,Manipulace,,-----,png/ucho.png,Posun hned 2 zombiky,Jsi posunut o 4 pole
+4,+,Karta,Hned,Lekarnicka,Lekarna,max +1,png/new.png,Dopln zdavi na max (max_+1),Nesmis vstoupit do budovy
+4,+,Karta,Kolo,Kulicky,Hrackar- stvi,+imunita,png/ucho.png,Zadne posouvani zombiky (a imunita na skozeni),Nehrajes
+4,+,Karta,Hned,Granat,Army Shop,bez zraneni,png/darek.png,Zlikviduj zombiky v budove; -1_Zdravi (bez zraneni),Ztrat vybaveni; nemas-li tak 2 naboje
+4,X,Karta,Vyloz,Motorova pila,Zahrad- nictvi,Zbran +1,png/sekera.png,Zbran +0 (+1); Zere libovolnou munici,Nehrajes kartu; ale muzes se pohnout
+4,+,Karta,Vyloz,Skateboard,Skate Shop,na porad,png/darek.png,+2 pohyby na jedno kolo (na porad),Rozhodnou za tebe kam tohle kolo pujdes
+4,+,Karta,Vyloz,Bedna,Army Shop,1  /  2  /  3,png/darek.png,+3_libovolne munice i ruzne (dopln),Vrat 2 zombiky
+4,X,Karta,Vyloz,Pozarni sekera,Pozarni Stanice,Zbran +2,png/sekera.png,Zbran +1 (+2); Zbran na blizko,Jsi posunut na sousedni dil mapy
+4,+,Karta,Hned,Klidny kout,,-----,png/new.png,Bez pohybu; obnov 2 zdravi,Na svem dilku mapy pridej 2 zombiky do budovy
+2,+,Karta,Hned,Klicky od auta,,-----,png/darek.png,Bez pohybu; ujed po silnici 8 poli; odstran zombiky cestou,Nehybes se; ale muze hrat kartu
+2,+,Karta,Hned,Adrenalin,,-----,png/new.png,+2 Pohyby; nebo +2 do boje,Pridej 3 zombiky do sveho okoli
+4,!!!,Karta,Vyloz,Brokovnice,Sport Shop,-----,png/puska.png,Zbran +1; ma vlastni 3 munice (obnov munici),Napln libovolnou budovu zombiky
+4,!!!,Karta,Vyloz,Puska,Zelezar- stvi,Zbran +2,png/puska.png,Zbran +1 (+2); munice B,Nebudes tahnout zombikem
+4,!!!,Karta,Vyloz,Samopal,Policejni Stanice,Zbran +2,png/puska.png,Zbran +1 (+2); munice C,Nesmis zbirat odmeny
+4,O,Karta,Vyloz,Army vesta,,-----,png/vesta.png,Chrani pred zranenim; ma 2 zdravi,Toto kolo mas do boje -1
+4,O,Karta,Vyloz,Vesta,Zahrad- nictvi,Pridava 2,png/vesta.png,Pridava 1 (2) extra mista na vybaveni,Pridej 3 zombiky do sveho okoli
+4,O,Karta,Vyloz,Nabojova vesta,,-----,png/vesta.png,Muzes nest 2 naboje nad maximum navic,Pridej 2 odmeny ale ne na svuj dil mapy

@@ -31,6 +31,7 @@
         "use",
         "name",
         "location",
+        "upgrade",
         "img",
         "text",
         "effect"
