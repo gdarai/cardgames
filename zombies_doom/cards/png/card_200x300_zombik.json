@@ -1,0 +1,72 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[2, 5],[160,22]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "score":{
+    "type":"text",
+    "position":[[165, 5],[198,45]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "life":{
+    "type":"text",
+    "position":[[2, 65],[52,115]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "effect":{
+    "type":"text",
+    "position":[[5, 200],[195,295]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "fixed":0,
+    "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[5, 130],[195,200]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[100,100,100],
+    "fixed":0,
+    "align":"center"
+  },
+  "iconI":{
+    "type":"img",
+    "position":[[160,60],[190,90]]
+  },
+  "iconT":{
+    "type":"text",
+    "position":[[160, 90],[190,110]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[55,30],[155,130]]
+  }
+}

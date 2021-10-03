@@ -1,0 +1,37 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[2, 5],[195,22]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[50,30],[150,130]]
+  },
+  "effect":{
+    "type":"text",
+    "position":[[5, 130],[195,160]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":3,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[5, 170],[195,295]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "fixed":0,
+    "align":"center"
+  }
+}

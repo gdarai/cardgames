@@ -1,0 +1,52 @@
+{
+  "a1":{
+    "type":"img",
+    "position":[[0,0],[100,100]]
+  },
+  "a2":{
+    "type":"img",
+    "position":[[100,0],[200,100]]
+  },
+  "a3":{
+    "type":"img",
+    "position":[[200,0],[300,100]]
+  },
+  "b1":{
+    "type":"img",
+    "position":[[0,100],[100,200]]
+  },
+  "b2":{
+    "type":"img",
+    "position":[[100,100],[200,200]]
+  },
+  "b3":{
+    "type":"img",
+    "position":[[200,100],[300,200]]
+  },
+  "c1":{
+    "type":"img",
+    "position":[[0,200],[100,300]]
+  },
+  "c2":{
+    "type":"img",
+    "position":[[100,200],[200,300]]
+  },
+  "c3":{
+    "type":"img",
+    "position":[[200,200],[300,300]]
+  },
+  "nameFrame":{
+    "type":"img",
+    "position":[[100,100],[200,120]]
+  },
+  "nameZ":{
+    "type":"text",
+    "position":[[100, 100],[200,120]],
+    "padding":[[5,5], [5,5]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  }  
+}

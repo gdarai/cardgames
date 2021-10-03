@@ -1,0 +1,87 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[5, 5],[195,22]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "life":{
+    "type":"text",
+    "position":[[155,30],[190,70]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "speed":{
+    "type":"text",
+    "position":[[155,72],[190,112]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "fight":{
+    "type":"text",
+    "position":[[155,133],[190,173]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "gun":{
+    "type":"text",
+    "position":[[155,175],[190,215]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "ammo":{
+    "type":"text",
+    "position":[[155,221],[190,251]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "carry":{
+    "type":"text",
+    "position":[[5,265],[195,295]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "text":{
+    "type":"text",
+    "position":[[5, 130],[100,260]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[100,100,100],
+    "fixed":0,
+    "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[15,30],[100,115]]
+  }
+}

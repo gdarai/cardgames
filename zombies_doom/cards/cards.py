@@ -129,6 +129,16 @@ class ANALYZE_REG_ITEMIZE:
 	def getCount(self):
 		return len(self.source)
 
+class ANALYZE_REG_LINK:
+	def __init__(self, linkName, source):
+		self.linkName = linkName
+		self.source = source
+	def getValue(self, index):
+		value = self.source[self.linkName].getValue(index)
+# 		self.source[self.linkName].getValue(index)
+		return value
+	def getCount(self):
+		return self.source[self.linkName].getCount()
 
 class ANALYZE_REG_FULL:
 	def __init__(self, script, counterName, isMaster):
@@ -165,8 +175,13 @@ class ANALYZE_LIST:
 			COUNTERS[self.counterName] = index + 1
 		index = index % len(self.values)
 		return str(self.values[index])
+	def getValue(self, index):
+		index = index % len(self.values)
+		return str(self.values[index])
+	def getCount(self):
+		return len(self.values)
 
-def ANALYZE_REG(regStr, counterName, isMaster):
+def ANALYZE_REG(regStr, counterName, isMaster, source):
 	script = list()
 	while regStr != '':
 		nextStr = ''
@@ -178,8 +193,12 @@ def ANALYZE_REG(regStr, counterName, isMaster):
 				script.append(ANALYZE_REG_RANGE(regSplit[0], regSplit[1]))
 			else:
 				script.append(ANALYZE_REG_ITEMIZE(nextStr))
+		elif regStr[0] == '{':
+			nextStr = (regStr[1:].split('}'))[0]
+			regStr = regStr[len(nextStr)+2:]
+			script.append(ANALYZE_REG_LINK(nextStr, source))
 		else:
-			nextStr = (regStr.split('['))[0]
+			nextStr = (re.split('[\[\{]', regStr))[0]
 			regStr = regStr[len(nextStr):]
 			script.append(ANALYZE_REG_CONST(nextStr))
 	return ANALYZE_REG_FULL(script, counterName, isMaster)
@@ -551,7 +570,7 @@ def readOneParameter(setting, paramName, paramSource):
 				counterName = paramSource['counter']
 			if 'isMaster' in paramSource:
 				isMaster = paramSource['isMaster']
-			newParam = ANALYZE_REG(paramSource['reg'], counterName, isMaster)
+			newParam = ANALYZE_REG(paramSource['reg'], counterName, isMaster, setting)
 		elif 'list' in paramSource:
 			counterName = len(list(COUNTERS.keys()))
 			isMaster = True

@@ -1,14 +1,15 @@
-16,png/bulletA.png,2
-16,png/bulletA.png,4
-16,png/bulletB.png,2
-16,png/bulletB.png,4
-16,png/bulletC.png,2
-16,png/bulletC.png,4
-16,icons/life.png,1
-16,icons/life.png,3
-8,png/trap.png,-1
-8,png/trap.png,+3
-4,png/buff.png,X
-4,png/buff.png,Z
-4,png/buff.png,N
-4,png/buff.png,+4
+4,Zasobnik Pistole,png/bulletA.png,2 / 1,Naboje A pro kazdeho
+4,Zasobnik Pistole,png/bulletA.png,4 / 2,Naboje A pro kazdeho
+4,Zasobnik Pusky,png/bulletB.png,2 / 1,Naboje B pro kazdeho
+4,Zasobnik Pusky,png/bulletB.png,4 / 2,Naboje B pro kazdeho
+4,Zasobnik Samopalu,png/bulletC.png,2 / 1,Naboje C pro kazdeho
+4,Zasobnik Samopalu,png/bulletC.png,4 / 2,Naboje C pro kazdeho
+4,Lekarnicka,icons/life.png,+1,Vyleci si zraneni
+4,Lekarnicka,icons/life.png,'+2 / +1,Vyleci si zraneni
+2,Past,png/trap.png,-1,Povine. Zranila te past
+2,Doupe zombiku,png/trap.png,+3,Povine. Ihned dej do sveho okoli 3 nove zombiky
+1,Ulezely syr,png/buff.png,Berserk,Pristi 3 kola porazis kazdeho zombika holyma rukama
+1,Balicek tabaku,icons/life.png,Zdravi,Vyleci polovinu zraneni ale pristi kolo nehrajes
+1,Bedna s vybavenim,png/buff.png,Karta,Lizni si na ruku novou kartu a hned 1 kartu zahraj
+1,Lahev Ginu,icons/run.png,+2,Pristi kolo se muzes posunout o 2 dal
+1,Lahev Vodky,png/buff.png,+2,Pristi kolo mas bonus +2 do boje

@@ -1,0 +1,78 @@
+{
+  "charge1":{
+    "type":"text",
+    "position":[[2, 5],[198,22]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "charge2":{
+    "type":"text",
+    "position":[[2, 277],[198,296]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "charge3":{
+    "type":"text",
+    "position":[[2, 140],[20,158]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "charge4":{
+    "type":"text",
+    "position":[[182, 138],[198,156]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "use":{
+    "type":"text",
+    "position":[[20, 30],[198,85]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "fixed":0,
+    "align":"center"
+  },
+  "effect":{
+    "type":"text",
+    "position":[[20, 205],[198,270]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[100,100,100],
+    "fixed":0,
+    "align":"center"
+  },
+   "img":{
+    "type":"img",
+    "position":[[50,85],[150,185]]
+  },
+  "name":{
+    "type":"text",
+    "position":[[25,185],[175,205]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  }
+}

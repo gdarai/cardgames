@@ -1,9 +1,9 @@
-3,O,Zombik,,Rychle,1,1,Zombici maji boj +1,png/kill.png
-3,O,Zombik,,S Krunyrem,2,2,Zombici se musi porazit 2x,png/kill.png
-3,O,Zombik,,Prizraky,3,3,Vzdy zahodit navic 1 naboj,png/kill.png
-3,O,Zombik,,Zvedavy,4,4,Pohybuji se o 2,png/kill.png
-3,O,Zombik,,Zurive,5,5,Nici vybaveni na kterem stoji,png/kill.png
-3,O,Zombik,,Agresivni,6,6,Na zacatku tahu se presunou k hraci,png/kill.png
-3,O,Zombik,,Ostre zuby,7,7,Kousou za 2 zivoty,png/kill.png
-3,O,Zombik,,Zbabele,8,8,Vraci se do zasoby,png/kill.png
-3,O,Zombik,,Ozivovaci,9,9,Kdyz zrani; osvobodi trofej,png/kill.png
+6,Zombik,3,3,Ma na jakykoliv boj +1,png/kill.png,png/vesta.png,+1,Bacha na ne; kousou
+6,Bijec,3,3,Musi se porazit 2x,png/kill.png,png/kill.png,2x,Rvat se s jednim takovym je jako zbit 2 zombiky
+6,Hyena,3,3,Pokud ji neporazis odevzdej trofej,png/kill.png,png/buff.png,1,Pozirac zdechlin
+6,Krikloun,3,3,Umisti do sveho okoli 2 nove zombiky,png/kill.png,png/ucho.png,+2,Rve o pomoc uz kdyz te zahledne
+6,Rvac,3,3,Na boj z blizka ma +2,png/kill.png,png/sekera.png,+2,Vidis ty svaly?
+6,Bezec,3,3,Na boj strelnou zbrani ma +2,png/kill.png,png/puska.png,+2,Maratonec po smrti
+6,Ostrodrap,3,3,Pokud ji neporazis; znici ti 1 vybaveni,png/kill.png,png/darek.png,-1,Asi si dlouho nestrihala nehty
+6,Parac,3,3,Pokud ji neporazis; da ti 2 zraneni,png/kill.png,icons/life.png,2x,To nejsou zuby ale kly
+6,Nesmrtelny,3,3,Kdyz ji porazis pridej si do okoli zombika,png/kill.png,png/ucho.png,+1,Kdyz ji zabijes; povstane zas

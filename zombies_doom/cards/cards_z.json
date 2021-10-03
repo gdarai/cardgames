@@ -14,6 +14,14 @@
     "sheet":"Lepsi_Karty",
     "skipTitle":1,
     "table":1
+  }, 
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_karty2.csv",
+    "sheet":"Lepsi_Karty2",
+    "skipTitle":1,
+    "table":1
   },
   {
     "_process":"CONVERT_SVGS"
@@ -38,6 +46,26 @@
       ]
     },
     "values":"csv_karty.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_karty.tex",
+    "_card":"png/card_200x300_4x",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "charge1",
+        "charge2",
+        "charge3",
+        "charge4",
+        "img",
+        "use",
+        "effect"
+      ]
+    },
+    "values":"csv_karty2.csv"
   },
   {
     "_process":"PRINT_CARDS",
