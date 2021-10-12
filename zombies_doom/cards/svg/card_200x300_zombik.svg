@@ -58,9 +58,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7447843"
-     inkscape:cx="138.07972"
-     inkscape:cy="181.68797"
+     inkscape:zoom="9.3833131"
+     inkscape:cx="63.041522"
+     inkscape:cy="23.09391"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -81,7 +81,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -138,5 +138,27 @@
        id="path822-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
-  </g>
+    <rect
+       style="opacity:1;fill:#333333;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.71627903;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1171-6-3"
+       width="9.9929285"
+       height="11.205232"
+       x="0.52950609"
+       y="285.26523"
+       ry="0.20470455" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot46"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.33333206px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(-0.26458277,-5.4597271e-4,5.4597271e-4,-0.26458277,23.295409,327.43211)"><flowRegion
+         id="flowRegion48"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.33333206px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
+           id="rect50"
+           width="57.605583"
+           height="62.895893"
+           x="56.429962"
+           y="114.25138"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.33333206px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara52"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:37.33333206px;font-family:FreeMono;-inkscape-font-specification:'FreeMono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start">1</flowPara></flowRoot>  </g>
 </svg>

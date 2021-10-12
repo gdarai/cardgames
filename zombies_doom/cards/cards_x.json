@@ -51,6 +51,22 @@
     "table":1
   },
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_help_text.csv",
+    "sheet":"help_text",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_help_img.csv",
+    "sheet":"help_img",
+    "skipTitle":1,
+    "table":1
+  },
+  {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_karty.tex",
     "_card":"png/card_200x300_4x",
@@ -76,12 +92,13 @@
     "_card":"png/card_200x300_zombik",
     "_onOneLine":6,
     "_randomize":"True",
-    "life":{ "reg": "[3-5]" },
+    "life":{ "reg": "[345]" },
+    "score":{ "reg": "[233]" },
     "_list":{
       "values":[
         "name",
         "lifex",
-        "score",
+        "_score",
         "effect",
         "img",
         "iconI",
@@ -96,7 +113,7 @@
     "_out":"_OUT_proHrace.tex",
     "_card":"png/card_200x300_postava",
     "_onOneLine":6,
-    "_randomize":"True",
+    "_randomize":"False",
     "_list":{
       "values":[
         "name",
@@ -114,9 +131,37 @@
   },
   {
     "_process":"PRINT_CARDS",
+    "_out":"_OUT_proHrace.tex",
+    "_card":"png/card_200x300_img",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "img"
+      ]
+    },
+    "values":"csv_help_img.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_proHrace.tex",
+    "_card":"png/card_200x300_text",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "text"
+      ]
+    },
+    "values":"csv_help_text.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
     "_out":"_OUT_loot.tex",
     "_card":"png/card_200x300_loot",
-    "_onOneLine":6,
+    "_onOneLine":8,
     "_randomize":"True",
     "_list":{
       "values":[
@@ -163,6 +208,7 @@
     "_list":{
       "values":[
 		"nameZ",
+		"loot",
         "a1x",
         "a2x",
         "a3x",

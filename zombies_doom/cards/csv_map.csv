@@ -1,18 +1,18 @@
-1,Park,S,UD,S,LR,O,LR,S,UD,S
-4,X Krizovatka,B,UD,B,LR,X,LR,B,UD,B
-1,Skate Shop,B,UD,B,LR,T,D,B,UD,B
-1,Heliport,S,UD,S,LR,O,LR,S,UD,S
-1,Pumpa,B,UD,B,LR,T,D,B,UD,B
-4,Zatacka,B,B,B,LR,L,B,B,UD,B
-1,Hrackarstvi,B,B,B,LR,L,D,B,UD,B
-4,Silnice,B,UD,B,B,UD,B,B,UD,B
-1,Zahradnictvi,B,D,B,B,I,B,B,UD,B
-4,T Krizovatka,B,UD,B,LR,T,B,B,UD,B
-1,Sport Store,B,D,B,B,I,B,B,UD,B
-1,Zahradnictvi,B,UD,B,LR,T,D,B,UD,B
-1,Nemocnice,B,D,B,B,I,B,B,UD,B
-1,Pozarni Stanice,B,D,B,B,I,B,B,UD,B
-1,Army Shop,B,UD,B,B,UD,D,B,UD,B
-1,Zelezarstvi,B,D,B,LR,L,B,B,UD,B
-1,Policejni Stanice,B,D,B,B,I,B,B,UD,B
-1,Nemocnice,B,UD,B,B,UD,D,B,UD,B
+1,Park,png/bulletA.png,S,UD,S,LR,O,LR,S,UD,S
+4,X Krizovatka,,B,UD,B,LR,X,LR,B,UD,B
+1,Skate Shop,png/bulletC.png,B,UD,B,LR,T,D,B,UD,B
+1,Heliport,png/bulletC.png,S,UD,S,LR,O,LR,S,UD,S
+1,Pumpa,png/bulletB.png,B,UD,B,LR,T,D,B,UD,B
+4,Zatacka,,B,B,B,LR,L,B,B,UD,B
+1,Hrackarstvi,png/bulletA.png,B,B,B,LR,L,D,B,UD,B
+4,Silnice,,B,UD,B,B,UD,B,B,UD,B
+1,Zahradnictvi,png/bulletB.png,B,D,B,B,I,B,B,UD,B
+4,T Krizovatka,,B,UD,B,LR,T,B,B,UD,B
+1,Sport Store,png/bulletA.png,B,D,B,B,I,B,B,UD,B
+1,Zahradnictvi,png/bulletB.png,B,UD,B,LR,T,D,B,UD,B
+1,Nemocnice,icons/life.png,B,D,B,B,I,B,B,UD,B
+1,Pozarni Stanice,png/bulletB.png,B,D,B,B,I,B,B,UD,B
+1,Army Shop,png/bulletC.png,B,UD,B,B,UD,D,B,UD,B
+1,Zelezarstvi,png/bulletA.png,B,D,B,LR,L,B,B,UD,B
+1,Policejni Stanice,png/bulletC.png,B,D,B,B,I,B,B,UD,B
+1,Nemocnice,icons/life.png,B,UD,B,B,UD,D,B,UD,B

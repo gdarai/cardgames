@@ -1,8 +1,8 @@
-8,Vladce zombiku,* Pouzij,-----,-,-,png/ucho.png,Pridej kamkoliv 8 zombiku,Pridej kamkoliv 5 zombiku
-4,Horlaviny,* Pouzij,Pumpa (3),2,1,png/darek.png,Zlikviduj zombika ve svem okoli 1(3) pouziti,Zombici s tebou nebojuji a ty s nimi take ne
+8,Vladce zombiku,* Pouzij,-----,-,-,png/ucho.png,Pridej kamkoliv 3 zombiky,Pridej na svuj dil mapy 2 zombiky
+4,Horlaviny,* Pouzij,Pumpa (3),2,1,png/darek.png,Zlikviduj zombika ve svem okoli 1(3) pouziti,Toto kolo nebojujes a zombiky prochazis
 4,Manipulace,* Pouzij,-----,-,-,png/ucho.png,Posun hned 2 zombiky,Jsi posunut o 4 pole
 4,Lekarnicka,* Pouzij,Lekarna,-,-,png/new.png,Dopln zdavi na max (max_+1),Nesmis vstoupit do budovy
-4,Kulicky,* Pouzij,Hrackarstvi,-,-,png/ucho.png,Zadne posouvani zombiky (a imunita na skozeni),Vubec nehrajes
+4,Kulicky,* Pouzij,Hrackarstvi,-,-,png/ucho.png,Nikdo neposouva zombiky (a imunita na skozeni),Vubec nehrajes
 4,Granat,* Pouzij,Army Shop,-,-,png/darek.png,Zlikviduj zombiky v budove; zrani te (bez zraneni),Ztrat 1 vybaveni; nemas-li tak 2 naboje
 4,Motorova pila,* Zbran B +0,Zahradnictvi (+1),-,-,png/sekera.png,Zbran na blizko +0 (+1); Zere libovolnou munici,Nehrajes kartu; ale muzes se pohnout
 4,Skateboard,* Pouzij,Skate Shop,-,-,png/darek.png,+2 pohyby na jedno kolo (na porad),Rozhodnou za tebe kam tohle kolo pujdes
@@ -11,9 +11,9 @@
 4,Klidny kout,* Pouzij,-----,-,-,png/new.png,Bez pohybu; obnov 2 zdravi,Na svem dilku mapy pridej 2 zombiky do budovy
 2,Klicky od auta,* Pouzij,-----,-,-,png/darek.png,Bez pohybu; ujed po silnici 5 poli; sezbirej prejete zombiky,Nehybes se; ale muzes hrat kartu
 2,Adrenalin,* Pouzij,-----,-,-,png/new.png,+2 Pohyby; nebo +2 do boje,Pridej 3 zombiky do sveho okoli
-4,Brokovnice,* Zbran S +1 (3),Sport Shop (0),2,1,png/puska.png,Strelna zbran +1; ma vlastni 3 munice (obnov munici),Napln libovolnou budovu zombiky
+4,Brokovnice,* Zbran S +1 (3),Sport Shop (0),2,1,png/puska.png,Strelna zbran +1; ma vlastni 3 munice (obnov munici),Dej do libovolne budovy 2 zombiky
 4,Puska,* Zbran S +1,Zelezarstvi (+2),-,-,png/puska.png,Strelna zbran +1 (+2); munice B,Nebudes tahnout zombikem
 4,Samopal,* Zbran S +1,Policejni Stanice (+2),-,-,png/puska.png,Strelna zbran +1 (+2); munice C,Nesmis zbirat odmeny
 4,Army vesta,* Vesta 1. zdravi,2. zdravi,-,-,png/vesta.png,Chrani pred zranenim; ma 2 zdravi,Toto kolo mas do boje -1
 4,Vesta,* Vesta 1 kapsa,Zahradnictvi 2 kapsy,-,-,png/vesta.png,Pridava 1 (2) extra mista na vybaveni,Pridej 2 zombiky do sveho okoli
-4,Nabojova vesta,* Vesta,-----,-,-,png/vesta.png,Muzes nest 4 libovolne naboje nad maximum navic,Pridej 2 odmeny ale ne na svuj dil mapy
+4,Nabojova vesta,* Vesta,-----,-,-,png/vesta.png,Muzes nest 4 libovolne naboje nad maximum navic,Pridej odmenu do parku

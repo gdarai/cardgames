@@ -1,0 +1,16 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[2, 5],[195,22]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "img":{
+    "type":"img",
+    "position":[[20,130],[180,290]]
+  }
+}

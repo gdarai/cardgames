@@ -48,5 +48,9 @@
     "line":1,
     "color":[0,0,0],
     "align":"center"
+  },
+  "loot":{
+    "type":"img",
+    "position":[[165,130],[195,160]]
   }  
 }

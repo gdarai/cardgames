@@ -31,7 +31,7 @@
   },
   "effect":{
     "type":"text",
-    "position":[[5, 200],[195,295]],
+    "position":[[40, 200],[195,295]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
