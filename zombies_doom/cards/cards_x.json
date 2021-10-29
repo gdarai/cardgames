@@ -92,7 +92,7 @@
     "_card":"png/card_200x300_zombik",
     "_onOneLine":6,
     "_randomize":"True",
-    "life":{ "reg": "[345]" },
+    "life":{ "reg": "[456]" },
     "score":{ "reg": "[233]" },
     "_list":{
       "values":[
@@ -208,7 +208,8 @@
     "_list":{
       "values":[
 		"nameZ",
-		"loot",
+		"lootFrame",
+		"lootZ",
         "a1x",
         "a2x",
         "a3x",

@@ -1,7 +1,7 @@
-12,Vazne zraneni,png/trap.png,icons/life.png,!!! -1 Zivot
-2,Zraneni ruky,png/trap.png,png/sekera.png,Postih -1 do boje na blizko
-2,Sram prez zada,png/trap.png,png/vesta.png,Nemuzes pouzivat vesty
-2,Otrava,png/trap.png,png/buff.png,Pristi kolo nehrajes; pak tohle zraneni zahod
-2,Pohmozdena noha,png/trap.png,icons/run.png,Postih -1 do pohybu
-2,Pohmozdena hlava,png/trap.png,png/puska.png,Postih -1 do boje na dalku
-2,Lehke zraneni,png/trap.png,,Mas stesti; nic to neni
+12,Vazne zraneni,icons/life.png,icons/life.png,!!! -1 Zivot
+2,Zraneni ruky,icons/life.png,png/sekera.png,Postih -1 do boje na blizko
+2,Sram prez zada,icons/life.png,png/vesta.png,Nemuzes pouzivat vesty
+2,Otrava,icons/life.png,png/buff.png,Pristi kolo nehrajes; pak tohle zraneni zahod
+2,Pohmozdena noha,icons/life.png,icons/run.png,Postih -1 do pohybu
+2,Pohmozdena hlava,icons/life.png,png/puska.png,Postih -1 do boje na dalku
+2,Lehke zraneni,icons/life.png,,Mas stesti; nic to neni

@@ -1,7 +1,8 @@
-Bojovnik,png/kill.png,5,2,4,3,6,BSV + 1,* Univerzalni vojak
-Pruzkumnik,png/kill.png,4,3,3,3,5,BSV + 1,Vzdy vidi sousedni dilky mapy kolem nej (po silnici)
-Medik,png/kill.png,4,2,3,3,5,BSV + 1,Kazde leceni je o 1 ucinnejsi
-Kulometcik,png/kill.png,4,2,2,3,6,BSV + 2,V kazdem lootu najde 1 naboj navic
-Pistolnik,png/kill.png,3,3,3,4,5,BSV + 1,* Mistr strelec
-Sniper,png/kill.png,3,3,2,4,4,BSSV + 1,Muze zastrelit zombika i o 3 kroky dal
-Rvac,png/kill.png,5,2,5,2,4,BBSV + 2,* Zbran pouziva radeji jako kyj
+Bojovnik,png/buff.png,4,2,4,3,6,BSV + 1,* Univerzalni vojak
+Pruzkumnik,png/buff.png,3,3,3,3,5,BSV + 1,Vzdy vidi sousedni dilky mapy kolem nej (po silnici)
+Medik,png/buff.png,3,2,3,3,5,BSV + 1,Kazde leceni je o 1 ucinnejsi
+Kulometcik,png/buff.png,3,2,2,3,6,BSV + 2,V kazdem lootu najde 1 naboj navic
+Pistolnik,png/buff.png,2,3,3,4,5,BSV + 1,* Mistr strelec
+Sniper,png/buff.png,2,3,2,4,4,BSSV + 1,Muze zastrelit zombika i o 3 kroky dal
+Rvac,png/buff.png,4,2,5,2,4,BBSV + 2,* Zbran pouziva radeji jako kyj
+Sberatel,png/buff.png,3,3,4,3,5,BSV + 2,Z kazdeho zombika tahni kartu a hned 1 kartu zahraj

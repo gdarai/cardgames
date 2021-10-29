@@ -49,8 +49,12 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "loot":{
+  "lootFrame":{
     "type":"img",
-    "position":[[165,130],[195,160]]
+    "position":[[263,228],[297,262]]
+  },  
+  "lootZ":{
+    "type":"img",
+    "position":[[265,230],[295,260]]
   }  
 }
