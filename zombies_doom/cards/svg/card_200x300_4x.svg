@@ -36,17 +36,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.78946"
-     inkscape:cx="226.18499"
+     inkscape:cx="126.71364"
      inkscape:cy="130.34491"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:snap-global="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="915"
-     inkscape:window-x="0"
-     inkscape:window-y="31"
+     inkscape:window-width="1533"
+     inkscape:window-height="845"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:pagecheckerboard="true" />
@@ -125,26 +125,10 @@
            height="12.714423"
            x="47.004837"
            y="91.945793" /></flowRegion><flowPara
-         id="flowPara29" /></flowRoot>    <rect
-       style="opacity:1;fill:#333333;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.85658133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1171"
-       width="5.3490758"
-       height="29.936951"
-       x="0.39104787"
-       y="239.95001"
-       ry="0.5469079" />
-    <path
+         id="flowPara29" /></flowRoot>    <path
        style="fill:none;stroke:#000000;stroke-width:0.99017221;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 0.24143528,289.90286 H 52.12311"
        id="path829-3"
        inkscape:connector-curvature="0" />
-    <rect
-       style="opacity:1;fill:#333333;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.85658133;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1171-6"
-       width="5.3490758"
-       height="29.936951"
-       x="47.015144"
-       y="239.95001"
-       ry="0.5469079" />
   </g>
 </svg>

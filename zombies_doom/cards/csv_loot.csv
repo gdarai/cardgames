@@ -8,8 +8,8 @@
 4,Lekarnicka,icons/life.png,'+2 / +1,Vyleci si zraneni
 2,Past,png/trap.png,-1,Povine. Zranila te past
 2,Doupe zombiku,png/trap.png,+3,Povine. Ihned dej do sveho okoli 3 nove zombiky
-1,Ulezely syr,png/buff.png,Berserk,Pristi 2 kola porazis kazdeho zombika holyma rukama
-1,Balicek tabaku,icons/life.png,Zdravi,Vyleci polovinu zraneni ale pristi kolo nehrajes
+1,Ulezely syr,png/buff.png,Berserk,Pristi 2 zombiky porazis holyma rukama
+1,Balicek tabaku,icons/life.png,Zdravi,Vyleci polovinu zraneni ale pristi kolo mas -1 do boje
 1,Bedna s vybavenim,png/buff.png,Karta,Lizni si na ruku novou kartu a hned 1 kartu zahraj
 1,Lahev Ginu,icons/run.png,+2,Pristi kolo se muzes posunout o 2 dal
-1,Lahev Vodky,png/buff.png,+2,Pristi kolo mas bonus +2 do boje
+1,Lahev Vodky,png/buff.png,+2,Pristi kolo mas +2 do boje

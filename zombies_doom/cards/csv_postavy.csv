@@ -1,8 +1,8 @@
-Bojovnik,png/buff.png,4,2,4,3,6,BSV + 1,* Univerzalni vojak
-Pruzkumnik,png/buff.png,3,3,3,3,5,BSV + 1,Vzdy vidi sousedni dilky mapy kolem nej (po silnici)
-Medik,png/buff.png,3,2,3,3,5,BSV + 1,Kazde leceni je o 1 ucinnejsi
-Kulometcik,png/buff.png,3,2,2,3,6,BSV + 2,V kazdem lootu najde 1 naboj navic
-Pistolnik,png/buff.png,2,3,3,4,5,BSV + 1,* Mistr strelec
-Sniper,png/buff.png,2,3,2,4,4,BSSV + 1,Muze zastrelit zombika i o 3 kroky dal
-Rvac,png/buff.png,4,2,5,2,4,BBSV + 2,* Zbran pouziva radeji jako kyj
-Sberatel,png/buff.png,3,3,4,3,5,BSV + 2,Z kazdeho zombika tahni kartu a hned 1 kartu zahraj
+Trooper,png/character.png,png/buff.png,4,2,4,3,6,B SS V + 1,* Univerzalni vojak
+Pruzkumnik,png/character.png,png/ucho.png,3,3,3,3,5,B S V + 1,Vidi loot na vsech sousednich mapach
+Medik,png/character.png,icons/life.png,3,3,3,3,5,B S V + 1,U kazdeho lootu +1 leceni
+Kulometcik,png/character.png,png/bulletC.png,3,2,2,3,6,B S V + 2,V kazdem lootu najde 1 naboj navic
+Pistolnik,png/character.png,png/bulletA.png,2,3,3,4,5,B S V + 1,* Mistr strelec
+Sniper,png/character.png,png/puska.png,2,2,2,4,4,B S V + 1,Muze zastrelit zombika i o 3 kroky dal
+Rvac,png/character.png,png/sekera.png,4,2,5,2,4,BB S V + 2,* I pusku pouziva radeji jako kyj
+Sberatel,png/character.png,png/darek.png,3,3,4,3,5,B S V + 2,Z kazdeho zombika tahni kartu a hned 1 kartu zahraj

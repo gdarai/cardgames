@@ -19,9 +19,14 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "charge3":{
+  "charge3frame":{
+    "type":"img",
+    "position":[[0,126],[22,168]],
+	"useMask":"False"
+  },
+  "charge3text":{
     "type":"text",
-    "position":[[2, 140],[20,158]],
+    "position":[[2, 138],[20,156]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -29,7 +34,12 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "charge4":{
+  "charge4frame":{
+    "type":"img",
+    "position":[[180,126],[200,168]],
+	"useMask":"False"
+  }, 
+  "charge4text":{
     "type":"text",
     "position":[[182, 138],[198,156]],
     "padding":[[2,2], [2,2]],

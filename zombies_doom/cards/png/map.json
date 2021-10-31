@@ -51,10 +51,10 @@
   },
   "lootFrame":{
     "type":"img",
-    "position":[[263,228],[297,262]]
+    "position":[[233,33],[267,67]]
   },  
   "lootZ":{
     "type":"img",
-    "position":[[265,230],[295,260]]
+    "position":[[235,35],[265,65]]
   }  
 }

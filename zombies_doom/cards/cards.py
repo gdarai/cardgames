@@ -91,8 +91,8 @@ def representsInt(s):
 class ANALYZE_REG_CONST:
 	def __init__(self, value):
 		self.value = value
-	def getValue(self, index):
-		return self.value
+	def getValue(self, index, restValue):
+		return self.value + restValue
 	def getCount(self):
 		return 1
 
@@ -109,10 +109,10 @@ class ANALYZE_REG_RANGE:
 		else:
 			print('!! Regexp error, range ['+minV+'-'+maxV+'] is not understanded')
 			exit()
-	def getValue(self, index):
+	def getValue(self, index, restValue):
 		value = self.minV + index
 		if self.type == 'int':
-			return str(value)
+			return str(value) + restValue
 		return chr(value)
 	def getCount(self):
 		return self.count
@@ -123,9 +123,9 @@ class ANALYZE_REG_ITEMIZE:
 		if len(self.source) < 1:
 			print('!! Regexp error, itemize ['+str(source)+'] is not understanded')
 			exit()
-	def getValue(self, index):
+	def getValue(self, index, restValue):
 		value = self.source[index]
-		return value
+		return value + restValue
 	def getCount(self):
 		return len(self.source)
 
@@ -133,10 +133,22 @@ class ANALYZE_REG_LINK:
 	def __init__(self, linkName, source):
 		self.linkName = linkName
 		self.source = source
-	def getValue(self, index):
+	def getValue(self, index, restValue):
 		value = self.source[self.linkName].getValue(index)
-# 		self.source[self.linkName].getValue(index)
-		return value
+		return value + restValue
+	def getCount(self):
+		return self.source[self.linkName].getCount()
+
+class ANALYZE_REG_COND:
+	def __init__(self, linkName, ifNot, source):
+		self.linkName = linkName
+		self.ifNot = ifNot
+		self.source = source
+	def getValue(self, index, restValue):
+		value = self.source[self.linkName].getValue(index)
+		if value == '':
+			return self.ifNot
+		return restValue
 	def getCount(self):
 		return self.source[self.linkName].getCount()
 
@@ -160,7 +172,7 @@ class ANALYZE_REG_FULL:
 			count = sc.getCount()
 			idx = index % count
 			index = index // count
-			value = sc.getValue(idx) + value
+			value = sc.getValue(idx, value)
 		return value
 
 class ANALYZE_LIST:
@@ -194,9 +206,15 @@ def ANALYZE_REG(regStr, counterName, isMaster, source):
 			else:
 				script.append(ANALYZE_REG_ITEMIZE(nextStr))
 		elif regStr[0] == '{':
-			nextStr = (regStr[1:].split('}'))[0]
-			regStr = regStr[len(nextStr)+2:]
-			script.append(ANALYZE_REG_LINK(nextStr, source))
+			linkName = (regStr[1:].split('}'))[0]
+			regStr = regStr[len(linkName)+2:]
+			script.append(ANALYZE_REG_LINK(linkName, source))
+		elif regStr[0] == '?':
+			linkName = (regStr[2:].split('}'))[0]
+			regStr = regStr[len(linkName)+2:]
+			ifNot = (regStr[2:].split('}'))[0]
+			regStr = regStr[len(ifNot)+3:]
+			script.append(ANALYZE_REG_COND(linkName, ifNot, source))
 		else:
 			nextStr = (re.split('[\[\{]', regStr))[0]
 			regStr = regStr[len(nextStr):]
@@ -205,7 +223,7 @@ def ANALYZE_REG(regStr, counterName, isMaster, source):
 ########
 # Superglobals
 
-def getFiles( wildch ):
+def getFiles(wildch):
 	splitName = wildch.split('/')
 	mypath = os.getcwd()
 	pureWildch = splitName.pop()

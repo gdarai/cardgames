@@ -72,13 +72,15 @@
     "_card":"png/card_200x300_4x",
     "_onOneLine":6,
     "_randomize":"True",
+    "charge3frame":{ "reg": "?{charge3text}{}png/card_side.png" },
+    "charge4frame":{ "reg": "?{charge4text}{}png/card_side.png" },
     "_list":{
       "values":[
         "name",
         "charge1",
         "charge2",
-        "charge3",
-        "charge4",
+        "charge3text",
+        "charge4text",
         "img",
         "use",
         "effect"
@@ -117,7 +119,8 @@
     "_list":{
       "values":[
         "name",
-        "img",
+        "imgA",
+        "imgIco",
         "life",
         "speed",
         "fight",
@@ -177,7 +180,7 @@
     "_process":"PRINT_CARDS",
     "_out":"_OUT_zraneni.tex",
     "_card":"png/card_200x300_zraneni",
-    "_onOneLine":6,
+    "_onOneLine":8,
     "_randomize":"True",
     "_list":{
       "values":[
@@ -204,12 +207,12 @@
     "c1":{ "reg": "png/map_{c1x}.png" },
     "c2":{ "reg": "png/map_{c2x}.png" },
     "c3":{ "reg": "png/map_{c3x}.png" },
-    "nameFrame":{ "value": "png/map_sign.png" },
+    "nameFrame":{ "reg": "?{nameZ}{}png/map_sign.png" },
+    "lootFrame":{ "reg": "?{lootZ}{}png/map_D0.png" },
     "_list":{
       "values":[
-		"nameZ",
-		"lootFrame",
-		"lootZ",
+		    "nameZ",
+		    "lootZ",
         "a1x",
         "a2x",
         "a3x",
