@@ -1,18 +1,18 @@
-1,Park,png/bulletA.png,S,UD,S,LR,O,LR,S,UD,S
-4,X Krizovatka,,B,UD,B,LR,X,LR,B,UD,B
-1,Skate Shop,png/bulletC.png,B,UD,D0,LR,T,D,B,UD,D0
-1,Heliport,png/bulletC.png,S,UD,S,LR,O,LR,S,UD,S
-1,Pumpa,png/bulletB.png,B,UD,D0,LR,T,D,B,UD,D0
-4,Zatacka,,B,B,B,LR,L,B,B,UD,B
-1,Hrackarstvi,png/bulletA.png,B,B,D0,LR,L,D,B,UD,D0
-4,Silnice,,B,UD,B,B,UD,B,B,UD,B
-1,Zahradnictvi,png/bulletB.png,D0,D,D0,D0,I,D0,B,UD,B
-4,T Krizovatka,,B,UD,B,LR,T,B,B,UD,B
-1,Sport Shop,png/bulletA.png,D0,D,D0,D0,I,D0,B,UD,B
-1,Zahradnictvi,png/bulletB.png,B,UD,B,LR,T,D,B,UD,B
-1,Nemocnice,icons/life.png,D0,D,D0,D0,I,D0,B,UD,B
-1,Pozarni Stanice,png/bulletB.png,D0,D,D0,D0,I,D0,B,UD,B
-1,Army Shop,png/bulletC.png,B,UD,D0,B,UD,D,B,UD,D0
-1,Zelezarstvi,png/bulletA.png,D0,D,D0,LR,L,B,B,UD,B
-1,Policejni Stanice,png/bulletC.png,D0,D,D0,D0,I,D0,B,UD,B
-1,Nemocnice,icons/life.png,B,UD,D0,B,UD,D,B,UD,D0
+1,Park,png/bulletA.png,2,run,S,UD,S,LR,O,LR,S,UD,S
+4,X Krizovatka,,,void,B,UD,B,LR,X,LR,B,UD,B
+1,Skate Shop,png/bulletC.png,2,skateboard,B,UD,D0,LR,T,D,B,UD,D0
+1,Heliport,png/bulletC.png,2,run,S,UD,S,LR,O,LR,S,UD,S
+1,Pumpa,png/bulletB.png,2,flame,B,UD,D0,LR,T,D,B,UD,D0
+4,Zatacka,,,run,B,B,B,LR,L,B,B,UD,B
+1,Hrackarstvi,png/bulletA.png,2,balls,B,B,D0,LR,L,D,B,UD,D0
+4,Silnice,,,void,B,UD,B,B,UD,B,B,UD,B
+1,Zahradnictvi,png/bulletB.png,2,chainsaw,D0,D,D0,D0,I,D0,B,UD,B
+4,T Krizovatka,,,void,B,UD,B,LR,T,B,B,UD,B
+1,Sport Shop,png/bulletA.png,2,shotgun,D0,D,D0,D0,I,D0,B,UD,B
+1,Zahradnictvi,png/bulletB.png,2,chainsaw,B,UD,B,LR,T,D,B,UD,B
+1,Nemocnice,icons/life.png,1,first_aid,D0,D,D0,D0,I,D0,B,UD,B
+1,Pozarni Stanice,png/bulletB.png,2,axe,D0,D,D0,D0,I,D0,B,UD,B
+1,Army Shop,png/bulletC.png,2,ammo_box,B,UD,D0,B,UD,D,B,UD,D0
+1,Zelezarstvi,png/bulletA.png,2,rifle,D0,D,D0,LR,L,B,B,UD,B
+1,Policejni Stanice,png/bulletC.png,2,machinegun,D0,D,D0,D0,I,D0,B,UD,B
+1,Nemocnice,icons/life.png,1,first_aid,B,UD,D0,B,UD,D,B,UD,D0

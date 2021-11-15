@@ -56,5 +56,19 @@
   "lootZ":{
     "type":"img",
     "position":[[235,35],[265,65]]
+  },  
+  "ico":{
+    "type":"img",
+    "position":[[120,135],[180,195]]
+  },  
+  "lootZZ":{
+    "type":"text",
+    "position":[[235,60],[265,90]],
+    "padding":[[0,0], [0,0]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":2,
+    "color":[0,0,0],
+    "align":"center"
   }  
 }

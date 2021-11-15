@@ -74,6 +74,7 @@
     "_randomize":"True",
     "charge3frame":{ "reg": "?{charge3text}{}png/card_side.png" },
     "charge4frame":{ "reg": "?{charge4text}{}png/card_side.png" },
+    "img":{ "reg": "ico1/{imgName}.png" },
     "_list":{
       "values":[
         "name",
@@ -81,7 +82,7 @@
         "charge2",
         "charge3text",
         "charge4text",
-        "img",
+        "imgName",
         "use",
         "effect"
       ]
@@ -207,12 +208,15 @@
     "c1":{ "reg": "png/map_{c1x}.png" },
     "c2":{ "reg": "png/map_{c2x}.png" },
     "c3":{ "reg": "png/map_{c3x}.png" },
+    "ico":{ "reg": "ico1/{doorIco}.png" },
     "nameFrame":{ "reg": "?{nameZ}{}png/map_sign.png" },
     "lootFrame":{ "reg": "?{lootZ}{}png/map_D0.png" },
     "_list":{
       "values":[
-		    "nameZ",
-		    "lootZ",
+		"nameZ",
+		"lootZ",
+		"lootZZ",
+		"doorIco",
         "a1x",
         "a2x",
         "a3x",
