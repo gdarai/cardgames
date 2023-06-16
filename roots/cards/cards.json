@@ -1,0 +1,29 @@
+[
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_krajina.csv",
+    "sheet":"Krajina",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"CONVERT_SVGS"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_krajina.tex",
+    "_card":"png/card_50x150_krajina",
+    "_onOneLine":10,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "speed",
+        "img"
+      ]
+    },
+    "values":"csv_krajina.csv"
+  }
+]
