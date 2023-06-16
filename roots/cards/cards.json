@@ -8,6 +8,30 @@
     "table":1
   },
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_akce.csv",
+    "sheet":"Akce",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_stavby.csv",
+    "sheet":"Stavby",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_prizen.csv",
+    "sheet":"Prizen",
+    "skipTitle":1,
+    "table":1
+  },
+  {
     "_process":"CONVERT_SVGS"
   },
   {
@@ -25,5 +49,58 @@
       ]
     },
     "values":"csv_krajina.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_akce.tex",
+    "_card":"png/card_100x150_akce",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "type",
+        "role",
+        "where",
+        "cost",
+        "img"
+      ]
+    },
+    "values":"csv_akce.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_stavby.tex",
+    "_card":"png/card_100x150_stavby",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "lvl",
+        "time",
+        "cost",
+        "effect",
+        "img"
+      ]
+    },
+    "values":"csv_stavby.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_prizen.tex",
+    "_card":"png/card_100x150_prizen",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "type",
+        "cost",
+        "effect",
+        "img"
+      ]
+    },
+    "values":"csv_prizen.csv"
   }
 ]
