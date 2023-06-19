@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.64"
+     inkscape:cx="247.65625"
+     inkscape:cy="286.71875"
+     inkscape:window-width="1024"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 256 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="512 : 256 : 1"
+       inkscape:persp3d-origin="256 : 170.66667 : 1"
+       id="perspective4832" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#ffaaaa;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 195.41202,104.18877 C 72.18207,100.63741 27.741039,173.72657 27.165699,282.98888 c 0.305605,70.85586 217.813631,82.56216 321.275711,152.56114 13.44929,12.58888 -43.78662,21.55614 -23.18497,33.54588 27.32194,5.1472 28.49132,15.01582 37.24623,20.00151 26.72887,-99.32218 75.12191,-79.54589 101.70384,-116.21905 -4.7863,-12.79124 -18.39452,-44.31623 -47.83144,-18.79635 0,0 -0.055,31.21343 -27.98476,29.75683 C 296.6702,317.78803 248.52037,105.40905 195.41202,104.18877 Z"
+       id="path6220"
+       sodipodi:nodetypes="ccccccccc" />
+    <ellipse
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1.01792;stroke-opacity:1"
+       id="path7685"
+       cx="142.18712"
+       cy="228.80287"
+       rx="89.816887"
+       ry="102.66481" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.956725;stroke-opacity:1"
+       id="path7843"
+       cx="139.18768"
+       cy="226.75362"
+       rx="75.494492"
+       ry="89.920174" />
+  </g>
+</svg>

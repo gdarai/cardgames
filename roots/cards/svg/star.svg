@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.64"
+     inkscape:cx="247.65625"
+     inkscape:cy="286.71875"
+     inkscape:window-width="1024"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 256 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="512 : 256 : 1"
+       inkscape:persp3d-origin="256 : 170.66667 : 1"
+       id="perspective4832" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:#ffcc00;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path11276"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="251.87965"
+       sodipodi:cy="275.09488"
+       sodipodi:r1="259.01096"
+       sodipodi:r2="125.69579"
+       sodipodi:arg1="0.97389294"
+       sodipodi:arg2="1.6123701"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 397.46557,489.3177 246.65551,400.68206 93.130172,479.75381 130.8248,308.935 8.181158,187.35824 182.28778,170.42204 260.01518,16.211723 329.92437,176.56339 500.60618,202.83293 369.70581,318.87191 Z"
+       inkscape:transform-center-x="0.20808912"
+       inkscape:transform-center-y="-28.315885" />
+  </g>
+</svg>

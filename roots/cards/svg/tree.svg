@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.64"
+     inkscape:cx="247.65625"
+     inkscape:cy="286.71875"
+     inkscape:window-width="1024"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 256 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="512 : 256 : 1"
+       inkscape:persp3d-origin="256 : 170.66667 : 1"
+       id="perspective4832" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#a05a2c;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="rect14758"
+       width="81.320381"
+       height="223.4828"
+       x="193.14032"
+       y="222.74861"
+       ry="9.6590996" />
+    <ellipse
+       style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path14708"
+       cx="153.78294"
+       cy="155.08049"
+       rx="110.52647"
+       ry="110.05872" />
+    <circle
+       style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path14710"
+       cx="345.56113"
+       cy="134.85199"
+       r="121.63538" />
+    <circle
+       style="fill:#008000;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       id="path14712"
+       cx="235.28218"
+       cy="204.39439"
+       r="99.523689" />
+  </g>
+</svg>
