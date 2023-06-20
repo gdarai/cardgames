@@ -1,0 +1,11 @@
+Slunecno|-J / Cestu|1 na k6|--------||Oblacno|2-5 nak6|--------|Boure|+J / Cestu|6 na k6
++_Jidlo_+|Zaklad|Rybar 1+2|Lovec 1||+_Kosti_+|Zaklad|Lovec 1+2|Saman 1
++_Drevo_+|Drevorubec 1+2|Rybar 2||+_Pruzkum_+|Zaklad|Rybar 1|Saman 1+2
++_Leceni_+|Zaklad|Rybar 1|Saman 1||+_Stavba_+|Zaklad|Drevorubec 1|Saman 2
++_Utok_+|Valecnik 1+2|Lovec 2||+_Obrana_+|Drevorubec 1+2|Valecnik 1
++_Zahaneni_+|Valecnik 1+2|Lovec 1||+Popularita+|-1 hlad|-1 zraneni|+1 obet
++_Rybar_+|-postih na vode|+J na vode||+_Lovec_+|-postih v lese|+J v lese||= Drevorubec =|vyber ze 2 Ocek|+Nastroj
++_Valecnik_+|+Pop u Flakani|+2Pop u Flakani||+_Saman_+|+1Akcni karta|+1Akcni karta||+_Nova_+|+_Populace_+|x-1 Flirtu|2x Akcnich karet
++_Sklad_+|zaklad 10||-------||+_Obrana_+|zaklad 0
++_Ocka_+|max 5|J||-------||+_Flirt_+|2J
++_Vycvik_+|lvl1 J +K|lvl2 2J +K|-------||+_Nastroje_+|zaklad 1
