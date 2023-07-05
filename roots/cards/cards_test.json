@@ -2,22 +2,27 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_help.csv",
-    "sheet":"Help",
+    "target":"csv_ribon.csv",
+    "sheet":"Ribony",
     "skipTitle":1,
     "table":1
   },
   {
+    "_process":"CONVERT_SVGS"
+  },
+  {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_help.tex",
-    "_card":"png/card_100x150_help",
+    "_out":"_OUT_ribon.tex",
+    "_card":"png/card_100x50_ribon",
     "_onOneLine":6,
     "_randomize":"False",
     "_list":{
       "values":[
-        "text"
+        "name",
+        "text",
+        "img"
       ]
     },
-    "values":"csv_help.csv"
+    "values":"csv_ribon.csv"
   }
 ]
