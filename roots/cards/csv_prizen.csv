@@ -1,22 +1,21 @@
-1,Slunecno,Pocasi,Nic,Zmen si pocasi na +1,png/sun.png
-1,Boure,Pocasi,Nic,Zmen souperi pocasi na -1,png/sun.png
-10,Nova stavba,Stavba,Nic,Vyber si novou stavbu,png/hammer.png
-1,Novy nastroj,Stavba,Nic,+1 Nastroj,png/hammer.png
-1,Pruzkum,Pruzkum,Nic,Prozkoumej 1 pole,png/binocular.png
-1,Pruzkum +,Pruzkum,Nic,Prozkoumej 2 pole,png/binocular.png
-1,Prislib naklonnosti,Pop,Nic,+5 Pop tajne na ruce,png/star.png
-1,Dar jidla,Suroviny,Nic,+5J,png/food.png
-1,Dar kosti,Suroviny,Nic,+5K,png/bone.png
-1,Dar dreva,Suroviny,Nic,+2D,png/log.png
-2,Dar zdravi,Leceni,Nic,Vyleci 1,png/heart.png
-1,Dar zdravi +,Leceni,Nic,Vyleci 2,png/heart.png
-2,Nocni bes,Utok,Nic,Utok 1,png/sword.png
-1,Nocni bes +,Utok,Nic,Utok 2,png/sword.png
-1,Pomluva,A. Karty,Nic,-1 Akcni karta,png/cards.png
-1,Zadost,A. Karty,Nic,+2 Akcni karty,png/cards.png
-2,Zazen zver,Zahaneni,Nic,Zahaneni,png/spear.png
-3,Zazen zver +,Zahaneni,Nic,Zahaneni +,png/spear.png
-1,Dar dovednosti,Vycvik,Nic,Vycvik zdarma,png/star.png
-1,Dar plodnosti,Flirt,Nic,2x Flirt,png/heart.png
-1,Dar popularity,Pop,Nic,+2 Pop,png/star.png
-1,Dar popularity +,Pop,Nic,+3 Pop,png/star.png
+1,Slunecno,Pocasi,,Pocasi na +1,png/sun.png
+1,Boure,Pocasi,X,Pocasi na -1,png/sun.png
+10,Nova stavba,Stavba,,Vyber si novou stavbu,png/hammer.png
+3,Novy nastroj,Stavba,,+1 Nastroj,png/hammer.png
+1,Pruzkum,Pruzkum,,Prozkoumej 1 pole,png/binocular.png
+1,Pruzkum +,Pruzkum,,Prozkoumej 2 pole,png/binocular.png
+2,Dar jidla,Suroviny,,+5J,png/food.png
+2,Dar kosti,Suroviny,,+5K,png/bone.png
+2,Dar dreva,Suroviny,,+2D,png/log.png
+2,Dar zdravi,Leceni,,Vyleci 1,png/heart.png
+1,Dar zdravi +,Leceni,,Vyleci 2,png/heart.png
+2,Nocni bes,Utok,X,Utok 1,png/sword.png
+1,Nocni bes +,Utok,X,Utok 2,png/sword.png
+1,Pomluva,A. Karty,X,-1 Akcni karta,png/cards.png
+3,Zadost,A. Karty,,+2 Akcni karty,png/cards.png
+2,Zazen zver,Zahaneni,,Zahaneni,png/spear.png
+3,Zazen zver +,Zahaneni,X,Zahaneni +,png/spear.png
+1,Dar dovednosti,Vycvik,,Vycvik zdarma,png/star.png
+1,Dar plodnosti,Flirt,,+2 Flirt,png/heart.png
+7,Dar popularity,Pop,,+1P tajne,png/star.png
+7,Dar popularity +,Pop,,+2P tajne,png/star.png
