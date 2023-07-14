@@ -338,6 +338,16 @@ def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
 	return bestAnalysis['text']
 
 def combinePNGs(setting, name):
+	srcImgs = dict()
+	for paramName in setting['_formula']:
+		if paramName in srcImgs:
+			continue;
+		fileName = setting[paramName].nextVal()
+		print(fileName)
+		srcImgs[paramName] = cv2.imread(fileName)
+
+	shape = checkFieldRaw('Export', '??', setting, '_shape', 'string', 'row')
+	print(shape)
 	return
 
 def printCsvTable(setting, name):
@@ -761,9 +771,7 @@ def readAndProcess(level, name, source, setting):
 			for idx in range(0, setting['_count']):
 				newFileName = setting['_out'].nextVal()
 				print(separator+' -Combining PNGs row '+str(idx)+' (to '+newFileName+')')
-				exit()
 				combinePNGs(setting, newFileName)
-
 			exit()
 			return;
 

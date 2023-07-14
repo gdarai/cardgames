@@ -26,8 +26,8 @@
     "_shape":"row",
     "_out":{ "reg": "png/comb_{colTgt}.png" },
     "Ax":{ "reg": "png/{colA}.png" },
-    "Bx":{ "reg": "png/{colB}.png" },
-    "Cx":{ "reg": "png/{colC}.png" },
+    "Bx":{ "reg": "?{colB}{}png/{colB}.png" },
+    "Cx":{ "reg": "?{colC}{}png/{colC}.png" },
     "_list":{
       "values":[
         "colA",
