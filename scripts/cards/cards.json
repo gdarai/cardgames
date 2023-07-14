@@ -8,19 +8,35 @@
     "table":1
   },
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_comb.csv",
+    "sheet":"Test COMB",
+    "skipTitle":1,
+    "table":1
+  },
+  {
     "_process":"CONVERT_SVGS"
   },
   {
-    "_process":"COMBINE_PNGS"
+    "_process":"COMBINE_PNGS",
+    "_formula":["Ax", "Bx", "Cx"],
+    "_skipMissing":"True",
+    "_align":"center",
+    "_shape":"row",
+    "_out":{ "reg": "png/comb_{colTgt}.png" },
+    "Ax":{ "reg": "png/{colA}.png" },
+    "Bx":{ "reg": "png/{colB}.png" },
+    "Cx":{ "reg": "png/{colC}.png" },
     "_list":{
       "values":[
-        "name",
-        "text",
-        "speed",
-        "img"
+        "colA",
+        "colB",
+        "colC",
+        "colTgt"
       ]
     },
-    "values":"csv_A.csv"
+    "values":"csv_comb.csv"
   },
   {
     "_process":"PRINT_CARDS",

@@ -27,7 +27,12 @@ RESIZE_FILE = 'resize.png'
 RESIZE_HEIGHT = 300
 SVG_DIRECTORY = 'svg'
 PNG_DIRECTORY = 'png'
-
+ALLOWED_PROCESSES = [
+	'EXPORT_TABLE',
+	'CONVERT_SVGS',
+	'PRINT_CARDS',
+	'COMBINE_PNGS',
+];
 
 A4_TEXT_W = A4_WIDTH - (2*A4_MARGIN)
 COUNTERS = dict()
@@ -90,8 +95,8 @@ def representsInt(s):
 class ANALYZE_REG_CONST:
 	def __init__(self, value):
 		self.value = value
-	def getValue(self, index):
-		return self.value
+	def getValue(self, index, restValue):
+		return self.value + restValue
 	def getCount(self):
 		return 1
 
@@ -108,10 +113,10 @@ class ANALYZE_REG_RANGE:
 		else:
 			print('!! Regexp error, range ['+minV+'-'+maxV+'] is not understanded')
 			exit()
-	def getValue(self, index):
+	def getValue(self, index, restValue):
 		value = self.minV + index
 		if self.type == 'int':
-			return str(value)
+			return str(value) + restValue
 		return chr(value)
 	def getCount(self):
 		return self.count
@@ -122,12 +127,34 @@ class ANALYZE_REG_ITEMIZE:
 		if len(self.source) < 1:
 			print('!! Regexp error, itemize ['+str(source)+'] is not understanded')
 			exit()
-	def getValue(self, index):
+	def getValue(self, index, restValue):
 		value = self.source[index]
-		return value
+		return value + restValue
 	def getCount(self):
 		return len(self.source)
 
+class ANALYZE_REG_LINK:
+	def __init__(self, linkName, source):
+		self.linkName = linkName
+		self.source = source
+	def getValue(self, index, restValue):
+		value = self.source[self.linkName].getValue(index)
+		return value + restValue
+	def getCount(self):
+		return self.source[self.linkName].getCount()
+
+class ANALYZE_REG_COND:
+	def __init__(self, linkName, ifNot, source):
+		self.linkName = linkName
+		self.ifNot = ifNot
+		self.source = source
+	def getValue(self, index, restValue):
+		value = self.source[self.linkName].getValue(index)
+		if value == '':
+			return self.ifNot
+		return restValue
+	def getCount(self):
+		return self.source[self.linkName].getCount()
 
 class ANALYZE_REG_FULL:
 	def __init__(self, script, counterName, isMaster):
@@ -149,7 +176,7 @@ class ANALYZE_REG_FULL:
 			count = sc.getCount()
 			idx = index % count
 			index = index // count
-			value = sc.getValue(idx) + value
+			value = sc.getValue(idx, value)
 		return value
 
 class ANALYZE_LIST:
@@ -164,8 +191,13 @@ class ANALYZE_LIST:
 			COUNTERS[self.counterName] = index + 1
 		index = index % len(self.values)
 		return str(self.values[index])
+	def getValue(self, index):
+		index = index % len(self.values)
+		return str(self.values[index])
+	def getCount(self):
+		return len(self.values)
 
-def ANALYZE_REG(regStr, counterName, isMaster):
+def ANALYZE_REG(regStr, counterName, isMaster, source):
 	script = list()
 	while regStr != '':
 		nextStr = ''
@@ -177,11 +209,22 @@ def ANALYZE_REG(regStr, counterName, isMaster):
 				script.append(ANALYZE_REG_RANGE(regSplit[0], regSplit[1]))
 			else:
 				script.append(ANALYZE_REG_ITEMIZE(nextStr))
+		elif regStr[0] == '{':
+			linkName = (regStr[1:].split('}'))[0]
+			regStr = regStr[len(linkName)+2:]
+			script.append(ANALYZE_REG_LINK(linkName, source))
+		elif regStr[0] == '?':
+			linkName = (regStr[2:].split('}'))[0]
+			regStr = regStr[len(linkName)+2:]
+			ifNot = (regStr[2:].split('}'))[0]
+			regStr = regStr[len(ifNot)+3:]
+			script.append(ANALYZE_REG_COND(linkName, ifNot, source))
 		else:
-			nextStr = (regStr.split('['))[0]
+			nextStr = (re.split('[\[\{]', regStr))[0]
 			regStr = regStr[len(nextStr):]
 			script.append(ANALYZE_REG_CONST(nextStr))
 	return ANALYZE_REG_FULL(script, counterName, isMaster)
+
 ########
 # Superglobals
 
@@ -294,6 +337,9 @@ def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
 
 	return bestAnalysis['text']
 
+def combinePNGs(setting, name):
+	return
+
 def printCsvTable(setting, name):
 	targetFile = checkFieldRaw('Export', '??', setting, 'target', 'string', None)
 	sheetName = checkFieldRaw('Export', setting['target'], setting, 'sheet', 'string', None)
@@ -377,6 +423,7 @@ def printCardFile(setting, name):
 	for fieldName in setting['_cardParamNames']:
 		if fieldName not in setting:
 			continue
+
 		props = setting['_cardParams'][fieldName]
 		checkField(cardName, props, 'type', ['text', 'img'], 'text')
 		if props['type'] == 'text':
@@ -506,7 +553,7 @@ def readOneParameter(setting, paramName, paramSource):
 				counterName = paramSource['counter']
 			if 'isMaster' in paramSource:
 				isMaster = paramSource['isMaster']
-			newParam = ANALYZE_REG(paramSource['reg'], counterName, isMaster)
+			newParam = ANALYZE_REG(paramSource['reg'], counterName, isMaster, setting)
 		elif 'list' in paramSource:
 			counterName = len(list(COUNTERS.keys()))
 			isMaster = True
@@ -535,6 +582,9 @@ def printSvgFile(fileName):
 def readParameters(setting, source):
 	if '_process' in source:
 		setting['_process'] = source['_process'].upper()
+		if any(setting['_process'] in s for s in ALLOWED_PROCESSES) == False:
+			print('!! _process '+setting['_process']+' is unknown!')
+			exit()
 
 	if setting['_process'] == 'CONVERT_SVGS':
 		return setting;
@@ -623,31 +673,48 @@ def readParameters(setting, source):
 				print('!! Key List '+listName+' must contain array or existing filename.')
 				exit()
 
-	for paramName in setting['_cardParamNames']:
-		if paramName in source:
-			setting = readOneParameter(setting, paramName, source[paramName])
+	if setting['_process'] == 'COMBINE_PNGS':
+		if '_formula' not in source:
+			print('!! Config must contain core list parameter \'_formula\'.')
+			exit()
+		setting['_cardParamNames'] = source['_formula']
+		setting['_formula'] = source['_formula']
 
-	if '_count' in source:
-		setting['_count'] = source['_count']
-	if '_resize' in source:
-		setting['_resize'] = source['_resize']
-	if '_break' in source:
-		setting['_break'] = source['_break']
-	if '_yspace' in source:
-		setting['_yspace'] = source['_yspace']
-	if '_out' in source:
-		newFile = source['_out']
-		setting['_out'] = newFile
-		print('!! Swapping output to file '+newFile)
-		if newFile not in IMAGES:
-			IMAGES[newFile] = list()
-	if '_randomize' in source:
-		setting['_randomize'] = source['_randomize'] == 'True'
+		if '_out' not in source:
+			print('!! Config must contain core string parameter \'_out\'.')
+			exit()
+		setting = readOneParameter(setting, '_out', source['_out'])
+		for paramName in setting['_cardParamNames']:
+			if paramName in source:
+				setting = readOneParameter(setting, paramName, source[paramName])
+
+	if setting['_process'] == 'PRINT_CARDS':
+		for paramName in setting['_cardParamNames']:
+			if paramName in source:
+				setting = readOneParameter(setting, paramName, source[paramName])
+
+		if '_count' in source:
+			setting['_count'] = source['_count']
+		if '_resize' in source:
+			setting['_resize'] = source['_resize']
+		if '_break' in source:
+			setting['_break'] = source['_break']
+		if '_yspace' in source:
+			setting['_yspace'] = source['_yspace']
+		if '_out' in source:
+			newFile = source['_out']
+			setting['_out'] = newFile
+			print('!! Swapping output to file '+newFile)
+			if newFile not in IMAGES:
+				IMAGES[newFile] = list()
+		if '_randomize' in source:
+			setting['_randomize'] = source['_randomize'] == 'True'
 
 	return setting
 
 def checkParameters(setting):
 	missing = list()
+
 	for paramName in setting['_cardParamNames']:
 		if paramName not in setting:
 			missing.append(paramName)
@@ -667,6 +734,7 @@ def readAndProcess(level, name, source, setting):
 	print(separator+name)
 	newLevel = level + 1
 	setting = readParameters(setting, source)
+	print(setting['_process'])
 	if '_sub' in source:
 		readAndProcessList(newLevel, name, source['_sub'], copy.deepcopy(setting))
 	else:
@@ -685,8 +753,22 @@ def readAndProcess(level, name, source, setting):
 			printCsvTable(setting, name)
 			return;
 
+		if setting['_process'] == 'COMBINE_PNGS':
+			missing = checkParameters(setting)
+			if len(missing) > 0:
+				print(separator+' -Missing '+str(missing))
+
+			for idx in range(0, setting['_count']):
+				newFileName = setting['_out'].nextVal()
+				print(separator+' -Combining PNGs row '+str(idx)+' (to '+newFileName+')')
+				exit()
+				combinePNGs(setting, newFileName)
+
+			exit()
+			return;
+
 		if setting['_card'] == '':
-			print('!! Almost printing but still missing the mandatory "_card" key.')
+			print('!! Should do the printing now, but still missing the mandatory "_card" key.')
 			exit()
 		missing = checkParameters(setting)
 		if len(missing) > 0:
