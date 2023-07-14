@@ -1,0 +1,41 @@
+[
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_A.csv",
+    "sheet":"Test A",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"CONVERT_SVGS"
+  },
+  {
+    "_process":"COMBINE_PNGS"
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "speed",
+        "img"
+      ]
+    },
+    "values":"csv_A.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_A.tex",
+    "_card":"png/card_100x150",
+    "_onOneLine":3,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "speed",
+        "img"
+      ]
+    },
+    "values":"csv_A.csv"
+  }
+]
