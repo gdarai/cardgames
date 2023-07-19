@@ -24,6 +24,7 @@
     "_skipMissing":"True",
     "_align":"center",
     "_shape":"row",
+    "_skip":[ "" ],
     "_out":{ "reg": "png/comb_{colTgt}.png" },
     "Ax":{ "reg": "png/{colA}.png" },
     "Bx":{ "reg": "?{colB}{}png/{colB}.png" },

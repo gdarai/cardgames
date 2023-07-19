@@ -78,6 +78,11 @@ VALTYPE['img'] = VALTYPE_IMG
 VALTYPE['string'] = VALTYPE_STR
 VALTYPE['list'] = VALTYPE_LIST
 
+COMB_SHAPE = dict()
+COMB_SHAPE['row'] = { "cross": 1, "size": 0, "increment": +1, "center": False }
+COMB_SHAPE['rowC'] = { "cross": 1, "size": 0, "increment": +1, "center": True }
+COMB_SHAPE['col'] = { "cross": 0, "size": 1, "increment": +1, "center": False }
+COMB_SHAPE['colC'] = { "cross": 0, "size": 1, "increment": +1, "center": True }
 
 class ANALYZE_CONST:
 	def __init__(self, value):
@@ -175,7 +180,6 @@ class ANALYZE_REG_FULL:
 		for sc in reversed(self.script):
 			count = sc.getCount()
 			idx = index % count
-			index = index // count
 			value = sc.getValue(idx, value)
 		return value
 
@@ -337,17 +341,56 @@ def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
 
 	return bestAnalysis['text']
 
-def combinePNGs(setting, name):
-	srcImgs = dict()
-	for paramName in setting['_formula']:
-		if paramName in srcImgs:
-			continue;
-		fileName = setting[paramName].nextVal()
-		print(fileName)
-		srcImgs[paramName] = cv2.imread(fileName)
+def fixRGBA(img):
+	# RGB to RGBA
+	if img.shape[2] == 3:
+		# First create the image with alpha channel
+		rgba = cv2.cvtColor(img, cv2.COLOR_RGB2RGBA)
+		# Then assign the mask to the last channel of the image
+		rgba[:, :, 3] = np.zeros(img.shape[:2], np.uint8)
+		img = rgba
+	return img
 
-	shape = checkFieldRaw('Export', '??', setting, '_shape', 'string', 'row')
-	print(shape)
+# COMBINE_PNGS
+def combinePNGs(setting, outName):
+	srcImgs = dict()
+	skip = checkFieldRaw('CombinePNGs', outName, setting, '_skip', 'list', [''])
+
+	config = checkFieldRaw('CombinePNGs', outName, setting, '_shape', list(COMB_SHAPE.keys()), 'rowC')
+	config = COMB_SHAPE[config]
+	sizeCoor = config['size']
+	isRow = sizeCoor == 0
+
+	cross = 0;
+	size = 0;
+
+	for paramName in setting['_formula']:
+		if paramName not in srcImgs:
+			fileName = setting[paramName].nextVal()
+			if fileName in skip:
+				srcImgs[paramName] = None
+				continue
+			srcImgs[paramName] = fixRGBA(cv2.imread(fileName))
+		imShape = srcImgs[paramName].shape
+		size += imShape[config['size']]
+		cross = max(cross, imShape[config['cross']])
+
+	newImg = np.zeros((cross, size, 4) if isRow else (size, cross, 4), np.uint8)
+	notRev = config['increment'] > 0
+	formula = setting['_formula'] if notRev else reversed(setting['_formula'])
+	dirSize = 0
+
+	for paramName in formula:
+		img = srcImgs[paramName]
+		if img is None:
+			continue
+		imShape = img.shape
+		w = [dirSize, dirSize + imShape[0]] if isRow else [0, imShape[0]]
+		h = [0, imShape[1]] if isRow else [dirSize, dirSize + imShape[1]]
+		newImg[h[0]:h[1], w[0]:w[1]] = img
+		dirSize += imShape[sizeCoor]
+
+	cv2.imwrite(outName, newImg[:, :, :3])
 	return
 
 def printCsvTable(setting, name):
@@ -420,15 +463,7 @@ def printCsvTable(setting, name):
 
 def printCardFile(setting, name):
 	cardName = setting['_card']
-	img = cv2.imread(cardName+'.png')
-
-	# RGB to RGBA
-	if img.shape[2] == 3:
-		# First create the image with alpha channel
-		rgba = cv2.cvtColor(img, cv2.COLOR_RGB2RGBA)
-		# Then assign the mask to the last channel of the image
-		rgba[:, :, 3] = np.zeros(img.shape[:2], np.uint8)
-		img = rgba
+	img = fixRGBA(cv2.imread(cardName+'.png'))
 
 	for fieldName in setting['_cardParamNames']:
 		if fieldName not in setting:
@@ -499,14 +534,7 @@ def printCardFile(setting, name):
 			if os.path.exists(fileName) == False:
 				print('Trying to read file '+fileName+' which does not exist')
 				print(props)
-			theImg = cv2.imread(fileName)
-			# RGB to RGBA
-			if theImg.shape[2] == 3:
-				# First create the image with alpha channel
-				rgba = cv2.cvtColor(theImg, cv2.COLOR_RGB2RGBA)
-				# Then assign the mask to the last channel of the image
-				rgba[:, :, 3] = np.zeros(theImg.shape[:2], np.uint8)
-				theImg = rgba
+			theImg = fixRGBA(cv2.imread(fileName))
 			imgSize = theImg.shape[:2]
 			imgScale = min(float(size[0])/imgSize[1], float(size[1])/imgSize[0])
 			theImg = cv2.resize(theImg, None, fx=imgScale, fy=imgScale)
@@ -589,6 +617,10 @@ def printSvgFile(fileName):
 	command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
 	os.system(command)
 
+def readSimpleParameter(setting, source, name):
+	if name in source:
+		setting[name] = source[name]
+
 def readParameters(setting, source):
 	if '_process' in source:
 		setting['_process'] = source['_process'].upper()
@@ -612,11 +644,9 @@ def readParameters(setting, source):
 	if setting['_process'] == 'EXPORT_TABLE':
 		setting['_cardParamNames'] = []
 		for paramName in setting['_exportTableParams']:
-			if paramName in source:
-				setting[paramName] = source[paramName]
+			readSimpleParameter(setting, source, paramName)
 
-	if '_onOneLine' in source:
-		setting['_onOneLine'] = source['_onOneLine']
+	readSimpleParameter(setting, source, '_onOneLine')
 
 	if '_card' in source:
 		setting['_process'] = 'PRINT_CARDS'
@@ -690,6 +720,9 @@ def readParameters(setting, source):
 		setting['_cardParamNames'] = source['_formula']
 		setting['_formula'] = source['_formula']
 
+		readSimpleParameter(setting, source, '_skip')
+		readSimpleParameter(setting, source, '_shape')
+
 		if '_out' not in source:
 			print('!! Config must contain core string parameter \'_out\'.')
 			exit()
@@ -703,14 +736,11 @@ def readParameters(setting, source):
 			if paramName in source:
 				setting = readOneParameter(setting, paramName, source[paramName])
 
-		if '_count' in source:
-			setting['_count'] = source['_count']
-		if '_resize' in source:
-			setting['_resize'] = source['_resize']
-		if '_break' in source:
-			setting['_break'] = source['_break']
-		if '_yspace' in source:
-			setting['_yspace'] = source['_yspace']
+		readSimpleParameter(setting, source, '_count')
+		readSimpleParameter(setting, source, '_resize')
+		readSimpleParameter(setting, source, '_break')
+		readSimpleParameter(setting, source, '_yspace')
+		readSimpleParameter(setting, source, '_yspace')
 		if '_out' in source:
 			newFile = source['_out']
 			setting['_out'] = newFile
@@ -772,7 +802,6 @@ def readAndProcess(level, name, source, setting):
 				newFileName = setting['_out'].nextVal()
 				print(separator+' -Combining PNGs row '+str(idx)+' (to '+newFileName+')')
 				combinePNGs(setting, newFileName)
-			exit()
 			return;
 
 		if setting['_card'] == '':
