@@ -10,6 +10,14 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
+    "target":"csv_krajina_add.csv",
+    "sheet":"Krajina",
+    "skipTitle":1,
+    "table":2
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
     "target":"csv_akce_adv.csv",
     "sheet":"Akce",
     "skipTitle":1,
@@ -91,6 +99,48 @@
     "values":"csv_krajina.csv"
   },
   {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_krajina.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_krajina.tex",
+    "_card":"png/card_50x150_krajina",
+    "_onOneLine":10,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "speed",
+        "img"
+      ]
+    },
+    "values":"csv_krajina_add.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_akce_basic.tex",
+    "_card":"png/card_100x150_akce",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "type",
+        "role",
+        "where",
+        "cost",
+        "img"
+      ]
+    },
+    "values":"csv_akce_basic.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_akce_basic.tex"
+  },
+  {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_akce_basic.tex",
     "_card":"png/card_100x150_akce",
@@ -128,7 +178,7 @@
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_stavby_basic.tex",
+    "_out":"_OUT_stavby.tex",
     "_card":"png/card_100x150_stavby",
     "_onOneLine":6,
     "_randomize":"True",
@@ -146,7 +196,29 @@
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_stavby_adv.tex",
+    "_out":"_OUT_stavby.tex",
+    "_card":"png/card_100x150_stavby",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "lvl",
+        "time",
+        "cost",
+        "effect",
+        "img"
+      ]
+    },
+    "values":"csv_stavby_basic.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_stavby.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_stavby.tex",
     "_card":"png/card_100x150_stavby",
     "_onOneLine":6,
     "_randomize":"True",
@@ -164,7 +236,25 @@
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_stavby_init.tex",
+    "_out":"_OUT_stavby.tex",
+    "_card":"png/card_100x150_stavby",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "lvl",
+        "time",
+        "cost",
+        "effect",
+        "img"
+      ]
+    },
+    "values":"csv_stavby_adv.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
     "_card":"png/card_100x150_stavby",
     "_onOneLine":6,
     "_randomize":"False",
@@ -179,6 +269,23 @@
       ]
     },
     "values":"csv_stavby_init.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_na_ruku.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_100x150_help",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "text"
+      ]
+    },
+    "values":"csv_help.csv"
   },
   {
     "_process":"PRINT_CARDS",
@@ -196,19 +303,6 @@
       ]
     },
     "values":"csv_prizen.csv"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_help.tex",
-    "_card":"png/card_100x150_help",
-    "_onOneLine":6,
-    "_randomize":"False",
-    "_list":{
-      "values":[
-        "text"
-      ]
-    },
-    "values":"csv_help.csv"
   },
   {
     "_process":"PRINT_CARDS",

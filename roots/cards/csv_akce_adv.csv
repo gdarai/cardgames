@@ -1,25 +1,25 @@
-3,Rybolov,Jidlo +4,Rybar I,Voda,Nic,png/food.png
-3,Sledovani Vody,Pruzkum +P,Rybar I,2 dny,2J,png/binocular.png
-3,Leceni,Leceni,Rybar I,2 dny,J,png/heart.png
-2,Rybolov II,Jidlo +6 K+2,Rybar II,Voda,Nastroj,png/food.png
-2,Plaveni klad,Drevo +1 K+3,Rybar II,Voda,(J),png/log.png
-3,Lov zvere,Jidlo +4 K+2,Lovec I,Les,Nic,png/food.png
-3,Lov kosti,Kosti +6,Lovec I,Les,(J),png/bone.png
-3,Mistr zvirat,Zahaneni +,Lovec I,Kde treba,(J) +K,png/spear.png
-2,Lov dravcu,Kosti +6 J+2,Lovec II,Les,(J) +Nastroj,png/bone.png
-2,Zakerny Utok,Utok,Lovec II,Krizovatka,(J) +xJ +K,png/sword.png
-3,Kaceni,Drevo +1,Drevorubec I,Les,(J) +P,png/log.png
-3,Obrana doma,Obrana,Drevorubec I,1 den,J +3K +Nastroj,png/shield.png
-3,Stavba,Stavba 1,Drevorubec I,Dle stavby,x,png/hammer.png
-2,Lepsi Kaceni,Drevo +2,Drevorubec II,Les,(J) +Nastroj,png/log.png
-2,Obrana kdekoliv,Obrana,Drevorubec II,Kde treba,(J) +3K +Nastroj,png/shield.png
-3,Hruby Utok,Utok,Valecnik I,Krizovatka,(J) +xJ +3K,png/sword.png
-3,Obranny boj,Obrana,Valecnik I,Kde treba,(J) +3K +P,png/shield.png
-3,Plaseni zvere,Zahaneni,Valecnik I,Kde treba,(J) +J +P +Nastroj,png/spear.png
-2,Zvireci Hruza,Zahaneni +,Valecnik II,Kde treba,(J) +J +P,png/spear.png
-2,Lepsi Utok,Utok,Valecnik II,Krizovatka,(J) +xJ +Nastroj,png/sword.png
-3,Zvireci oci I,Pruzkum +P,Saman I,1 den,J +K,png/binocular.png
-3,Zber klesti,Kosti +4 P+1,Saman I,1 den,J,png/bone.png
-3,Leceni Kouzly,Leceni,Saman I,1 den,J +K,png/heart.png
-2,Kouzelna Stavba,Stavba 2 P+1,Saman II,Dle stavby,x +K,png/hammer.png
-2,Zvireci oci II,Pruzkum +P,Saman II,1 den,J +K ze 2,png/binocular.png
+6,Rybolov,Jidlo +4,Rybar I,Voda,Nic,png/food.png
+6,Sledovani Vody,Pruzkum +P,Rybar I,2 dny,2J,png/binocular.png
+6,Leceni,Leceni,Rybar I,2 dny,J,png/heart.png
+6,Lov zvere,Jidlo +4 K+2,Lovec I,Les,Nic,png/food.png
+6,Lov kosti,Kosti +6,Lovec I,Les,(J),png/bone.png
+6,Mistr zvirat,Zahaneni +,Lovec I,Kde treba,(J) +K,png/spear.png
+6,Kaceni,Drevo +1,Drevorubec I,Les,(J) +P,png/log.png
+6,Obrana doma,Obrana,Drevorubec I,1 den,J +3K +Nastroj,png/shield.png
+6,Stavba,Stavba 1,Drevorubec I,Dle stavby,x,png/hammer.png
+6,Hruby Utok,Utok,Valecnik I,Krizovatka,(J) +xJ +3K,png/sword.png
+6,Obranny boj,Obrana,Valecnik I,Kde treba,(J) +3K +P,png/shield.png
+6,Plaseni zvere,Zahaneni,Valecnik I,Kde treba,(J) +J +P +Nastroj,png/spear.png
+6,Zvireci oci I,Pruzkum +P,Saman I,1 den,J +K,png/binocular.png
+6,Zber klesti,Kosti +4 P+1,Saman I,1 den,J,png/bone.png
+6,Leceni Kouzly,Leceni,Saman I,1 den,J +K,png/heart.png
+4,Rybolov II,Jidlo +6 K+2,Rybar II,Voda,Nastroj,png/food.png
+4,Plaveni klad,Drevo +1 K+3,Rybar II,Voda,(J),png/log.png
+4,Lov dravcu,Kosti +6 J+2,Lovec II,Les,(J) +Nastroj,png/bone.png
+4,Zakerny Utok,Utok,Lovec II,Krizovatka,(J) +xJ +K,png/sword.png
+4,Lepsi Kaceni,Drevo +2,Drevorubec II,Les,(J) +Nastroj,png/log.png
+4,Obrana kdekoliv,Obrana,Drevorubec II,Kde treba,(J) +3K +Nastroj,png/shield.png
+4,Zvireci Hruza,Zahaneni +,Valecnik II,Kde treba,(J) +J +P,png/spear.png
+4,Lepsi Utok,Utok,Valecnik II,Krizovatka,(J) +xJ +Nastroj,png/sword.png
+4,Kouzelna Stavba,Stavba 2 P+1,Saman II,Dle stavby,x +K,png/hammer.png
+4,Zvireci oci II,Pruzkum +P,Saman II,1 den,J +K ze 2,png/binocular.png

@@ -27,7 +27,13 @@ RESIZE_FILE = 'resize.png'
 RESIZE_HEIGHT = 300
 SVG_DIRECTORY = 'svg'
 PNG_DIRECTORY = 'png'
-
+ALLOWED_PROCESSES = [
+	'EXPORT_TABLE',
+	'CONVERT_SVGS',
+	'PRINT_CARDS',
+	'COMBINE_PNGS',
+	'SPLIT_TEX',
+];
 
 A4_TEXT_W = A4_WIDTH - (2*A4_MARGIN)
 COUNTERS = dict()
@@ -73,6 +79,11 @@ VALTYPE['img'] = VALTYPE_IMG
 VALTYPE['string'] = VALTYPE_STR
 VALTYPE['list'] = VALTYPE_LIST
 
+COMB_SHAPE = dict()
+COMB_SHAPE['row'] = { "cross": 1, "size": 0, "increment": +1, "center": False }
+COMB_SHAPE['rowC'] = { "cross": 1, "size": 0, "increment": +1, "center": True }
+COMB_SHAPE['col'] = { "cross": 0, "size": 1, "increment": +1, "center": False }
+COMB_SHAPE['colC'] = { "cross": 0, "size": 1, "increment": +1, "center": True }
 
 class ANALYZE_CONST:
 	def __init__(self, value):
@@ -90,8 +101,8 @@ def representsInt(s):
 class ANALYZE_REG_CONST:
 	def __init__(self, value):
 		self.value = value
-	def getValue(self, index):
-		return self.value
+	def getValue(self, index, restValue):
+		return self.value + restValue
 	def getCount(self):
 		return 1
 
@@ -108,10 +119,10 @@ class ANALYZE_REG_RANGE:
 		else:
 			print('!! Regexp error, range ['+minV+'-'+maxV+'] is not understanded')
 			exit()
-	def getValue(self, index):
+	def getValue(self, index, restValue):
 		value = self.minV + index
 		if self.type == 'int':
-			return str(value)
+			return str(value) + restValue
 		return chr(value)
 	def getCount(self):
 		return self.count
@@ -122,12 +133,34 @@ class ANALYZE_REG_ITEMIZE:
 		if len(self.source) < 1:
 			print('!! Regexp error, itemize ['+str(source)+'] is not understanded')
 			exit()
-	def getValue(self, index):
+	def getValue(self, index, restValue):
 		value = self.source[index]
-		return value
+		return value + restValue
 	def getCount(self):
 		return len(self.source)
 
+class ANALYZE_REG_LINK:
+	def __init__(self, linkName, source):
+		self.linkName = linkName
+		self.source = source
+	def getValue(self, index, restValue):
+		value = self.source[self.linkName].getValue(index)
+		return value + restValue
+	def getCount(self):
+		return self.source[self.linkName].getCount()
+
+class ANALYZE_REG_COND:
+	def __init__(self, linkName, ifNot, source):
+		self.linkName = linkName
+		self.ifNot = ifNot
+		self.source = source
+	def getValue(self, index, restValue):
+		value = self.source[self.linkName].getValue(index)
+		if value == '':
+			return self.ifNot
+		return restValue
+	def getCount(self):
+		return self.source[self.linkName].getCount()
 
 class ANALYZE_REG_FULL:
 	def __init__(self, script, counterName, isMaster):
@@ -148,8 +181,7 @@ class ANALYZE_REG_FULL:
 		for sc in reversed(self.script):
 			count = sc.getCount()
 			idx = index % count
-			index = index // count
-			value = sc.getValue(idx) + value
+			value = sc.getValue(idx, value)
 		return value
 
 class ANALYZE_LIST:
@@ -164,8 +196,13 @@ class ANALYZE_LIST:
 			COUNTERS[self.counterName] = index + 1
 		index = index % len(self.values)
 		return str(self.values[index])
+	def getValue(self, index):
+		index = index % len(self.values)
+		return str(self.values[index])
+	def getCount(self):
+		return len(self.values)
 
-def ANALYZE_REG(regStr, counterName, isMaster):
+def ANALYZE_REG(regStr, counterName, isMaster, source):
 	script = list()
 	while regStr != '':
 		nextStr = ''
@@ -177,11 +214,22 @@ def ANALYZE_REG(regStr, counterName, isMaster):
 				script.append(ANALYZE_REG_RANGE(regSplit[0], regSplit[1]))
 			else:
 				script.append(ANALYZE_REG_ITEMIZE(nextStr))
+		elif regStr[0] == '{':
+			linkName = (regStr[1:].split('}'))[0]
+			regStr = regStr[len(linkName)+2:]
+			script.append(ANALYZE_REG_LINK(linkName, source))
+		elif regStr[0] == '?':
+			linkName = (regStr[2:].split('}'))[0]
+			regStr = regStr[len(linkName)+2:]
+			ifNot = (regStr[2:].split('}'))[0]
+			regStr = regStr[len(ifNot)+3:]
+			script.append(ANALYZE_REG_COND(linkName, ifNot, source))
 		else:
-			nextStr = (regStr.split('['))[0]
+			nextStr = (re.split('[\[\{]', regStr))[0]
 			regStr = regStr[len(nextStr):]
 			script.append(ANALYZE_REG_CONST(nextStr))
 	return ANALYZE_REG_FULL(script, counterName, isMaster)
+
 ########
 # Superglobals
 
@@ -294,6 +342,58 @@ def analyzeTextSplit(theText, tgtSize, yspace, font, lineTh, separator):
 
 	return bestAnalysis['text']
 
+def fixRGBA(img):
+	# RGB to RGBA
+	if img.shape[2] == 3:
+		# First create the image with alpha channel
+		rgba = cv2.cvtColor(img, cv2.COLOR_RGB2RGBA)
+		# Then assign the mask to the last channel of the image
+		rgba[:, :, 3] = np.zeros(img.shape[:2], np.uint8)
+		img = rgba
+	return img
+
+# COMBINE_PNGS
+def combinePNGs(setting, outName):
+	srcImgs = dict()
+	skip = checkFieldRaw('CombinePNGs', outName, setting, '_skip', 'list', [''])
+
+	config = checkFieldRaw('CombinePNGs', outName, setting, '_shape', list(COMB_SHAPE.keys()), 'rowC')
+	config = COMB_SHAPE[config]
+	sizeCoor = config['size']
+	isRow = sizeCoor == 0
+
+	cross = 0;
+	size = 0;
+
+	for paramName in setting['_formula']:
+		if paramName not in srcImgs:
+			fileName = setting[paramName].nextVal()
+			if fileName in skip:
+				srcImgs[paramName] = None
+				continue
+			srcImgs[paramName] = fixRGBA(cv2.imread(fileName))
+		imShape = srcImgs[paramName].shape
+		size += imShape[config['size']]
+		cross = max(cross, imShape[config['cross']])
+
+	newImg = np.zeros((cross, size, 4) if isRow else (size, cross, 4), np.uint8)
+	notRev = config['increment'] > 0
+	formula = setting['_formula'] if notRev else reversed(setting['_formula'])
+	dirSize = 0
+
+	for paramName in formula:
+		img = srcImgs[paramName]
+		if img is None:
+			continue
+		imShape = img.shape
+		w = [dirSize, dirSize + imShape[0]] if isRow else [0, imShape[0]]
+		h = [0, imShape[1]] if isRow else [dirSize, dirSize + imShape[1]]
+		newImg[h[0]:h[1], w[0]:w[1]] = img
+		dirSize += imShape[sizeCoor]
+
+	cv2.imwrite(outName, newImg[:, :, :3])
+	return
+
 def printCsvTable(setting, name):
 	targetFile = checkFieldRaw('Export', '??', setting, 'target', 'string', None)
 	sheetName = checkFieldRaw('Export', setting['target'], setting, 'sheet', 'string', None)
@@ -364,19 +464,12 @@ def printCsvTable(setting, name):
 
 def printCardFile(setting, name):
 	cardName = setting['_card']
-	img = cv2.imread(cardName+'.png')
-
-	# RGB to RGBA
-	if img.shape[2] == 3:
-		# First create the image with alpha channel
-		rgba = cv2.cvtColor(img, cv2.COLOR_RGB2RGBA)
-		# Then assign the mask to the last channel of the image
-		rgba[:, :, 3] = np.zeros(img.shape[:2], np.uint8)
-		img = rgba
+	img = fixRGBA(cv2.imread(cardName+'.png'))
 
 	for fieldName in setting['_cardParamNames']:
 		if fieldName not in setting:
 			continue
+
 		props = setting['_cardParams'][fieldName]
 		checkField(cardName, props, 'type', ['text', 'img'], 'text')
 		if props['type'] == 'text':
@@ -442,14 +535,7 @@ def printCardFile(setting, name):
 			if os.path.exists(fileName) == False:
 				print('Trying to read file '+fileName+' which does not exist')
 				print(props)
-			theImg = cv2.imread(fileName)
-			# RGB to RGBA
-			if theImg.shape[2] == 3:
-				# First create the image with alpha channel
-				rgba = cv2.cvtColor(theImg, cv2.COLOR_RGB2RGBA)
-				# Then assign the mask to the last channel of the image
-				rgba[:, :, 3] = np.zeros(theImg.shape[:2], np.uint8)
-				theImg = rgba
+			theImg = fixRGBA(cv2.imread(fileName))
 			imgSize = theImg.shape[:2]
 			imgScale = min(float(size[0])/imgSize[1], float(size[1])/imgSize[0])
 			theImg = cv2.resize(theImg, None, fx=imgScale, fy=imgScale)
@@ -488,6 +574,16 @@ def printCardFile(setting, name):
 	imageDict['file'] = name
 	imageDict['onOneLine'] = setting['_onOneLine']
 	imageDict['randomize'] = setting['_randomize']
+	imageDict['task'] = 'print'
+	IMAGES[setting['_out']].append(imageDict)
+	return
+
+def addPrintSeparator(setting):
+	imageDict = dict()
+	imageDict['file'] = setting['_out']
+	imageDict['onOneLine'] = setting['_onOneLine']
+	imageDict['randomize'] = setting['_randomize']
+	imageDict['task'] = 'split'
 	IMAGES[setting['_out']].append(imageDict)
 	return
 
@@ -506,7 +602,7 @@ def readOneParameter(setting, paramName, paramSource):
 				counterName = paramSource['counter']
 			if 'isMaster' in paramSource:
 				isMaster = paramSource['isMaster']
-			newParam = ANALYZE_REG(paramSource['reg'], counterName, isMaster)
+			newParam = ANALYZE_REG(paramSource['reg'], counterName, isMaster, setting)
 		elif 'list' in paramSource:
 			counterName = len(list(COUNTERS.keys()))
 			isMaster = True
@@ -532,9 +628,16 @@ def printSvgFile(fileName):
 	command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
 	os.system(command)
 
+def readSimpleParameter(setting, source, name):
+	if name in source:
+		setting[name] = source[name]
+
 def readParameters(setting, source):
 	if '_process' in source:
 		setting['_process'] = source['_process'].upper()
+		if any(setting['_process'] in s for s in ALLOWED_PROCESSES) == False:
+			print('!! _process '+setting['_process']+' is unknown!')
+			exit()
 
 	if setting['_process'] == 'CONVERT_SVGS':
 		return setting;
@@ -552,11 +655,9 @@ def readParameters(setting, source):
 	if setting['_process'] == 'EXPORT_TABLE':
 		setting['_cardParamNames'] = []
 		for paramName in setting['_exportTableParams']:
-			if paramName in source:
-				setting[paramName] = source[paramName]
+			readSimpleParameter(setting, source, paramName)
 
-	if '_onOneLine' in source:
-		setting['_onOneLine'] = source['_onOneLine']
+	readSimpleParameter(setting, source, '_onOneLine')
 
 	if '_card' in source:
 		setting['_process'] = 'PRINT_CARDS'
@@ -623,31 +724,50 @@ def readParameters(setting, source):
 				print('!! Key List '+listName+' must contain array or existing filename.')
 				exit()
 
-	for paramName in setting['_cardParamNames']:
-		if paramName in source:
-			setting = readOneParameter(setting, paramName, source[paramName])
+	if setting['_process'] == 'COMBINE_PNGS':
+		if '_formula' not in source:
+			print('!! Config must contain core list parameter \'_formula\'.')
+			exit()
+		setting['_cardParamNames'] = source['_formula']
+		setting['_formula'] = source['_formula']
 
-	if '_count' in source:
-		setting['_count'] = source['_count']
-	if '_resize' in source:
-		setting['_resize'] = source['_resize']
-	if '_break' in source:
-		setting['_break'] = source['_break']
-	if '_yspace' in source:
-		setting['_yspace'] = source['_yspace']
-	if '_out' in source:
-		newFile = source['_out']
-		setting['_out'] = newFile
-		print('!! Swapping output to file '+newFile)
-		if newFile not in IMAGES:
-			IMAGES[newFile] = list()
-	if '_randomize' in source:
-		setting['_randomize'] = source['_randomize'] == 'True'
+		readSimpleParameter(setting, source, '_skip')
+		readSimpleParameter(setting, source, '_shape')
+
+		if '_out' not in source:
+			print('!! Config must contain core string parameter \'_out\'.')
+			exit()
+		setting = readOneParameter(setting, '_out', source['_out'])
+		for paramName in setting['_cardParamNames']:
+			if paramName in source:
+				setting = readOneParameter(setting, paramName, source[paramName])
+	if setting['_process'] == 'SPLIT_TEX':
+		readSimpleParameter(setting, source, '_out')
+
+	if setting['_process'] == 'PRINT_CARDS':
+		for paramName in setting['_cardParamNames']:
+			if paramName in source:
+				setting = readOneParameter(setting, paramName, source[paramName])
+
+		readSimpleParameter(setting, source, '_count')
+		readSimpleParameter(setting, source, '_resize')
+		readSimpleParameter(setting, source, '_break')
+		readSimpleParameter(setting, source, '_yspace')
+		readSimpleParameter(setting, source, '_yspace')
+		if '_out' in source:
+			newFile = source['_out']
+			setting['_out'] = newFile
+			print('!! Swapping output to file '+newFile)
+			if newFile not in IMAGES:
+				IMAGES[newFile] = list()
+		if '_randomize' in source:
+			setting['_randomize'] = source['_randomize'] == 'True'
 
 	return setting
 
 def checkParameters(setting):
 	missing = list()
+
 	for paramName in setting['_cardParamNames']:
 		if paramName not in setting:
 			missing.append(paramName)
@@ -667,6 +787,7 @@ def readAndProcess(level, name, source, setting):
 	print(separator+name)
 	newLevel = level + 1
 	setting = readParameters(setting, source)
+	print(setting['_process'])
 	if '_sub' in source:
 		readAndProcessList(newLevel, name, source['_sub'], copy.deepcopy(setting))
 	else:
@@ -675,7 +796,7 @@ def readAndProcess(level, name, source, setting):
 			print('\nConverting '+str(len(svgFiles))+' svg''s')
 			for fileName in svgFiles:
 				printSvgFile(fileName)
-			return;
+			return
 
 		if setting['_process'] == 'EXPORT_TABLE':
 			missing = checkParameters(setting)
@@ -683,10 +804,23 @@ def readAndProcess(level, name, source, setting):
 				print(separator+' -Missing '+str(missing))
 			print(separator+' -Printing table')
 			printCsvTable(setting, name)
-			return;
+			return
 
+		if setting['_process'] == 'COMBINE_PNGS':
+			missing = checkParameters(setting)
+			if len(missing) > 0:
+				print(separator+' -Missing '+str(missing))
+
+			for idx in range(0, setting['_count']):
+				newFileName = setting['_out'].nextVal()
+				print(separator+' -Combining PNGs row '+str(idx)+' (to '+newFileName+')')
+				combinePNGs(setting, newFileName)
+			return
+		if setting['_process'] == 'SPLIT_TEX':
+			addPrintSeparator(setting)
+			return
 		if setting['_card'] == '':
-			print('!! Almost printing but still missing the mandatory "_card" key.')
+			print('!! Should do the printing now, but still missing the mandatory "_card" key.')
 			exit()
 		missing = checkParameters(setting)
 		if len(missing) > 0:
@@ -695,7 +829,9 @@ def readAndProcess(level, name, source, setting):
 		for idx in range(0, setting['_count']):
 			printCardFile(setting, name+'_'+str(idx))
 
-def printImages(IMAGES):
+def printImagesSelection(IMAGES):
+	if len(IMAGES) == 0:
+		return
 	onOneLine = IMAGES[0]['onOneLine']
 	doRandom = IMAGES[0]['randomize']
 	imgWidth = str(A4_TEXT_W / onOneLine)
@@ -707,6 +843,25 @@ def printImages(IMAGES):
 			writeLine(f,0,'\\newline')
 			imgWidth = str(A4_TEXT_W / onOneLine)
 		writeLine(f,1,'\\includegraphics[width='+imgWidth+'cm]{'+DIRECTORY+'/'+img['file']+'}')
+
+def printImages(IMAGES):
+	pick = list();
+	onOneLine = IMAGES[0]['onOneLine']
+	doRandom = IMAGES[0]['randomize']
+	for IMG in IMAGES:
+		if(IMG['onOneLine'] == onOneLine and IMG['randomize'] == doRandom and IMG['task'] == 'print'):
+			pick.append(IMG)
+		else:
+			printImagesSelection(pick)
+			pick = list()
+			if IMG['task'] == 'print':
+				pick.append(IMG)
+				onOneLine = pick[0]['onOneLine']
+				doRandom = pick[0]['randomize']
+			elif IMG['task'] == 'split':
+				writeLine(f,0,'\\newline')
+				writeLine(f,0,'\\newline')
+	printImagesSelection(pick)
 
 ########
 # Settings file
