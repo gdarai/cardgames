@@ -32,6 +32,7 @@ ALLOWED_PROCESSES = [
 	'CONVERT_SVGS',
 	'PRINT_CARDS',
 	'COMBINE_PNGS',
+	'SPLIT_TEX',
 ];
 
 A4_TEXT_W = A4_WIDTH - (2*A4_MARGIN)
@@ -573,6 +574,16 @@ def printCardFile(setting, name):
 	imageDict['file'] = name
 	imageDict['onOneLine'] = setting['_onOneLine']
 	imageDict['randomize'] = setting['_randomize']
+	imageDict['task'] = 'print'
+	IMAGES[setting['_out']].append(imageDict)
+	return
+
+def addPrintSeparator(setting):
+	imageDict = dict()
+	imageDict['file'] = setting['_out']
+	imageDict['onOneLine'] = setting['_onOneLine']
+	imageDict['randomize'] = setting['_randomize']
+	imageDict['task'] = 'split'
 	IMAGES[setting['_out']].append(imageDict)
 	return
 
@@ -730,6 +741,8 @@ def readParameters(setting, source):
 		for paramName in setting['_cardParamNames']:
 			if paramName in source:
 				setting = readOneParameter(setting, paramName, source[paramName])
+	if setting['_process'] == 'SPLIT_TEX':
+		readSimpleParameter(setting, source, '_out')
 
 	if setting['_process'] == 'PRINT_CARDS':
 		for paramName in setting['_cardParamNames']:
@@ -783,7 +796,7 @@ def readAndProcess(level, name, source, setting):
 			print('\nConverting '+str(len(svgFiles))+' svg''s')
 			for fileName in svgFiles:
 				printSvgFile(fileName)
-			return;
+			return
 
 		if setting['_process'] == 'EXPORT_TABLE':
 			missing = checkParameters(setting)
@@ -791,7 +804,7 @@ def readAndProcess(level, name, source, setting):
 				print(separator+' -Missing '+str(missing))
 			print(separator+' -Printing table')
 			printCsvTable(setting, name)
-			return;
+			return
 
 		if setting['_process'] == 'COMBINE_PNGS':
 			missing = checkParameters(setting)
@@ -802,8 +815,10 @@ def readAndProcess(level, name, source, setting):
 				newFileName = setting['_out'].nextVal()
 				print(separator+' -Combining PNGs row '+str(idx)+' (to '+newFileName+')')
 				combinePNGs(setting, newFileName)
-			return;
-
+			return
+		if setting['_process'] == 'SPLIT_TEX':
+			addPrintSeparator(setting)
+			return
 		if setting['_card'] == '':
 			print('!! Should do the printing now, but still missing the mandatory "_card" key.')
 			exit()
@@ -814,7 +829,9 @@ def readAndProcess(level, name, source, setting):
 		for idx in range(0, setting['_count']):
 			printCardFile(setting, name+'_'+str(idx))
 
-def printImages(IMAGES):
+def printImagesSelection(IMAGES):
+	if len(IMAGES) == 0:
+		return
 	onOneLine = IMAGES[0]['onOneLine']
 	doRandom = IMAGES[0]['randomize']
 	imgWidth = str(A4_TEXT_W / onOneLine)
@@ -826,6 +843,25 @@ def printImages(IMAGES):
 			writeLine(f,0,'\\newline')
 			imgWidth = str(A4_TEXT_W / onOneLine)
 		writeLine(f,1,'\\includegraphics[width='+imgWidth+'cm]{'+DIRECTORY+'/'+img['file']+'}')
+
+def printImages(IMAGES):
+	pick = list();
+	onOneLine = IMAGES[0]['onOneLine']
+	doRandom = IMAGES[0]['randomize']
+	for IMG in IMAGES:
+		if(IMG['onOneLine'] == onOneLine and IMG['randomize'] == doRandom and IMG['task'] == 'print'):
+			pick.append(IMG)
+		else:
+			printImagesSelection(pick)
+			pick = list()
+			if IMG['task'] == 'print':
+				pick.append(IMG)
+				onOneLine = pick[0]['onOneLine']
+				doRandom = pick[0]['randomize']
+			elif IMG['task'] == 'split':
+				writeLine(f,0,'\\newline')
+				writeLine(f,0,'\\newline')
+	printImagesSelection(pick)
 
 ########
 # Settings file

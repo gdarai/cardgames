@@ -10,6 +10,14 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
+    "target":"csv_B.csv",
+    "sheet":"Test A",
+    "skipTitle":1,
+    "table":2
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
     "target":"csv_comb.csv",
     "sheet":"Test COMB",
     "skipTitle":1,
@@ -43,7 +51,7 @@
     "_process":"PRINT_CARDS",
     "_out":"_OUT_A.tex",
     "_card":"png/card_100x150",
-    "_onOneLine":3,
+    "_onOneLine":6,
     "_randomize":"True",
     "_list":{
       "values":[
@@ -54,5 +62,41 @@
       ]
     },
     "values":"csv_A.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_A.tex",
+    "_card":"png/card_100x150",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "speed",
+        "img"
+      ]
+    },
+    "values":"csv_B.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_A.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_A.tex",
+    "_card":"png/card_100x150",
+    "_onOneLine":8,
+    "_randomize":"True",
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "speed",
+        "img"
+      ]
+    },
+    "values":"csv_B.csv"
   }
 ]
