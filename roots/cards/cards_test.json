@@ -2,8 +2,16 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_ribon.csv",
-    "sheet":"Ribony",
+    "target":"csv_prizen.csv",
+    "sheet":"Prizen Novy",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_kombinace.csv",
+    "sheet":"Kombinace",
     "skipTitle":1,
     "table":1
   },
@@ -11,18 +19,44 @@
     "_process":"CONVERT_SVGS"
   },
   {
+    "_process":"COMBINE_PNGS",
+    "_formula":["Ax", "Bx", "Cx"],
+    "_skipMissing":"True",
+    "_align":"center",
+    "_shape":"row",
+    "_skip":[ "" ],
+    "_out":{ "reg": "png/{name}.png" },
+    "Ax":{ "reg": "png/{colA}.png" },
+    "Bx":{ "reg": "?{colB}{}png/{colB}.png" },
+    "Cx":{ "reg": "?{colC}{}png/{colC}.png" },
+    "_list":{
+      "values":[
+        "colA",
+        "colB",
+        "colC",
+        "name"
+      ]
+    },
+    "values":"csv_kombinace.csv"
+  },
+  {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_ribon.tex",
-    "_card":"png/card_100x50_ribon",
+    "_out":"_OUT_prizen.tex",
+    "_card":"png/card_100x150_prizen",
     "_onOneLine":6,
-    "_randomize":"False",
+    "_randomize":"True",
+    "minusColor": "png/gradient.png",
+    "mainImg":{ "reg": "png/{image}.png" },
+    "plusImg":{ "reg": "png/{plus}.png" },
+    "minusImg":{ "reg": "png/{minus}.png" },
     "_list":{
       "values":[
         "name",
-        "text",
-        "img"
+        "image",
+        "plus",
+        "minus"
       ]
     },
-    "values":"csv_ribon.csv"
+    "values":"csv_prizen.csv"
   }
 ]

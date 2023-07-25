@@ -1,21 +1,18 @@
-1,Slunecno,Pocasi,,Pocasi na +1,png/sun.png
-1,Boure,Pocasi,X,Pocasi na -1,png/sun.png
-10,Nova stavba,Stavba,,Vyber si novou stavbu,png/hammer.png
-3,Novy nastroj,Stavba,,+1 Nastroj,png/hammer.png
-1,Pruzkum,Pruzkum,,Prozkoumej 1 pole,png/binocular.png
-1,Pruzkum +,Pruzkum,,Prozkoumej 2 pole,png/binocular.png
-2,Dar jidla,Suroviny,,+5J,png/food.png
-2,Dar kosti,Suroviny,,+5K,png/bone.png
-2,Dar dreva,Suroviny,,+2D,png/log.png
-2,Dar zdravi,Leceni,,Vyleci 1,png/heart.png
-1,Dar zdravi +,Leceni,,Vyleci 2,png/heart.png
-2,Nocni bes,Utok,X,Utok 1,png/sword.png
-1,Nocni bes +,Utok,X,Utok 2,png/sword.png
-1,Pomluva,A. Karty,X,-1 Akcni karta,png/cards.png
-3,Zadost,A. Karty,,+2 Akcni karty,png/cards.png
-2,Zazen zver,Zahaneni,,Zahaneni,png/spear.png
-3,Zazen zver +,Zahaneni,X,Zahaneni +,png/spear.png
-1,Dar dovednosti,Vycvik,,Vycvik zdarma,png/star.png
-1,Dar plodnosti,Flirt,,+2 Flirt,png/heart.png
-7,Dar popularity,Pop,,+1P tajne,png/star.png
-7,Dar popularity +,Pop,,+2P tajne,png/star.png
+1,Pocasi,weather,sun,storm
+10,Stavba,hammer,hammer,two_food
+2,Pruzkum,binocular,binocular,two_food
+1,Pruzkum,binocular,two_binocular,binocular_wolf
+2,Jidlo,food,five_food,three_food
+1,Kosti,bone,five_bone,three_bone
+1,Drevo,log,two_log,log
+2,Utok,sword,heal,sword
+1,Utok,sword,two_heal,two_sword
+1,Karty,cards,card,two_discard
+1,Karty,cards,two_card,three_discard
+2,Zver,spear,spear,wolf
+1,Zver,spear,spear,two_wolf
+1,Vycvik,ribbon,ribbon,two_food
+1,Flirt,heart,heart,two_food
+6,Ocko,star,star,star
+4,Ocko,star,two_star,star
+1,Nastroj,tool,tool,tool
