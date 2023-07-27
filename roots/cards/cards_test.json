@@ -2,10 +2,18 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_prizen.csv",
-    "sheet":"Prizen Novy",
+    "target":"csv_akce_adv.csv",
+    "sheet":"Akce Novy",
     "skipTitle":1,
     "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_akce_basic.csv",
+    "sheet":"Akce Novy",
+    "skipTitle":1,
+    "table":2
   },
   {
     "_process":"EXPORT_TABLE",
@@ -20,7 +28,7 @@
   },
   {
     "_process":"COMBINE_PNGS",
-    "_formula":["Ax", "Bx", "Cx"],
+    "_formula":["Ax", "Bx", "Cx", "Dx"],
     "_skipMissing":"True",
     "_align":"center",
     "_shape":"row",
@@ -29,11 +37,13 @@
     "Ax":{ "reg": "png/{colA}.png" },
     "Bx":{ "reg": "?{colB}{}png/{colB}.png" },
     "Cx":{ "reg": "?{colC}{}png/{colC}.png" },
+    "Dx":{ "reg": "?{colD}{}png/{colD}.png" },
     "_list":{
       "values":[
         "colA",
         "colB",
         "colC",
+        "colD",
         "name"
       ]
     },
@@ -41,22 +51,48 @@
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_prizen.tex",
-    "_card":"png/card_100x150_prizen",
+    "_out":"_OUT_akce_basic.tex",
+    "_card":"png/card_100x150_akce",
     "_onOneLine":6,
     "_randomize":"True",
-    "minusColor": "png/gradient.png",
-    "mainImg":{ "reg": "png/{image}.png" },
-    "plusImg":{ "reg": "png/{plus}.png" },
-    "minusImg":{ "reg": "png/{minus}.png" },
+    "typeImg":{ "reg": "png/{type}.png" },
+    "roleImg":{ "reg": "png/{role}.png" },
+    "whereImg":{ "reg": "png/{where}.png" },
+    "costImg":{ "reg": "png/{cost}.png" },
     "_list":{
       "values":[
         "name",
-        "image",
-        "plus",
-        "minus"
+        "type",
+        "roleText",
+        "role",
+        "where",
+        "cost",
+        "main"
       ]
     },
-    "values":"csv_prizen.csv"
+    "values":"csv_akce_basic.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_akce_basic.tex",
+    "_card":"png/card_100x150_akce",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "typeImg":{ "reg": "png/{type}.png" },
+    "roleImg":{ "reg": "png/{role}.png" },
+    "whereImg":{ "reg": "png/{where}.png" },
+    "costImg":{ "reg": "png/{cost}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "type",
+        "roleText",
+        "role",
+        "where",
+        "cost",
+        "main"
+      ]
+    },
+    "values":"csv_akce_adv.csv"
   }
 ]

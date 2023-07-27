@@ -1,5 +1,5 @@
-3,Zber bobuli,Jidlo +2,---,1 den,Nic,png/food.png
-2,Naplava,Kosti +2,---,Voda / Les,(J),png/bone.png
-2,Pruzkum,Pruzkum +P,---,Okraj,(J),png/binocular.png
-2,Zakladni Leceni,Leceni,---,2 dny,J +K,png/heart.png
-2,Zakladni Stavba,Stavba 0,---,Dle stavby,x +J +K,png/hammer.png
+3,Zber bobuli,two_food,---,card,sun,free,food
+2,Naplava,two_bone,---,card,water_tree,question,bone
+2,Pruzkum,binocular_star,---,card,binocular,question,binocular
+2,Zakladni Leceni,heal,---,card,two_sun,food_bone,heal
+2,Zakladni Stavba,hammer,---,card,hammer,hammer_food_bone,hammer

@@ -1,25 +1,25 @@
-6,Rybolov,Jidlo +4,Rybar I,Voda,Nic,png/food.png
-6,Sledovani Vody,Pruzkum +P,Rybar I,2 dny,2J,png/binocular.png
-6,Leceni,Leceni,Rybar I,2 dny,J,png/heart.png
-6,Lov zvere,Jidlo +4 K+2,Lovec I,Les,Nic,png/food.png
-6,Lov kosti,Kosti +6,Lovec I,Les,(J),png/bone.png
-6,Mistr zvirat,Zahaneni +,Lovec I,Kde treba,(J) +K,png/spear.png
-6,Kaceni,Drevo +1,Drevorubec I,Les,(J) +P,png/log.png
-6,Obrana doma,Obrana,Drevorubec I,1 den,J +3K +Nastroj,png/shield.png
-6,Stavba,Stavba 1,Drevorubec I,Dle stavby,x,png/hammer.png
-6,Hruby Utok,Utok,Valecnik I,Krizovatka,(J) +xJ +3K,png/sword.png
-6,Obranny boj,Obrana,Valecnik I,Kde treba,(J) +3K +P,png/shield.png
-6,Plaseni zvere,Zahaneni,Valecnik I,Kde treba,(J) +J +P +Nastroj,png/spear.png
-6,Zvireci oci I,Pruzkum +P,Saman I,1 den,J +K,png/binocular.png
-6,Zber klesti,Kosti +4 P+1,Saman I,1 den,J,png/bone.png
-6,Leceni Kouzly,Leceni,Saman I,1 den,J +K,png/heart.png
-4,Rybolov II,Jidlo +6 K+2,Rybar II,Voda,Nastroj,png/food.png
-4,Plaveni klad,Drevo +1 K+3,Rybar II,Voda,(J),png/log.png
-4,Lov dravcu,Kosti +6 J+2,Lovec II,Les,(J) +Nastroj,png/bone.png
-4,Zakerny Utok,Utok,Lovec II,Krizovatka,(J) +xJ +K,png/sword.png
-4,Lepsi Kaceni,Drevo +2,Drevorubec II,Les,(J) +Nastroj,png/log.png
-4,Obrana kdekoliv,Obrana,Drevorubec II,Kde treba,(J) +3K +Nastroj,png/shield.png
-4,Zvireci Hruza,Zahaneni +,Valecnik II,Kde treba,(J) +J +P,png/spear.png
-4,Lepsi Utok,Utok,Valecnik II,Krizovatka,(J) +xJ +Nastroj,png/sword.png
-4,Kouzelna Stavba,Stavba 2 P+1,Saman II,Dle stavby,x +K,png/hammer.png
-4,Zvireci oci II,Pruzkum +P,Saman II,1 den,J +K ze 2,png/binocular.png
+6,Rybolov,four_food,Rybar I,hook,water,free,food
+6,Sledovani Vody,binocular_star,Rybar I,hook,two_sun,two_food,binocular
+6,Leceni,heal,Rybar I,hook,two_sun,food,heal
+6,Lov zvere,four_food_two_bone,Lovec I,spear,tree,free,food
+6,Lov kosti,six_bone,Lovec I,spear,tree,question,bone
+6,Mistr zvirat,spear_wolf,Lovec I,spear,question,question_bone,spear
+6,Kaceni,log,Drevorubec I,axe,tree,question_star,log
+6,Obrana doma,shield,Drevorubec I,axe,sun,food_three_bone_tool,shield
+6,Stavba,ribbon_hammer,Drevorubec I,axe,hammer,hammer,hammer
+6,Hruby Utok,sword,Valecnik I,sword,sword,question_sword_three_bone,sword
+6,Obranny boj,shield,Valecnik I,sword,question,question_three_bone_star,shield
+6,Plaseni zvere,spear,Valecnik I,sword,question,question_food_bone_tool,spear
+6,Zvireci oci I,binocular_star,Saman I,wand,sun,food_bone,binocular
+6,Zber klesti,four_bone_star,Saman I,wand,sun,food,bone
+6,Leceni Kouzly,heal,Saman I,wand,sun,food_bone,heart
+4,Rybolov II,six_food_two_bone,Rybar II,hook2,water,tool,food
+4,Plaveni klad,log_three_bone,Rybar II,hook2,water,question,log
+4,Lov dravcu,six_bone_two_food,Lovec II,spear2,tree,question_tool,bone
+4,Zakerny Utok,sword,Lovec II,spear2,sword,question_sword_bone,sword
+4,Lepsi Kaceni,two_log,Drevorubec II,axe2,tree,question_tool,log
+4,Obrana kdekoliv,shield,Drevorubec II,axe2,question,question_three_bone_tool,shield
+4,Zvireci Hruza,spear_wolf,Valecnik II,sword2,question,question_food_star,spear
+4,Lepsi Utok,sword,Valecnik II,sword2,sword,question_sword_tool,sword
+4,Kouzelna Stavba,wand_hammer_star,Saman II,wand2,hammer,hammer_bone,hammer
+4,Zvireci oci II,ribbon_binocular_star,Saman II,wand2,sun,food_bone,binocular
