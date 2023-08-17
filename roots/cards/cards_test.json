@@ -2,18 +2,26 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_akce_adv.csv",
-    "sheet":"Akce Novy",
+    "target":"csv_stavby_basic.csv",
+    "sheet":"Stavby Nove",
     "skipTitle":1,
     "table":1
   },
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_akce_basic.csv",
-    "sheet":"Akce Novy",
+    "target":"csv_stavby_adv.csv",
+    "sheet":"Stavby Nove",
     "skipTitle":1,
     "table":2
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_stavby_init.csv",
+    "sheet":"Stavby Nove",
+    "skipTitle":1,
+    "table":3
   },
   {
     "_process":"EXPORT_TABLE",
@@ -22,9 +30,6 @@
     "sheet":"Kombinace",
     "skipTitle":1,
     "table":1
-  },
-  {
-    "_process":"CONVERT_SVGS"
   },
   {
     "_process":"COMBINE_PNGS",
@@ -51,48 +56,76 @@
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_akce_basic.tex",
-    "_card":"png/card_100x150_akce",
+    "_out":"_OUT_stavby.tex",
+    "_card":"png/card_150x150_stavby",
     "_onOneLine":6,
-    "_randomize":"True",
-    "typeImg":{ "reg": "png/{type}.png" },
-    "roleImg":{ "reg": "png/{role}.png" },
-    "whereImg":{ "reg": "png/{where}.png" },
-    "costImg":{ "reg": "png/{cost}.png" },
+    "_randomize":"False",
+    "lvl":{ "reg": "png/{lvl0}.png" },
+    "cost":{ "reg": "png/{cost0}.png" },
+    "effect":{ "reg": "png/{effImg0}.png" },
     "_list":{
       "values":[
         "name",
-        "type",
-        "roleText",
-        "role",
-        "where",
-        "cost",
-        "main"
+        "lvl0",
+        "time",
+        "cost0",
+        "effectTxt",
+        "effImg0",
+        "img"
       ]
     },
-    "values":"csv_akce_basic.csv"
+    "values":"csv_stavby_init.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_stavby.tex"
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_akce_basic.tex",
-    "_card":"png/card_100x150_akce",
+    "_out":"_OUT_stavby.tex",
+    "_card":"png/card_150x150_stavby",
     "_onOneLine":6,
     "_randomize":"True",
-    "typeImg":{ "reg": "png/{type}.png" },
-    "roleImg":{ "reg": "png/{role}.png" },
-    "whereImg":{ "reg": "png/{where}.png" },
-    "costImg":{ "reg": "png/{cost}.png" },
+    "lvl":{ "reg": "png/{lvl0}.png" },
+    "cost":{ "reg": "png/{cost0}.png" },
+    "effect":{ "reg": "png/{effImg0}.png" },
     "_list":{
       "values":[
         "name",
-        "type",
-        "roleText",
-        "role",
-        "where",
-        "cost",
-        "main"
+        "lvl0",
+        "time",
+        "cost0",
+        "effectTxt",
+        "effImg0",
+        "img"
       ]
     },
-    "values":"csv_akce_adv.csv"
+    "values":"csv_stavby_basic.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_stavby.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_stavby.tex",
+    "_card":"png/card_150x150_stavby",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "lvl":{ "reg": "png/{lvl0}.png" },
+    "cost":{ "reg": "png/{cost0}.png" },
+    "effect":{ "reg": "png/{effImg0}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "lvl0",
+        "time",
+        "cost0",
+        "effectTxt",
+        "effImg0",
+        "img"
+      ]
+    },
+    "values":"csv_stavby_adv.csv"
   }
 ]

@@ -1,4 +1,4 @@
-Druhy sklad,---,2 dny,D +2K,+5 sklad,png/weight.png
-Vedlejsi sklad,---,3 dny,2D +3K,+5 sklad,png/weight.png
-Val,---,1 den,J +3K,+1 obrana,png/shield.png
-Pila,---,2 dny,D +2K +J,+1 Nastroj,png/hammer.png
+1,Druhy sklad,hammer,2 dny,two_bone_log,+5 sklad,five_storage,png/weight.png
+1,Vedlejsi sklad,hammer,3 dny,three_bone_two_log,+5 sklad,five_storage,png/weight.png
+1,Val,hammer,1 den,food_three_log,+1 obrana,shield,png/shield.png
+1,Pila,hammer,2 dny,food_two_bone_log,+1 Nastroj,tool,png/hammer.png

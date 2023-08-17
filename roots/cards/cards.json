@@ -35,7 +35,7 @@
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
     "target":"csv_stavby_basic.csv",
-    "sheet":"Stavby",
+    "sheet":"Stavby Nove",
     "skipTitle":1,
     "table":1
   },
@@ -43,7 +43,7 @@
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
     "target":"csv_stavby_adv.csv",
-    "sheet":"Stavby",
+    "sheet":"Stavby Nove",
     "skipTitle":1,
     "table":2
   },
@@ -51,7 +51,7 @@
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
     "target":"csv_stavby_init.csv",
-    "sheet":"Stavby",
+    "sheet":"Stavby Nove",
     "skipTitle":1,
     "table":3
   },
@@ -245,34 +245,20 @@
   {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_stavby.tex",
-    "_card":"png/card_100x150_stavby",
+    "_card":"png/card_150x150_stavby",
     "_onOneLine":6,
     "_randomize":"True",
+    "lvl":{ "reg": "png/{lvl0}.png" },
+    "cost":{ "reg": "png/{cost0}.png" },
+    "effect":{ "reg": "png/{effImg0}.png" },
     "_list":{
       "values":[
         "name",
-        "lvl",
+        "lvl0",
         "time",
-        "cost",
-        "effect",
-        "img"
-      ]
-    },
-    "values":"csv_stavby_basic.csv"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_stavby.tex",
-    "_card":"png/card_100x150_stavby",
-    "_onOneLine":6,
-    "_randomize":"True",
-    "_list":{
-      "values":[
-        "name",
-        "lvl",
-        "time",
-        "cost",
-        "effect",
+        "cost0",
+        "effectTxt",
+        "effImg0",
         "img"
       ]
     },
@@ -285,34 +271,20 @@
   {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_stavby.tex",
-    "_card":"png/card_100x150_stavby",
+    "_card":"png/card_150x150_stavby",
     "_onOneLine":6,
     "_randomize":"True",
+    "lvl":{ "reg": "png/{lvl0}.png" },
+    "cost":{ "reg": "png/{cost0}.png" },
+    "effect":{ "reg": "png/{effImg0}.png" },
     "_list":{
       "values":[
         "name",
-        "lvl",
+        "lvl0",
         "time",
-        "cost",
-        "effect",
-        "img"
-      ]
-    },
-    "values":"csv_stavby_adv.csv"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_stavby.tex",
-    "_card":"png/card_100x150_stavby",
-    "_onOneLine":6,
-    "_randomize":"True",
-    "_list":{
-      "values":[
-        "name",
-        "lvl",
-        "time",
-        "cost",
-        "effect",
+        "cost0",
+        "effectTxt",
+        "effImg0",
         "img"
       ]
     },
@@ -321,16 +293,20 @@
   {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_na_ruku.tex",
-    "_card":"png/card_100x150_stavby",
+    "_card":"png/card_150x150_stavby",
     "_onOneLine":6,
     "_randomize":"False",
+    "lvl":{ "reg": "png/{lvl0}.png" },
+    "cost":{ "reg": "png/{cost0}.png" },
+    "effect":{ "reg": "png/{effImg0}.png" },
     "_list":{
       "values":[
         "name",
-        "lvl",
+        "lvl0",
         "time",
-        "cost",
-        "effect",
+        "cost0",
+        "effectTxt",
+        "effImg0",
         "img"
       ]
     },
