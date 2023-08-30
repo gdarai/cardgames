@@ -88,6 +88,14 @@
     "table":1
   },
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_help_vocab.csv",
+    "sheet":"Help Nove",
+    "skipTitle":1,
+    "table":1
+  },
+  {
     "_process":"CONVERT_SVGS"
   },
   {
@@ -328,6 +336,37 @@
       ]
     },
     "values":"csv_help.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_100x150_vocab",
+    "_onOneLine":6,
+    "_randomize":"False",
+    "img1":{ "reg": "png/{img1a}.png" },
+    "img2":{ "reg": "png/{img2a}.png" },
+    "img3":{ "reg": "png/{img3a}.png" },
+    "img4":{ "reg": "png/{img4a}.png" },
+    "img5":{ "reg": "png/{img5a}.png" },
+    "img6":{ "reg": "png/{img6a}.png" },
+    "_list":{
+      "values":[
+        "title",
+        "img1a",
+        "text1",
+        "img2a",
+        "text2",
+        "img3a",
+        "text3",
+        "img4a",
+        "text4",
+        "img5a",
+        "text5",
+        "img6a",
+        "text6"
+      ]
+    },
+    "values":"csv_help_vocab.csv"
   },
   {
     "_process":"PRINT_CARDS",

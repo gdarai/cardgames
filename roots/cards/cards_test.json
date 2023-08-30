@@ -2,130 +2,40 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_stavby_basic.csv",
-    "sheet":"Stavby Nove",
+    "target":"csv_help_vocab.csv",
+    "sheet":"Help Nove",
     "skipTitle":1,
     "table":1
-  },
-  {
-    "_process":"EXPORT_TABLE",
-    "_sourceOds":"cards.ods",
-    "target":"csv_stavby_adv.csv",
-    "sheet":"Stavby Nove",
-    "skipTitle":1,
-    "table":2
-  },
-  {
-    "_process":"EXPORT_TABLE",
-    "_sourceOds":"cards.ods",
-    "target":"csv_stavby_init.csv",
-    "sheet":"Stavby Nove",
-    "skipTitle":1,
-    "table":3
-  },
-  {
-    "_process":"EXPORT_TABLE",
-    "_sourceOds":"cards.ods",
-    "target":"csv_kombinace.csv",
-    "sheet":"Kombinace",
-    "skipTitle":1,
-    "table":1
-  },
-  {
-    "_process":"COMBINE_PNGS",
-    "_formula":["Ax", "Bx", "Cx", "Dx"],
-    "_skipMissing":"True",
-    "_align":"center",
-    "_shape":"row",
-    "_skip":[ "" ],
-    "_out":{ "reg": "png/{name}.png" },
-    "Ax":{ "reg": "png/{colA}.png" },
-    "Bx":{ "reg": "?{colB}{}png/{colB}.png" },
-    "Cx":{ "reg": "?{colC}{}png/{colC}.png" },
-    "Dx":{ "reg": "?{colD}{}png/{colD}.png" },
-    "_list":{
-      "values":[
-        "colA",
-        "colB",
-        "colC",
-        "colD",
-        "name"
-      ]
-    },
-    "values":"csv_kombinace.csv"
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_stavby.tex",
-    "_card":"png/card_150x150_stavby",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_100x150_vocab",
     "_onOneLine":6,
     "_randomize":"False",
-    "lvl":{ "reg": "png/{lvl0}.png" },
-    "cost":{ "reg": "png/{cost0}.png" },
-    "effect":{ "reg": "png/{effImg0}.png" },
+    "img1":{ "reg": "png/{img1a}.png" },
+    "img2":{ "reg": "png/{img2a}.png" },
+    "img3":{ "reg": "png/{img3a}.png" },
+    "img4":{ "reg": "png/{img4a}.png" },
+    "img5":{ "reg": "png/{img5a}.png" },
+    "img6":{ "reg": "png/{img6a}.png" },
     "_list":{
       "values":[
-        "name",
-        "lvl0",
-        "time",
-        "cost0",
-        "effectTxt",
-        "effImg0",
-        "img"
+        "title",
+        "img1a",
+        "text1",
+        "img2a",
+        "text2",
+        "img3a",
+        "text3",
+        "img4a",
+        "text4",
+        "img5a",
+        "text5",
+        "img6a",
+        "text6"
       ]
     },
-    "values":"csv_stavby_init.csv"
-  },
-  {
-    "_process":"SPLIT_TEX",
-    "_out":"_OUT_stavby.tex"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_stavby.tex",
-    "_card":"png/card_150x150_stavby",
-    "_onOneLine":6,
-    "_randomize":"True",
-    "lvl":{ "reg": "png/{lvl0}.png" },
-    "cost":{ "reg": "png/{cost0}.png" },
-    "effect":{ "reg": "png/{effImg0}.png" },
-    "_list":{
-      "values":[
-        "name",
-        "lvl0",
-        "time",
-        "cost0",
-        "effectTxt",
-        "effImg0",
-        "img"
-      ]
-    },
-    "values":"csv_stavby_basic.csv"
-  },
-  {
-    "_process":"SPLIT_TEX",
-    "_out":"_OUT_stavby.tex"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_stavby.tex",
-    "_card":"png/card_150x150_stavby",
-    "_onOneLine":6,
-    "_randomize":"True",
-    "lvl":{ "reg": "png/{lvl0}.png" },
-    "cost":{ "reg": "png/{cost0}.png" },
-    "effect":{ "reg": "png/{effImg0}.png" },
-    "_list":{
-      "values":[
-        "name",
-        "lvl0",
-        "time",
-        "cost0",
-        "effectTxt",
-        "effImg0",
-        "img"
-      ]
-    },
-    "values":"csv_stavby_adv.csv"
+    "values":"csv_help_vocab.csv"
   }
 ]

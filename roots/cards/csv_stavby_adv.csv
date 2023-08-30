@@ -1,4 +1,4 @@
-2,Obranne pasmo,ribbon_hammer,3 dny,two_bone_two_log,Zadna zver 2 daleko,two_sun_wolf,png/sun.png
+2,Ohradniky,ribbon_hammer,3 dny,two_bone_two_log,Zadna zver v okoli,sun_wolf,png/sun.png
 2,Chov,ribbon_hammer,2 dny,food_bone_two_log,+J / den,sun_food,png/food.png
 2,Obetiste,ribbon_hammer,3 dny,food_three_bone_log,+Pop / Ocko,favour_star,png/star.png
 2,Misto zasveceni,ribbon_hammer,2 dny,two_food_four_bone,+Pop / Odpocinek,heart_star,png/star.png
@@ -8,9 +8,9 @@
 2,Sauna,ribbon_hammer,2 dny,food_two_bone,-1 Flirt na populaci,heart,png/heart.png
 2,Stolec Starsich,ribbon_hammer,3 dny,food_four_bone_log,+1 Akcni karta,card,png/cards.png
 2,Dilna,ribbon_hammer,3 dny,two_bone_log,+1 Nastroj,tool,png/hammer.png
-2,Pametnice,ribbon_hammer,2 dny,bone_log,+1 Ocko na ruce,favour,png/cards.png
+2,Pametnice,ribbon_hammer,2 dny,bone_log,+1 Ocko na ruce,storage_favour,png/cards.png
 2,Sad,wand_hammer,4 dny,two_food_five_bone,+J +K / den,sun_food_bone,png/food.png
 2,Modla,wand_hammer,4 dny,three_bone_three_log,+Pop / den,sun_star,png/star.png
 2,Palisada,wand_hammer,5 dnu,six_bone_four_log,+2 obrany,two_shield,png/shield.png
 2,Velka sin,wand_hammer,4 dny,three_bone_two_log,+2 Akcni karty,two_card,png/cards.png
-2,Vecny ohen,wand_hammer,2 dny,food_three_bone,+1 Ocko na ruce,favour,png/cards.png
+2,Vecny ohen,wand_hammer,2 dny,food_three_bone,+1 Ocko na ruce,storage_favour,png/cards.png
