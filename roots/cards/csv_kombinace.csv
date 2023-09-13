@@ -59,7 +59,7 @@ two,shield,,,two_shield
 two,star,,,two_star
 two,sun,,,two_sun
 two,sword,,,two_sword
-two,wolf,wolf,,two_wolf_wolf
+two,wolf,,,two_wolf
 walk,bone,,,walk_bone
 walk,food,star,,walk_food_star
 walk,star,,,walk_star
@@ -72,3 +72,4 @@ walk,tool,,,walk_tool
 wand,hammer,star,,wand_hammer_star
 wand,hammer,,,wand_hammer
 water,tree,,,water_tree
+sun,star,,,sun_star

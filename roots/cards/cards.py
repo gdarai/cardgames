@@ -33,6 +33,7 @@ ALLOWED_PROCESSES = [
 	'PRINT_CARDS',
 	'COMBINE_PNGS',
 	'SPLIT_TEX',
+	'TERMINATE',
 ];
 
 A4_TEXT_W = A4_WIDTH - (2*A4_MARGIN)
@@ -622,15 +623,20 @@ def readOneParameter(setting, paramName, paramSource):
 	setting[paramName] = newParam
 	return setting
 
-def printSvgFile(fileName):
+def printSvgFile(setting, fileName):
+	print(setting)
 	pngFileName = fileName[:-3]+'png'
 	print(SVG_DIRECTORY+'/'+fileName+' --> '+PNG_DIRECTORY+'/'+pngFileName)
 	command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
+	if setting["_resize"] != 0:
+		command = command + " --export-width="+str(setting["_resize"])
 	os.system(command)
 
-def readSimpleParameter(setting, source, name):
+def readSimpleParameter(setting, source, name, default = None):
 	if name in source:
 		setting[name] = source[name]
+	elif default != None:
+		setting[name] = default
 
 def readParameters(setting, source):
 	if '_process' in source:
@@ -640,6 +646,7 @@ def readParameters(setting, source):
 			exit()
 
 	if setting['_process'] == 'CONVERT_SVGS':
+		readSimpleParameter(setting, source, '_resize', 0)
 		return setting;
 
 	if '_sourceOds' in source:
@@ -791,11 +798,14 @@ def readAndProcess(level, name, source, setting):
 	if '_sub' in source:
 		readAndProcessList(newLevel, name, source['_sub'], copy.deepcopy(setting))
 	else:
+		if setting['_process'] == 'TERMINATE':
+			exit()
+
 		if setting['_process'] == 'CONVERT_SVGS':
 			svgFiles = getFiles(SVG_DIRECTORY+'/.*.svg')
 			print('\nConverting '+str(len(svgFiles))+' svg''s')
 			for fileName in svgFiles:
-				printSvgFile(fileName)
+				printSvgFile(setting, fileName)
 			return
 
 		if setting['_process'] == 'EXPORT_TABLE':
