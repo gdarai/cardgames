@@ -31,6 +31,7 @@ ALLOWED_PROCESSES = [
 	'EXPORT_TABLE',
 	'CONVERT_SVGS',
 	'PRINT_CARDS',
+	'PRINT_A_CARD',
 	'COMBINE_PNGS',
 	'SPLIT_TEX',
 	'TERMINATE',
@@ -463,10 +464,9 @@ def printCsvTable(setting, name):
 		writeLine(f,0,strCells)
 	f.close()
 
-def printCardFile(setting, name):
+def printCardFile(setting, name, single = False):
 	cardName = setting['_card']
 	img = fixRGBA(cv2.imread(cardName+'.png'))
-
 	for fieldName in setting['_cardParamNames']:
 		if fieldName not in setting:
 			continue
@@ -567,16 +567,22 @@ def printCardFile(setting, name):
 		else:
 			print('!! Card '+setting['_card']+' field '+fieldName+' is of unknown type.')
 			exit()
-	fileName = DIRECTORY+'/'+name+'.png'
-	cv2.imwrite(DIRECTORY+'/'+RESIZE_FILE, img[:, :, :3])
-	resizeCmd = 'convert '+DIRECTORY+'/'+RESIZE_FILE+ ' -resize '+str(setting['_resize'])+' '+fileName
-	os.system(resizeCmd)
-	imageDict = dict()
-	imageDict['file'] = name
-	imageDict['onOneLine'] = setting['_onOneLine']
-	imageDict['randomize'] = setting['_randomize']
-	imageDict['task'] = 'print'
-	IMAGES[setting['_out']].append(imageDict)
+
+	if single == True:
+		cv2.imwrite(DIRECTORY+'/'+RESIZE_FILE, img[:, :, :3])
+		resizeCmd = 'convert '+DIRECTORY+'/'+RESIZE_FILE+ ' -resize '+str(setting['_resize'])+' '+name
+		os.system(resizeCmd)
+	else:
+		fileName = DIRECTORY+'/'+name+'.png'
+		cv2.imwrite(DIRECTORY+'/'+RESIZE_FILE, img[:, :, :3])
+		resizeCmd = 'convert '+DIRECTORY+'/'+RESIZE_FILE+ ' -resize '+str(setting['_resize'])+' '+fileName
+		os.system(resizeCmd)
+		imageDict = dict()
+		imageDict['file'] = name
+		imageDict['onOneLine'] = setting['_onOneLine']
+		imageDict['randomize'] = setting['_randomize']
+		imageDict['task'] = 'print'
+		IMAGES[setting['_out']].append(imageDict)
 	return
 
 def addPrintSeparator(setting):
@@ -624,7 +630,6 @@ def readOneParameter(setting, paramName, paramSource):
 	return setting
 
 def printSvgFile(setting, fileName):
-	print(setting)
 	pngFileName = fileName[:-3]+'png'
 	print(SVG_DIRECTORY+'/'+fileName+' --> '+PNG_DIRECTORY+'/'+pngFileName)
 	command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
@@ -667,7 +672,7 @@ def readParameters(setting, source):
 	readSimpleParameter(setting, source, '_onOneLine')
 
 	if '_card' in source:
-		setting['_process'] = 'PRINT_CARDS'
+		readSimpleParameter(setting, source, '_process', 'PRINT_CARDS')
 		if setting['_card'] != '':
 			print('!! multiple cards assinged in this branch, rewriting '+setting['_card']+' with '+source['_card'])
 		setting['_card'] = source['_card']
@@ -678,6 +683,10 @@ def readParameters(setting, source):
 			exit()
 		setting['_cardParams'] = json.load(open(setting['_card']+'.json'))
 		setting['_cardParamNames'] = list(setting['_cardParams'].keys())
+
+	# if '_lists' in source:
+	# 	for listName in source['_lists']:
+	# 		setting['_lists']['_fixedLists'] = source[listName]
 
 	if '_list' in source:
 		newLists = source['_list'].keys()
@@ -760,7 +769,6 @@ def readParameters(setting, source):
 		readSimpleParameter(setting, source, '_resize')
 		readSimpleParameter(setting, source, '_break')
 		readSimpleParameter(setting, source, '_yspace')
-		readSimpleParameter(setting, source, '_yspace')
 		if '_out' in source:
 			newFile = source['_out']
 			setting['_out'] = newFile
@@ -769,6 +777,17 @@ def readParameters(setting, source):
 				IMAGES[newFile] = list()
 		if '_randomize' in source:
 			setting['_randomize'] = source['_randomize'] == 'True'
+
+	if setting['_process'] == 'PRINT_A_CARD':
+		for paramName in setting['_cardParamNames']:
+			if paramName in source:
+				setting = readOneParameter(setting, paramName, source[paramName])
+
+		readSimpleParameter(setting, source, '_resize')
+		readSimpleParameter(setting, source, '_break')
+		readSimpleParameter(setting, source, '_yspace')
+
+		setting = readOneParameter(setting, '_out', source['_out'])
 
 	return setting
 
@@ -826,15 +845,26 @@ def readAndProcess(level, name, source, setting):
 				print(separator+' -Combining PNGs row '+str(idx)+' (to '+newFileName+')')
 				combinePNGs(setting, newFileName)
 			return
+
 		if setting['_process'] == 'SPLIT_TEX':
 			addPrintSeparator(setting)
 			return
+
 		if setting['_card'] == '':
 			print('!! Should do the printing now, but still missing the mandatory "_card" key.')
 			exit()
+
 		missing = checkParameters(setting)
 		if len(missing) > 0:
 			print(separator+' -Missing '+str(missing))
+
+		if setting['_process'] == 'PRINT_A_CARD':
+			for idx in range(0, setting['_count']):
+				newFileName = setting['_out'].nextVal()
+				print(separator+' -Printing img '+str(idx)+' ('+newFileName+')')
+				printCardFile(setting, newFileName, True)
+			return
+
 		print(separator+' -Printing '+str(setting['_count'])+'x')
 		for idx in range(0, setting['_count']):
 			printCardFile(setting, name+'_'+str(idx))

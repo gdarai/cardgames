@@ -467,7 +467,6 @@ def printCsvTable(setting, name):
 def printCardFile(setting, name, single = False):
 	cardName = setting['_card']
 	img = fixRGBA(cv2.imread(cardName+'.png'))
-
 	for fieldName in setting['_cardParamNames']:
 		if fieldName not in setting:
 			continue

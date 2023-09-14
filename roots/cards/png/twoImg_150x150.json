@@ -1,0 +1,11 @@
+{
+  "base":{
+    "type":"img",
+    "position":[[0, 10],[140, 150]]
+  },
+  "extra":{
+    "type":"img",
+    "position":[[80, 0],[150, 80]],
+    "mask":[3, 3]
+  }
+}

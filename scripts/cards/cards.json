@@ -24,8 +24,23 @@
     "table":1
   },
   {
-    "_resize":500,
     "_process":"CONVERT_SVGS"
+  },
+  {
+    "_resize":512,
+    "_process":"PRINT_A_CARD",
+    "_out":{ "reg": "png/{name}.png" },
+    "_card":"png/card_150x150",
+    "_list": {
+      "values": [
+        "name",
+        "text"
+      ]
+    },
+    "values": [
+      { "list": ["two", "four"] },
+      { "list": ["2", "4"] }
+    ]
   },
   {
     "_process":"COMBINE_PNGS",
@@ -47,21 +62,6 @@
       ]
     },
     "values":"csv_comb.csv"
-  },
-  {
-    "_process":"PRINT_A_CARD",
-    "_out":{ "reg": "png/{name}.png" },
-    "_card":"png/card_150x150",
-    "_list": {
-      "values": [
-        "name",
-        "text"
-      ]
-    },
-    "values": [
-      { "list": ["two", "four"] },
-      { "list": ["2", "4"] }
-    ]
   },
   {
     "_process":"PRINT_CARDS",
@@ -135,8 +135,5 @@
       ]
     },
     "values":"csv_B.csv"
-  },
-  {
-    "_process":"terminate"
   }
 ]

@@ -99,6 +99,40 @@
     "_process":"CONVERT_SVGS"
   },
   {
+    "_resize":400,
+    "_process":"PRINT_A_CARD",
+    "_out":{ "reg": "png/{name}.png" },
+    "_card":"png/white_150x150",
+    "_list": {
+      "values": [
+        "name",
+        "text"
+      ]
+    },
+    "values": [
+      { "list": ["two", "three", "four", "five", "six"] },
+      { "list": ["2", "3", "4", "5", "6"] }
+    ]
+  },
+  {
+    "_resize":400,
+    "_process":"PRINT_A_CARD",
+    "_out":{ "reg": "png/{base0}2.png" },
+    "_card":"png/twoImg_150x150",
+    "base":{ "reg": "png/{base0}.png" },
+    "extra":{ "reg": "png/{extra0}.png" },
+    "_list": {
+      "values": [
+        "base0",
+        "extra0"
+      ]
+    },
+    "values": [
+      { "list": ["axe", "sword", "wand", "hook", "spear"] },
+      { "list": ["ribbon", "ribbon", "ribbon", "ribbon", "ribbon"] }
+    ]
+  },
+  {
     "_process":"COMBINE_PNGS",
     "_formula":["Ax", "Bx", "Cx", "Dx"],
     "_skipMissing":"True",
