@@ -1,4 +1,4 @@
 Zdroje,food,Jidlo,bone,Kosti,log,Drevo,walk,Cesta,star,Popularita,tool,Nastroj
-Akce,binocular,Pruzkum,heal,Leceni,spear,Zahaneni,sword,Utok,shield,Obrana,hammer,Stavba
+Akce,binocular,Pruzkum,heal,Leceni,bow,Zahaneni,swords,Utok,shield,Obrana,hammer,Stavba
 Prostredi,water,Voda,tree,Les,sun,Den,wolf,Zver,heart,Flirt,ribbon,Trenink
-Dalsi,card,+ Karta,discard,- Karta,favour,Ocko,storage,Sklad,wand,Kouzlo,free,Zadarmo
+Dalsi,card,+ Karta,discard,- Karta,favour,Ocko,storage,Sklad,claw,Kouzlo,free,Zadarmo

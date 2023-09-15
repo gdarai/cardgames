@@ -74,6 +74,14 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
+    "target":"csv_vybaveni.csv",
+    "sheet":"Vybaveni",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
     "target":"csv_prizen.csv",
     "sheet":"Prizen Novy",
     "skipTitle":1,
@@ -110,26 +118,28 @@
       ]
     },
     "values": [
-      { "list": ["two", "three", "four", "five", "six"] },
-      { "list": ["2", "3", "4", "5", "6"] }
+      { "list": ["two", "three", "four", "five", "six", "plus", "minus"] },
+      { "list": ["2", "3", "4", "5", "6", "+", "-"] }
     ]
   },
   {
     "_resize":400,
     "_process":"PRINT_A_CARD",
-    "_out":{ "reg": "png/{base0}2.png" },
+    "_out":{ "reg": "png/{out0}.png" },
     "_card":"png/twoImg_150x150",
     "base":{ "reg": "png/{base0}.png" },
     "extra":{ "reg": "png/{extra0}.png" },
     "_list": {
       "values": [
+        "out0",
         "base0",
         "extra0"
       ]
     },
     "values": [
-      { "list": ["axe", "sword", "wand", "hook", "spear"] },
-      { "list": ["ribbon", "ribbon", "ribbon", "ribbon", "ribbon"] }
+      { "list": ["axe2", "sword2", "wand2", "hook2", "spear2", "card", "discard"] },
+      { "list": ["axe", "sword", "wand", "hook", "spear", "cards", "cards"] },
+      { "list": ["ribbon", "ribbon", "ribbon", "ribbon", "ribbon", "plus", "minus"] }
     ]
   },
   {
@@ -162,7 +172,7 @@
     "_onOneLine":6,
     "_randomize":"True",
     "minusColor": "png/gradient.png",
-    "mainImg":{ "reg": "png/{image}.png" },
+    "mainImg":"",
     "plusImg":{ "reg": "png/{plus}.png" },
     "minusImg":{ "reg": "png/{minus}.png" },
     "_list":{
@@ -408,13 +418,34 @@
     "_card":"png/card_100x50_ribon",
     "_onOneLine":6,
     "_randomize":"False",
+    "img":{ "reg": "png/{img0}.png" },
     "_list":{
       "values":[
         "name",
         "text",
-        "img"
+        "img0"
       ]
     },
     "values":"csv_ribon.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_ribon.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_ribon.tex",
+    "_card":"png/card_100x50_ribon",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "img":{ "reg": "png/{img0}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "img0"
+      ]
+    },
+    "values":"csv_vybaveni.csv"
   }
 ]

@@ -1,10 +1,10 @@
-6,Rybar I,Voda: Pohyb 1,png/star.png
-6,Rybar II,Voda: +J,png/star.png
-6,Lovec I,Les: Pohyb 1,png/star.png
-6,Lovec II,Zadne zraneni,png/star.png
-6,Drevorubec I,Vyber 2 ocek,png/star.png
-6,Drevorubec II,Vyber 2 staveb,png/star.png
-6,Valecnik I,Flirt: +J,png/star.png
-6,Valecnik II,Flirt: +P,png/star.png
-6,Saman I,+Nastroj,png/star.png
-6,Saman II,+2 Akce,png/star.png
+6,Rybar I,Voda: Pohyb 1,hook
+6,Rybar II,Voda: +J,hook2
+6,Lovec I,Les: Pohyb 1,spear
+6,Lovec II,Zadne zraneni,spear2
+6,Drevorubec I,Vyber 2 ocek,axe
+6,Drevorubec II,Vyber 2 staveb,axe2
+6,Valecnik I,Flirt: +J,sword
+6,Valecnik II,Flirt: +P,sword2
+6,Saman I,+Nastroj,wand
+6,Saman II,+2 Akce,wand2
