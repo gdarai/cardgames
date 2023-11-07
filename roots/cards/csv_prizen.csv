@@ -1,5 +1,6 @@
 1,Pocasi,weather,sun,storm
-10,Stavba,hammer,hammer,food
+5,Stavba,hammer,hammer,swords
+5,Stavba,hammer,hammer,wolf
 2,Pruzkum,binocular,binocular,two_food
 1,Pruzkum,binocular,two_binocular,wolf
 2,Jidlo,food,five_food,three_food
@@ -12,6 +13,7 @@
 2,Zver,bow,bow,wolf
 1,Vycvik,ribbon,ribbon,two_food
 1,Flirt,heart,heart,two_food
-6,Ocko,star,star,star
-4,Ocko,star,two_star,star
+3,Ocko,star,star,star
+3,Ocko,star,star,swords
+4,Ocko,star,two_star,wolf
 1,Nastroj,tool,tool,tool

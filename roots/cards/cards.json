@@ -160,7 +160,11 @@
         "colB",
         "colC",
         "colD",
-        "name"
+        "name",
+        "x",
+        "x",
+        "x",
+        "x"
       ]
     },
     "values":"csv_kombinace.csv"
@@ -447,5 +451,24 @@
       ]
     },
     "values":"csv_vybaveni.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_na_ruku.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/desk",
+    "_onOneLine":1,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "x"
+      ]
+    },
+    "values": [
+      { "list": [""] }
+    ]
   }
 ]
