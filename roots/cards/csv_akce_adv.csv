@@ -5,21 +5,21 @@
 6,Lov kosti,six_bone,Lovec I,spear,tree,walk,bone
 6,Mistr zvirat,bow_wolf,Lovec I,spear,walk,walk_bone,spear
 6,Kaceni,log,Drevorubec I,axe,tree,walk_star,log
-6,Obrana doma,shield,Drevorubec I,axe,sun,food_three_bone_tool,shield
+6,Obrana doma,shield,Drevorubec I,axe,sun,two_food_bone,shield
 6,Stavba,ribbon_hammer,Drevorubec I,axe,hammer,hammer_tool,hammer
-6,Hruby Utok,swords,Valecnik I,sword,sword,walk_swords_three_bone,sword
-6,Obranny boj,shield,Valecnik I,sword,walk,walk_three_bone,shield
+6,Hruby Utok,swords,Valecnik I,sword,three_sun,food_swords_three_bone,sword
+6,Obranny boj,shield,Valecnik I,sword,walk,walk_bone_tool,shield
 6,Volani bohu,favour_favour,Valecnik I,sword,sun,two_food,favour
 6,Zvireci oci I,binocular_star,Saman I,wand,sun,food_bone,binocular
 6,Zber klesti,four_bone_star,Saman I,wand,sun,food,bone
 6,Leceni Kouzly,heal,Saman I,wand,sun,food_bone,heal
-4,Rybolov II,six_food_two_bone,Rybar II,hook2,water,tool,food
-4,Plaveni klad,log_three_bone,Rybar II,hook2,water,walk,log
-4,Lov dravcu,six_bone_two_food,Lovec II,spear2,tree,walk_tool,bone
-4,Zakerny Utok,swords,Lovec II,spear2,sword,walk_swords_bone,sword
-4,Lepsi Kaceni,two_log,Drevorubec II,axe2,tree,walk_tool,log
-4,Obrana kdekoliv,shield,Drevorubec II,axe2,walk,walk_three_bone_tool,shield
-4,Zvireci Hruza,bow_wolf,Valecnik II,sword2,walk,walk_food_star,spear
-4,Lepsi Utok,swords,Valecnik II,sword2,sword,walk_swords_tool,sword
-4,Kouzelna Stavba,claw_hammer_star,Saman II,wand2,hammer,hammer_bone_tool,hammer
-4,Zvireci oci II,ribbon_binocular_star,Saman II,wand2,sun,food_bone,binocular
+6,Rybolov II,six_food_two_bone,Rybar II,hook2,water,tool,food
+6,Plaveni klad,log_three_bone,Rybar II,hook2,water,walk,log
+6,Lov dravcu,six_bone_two_food,Lovec II,spear2,tree,walk_tool,bone
+6,Zakerny Utok,swords,Lovec II,spear2,two_sun,swords_three_bone,sword
+6,Lepsi Kaceni,two_log,Drevorubec II,axe2,tree,walk_tool,log
+6,Obrana kdekoliv,shield,Drevorubec II,axe2,walk,walk_bone_tool,shield
+6,Zvireci Hruza,bow_wolf,Valecnik II,sword2,walk,walk_food_star,spear
+6,Lepsi Utok,swords,Valecnik II,sword2,two_sun,swords_bone_tool,sword
+6,Kouzelna Stavba,claw_hammer_star,Saman II,wand2,hammer,hammer_bone_tool,hammer
+6,Zvireci oci II,ribbon_binocular_star,Saman II,wand2,sun,food_bone,binocular

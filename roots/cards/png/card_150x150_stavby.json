@@ -23,9 +23,13 @@
     "color":[0,0,0],
     "align":"center"
   },
-  "effect":{
+  "if":{
     "type":"img",
-    "position":[[3, 30],[147, 90]]
+    "position":[[3, 30],[40, 90]]
+  },
+  "then":{
+    "type":"img",
+    "position":[[55, 30],[147, 90]]
   },
   "cost":{
     "type":"img",

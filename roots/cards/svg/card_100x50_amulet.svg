@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="150"
-   height="150"
-   viewBox="0 0 150 150"
+   width="100"
+   height="50"
+   viewBox="0 0 100 50"
    id="svg2"
    version="1.1"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="card_150x150_stavby.svg">
+   sodipodi:docname="card_100x50_amulet.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="0.99528273"
-     inkscape:cy="62.600051"
+     inkscape:zoom="3.959798"
+     inkscape:cx="46.154013"
+     inkscape:cy="36.183322"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,26 +53,21 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-902.36216)">
+     transform="translate(0,-1002.3622)">
     <rect
-       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:3.02140856;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1.41595149;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect3344"
-       width="147.94772"
-       height="147.98825"
-       x="1.5386482"
-       y="903.87323"
-       ry="0.5391193" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:32.1812973px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.80453247"
-       x="95.614334"
-       y="440.12442"
-       id="text818"
-       transform="scale(0.44064218,2.2694151)"><tspan
-         sodipodi:role="line"
-         id="tspan816"
-         x="95.614334"
-         y="440.12442"
-         style="stroke-width:0.80453247">&gt;</tspan></text>
+       width="98.998062"
+       height="48.57206"
+       x="0.71036804"
+       y="1003.2614"
+       ry="0.17694743" />
+    <rect
+       style="fill:#8b8b8b;fill-opacity:0.80392157;stroke:none;stroke-width:10.17580128;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="rect8"
+       width="97.526962"
+       height="18.291134"
+       x="1.4441551"
+       y="1004.2513" />
   </g>
 </svg>

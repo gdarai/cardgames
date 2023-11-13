@@ -1,7 +1,7 @@
-2,Treti sklad,hammer,2 dny,two_bone_log,+5 sklad,five_storage,png/weight.png
-2,Pole,hammer,3 dny,three_bone,+J / den,sun_food,png/food.png
-2,Hlidka,hammer,2 dny,three_bone,+1 obrana,shield,png/shield.png
-2,Pesiny,hammer,3 dny,two_bone,-1 den cesty,sun_walk,png/weight.png
-2,Cviciste,hammer,2 dny,two_bone_log,-J / vycvik,food_ribbon,png/star.png
-2,Velke ohniste,hammer,1 den,bone_log,+Pop / Ocko,favour_star,png/star.png
-2,Lazaret,hammer,2 dny,two_bone_log,-K -Pop / Leceni,heal_bone_star,png/heart.png
+2,Treti sklad,hammer,2 dny,two_bone_log,+5 sklad,,five_storage
+2,Pole,hammer,3 dny,three_bone,+J / den,sun,food
+2,Hlidka,hammer,2 dny,three_bone,+1 obrana,,shield
+2,Pesiny,hammer,3 dny,two_bone,-1 den cesty,walk,sun
+2,Cviciste,hammer,2 dny,two_bone_log,-J / vycvik,ribbon,food
+2,Velke ohniste,hammer,1 den,bone_log,+Pop / Ocko,favour,star
+2,Lazaret,hammer,2 dny,two_bone_log,-K -Pop / Leceni,heal,bone_star

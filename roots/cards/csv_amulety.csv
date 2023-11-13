@@ -1,0 +1,11 @@
+3,Rychlost,Pohyb -den,walk
+3,Zber jidla,+J,food
+3,Zber KKK,+K,bone
+3,Lesem,Les: Pohyb 1,tree
+3,Vodou,Voda: Pohyb 1,water
+3,Plizeni,Zadne zraneni,wolf
+3,Stavba,Stavba -den,hammer
+3,Leceni,Leceni +Ocko,heal
+3,Flirt,Flirt +Ocko,flirt
+3,Stavba II,Stavba +Ocko,hammer
+3,Karta navic,+ 1 Akce,card

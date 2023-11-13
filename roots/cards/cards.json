@@ -74,8 +74,8 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_vybaveni.csv",
-    "sheet":"Vybaveni",
+    "target":"csv_amulety.csv",
+    "sheet":"Amulety",
     "skipTitle":1,
     "table":1
   },
@@ -100,6 +100,14 @@
     "_sourceOds":"cards.ods",
     "target":"csv_help_vocab.csv",
     "sheet":"Help Nove",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_pocitadlo.csv",
+    "sheet":"Pocitadla",
     "skipTitle":1,
     "table":1
   },
@@ -306,7 +314,8 @@
     "_randomize":"True",
     "lvl":{ "reg": "png/{lvl0}.png" },
     "cost":{ "reg": "png/{cost0}.png" },
-    "effect":{ "reg": "png/{effImg0}.png" },
+    "if":{ "reg": "?{if0}{}png/{if0}.png" },
+    "then":{ "reg": "png/{then0}.png" },
     "_list":{
       "values":[
         "name",
@@ -314,8 +323,8 @@
         "time",
         "cost0",
         "effectTxt",
-        "effImg0",
-        "img"
+        "if0",
+        "then0"
       ]
     },
     "values":"csv_stavby_basic.csv"
@@ -332,7 +341,8 @@
     "_randomize":"True",
     "lvl":{ "reg": "png/{lvl0}.png" },
     "cost":{ "reg": "png/{cost0}.png" },
-    "effect":{ "reg": "png/{effImg0}.png" },
+    "if":{ "reg": "?{if0}{}png/{if0}.png" },
+    "then":{ "reg": "png/{then0}.png" },
     "_list":{
       "values":[
         "name",
@@ -340,8 +350,8 @@
         "time",
         "cost0",
         "effectTxt",
-        "effImg0",
-        "img"
+        "if0",
+        "then0"
       ]
     },
     "values":"csv_stavby_adv.csv"
@@ -354,7 +364,8 @@
     "_randomize":"False",
     "lvl":{ "reg": "png/{lvl0}.png" },
     "cost":{ "reg": "png/{cost0}.png" },
-    "effect":{ "reg": "png/{effImg0}.png" },
+    "if":{ "reg": "?{if0}{}png/{if0}.png" },
+    "then":{ "reg": "png/{then0}.png" },
     "_list":{
       "values":[
         "name",
@@ -362,8 +373,8 @@
         "time",
         "cost0",
         "effectTxt",
-        "effImg0",
-        "img"
+        "if0",
+        "then0"
       ]
     },
     "values":"csv_stavby_init.csv"
@@ -439,7 +450,7 @@
   {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_ribon.tex",
-    "_card":"png/card_100x50_ribon",
+    "_card":"png/card_100x50_amulet",
     "_onOneLine":6,
     "_randomize":"True",
     "img":{ "reg": "png/{img0}.png" },
@@ -450,7 +461,7 @@
         "img0"
       ]
     },
-    "values":"csv_vybaveni.csv"
+    "values":"csv_amulety.csv"
   },
   {
     "_process":"SPLIT_TEX",
@@ -461,6 +472,44 @@
     "_out":"_OUT_na_ruku.tex",
     "_card":"png/desk",
     "_onOneLine":1,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "x"
+      ]
+    },
+    "values": [
+      { "list": [""] }
+    ]
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_na_ruku.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_300x150_pocitadlo",
+    "_onOneLine":4,
+    "_randomize":"False",
+    "costA":{ "reg": "?{cost}{}png/{cost}.png" },
+    "imgA":{ "reg": "png/{img}.png" },
+    "costB":{ "reg": "?{cost}{}png/{cost}.png" },
+    "imgB":{ "reg": "png/{img}.png" },
+    "_list":{
+      "values":[
+        "img",
+        "cost",
+        "x"
+      ]
+    },
+    "values":"csv_pocitadlo.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/krasa_a_amulety",
+    "_onOneLine":4,
     "_randomize":"False",
     "_list":{
       "values":[

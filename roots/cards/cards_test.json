@@ -2,29 +2,31 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_prizen.csv",
-    "sheet":"Prizen Novy",
+    "target":"csv_pocitadlo.csv",
+    "sheet":"Pocitadla",
     "skipTitle":1,
     "table":1
   },
   {
+    "_process":"CONVERT_SVGS"
+  },
+  {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_prizen.tex",
-    "_card":"png/card_100x150_prizen",
-    "_onOneLine":6,
-    "_randomize":"True",
-    "minusColor": "png/gradient.png",
-    "mainImg":"",
-    "plusImg":{ "reg": "png/{plus}.png" },
-    "minusImg":{ "reg": "png/{minus}.png" },
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_300x150_pocitadlo",
+    "_onOneLine":4,
+    "_randomize":"False",
+    "costA":{ "reg": "?{cost}{}png/{cost}.png" },
+    "imgA":{ "reg": "png/{img}.png" },
+    "costB":{ "reg": "?{cost}{}png/{cost}.png" },
+    "imgB":{ "reg": "png/{img}.png" },
     "_list":{
       "values":[
-        "name",
-        "image",
-        "plus",
-        "minus"
+        "img",
+        "cost",
+        "x"
       ]
     },
-    "values":"csv_prizen.csv"
+    "values":"csv_pocitadlo.csv"
   }
 ]

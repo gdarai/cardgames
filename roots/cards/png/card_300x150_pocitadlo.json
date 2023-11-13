@@ -1,0 +1,18 @@
+{
+  "imgA":{
+    "type":"img",
+    "position":[[40, 10],[110, 80]]
+  },
+  "costA":{
+    "type":"img",
+    "position":[[40, 90],[110, 140]]
+  },
+  "imgB":{
+    "type":"img",
+    "position":[[190, 10],[260, 80]]
+  },
+  "costB":{
+    "type":"img",
+    "position":[[190, 90],[260, 140]]
+  }
+}
