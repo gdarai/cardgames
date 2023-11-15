@@ -1,25 +1,25 @@
-6,Rybolov,four_food,Rybar I,hook,water,free,food
-6,Sledovani Vody,binocular_star,Rybar I,hook,two_sun,two_food,binocular
-6,Leceni,heal,Rybar I,hook,two_sun,food,heal
-6,Lov zvere,four_food_two_bone,Lovec I,spear,tree,free,food
-6,Lov kosti,six_bone,Lovec I,spear,tree,walk,bone
-6,Mistr zvirat,bow_wolf,Lovec I,spear,walk,walk_bone,spear
-6,Kaceni,log,Drevorubec I,axe,tree,walk_star,log
-6,Obrana doma,shield,Drevorubec I,axe,sun,two_food_bone,shield
-6,Stavba,ribbon_hammer,Drevorubec I,axe,hammer,hammer_tool,hammer
-6,Hruby Utok,swords,Valecnik I,sword,three_sun,food_swords_three_bone,sword
-6,Obranny boj,shield,Valecnik I,sword,walk,walk_bone_tool,shield
-6,Volani bohu,favour_favour,Valecnik I,sword,sun,two_food,favour
-6,Zvireci oci I,binocular_star,Saman I,wand,sun,food_bone,binocular
-6,Zber klesti,four_bone_star,Saman I,wand,sun,food,bone
-6,Leceni Kouzly,heal,Saman I,wand,sun,food_bone,heal
-6,Rybolov II,six_food_two_bone,Rybar II,hook2,water,tool,food
-6,Plaveni klad,log_three_bone,Rybar II,hook2,water,walk,log
-6,Lov dravcu,six_bone_two_food,Lovec II,spear2,tree,walk_tool,bone
-6,Zakerny Utok,swords,Lovec II,spear2,two_sun,swords_three_bone,sword
-6,Lepsi Kaceni,two_log,Drevorubec II,axe2,tree,walk_tool,log
-6,Obrana kdekoliv,shield,Drevorubec II,axe2,walk,walk_bone_tool,shield
-6,Zvireci Hruza,bow_wolf,Valecnik II,sword2,walk,walk_food_star,spear
-6,Lepsi Utok,swords,Valecnik II,sword2,two_sun,swords_bone_tool,sword
-6,Kouzelna Stavba,claw_hammer_star,Saman II,wand2,hammer,hammer_bone_tool,hammer
-6,Zvireci oci II,ribbon_binocular_star,Saman II,wand2,sun,food_bone,binocular
+Rybolov,four_food,Rybar I,hook,water,free,food
+Sledovani Vody,binocular_star,Rybar I,hook,two_sun,two_food,binocular
+Leceni,heal,Rybar I,hook,two_sun,food,heal
+Rybolov II,six_food_two_bone,Rybar II,hook2,water,tool,food
+Plaveni klad,log_three_bone,Rybar II,hook2,water,walk,log
+Lov zvere,four_food_two_bone,Lovec I,spear,tree,free,food
+Lov kosti,six_bone,Lovec I,spear,tree,walk,bone
+Mistr zvirat,bow_wolf,Lovec I,spear,walk,walk_bone,spear
+Lov dravcu,six_bone_two_food,Lovec II,spear2,tree,walk_tool,bone
+Zakerny Utok,swords,Lovec II,spear2,two_sun,swords_three_bone,sword
+Kaceni,log,Drevorubec I,axe,tree,walk_star,log
+Obrana doma,shield,Drevorubec I,axe,sun,two_food_bone,shield
+Stavba,ribbon_hammer,Drevorubec I,axe,hammer,hammer_tool,hammer
+Lepsi Kaceni,two_log,Drevorubec II,axe2,tree,walk_tool,log
+Obrana kdekoliv,shield,Drevorubec II,axe2,walk,walk_bone_tool,shield
+Hruby Utok,swords,Valecnik I,sword,three_sun,food_swords_three_bone,sword
+Obranny boj,shield,Valecnik I,sword,walk,walk_bone_tool,shield
+Volani bohu,favour_favour,Valecnik I,sword,sun,two_food,favour
+Zvireci Hruza,bow_wolf,Valecnik II,sword2,walk,walk_food_star,spear
+Lepsi Utok,swords,Valecnik II,sword2,two_sun,swords_bone_tool,sword
+Zvireci oci I,binocular_star,Saman I,wand,sun,food_bone,binocular
+Zber klesti,four_bone_star,Saman I,wand,sun,food,bone
+Leceni Kouzly,heal,Saman I,wand,sun,food_bone,heal
+Kouzelna Stavba,claw_hammer_star,Saman II,wand2,hammer,hammer_bone_tool,hammer
+Zvireci oci II,ribbon_binocular_star,Saman II,wand2,sun,food_bone,binocular

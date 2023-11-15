@@ -6,7 +6,7 @@ food,bone,,,food_bone,bone,,,xxx
 food,swords,three,bone,food_swords_three_bone,swords_three_bone,three_bone,bone,xxx
 hammer,bone,tool,,hammer_bone_tool,bone_tool,tool,,xxx
 hammer,tool,,,hammer_tool,tool,,,xxx
-storage,three,favour,,storage_three_favour,three_favour,favour,,xxx
+three,favourstore,,,three_favourstore,favourstore,,,xxx
 swords,bone,tool,,swords_bone_tool,bone_tool,tool,,xxx
 swords,three,bone,,swords_three_bone,three_bone,bone,,xxx
 three,bone,,,three_bone,bone,,,xxx

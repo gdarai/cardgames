@@ -1,0 +1,18 @@
+{
+  "roleImg":{
+    "type":"img",
+    "position":[[2, 2],[50, 48]]
+  },
+  "whereImg":{
+    "type":"img",
+    "position":[[50, 2],[100, 48]]
+  },
+  "costImg":{
+    "type":"img",
+    "position":[[100, 2],[200, 48]]
+  },
+  "typeImg":{
+    "type":"img",
+    "position":[[200, 2],[298, 48]]
+  }
+}

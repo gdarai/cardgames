@@ -19,7 +19,7 @@
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
     "target":"csv_akce_adv.csv",
-    "sheet":"Akce Novy",
+    "sheet":"Akce Novy Adv",
     "skipTitle":1,
     "table":1
   },
@@ -29,7 +29,7 @@
     "target":"csv_akce_basic.csv",
     "sheet":"Akce Novy",
     "skipTitle":1,
-    "table":2
+    "table":1
   },
   {
     "_process":"EXPORT_TABLE",
@@ -145,9 +145,9 @@
       ]
     },
     "values": [
-      { "list": ["axe2", "sword2", "wand2", "hook2", "spear2", "card", "discard"] },
-      { "list": ["axe", "sword", "wand", "hook", "spear", "cards", "cards"] },
-      { "list": ["ribbon", "ribbon", "ribbon", "ribbon", "ribbon", "plus", "minus"] }
+      { "list": ["axe2", "sword2", "wand2", "hook2", "spear2", "card", "discard", "favourstore"] },
+      { "list": ["axe", "sword", "wand", "hook", "spear", "cards", "cards", "favour"] },
+      { "list": ["ribbon", "ribbon", "ribbon", "ribbon", "ribbon", "plus", "minus", "storage"] }
     ]
   },
   {
@@ -288,6 +288,7 @@
     "_out":"_OUT_akce_adv.tex",
     "_card":"png/card_100x150_akce",
     "_onOneLine":6,
+    "_count":6,
     "_randomize":"False",
     "typeImg":{ "reg": "png/{type}.png" },
     "roleImg":{ "reg": "png/{role}.png" },
@@ -519,5 +520,55 @@
     "values": [
       { "list": [""] }
     ]
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_lama.tex",
+    "_card":"png/card_300x50_lama",
+    "_onOneLine":3,
+    "_randomize":"False",
+    "typeImg":{ "reg": "png/{type}.png" },
+    "roleImg":{ "reg": "png/{role}.png" },
+    "whereImg":{ "reg": "png/{where}.png" },
+    "costImg":{ "reg": "png/{cost}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "type",
+        "roleText",
+        "role",
+        "where",
+        "cost",
+        "main"
+      ]
+    },
+    "values":"csv_akce_adv.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_lama.tex",
+    "_card":"png/card_300x50_lama",
+    "_onOneLine":3,
+    "_randomize":"False",
+    "typeImg":{ "reg": "png/{type}.png" },
+    "roleImg":{ "reg": "png/{role}.png" },
+    "whereImg":{ "reg": "png/{where}.png" },
+    "costImg":{ "reg": "png/{cost}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "type",
+        "roleText",
+        "role",
+        "where",
+        "cost",
+        "main"
+      ]
+    },
+    "values":"csv_akce_adv.csv"
   }
 ]
