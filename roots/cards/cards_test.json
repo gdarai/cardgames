@@ -1,44 +1,10 @@
 [
   {
-    "_process":"EXPORT_TABLE",
-    "_sourceOds":"cards.ods",
-    "target":"csv_akce_adv.csv",
-    "sheet":"Akce Novy Adv",
-    "skipTitle":1,
-    "table":1
-  },
-  {
-    "_process":"CONVERT_SVGS"
-  },
-  {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_akce_adv.tex",
     "_card":"png/card_100x150_akce",
     "_onOneLine":6,
-    "_count":6,
-    "_randomize":"False",
-    "typeImg":{ "reg": "png/{type}.png" },
-    "roleImg":{ "reg": "png/{role}.png" },
-    "whereImg":{ "reg": "png/{where}.png" },
-    "costImg":{ "reg": "png/{cost}.png" },
-    "_list":{
-      "values":[
-        "name",
-        "type",
-        "roleText",
-        "role",
-        "where",
-        "cost",
-        "main"
-      ]
-    },
-    "values":"csv_akce_adv.csv"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_lama.tex",
-    "_card":"png/card_300x50_lama",
-    "_onOneLine":3,
+    "_count":90,
     "_randomize":"False",
     "typeImg":{ "reg": "png/{type}.png" },
     "roleImg":{ "reg": "png/{role}.png" },

@@ -5,14 +5,14 @@
   },
   "whereImg":{
     "type":"img",
-    "position":[[50, 2],[100, 48]]
+    "position":[[50, 2],[98, 48]]
   },
   "costImg":{
     "type":"img",
-    "position":[[100, 2],[200, 48]]
+    "position":[[102, 2],[195, 48]]
   },
   "typeImg":{
     "type":"img",
-    "position":[[200, 2],[298, 48]]
+    "position":[[205, 2],[298, 48]]
   }
 }
