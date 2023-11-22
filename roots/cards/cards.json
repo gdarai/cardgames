@@ -19,17 +19,17 @@
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
     "target":"csv_akce_adv.csv",
-    "sheet":"Akce Novy Adv",
+    "sheet":"Akce Novy",
     "skipTitle":1,
-    "table":1
+    "table":2
   },
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
     "target":"csv_akce_adv2.csv",
-    "sheet":"Akce Novy Adv",
+    "sheet":"Akce Novy",
     "skipTitle":1,
-    "table":2
+    "table":3
   },
   {
     "_process":"EXPORT_TABLE",
@@ -116,6 +116,14 @@
     "_sourceOds":"cards.ods",
     "target":"csv_pocitadlo.csv",
     "sheet":"Pocitadla",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_akce_lama.csv",
+    "sheet":"Akce Novy Lama",
     "skipTitle":1,
     "table":1
   },
@@ -296,7 +304,6 @@
     "_out":"_OUT_akce_adv.tex",
     "_card":"png/card_100x150_akce",
     "_onOneLine":6,
-    "_count":90,
     "_randomize":"False",
     "typeImg":{ "reg": "png/{type}.png" },
     "roleImg":{ "reg": "png/{role}.png" },
@@ -320,7 +327,6 @@
     "_out":"_OUT_akce_adv.tex",
     "_card":"png/card_100x150_akce",
     "_onOneLine":6,
-    "_count":60,
     "_randomize":"False",
     "typeImg":{ "reg": "png/{type}.png" },
     "roleImg":{ "reg": "png/{role}.png" },
@@ -559,10 +565,10 @@
     "_card":"png/card_300x50_lama",
     "_onOneLine":3,
     "_randomize":"False",
-    "typeImg":{ "reg": "png/{type}.png" },
-    "roleImg":{ "reg": "png/{role}.png" },
-    "whereImg":{ "reg": "png/{where}.png" },
-    "costImg":{ "reg": "png/{cost}.png" },
+    "typeImg":{ "reg": "?{type}{}png/{type}.png" },
+    "roleImg":{ "reg": "?{role}{}png/{role}.png" },
+    "whereImg":{ "reg": "?{where}{}png/{where}.png" },
+    "costImg":{ "reg": "?{cost}{}png/{cost}.png" },
     "_list":{
       "values":[
         "name",
@@ -574,30 +580,7 @@
         "main"
       ]
     },
-    "values":"csv_akce_adv.csv"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_lama.tex",
-    "_card":"png/card_300x50_lama",
-    "_onOneLine":2,
-    "_randomize":"False",
-    "typeImg":{ "reg": "png/{type}.png" },
-    "roleImg":{ "reg": "png/{role}.png" },
-    "whereImg":{ "reg": "png/{where}.png" },
-    "costImg":{ "reg": "png/{cost}.png" },
-    "_list":{
-      "values":[
-        "name",
-        "type",
-        "roleText",
-        "role",
-        "where",
-        "cost",
-        "main"
-      ]
-    },
-    "values":"csv_akce_adv2.csv"
+    "values":"csv_akce_lama.csv"
   },
   {
     "_process":"SPLIT_TEX",
@@ -609,10 +592,10 @@
     "_card":"png/card_300x50_lama",
     "_onOneLine":3,
     "_randomize":"False",
-    "typeImg":{ "reg": "png/{type}.png" },
-    "roleImg":{ "reg": "png/{role}.png" },
-    "whereImg":{ "reg": "png/{where}.png" },
-    "costImg":{ "reg": "png/{cost}.png" },
+    "typeImg":{ "reg": "?{type}{}png/{type}.png" },
+    "roleImg":{ "reg": "?{role}{}png/{role}.png" },
+    "whereImg":{ "reg": "?{where}{}png/{where}.png" },
+    "costImg":{ "reg": "?{cost}{}png/{cost}.png" },
     "_list":{
       "values":[
         "name",
@@ -624,29 +607,6 @@
         "main"
       ]
     },
-    "values":"csv_akce_adv.csv"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_lama.tex",
-    "_card":"png/card_300x50_lama",
-    "_onOneLine":2,
-    "_randomize":"False",
-    "typeImg":{ "reg": "png/{type}.png" },
-    "roleImg":{ "reg": "png/{role}.png" },
-    "whereImg":{ "reg": "png/{where}.png" },
-    "costImg":{ "reg": "png/{cost}.png" },
-    "_list":{
-      "values":[
-        "name",
-        "type",
-        "roleText",
-        "role",
-        "where",
-        "cost",
-        "main"
-      ]
-    },
-    "values":"csv_akce_adv2.csv"
+    "values":"csv_akce_lama.csv"
   }
 ]

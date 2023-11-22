@@ -1,5 +1,2 @@
-+_Jidlo_+|Z R1 R2 L1||+_Kosti_+|Z L1 L2 S1||+_Drevo_+|D1 D2 R2||+_Pruzkum_+|Z R1 S1 S2
-+_Leceni_+|Z R1 S1||+_Stavba_+|Z D1 S2||+_Utok_+|V1 V2 L1||+_Obrana_+|D1 D2 V1||+_Plaseni_+|L1 V2
-+_Rychla Hra_+||Cil 10|popularity||Rozcesti na 5|poli od vsi
++_Rychla Hra_+||Cil|10_popularity|10_pokrok||Rozcesti na 5|poli od vsi
 Stavby|Basic||======||Ocka||======||Stavby|Advance
-+_Stavba_+||Oprava vesnice|+popularita|nK||Vyroba vybaveni|2K
