@@ -1,5 +1,5 @@
 3,Zber bobuli,two_food,- Novic -,cards,sun,free,food
-2,Naplava,two_bone,- Novic -,cards,water_tree,walk,bone
+2,Zber klesti,two_bone,- Novic -,cards,walk,walk,bone
 2,Pruzkum,binocular_star,- Novic -,cards,binocular,walk,binocular
-2,Zakladni Leceni,heal,- Novic -,cards,two_sun,food_bone,heal
-2,Zakladni Stavba,hammer,- Novic -,cards,hammer,hammer,hammer
+2,Zakladni obrana,shield,- Novic -,cards,two_sun,two_bone,shield
+2,Zakladni utok,swords,- Novic -,cards,two_sun,two_food_bone,swords

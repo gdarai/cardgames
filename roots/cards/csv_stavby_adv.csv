@@ -5,9 +5,8 @@
 2,Slunecni pec,ribbon,1 den,three_bone,-J / cestu,walk,food
 2,Straznice,ribbon,2 dny,two_bone_log,+1 obrana,,shield
 2,Chatrc stavare,ribbon,2 dny,three_bone,-1 den stavby,hammer,sun
-2,Sauna,ribbon,2 dny,food_two_bone,-1 Flirt na populaci,family,flirt
+2,Sauna,ribbon,2 dny,food_two_bone,-1 Flirt na populaci,flirt,flirt
 2,Stolec Starsich,ribbon,2 dny,food_three_bone,+1 Akcni karta,,card
-2,Dilna,ribbon,3 dny,two_bone_log,+1 Nastroj,,tool
 2,Pametnice,ribbon,2 dny,three_bone,+3 Ocko na ruce,,three_favourstore
 2,Sad,claw,4 dny,five_bone,+J +K / den,sun,food_bone
 2,Modla,claw,4 dny,three_bone_two_log,+Pop / den,sun,star

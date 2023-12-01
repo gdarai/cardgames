@@ -5,7 +5,7 @@
 3,Vodou,Voda: Pohyb 1,water
 3,Plizeni,Zadne zraneni,wolf
 3,Stavba,Stavba -den,hammer
-3,Leceni,Leceni +Ocko,heal
+3,Valceni,Boj +Ocko,shield
 3,Flirt,Flirt +Ocko,flirt
 3,Stavba II,Stavba +Ocko,hammer
-3,Karta navic,+ 1 Akce,card
+3,Karta navic,+ 1 Karta,card
