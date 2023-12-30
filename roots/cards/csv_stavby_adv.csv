@@ -1,15 +1,15 @@
 2,Ohradniky,ribbon,3 dny,two_bone_two_log,Zadna zver v okoli,sun,bow
 2,Chov,ribbon,2 dny,two_bone_log,+J / den,sun,food
 2,Obetiste,ribbon,3 dny,three_bone_log,+Pop / Ocko,favour,star
-2,Misto zasveceni,ribbon,2 dny,two_food_four_bone,+Pop / Odpocinek,flirt,star
 2,Slunecni pec,ribbon,1 den,three_bone,-J / cestu,walk,food
-2,Straznice,ribbon,2 dny,two_bone_log,+1 obrana,,shield
-2,Chatrc stavare,ribbon,2 dny,three_bone,-1 den stavby,hammer,sun
+2,Straznice,ribbon,2 dny,bone_log,+1 obrana,,shield
 2,Sauna,ribbon,2 dny,food_two_bone,-1 Flirt na populaci,flirt,flirt
 2,Stolec Starsich,ribbon,2 dny,food_three_bone,+1 Akcni karta,,card
 2,Pametnice,ribbon,2 dny,three_bone,+3 Ocko na ruce,,three_favourstore
 2,Sad,claw,4 dny,five_bone,+J +K / den,sun,food_bone
 2,Modla,claw,4 dny,three_bone_two_log,+Pop / den,sun,star
-2,Palisada,claw,4 dny,three_bone_two_log,+2 obrany,,two_shield
+2,Palisada,claw,4 dny,two_bone_two_log,+2 obrany,,two_shield
 2,Velka sin,claw,4 dny,three_bone_two_log,+2 Akcni karty,,two_card
 2,Vecny ohen,claw,2 dny,three_bone,+3 Ocko na ruce,,three_favourstore
+2,Sklad dilu,ribbon,2 dny,two_bone_log,+ obrana,log,shield
+2,Skryse,ribbon,3 dny,bone_log,+2J / utoku,swords,two_food
