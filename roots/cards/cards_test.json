@@ -2,22 +2,29 @@
   {
     "_process":"EXPORT_TABLE",
     "_sourceOds":"cards.ods",
-    "target":"csv_help.csv",
-    "sheet":"Help",
+    "target":"csv_prizen.csv",
+    "sheet":"Prizen Novy",
     "skipTitle":1,
     "table":1
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_na_ruku.tex",
-    "_card":"png/card_100x150_help",
+    "_out":"_OUT_prizen.tex",
+    "_card":"png/card_100x150_prizen",
     "_onOneLine":6,
-    "_randomize":"False",
+    "_randomize":"True",
+    "minusColor": "png/gradient.png",
+    "mainImg":"",
+    "plusImg":{ "reg": "png/{plus}.png" },
+    "minusImg":{ "reg": "png/{minus}.png" },
     "_list":{
       "values":[
-        "text"
+        "name",
+        "image",
+        "plus",
+        "minus"
       ]
     },
-    "values":"csv_help.csv"
+    "values":"csv_prizen.csv"
   }
 ]

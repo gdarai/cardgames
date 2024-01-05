@@ -1,18 +1,43 @@
-1,Pocasi,weather,sun,storm
-5,Stavba,hammer,hammer,swords
-5,Stavba,hammer,hammer,wolf
-2,Pruzkum,binocular,binocular,two_food
-1,Pruzkum,binocular,two_binocular,wolf
-2,Jidlo,food,five_food,three_food
-1,Kosti,bone,five_bone,three_bone
-1,Drevo,log,two_log,log
-2,Utok,swords,shield,swords
-1,Utok,swords,shield,two_swords
-1,Karty,cards,card,two_discard
-1,Karty,cards,two_card,three_discard
-2,Zver,bow,bow,wolf
-1,Vycvik,ribbon,ribbon,two_food
-1,Flirt,flirt,flirt,two_food
-3,Ocko,star,star,star
-3,Ocko,star,star,swords
-4,Ocko,star,two_star,wolf
+1,A za jezerem,binocular,binocular,two_food
+1,Za lesy a horami,binocular,binocular,two_food
+1,V dali vidim,binocular,two_binocular,wolf
+1,Zbytky po vichrici,bone,five_bone,three_bone
+1,Pohrebiste kosti,bone,five_bone,three_bone
+1,Opustena vesnice,bone,five_bone,three_bone
+1,Lovci,bow,bow,wolf
+1,Duchove lesa,bow,bow,wolf
+1,Vestec,cards,card,two_discard
+1,Houkani sovy,cards,two_card,three_discard
+1,Kralovna krasy,flirt,flirt,two_food
+1,Milion boruvek,food,five_food,three_food
+1,Mamut a cerstvy,food,five_food,three_food
+1,Houbarsky raj,food,five_food,three_food
+1,Rajska zahrada,food,five_food,three_food
+1,Jen pro mne,hammer,hammer,swords
+1,Stavim nekoukejte,hammer,hammer,swords
+1,Napad,hammer,hammer,swords
+1,Chce to strechu,hammer,hammer,swords
+1,Rada od samana,hammer,hammer,swords
+1,Sojka naseptava,hammer,hammer,wolf
+1,Napad hodny bohu,hammer,hammer,wolf
+1,Tohle stavim ja,hammer,hammer,wolf
+1,Jen muj napad,hammer,hammer,wolf
+1,Chce to svetlo,hammer,hammer,wolf
+1,Padly strom,log,two_log,log
+1,Po bouri,log,two_log,log
+1,Priplavila reka,log,two_log,log
+1,Namakany typ,ribbon,ribbon,two_food
+1,Oslava,star,star,star
+1,Svatek,star,star,star
+1,Slavnost prirody,star,star,star
+1,Obet,star,star,swords
+1,Volani krve,star,star,swords
+1,Zurivy valecnik,star,star,swords
+1,Uctivani dravcu,star,two_star,wolf
+1,Obet dravcum,star,two_star,wolf
+1,Krmeni dravcu,star,two_star,wolf
+1,Domestikace dravcu,star,two_star,wolf
+1,Divosi,swords,shield,swords
+1,Smecka psu,swords,shield,swords
+1,Smecka tygru,swords,shield,two_swords
+1,Nekde slunecno,weather,sun,storm

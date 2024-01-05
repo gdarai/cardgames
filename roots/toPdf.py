@@ -131,7 +131,7 @@ for line in lines:
             text = expandCzechLetters(line[4:])
         if(line[1]=='T'):
             writeLine(f,0,'\\title{'+text+'}')
-            writeLine(f,0,'\\date{2013-09-01}')
+            writeLine(f,0,'\\date{2024-01-05}')
             writeLine(f,0,'\\author{Martin \'Gaimi\' Darai}')
             writeLine(f,0,'')
             writeLine(f,0,'\\begin{document}')

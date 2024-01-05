@@ -1,15 +1,105 @@
-<T>Kmeny z udoli reky
-Pokus o Zvireci bohy v2
+<T>Kmeny z U'doli'
+Pokus o Zvi'r'eci' bohy v2
 
-<C>Cil hry
+<C>Slovni'c'ek
+<I0>
+<I>Sce''na'r' - nastavuje obti'z'nost hry, obsahuje ci'le, omezeni' a dodatec'na' pravidla sce''na'r'e.
+<I1>
 
-Naklonit si bohy na svou stranu. (Ziskat vitezne body)
-Hra ma umoznit hracum hrat 'vsichni najednou'. Kazdy hrac na zacatku kola vezme karty akci co ma k dispozici a rozplanuje co z nich udela. Akce ve kterich hraci konfliktej se vyhodnoti nakonci kola. Akce kde hrac skodi tak bude skodit vsem protihracum najednou.
+<C>Ci'l Hry - Sce''na'r'e
+Vyhraje hra'c' co dosa'hne ci'lu' sce''na'r'e.
 
-<C>Mechaniky
+<C1>Rozvoj Osady
+Kompetitivni' sce''na'r' pro zkus'ene'js'i' hra'c'e. Agresivita a obti'z'nost hry je plne' v rukou hra'c'u'.
+<I0>
+<I>Hraje se s plny'mi pravidly.
+<I>Zac'i'na' se se 3 c'leny kmene, bez surovin, s obranou 1 a 3 body pr'i'zne'.
+<I>Vyhraje ten kdo prvni' bude mi't za'roven' pokrok alespon' 10 a pr'i'zen' alespon' 10.
+<I>Kaz'de'' kolo mu'z'e kaz'dy' hra'c' by't pod u''tokem 3 a zur'ivosti 1.
+<I>Kaz'de'' kolo mu'z'e hra'c' ztratit 1 pr'i'zen' za hlad, 2 za u''tok a neomezene' za pokousa'ni' nebo hne'v bohu'.
+<I>V tomto sce''na'r'i nejde zahazovat karty akci'.
+<I>V za'kladu mu'z'e kaz'dy' hra'c' postavit nanejvy's' jednu budovu.
+<I>Hra'c' vypadne ze soute'z'e, pokud mu klesne pr'i'zen' na nula.
+<I1>
 
-Hrac ma k dispozici 
+<C1>Hne'v Bohu'
+Kompetitivni' sce''na'r' pro zkus'ene'js'i' hra'c'e s prvky PvE. Vhodny' i pro so'lohru.
+<I0>
+<I>Hraje se s plny'mi pravidly.
+<I>Zac'i'na' se se 3 c'leny kmene, bez surovin, s obranou 1 a 3 body pr'i'zne'.
+<I>Vyhraje ten kdo prvni' bude mi't pr'i'zen' 10.
+<I>Kaz'de'' kolo mu'z'e kaz'dy' hra'c' by't pod u''tokem 3 a zur'ivosti 1.
+<I>Kaz'de'' kolo mu'z'e hra'c' ztratit 1 pr'i'zen' za hlad, 2 za u''tok a neomezene' za pokousa'ni' nebo hne'v bohu'.
+<I>V tomto sce''na'r'i nejde zahazovat karty akci'.
+<I>V za'kladu mu'z'e kaz'dy' hra'c' postavit nanejvy's' jednu budovu.
+<I>Hra'c' vypadne ze soute'z'e, pokud mu klesne pr'i'zen' na nula.
+<I>Navi'c se v za've'ru kaz'de''ho kola ta'hne jedna karta hne'vu bohu' ktera' padne pr'i's'ti' kolo na vs'echny hra'c'e, kter'i' toto kolo nedali u''tok pr'es akci nebo hne'v.
+<I>Tento sce''na'r' jde hra't i v jednom hra'c'i.
+<I1>
 
-Hrac ma desku vesnice, ktera obsahuje zakladni informace jako kolik jsou zakladni hodnoty parametru vesnice a kolik stoji akce vesnice.
+<C>Pru'be'h Hry
+Hra se hraje na kola. Ve'ts'ina se da' hra't najednou, ne'ktere'' c'a'sti je pak potr'eba odehra't postupne' od zac'i'naji'ci'ho hra'c'e. Na konci kaz'de''ho kola se pak vyhodnocuje jestli ne'ktery' hra'c' nevypadl, c'i jestli ne'ktery' hra'c' nevyhra'l.
 
-Hrac ma pred sebou balicek svych karet akci lizaci + odhazovaci. Na zacatku kola si hrac nalize z lizaciho tolik akci, kolik
+<C1>Vypadli' Hra'c'i
+Pokud hra'c' vypadne neodcha'zi' ze hry. Nejspi's' uz' nevyhraje, ale mu'z'e zami'chat por'adi'm ve hr'e. Hra konc'i' kdyz' posledni' hra'c' vypadne, c'i kdyz' prvni' hra'c' vyhraje.
+
+<C2>Za've'rec'ne'' Por'adi'
+Na konci hry je prvni' vi'te'z, druzi' vs'ichni kter'i' nevypadli a pak vs'ichni co vypadli v por'adi' od toho co vypadl prvni'. Pokud tedy vypadnou vs'ichni, vyhra'va' ten, kdo vypadl jako prvni'.
+
+<C>Kolo Hry
+Pr'i'pravu kola a Pla'novaci' fa'zi de'laji' hra'c'i najednou. Vc'etne' pr'i'padne''ho taz'eni' karet pr'i'zne' c'i krajiny. Stavba budov se pak hraje postupne' od zac'i'naji'ci'ho hra'c'e.
+
+<C1>Pr'i'prava
+Kaz'dy' hra'c' si zkontroluje jestli na ne'j jdou ne'jake'' u''toky a zur'ivost. Odec'te pr'i'zne' ze hne'vu bohu' a hodi' si poc'asi'. Li'zne si do ruky nove'' akc'ni' karty. A vybere si zisk z pr'i'padny'ch produkc'ni'ch budov.
+
+<C1>Pla'novaci' Fa'ze
+Hra'c' mu'z'e pr'epla'nova'vat sve'' akce, dokud je nezac'ne uskutec'n'ovat. Napr'i'klad taz'eni'm karet pr'i'zne', karet krajiny, nebo hodem na kostce znic'eni' krajiny. Navi'c mu'z'e zadarmo, bez akce postav, pouz'i't libovolne'' mnoz'stvi' karet pr'i'zne'. Kaz'da' postava mu'z'e ude'lat jedno z na'sleduji'ci'ch:
+<I0>
+<I>hledat pr'i'zen' - li'znout si novou kartu pr'i'zne'.
+<I>tre''novat se - zi'skat novou roli, pr'idat do bali'c'ku odhozeny'ch karet novou dovednost a postave' s'ti'tek nove'' role.
+<I>flirtovat - zvednout u''roven' flirtu kmene o 1, pokud tak dosa'hne na u''roven' pro dals'i'ho c'lena kmene, sta'hne flirt zpe't na 0.
+<I>zahra't kartu akce - pokud vesnice, suroviny ve vesnici a postava odpovi'daji' podmi'nka'm karty.
+<I1>
+
+<C2>Du'lez'ite'' Pozna'mky
+<I0>
+<I>Karty pr'i'zne' se daji' pouz'i't az' na'sleduji'ci' kolo.
+<I>Nezapomi'nejte si hodit na kostce pos'kozeni' krajiny po kaz'de'' akci ktera' se de'la' mimo vesnici (Ma' botu v cene', krome' pru'zkumu).
+<I>Pokud do krajiny pr'i'de divoka' zve'r', bude postava co akci de'lala okamz'ite' zrane'na' a kmen pr'ijde o pr'i'zen'.
+<I>I kdyz' je krajina akci' pos'kozena' tak se akce dode'la' a pr'i'padne'' suroviny se zi'skaji'.
+<I>Novy' c'len kmene je k dispozici az' pr'i's'ti' kolo.
+<I>Kaz'da' postava mu'z'e mi't bud' dve' role u''rovne' jedna, nebo jednu roli u''rovne' jedna a dva.
+<I>Kaz'da' akce ktera' ma' v cene' botu jde de'lat i hladove', bez zaplaceni' ji'dla za botu. Pak ale vesnice hladovi' a hra'c' ztra'ci' pr'i'zen' dle pravidel sce'na'r'e.
+<I1>
+
+<C1>Stavba Budov
+Po odehra'ni' vs'ech akci' postav se stavi'. Od zac'i'naji'ci'ho hra'c'e nejprve hra'c'i r'eknou (a vyloz'i' karty pr'i'zne' stavby) ktere'' budovy si rezervuji' pro sebe. Mohou i vi'ce. Po kaz'de'' rezervovane'' budove' se z li'zaci' hroma'dky ihned doplni' budova nova'. Kdyz' zkonc'i' kolo rezervova'ni', zac'ne kolo vy'stavby. Ope't od zac'i'naji'ci'ho hra'c'e kaz'dy' postavi' budovu a zaplati' jeji' cenu. Stavi' vesnice, neni' tr'eba na to rezervovat z'a'dnou akci.
+
+<C2>Du'lez'ite'' Pozna'mky
+<I0>
+<I>To znamena' z'e kaz'da' budova zac'ne fungovat az' na'sleduji'ci' kolo po jeji'm postaveni'.
+<I>Take'' kaz'da' budova if-then se mu'z'e kaz'de'' kolo spustit jen jednou.
+<I>Mu'z'ou by't vyji'mky, jako napr'i'klad domek stavitele umoz'n'uje postavit budovy i dve'. Nebo je tretka co umoz'n'uje kaz'de'' kolo jednu budovu spustit podruhe''.
+<I1>
+
+<C1>Za've'r Kola
+Neboli zu'c'tova'ni'.
+
+<C2>Ztra'ty Na'klonnosti
+Podle pravidel sce''na'r'e ted' ztrati' kaz'dy' kmen na'klonnost.
+
+<C2>Vi'te'zstvi' c'i Prohra
+Ted' se vyhodnocuji' podmi'nky vi'te'zstvi' c'i prohry dle sce''na'r'e.
+
+<C2>Balancova'ni' Za'sob
+<I0>
+<I>Zahazuji' suroviny ktere'' se nevejdou do skladis'te'.
+<I>Prome'n'uji' se na hne'v bohu' karty pr'i'zne' tak aby jich hra'c'i nezbylo na ruce moc. Na hne'v jde prome'nit i kartu kterou si tohle kolo hra'c' li'znul.
+<I>Postavy se posouvaji' o jeden den zpe't do vesnice
+<I1>
+
+<C2>Posouva' se Nabi'dka Staveb
+V Kategorii'ch za'kladni' budovy, pokroc'ile'' budovy a amulety, pokud nikdo nic nepostavil, posune se nabi'dka. Spodni' se zahodi' a nahoru pr'ibyde nova'.
+
+<C2>Posouva' se Zac'i'naji'ci' hra'c'
+At' vi'me kdo pr'i's'te' stavi' nejrychleji.
