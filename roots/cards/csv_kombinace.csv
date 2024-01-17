@@ -1,5 +1,7 @@
 binocular,star,,,binocular_star,star,,,xxx
+binocular2,star,,,binocular2_star,star,,,xxx
 bone,log,,,bone_log,log,,,xxx
+bone,two,log,,bone_two_log,two_log,log,,xxx
 bow,or,wolf,,bow_or_wolf,or_wolf,wolf,,xxx
 bow,wolf,,,bow_wolf,wolf,,,xxx
 bow,wolf,favour,,bow_wolf_favour,wolf_favour,favour,,xxx
@@ -8,16 +10,10 @@ five,bone,,,five_bone,bone,,,xxx
 five,food,,,five_food,food,,,xxx
 five,storage,,,five_storage,storage,,,xxx
 food,bone,,,food_bone,bone,,,xxx
-food,three,bone,,food_three_bone,three_bone,bone,,xxx
 food,two,bone,,food_two_bone,two_bone,bone,,xxx
-four,food,,,four_food,food,,,xxx
 four,food,favour,,four_food_favour,food_favour,favour,,xxx
 four,food,two,bone,four_food_two_bone,food_two_bone,two_bone,bone,xxx
 log,three,bone,,log_three_bone,three_bone,bone,,xxx
-ribbon,binocular,star,,ribbon_binocular_star,binocular_star,star,,xxx
-ribbon,shield,,,ribbon_shield,shield,,,xxx
-ribbon,swords,,,ribbon_swords,swords,,,xxx
-six,bone,,,six_bone,bone,,,xxx
 six,bone,two,food,six_bone_two_food,bone_two_food,two_food,food,xxx
 six,food,two,bone,six_food_two_bone,food_two_bone,two_bone,bone,xxx
 swords,bone,,,swords_bone,bone,,,xxx
@@ -41,6 +37,8 @@ two,discard,,,two_discard,discard,,,xxx
 two,food,,,two_food,food,,,xxx
 two,food,bone,,two_food_bone,food_bone,bone,,xxx
 two,food,four,bone,two_food_four_bone,food_four_bone,four_bone,bone,xxx
+two,food,two,bone,two_food_two_bone,food_two_bone,two_bone,bone,xxx
+two,food,two,log,two_food_two_log,food_two_log,two_log,log,xxx
 two,log,,,two_log,log,,,xxx
 two,shield,,,two_shield,shield,,,xxx
 two,star,,,two_star,star,,,xxx
@@ -50,4 +48,4 @@ walk,bone,,,walk_bone,bone,,,xxx
 walk,food,,,walk_food,food,,,xxx
 walk,star,,,walk_star,star,,,xxx
 walk,two,bone,,walk_two_bone,two_bone,bone,,xxx
-water,tree,,,water_tree,tree,,,xxx
+four,food,,,four_food,food,,,xxx

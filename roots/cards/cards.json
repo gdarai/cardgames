@@ -152,18 +152,21 @@
     "_out":{ "reg": "png/{out0}.png" },
     "_card":"png/twoImg_150x150",
     "base":{ "reg": "png/{base0}.png" },
-    "extra":{ "reg": "png/{extra0}.png" },
+    "extraL":{ "reg": "?{extra0L}{}png/{extra0L}.png" },
+    "extraR":{ "reg": "?{extra0R}{}png/{extra0R}.png" },
     "_list": {
       "values": [
         "out0",
         "base0",
-        "extra0"
+        "extra0L",
+        "extra0R"
       ]
     },
     "values": [
-      { "list": ["axe2", "sword2", "wand2", "hook2", "spear2", "card", "discard", "favourstore"] },
-      { "list": ["axe", "sword", "wand", "hook", "spear", "cards", "cards", "favour"] },
-      { "list": ["ribbon", "ribbon", "ribbon", "ribbon", "ribbon", "plus", "minus", "storage"] }
+      { "list": ["axe2", "sword2", "wand2", "hook2", "spear2", "card", "discard", "favourstore", "binocular2", "swords2", "shield2", "walk2"] },
+      { "list": ["axe", "sword", "wand", "hook", "spear", "cards", "cards", "favour", "binocular", "swords", "shield", "walk"] },
+      { "list": ["", "", "crown", "", "", "", "", "", "largeplus", "largeplus", "largeplus", "largeplus"] },
+      { "list": ["crown", "crown", "", "crown", "crown", "plus", "minus", "storage", "largeplus", "largeplus", "largeplus", "largeplus"] }
     ]
   },
   {
@@ -248,56 +251,6 @@
       ]
     },
     "values":"csv_krajina_add.csv"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_akce_basic.tex",
-    "_card":"png/card_100x150_akce",
-    "_onOneLine":6,
-    "_randomize":"True",
-    "typeImg":{ "reg": "png/{type}.png" },
-    "roleImg":{ "reg": "png/{role}.png" },
-    "whereImg":{ "reg": "png/{where}.png" },
-    "costImg":{ "reg": "png/{cost}.png" },
-    "_list":{
-      "values":[
-        "name",
-        "type",
-        "roleText",
-        "role",
-        "where",
-        "cost",
-        "main"
-      ]
-    },
-    "values":"csv_akce_basic.csv"
-  },
-  {
-    "_process":"SPLIT_TEX",
-    "_out":"_OUT_akce_basic.tex"
-  },
-  {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_akce_basic.tex",
-    "_card":"png/card_100x150_akce",
-    "_onOneLine":6,
-    "_randomize":"True",
-    "typeImg":{ "reg": "png/{type}.png" },
-    "roleImg":{ "reg": "png/{role}.png" },
-    "whereImg":{ "reg": "png/{where}.png" },
-    "costImg":{ "reg": "png/{cost}.png" },
-    "_list":{
-      "values":[
-        "name",
-        "type",
-        "roleText",
-        "role",
-        "where",
-        "cost",
-        "main"
-      ]
-    },
-    "values":"csv_akce_basic.csv"
   },
   {
     "_process":"PRINT_CARDS",
@@ -467,40 +420,31 @@
     "values":"csv_help_vocab.csv"
   },
   {
-    "_process":"PRINT_CARDS",
-    "_out":"_OUT_ribon.tex",
-    "_card":"png/card_100x50_ribon",
-    "_onOneLine":6,
-    "_randomize":"False",
-    "img":{ "reg": "png/{img0}.png" },
-    "_list":{
-      "values":[
-        "name",
-        "text",
-        "img0"
-      ]
-    },
-    "values":"csv_ribon.csv"
-  },
-  {
     "_process":"SPLIT_TEX",
-    "_out":"_OUT_ribon.tex"
+    "_out":"_OUT_na_ruku.tex"
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_ribon.tex",
-    "_card":"png/card_100x50_amulet",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_100x150_akce",
     "_onOneLine":6,
     "_randomize":"True",
-    "img":{ "reg": "png/{img0}.png" },
+    "typeImg":{ "reg": "png/{type}.png" },
+    "roleImg":{ "reg": "png/{role}.png" },
+    "whereImg":{ "reg": "png/{where}.png" },
+    "costImg":{ "reg": "png/{cost}.png" },
     "_list":{
       "values":[
         "name",
-        "text",
-        "img0"
+        "type",
+        "roleText",
+        "role",
+        "where",
+        "cost",
+        "main"
       ]
     },
-    "values":"csv_amulety.csv"
+    "values":"csv_akce_basic.csv"
   },
   {
     "_process":"SPLIT_TEX",
@@ -546,18 +490,39 @@
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_na_ruku.tex",
-    "_card":"png/krasa_a_amulety",
-    "_onOneLine":4,
+    "_out":"_OUT_ribon.tex",
+    "_card":"png/card_100x50_ribon",
+    "_onOneLine":6,
     "_randomize":"False",
+    "img":{ "reg": "png/{img0}.png" },
     "_list":{
       "values":[
-        "x"
+        "name",
+        "text",
+        "img0"
       ]
     },
-    "values": [
-      { "list": [""] }
-    ]
+    "values":"csv_ribon.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_ribon.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_ribon.tex",
+    "_card":"png/card_100x50_amulet",
+    "_onOneLine":6,
+    "_randomize":"True",
+    "img":{ "reg": "png/{img0}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "text",
+        "img0"
+      ]
+    },
+    "values":"csv_amulety.csv"
   },
   {
     "_process":"PRINT_CARDS",
@@ -608,5 +573,24 @@
       ]
     },
     "values":"csv_akce_lama.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/krasa_a_amulety",
+    "_onOneLine":4,
+    "_randomize":"False",
+    "_list":{
+      "values":[
+        "x"
+      ]
+    },
+    "values": [
+      { "list": [""] }
+    ]
   }
 ]

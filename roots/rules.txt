@@ -17,7 +17,6 @@ Kompetitivni' sce''na'r' pro zkus'ene'js'i' hra'c'e. Agresivita a obti'z'nost hr
 <I>Vyhraje ten kdo prvni' bude mi't za'roven' pokrok alespon' 10 a pr'i'zen' alespon' 10.
 <I>Kaz'de'' kolo mu'z'e kaz'dy' hra'c' by't pod u''tokem 3 a zur'ivosti 1.
 <I>Kaz'de'' kolo mu'z'e hra'c' ztratit 1 pr'i'zen' za hlad, 2 za u''tok a neomezene' za pokousa'ni' nebo hne'v bohu'.
-<I>V tomto sce''na'r'i nejde zahazovat karty akci'.
 <I>V za'kladu mu'z'e kaz'dy' hra'c' postavit nanejvy's' jednu budovu.
 <I>Hra'c' vypadne ze soute'z'e, pokud mu klesne pr'i'zen' na nula.
 <I1>
@@ -30,15 +29,29 @@ Kompetitivni' sce''na'r' pro zkus'ene'js'i' hra'c'e s prvky PvE. Vhodny' i pro s
 <I>Vyhraje ten kdo prvni' bude mi't pr'i'zen' 10.
 <I>Kaz'de'' kolo mu'z'e kaz'dy' hra'c' by't pod u''tokem 3 a zur'ivosti 1.
 <I>Kaz'de'' kolo mu'z'e hra'c' ztratit 1 pr'i'zen' za hlad, 2 za u''tok a neomezene' za pokousa'ni' nebo hne'v bohu'.
-<I>V tomto sce''na'r'i nejde zahazovat karty akci'.
 <I>V za'kladu mu'z'e kaz'dy' hra'c' postavit nanejvy's' jednu budovu.
 <I>Hra'c' vypadne ze soute'z'e, pokud mu klesne pr'i'zen' na nula.
 <I>Navi'c se v za've'ru kaz'de''ho kola ta'hne jedna karta hne'vu bohu' ktera' padne pr'i's'ti' kolo na vs'echny hra'c'e, kter'i' toto kolo nedali u''tok pr'es akci nebo hne'v.
 <I>Tento sce''na'r' jde hra't i v jednom hra'c'i.
 <I1>
 
+<C1>Osada
+Kompetitivni' sce''na'r' pro zkus'ene'js'i' hra'c'e zame'r'eny' na vy'stavbu.
+<I0>
+<I>Hraje se s plny'mi pravidly.
+<I>Zac'i'na' se se 3 c'leny kmene, bez surovin, s obranou 1 a 3 body pr'i'zne'.
+<I>Vyhraje ten kdo prvni' bude mi't 10 budov.
+<I>Kaz'de'' kolo mu'z'e kaz'dy' hra'c' by't pod u''tokem 3 a zur'ivosti 1.
+<I>Kaz'de'' kolo mu'z'e hra'c' ztratit 1 pr'i'zen' za hlad, 2 za u''tok a neomezene' za pokousa'ni' nebo hne'v bohu'.
+<I>V za'kladu mu'z'e kaz'dy' hra'c' postavit nanejvy's' jednu budovu.
+<I>Hra'c' vypadne ze soute'z'e, pokud mu klesne pr'i'zen' na nula.
+<I1>
+
 <C>Pru'be'h Hry
 Hra se hraje na kola. Ve'ts'ina se da' hra't najednou, ne'ktere'' c'a'sti je pak potr'eba odehra't postupne' od zac'i'naji'ci'ho hra'c'e. Na konci kaz'de''ho kola se pak vyhodnocuje jestli ne'ktery' hra'c' nevypadl, c'i jestli ne'ktery' hra'c' nevyhra'l.
+
+<C1>Na'hla' smrt
+Zrychlena' varianta hry, kdy hra konc'i' okamz'ite' jakmile prvni' hra'c' vypadne. Ostatni' pak porovnaji' jak jsou daleko od splne'ni' podmi'nek sce''na'r'e a podle toho se vybere vi'te'z.
 
 <C1>Vypadli' Hra'c'i
 Pokud hra'c' vypadne neodcha'zi' ze hry. Nejspi's' uz' nevyhraje, ale mu'z'e zami'chat por'adi'm ve hr'e. Hra konc'i' kdyz' posledni' hra'c' vypadne, c'i kdyz' prvni' hra'c' vyhraje.
@@ -94,7 +107,7 @@ Ted' se vyhodnocuji' podmi'nky vi'te'zstvi' c'i prohry dle sce''na'r'e.
 <C2>Balancova'ni' Za'sob
 <I0>
 <I>Zahazuji' suroviny ktere'' se nevejdou do skladis'te'.
-<I>Prome'n'uji' se na hne'v bohu' karty pr'i'zne' tak aby jich hra'c'i nezbylo na ruce moc. Na hne'v jde prome'nit i kartu kterou si tohle kolo hra'c' li'znul.
+<I>Pokud ma' hra'c' moc karet pr'i'zne', mu'z'e jednu prome'nit na hne'v bohu'. Dalsi' nad sve'' maximum musi' proste' zahodit. Na hne'v jde prome'nit i kartu kterou si tohle kolo hra'c' li'znul.
 <I>Postavy se posouvaji' o jeden den zpe't do vesnice
 <I1>
 

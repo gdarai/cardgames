@@ -1,4 +1,2 @@
-Zdroje,food,Jidlo,bone,Kosti,log,Drevo,walk,Cesta,star,Popularita,tool,Nastroj
-Akce,binocular,Pruzkum,heal,Leceni,bow,Zahaneni,swords,Utok,shield,Obrana,hammer,Stavba
-Prostredi,water,Voda,tree,Les,sun,Den,wolf,Zver,flirt,Flirt,ribbon,Trenink
-Dalsi,card,+ Karta,discard,- Karta,favour,Ocko,storage,Sklad,claw,Kouzlo,free,Zadarmo
+Zakladni akce,binocular,Pruzkum,favour,Ocko,bow,Zahaneni,swords,Utok,shield,Obrana,star,Popularita
+Specialni akce,binocular2,Vyber ze dvou,swords2,1-3 Utoky,shield2,Doma nebo|v terenu,sun,Ve vsi,walk,Kdekoliv|mimo ves,walk2,Kdekoliv|I ve vsi

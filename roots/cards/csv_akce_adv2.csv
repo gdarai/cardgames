@@ -1,10 +1,10 @@
-6,Rybolov II,six_food_two_bone,Rybar II,hook2,water,free,food
+6,Lepsi rybolov,six_food_two_bone,Rybar II,hook2,water,free,food
 6,Plaveni klad,log_three_bone,Rybar II,hook2,water,walk,log
 6,Lov dravcu,six_bone_two_food,Lovec II,spear2,tree,walk,bone
-6,Zakerny Utok,ribbon_swords,Lovec II,spear2,two_sun,swords_three_food,sword
-6,Lepsi Kaceni,two_log,Drevorubec II,axe2,tree,walk_food,log
-6,Obrana kdekoliv,ribbon_shield,Drevorubec II,axe2,walk,walk_bone,shield
-6,Zvireci Hruza,bow_wolf_favour,Valecnik II,sword2,walk,walk_star,bow
-6,Lepsi Utok,ribbon_swords,Valecnik II,sword2,two_sun,swords_bone,sword
+6,Zakerny utok,swords2,Lovec II,spear2,two_sun,swords_three_food,sword
+6,Lepsi kaceni,two_log,Drevorubec II,axe2,tree,walk_food,log
+6,Obrana kdekoliv,shield2,Drevorubec II,axe2,walk2,walk_bone,shield
+6,Zvireci hruza,bow_wolf_favour,Valecnik II,sword2,walk,walk_star,bow
+6,Lepsi utok,swords2,Valecnik II,sword2,two_sun,swords_bone,sword
 6,Omameni prirody,four_food_favour,Saman II,wand2,sun,bone,favour
-6,Zvireci oci II,ribbon_binocular_star,Saman II,wand2,sun,food_bone,binocular
+6,Vize bohu,binocular2_star,Saman II,wand2,sun,food_bone,binocular
