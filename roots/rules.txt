@@ -9,6 +9,27 @@ Pokus o Zvi'r'eci' bohy v2
 <C>Ci'l Hry - Sce''na'r'e
 Vyhraje hra'c' co dosa'hne ci'lu' sce''na'r'e.
 
+<C1>Uvodni' Sce''na'r' - Pr'i'chod
+Tr'enice mezi stars'i'mi tve''ho kmene a postupuji'ci' ledovec va's minulou zimu poslali na tuhle pout'. Po u'trapa'ch cestova'ni' jste v ne'kolika skupina'ch dorazili do u'doli' r'eky. Zelene''ho ra'je ktery' jen c'eka' na prozkouma'ni' a osi'dleni'. Zac'al za'vod o to, c'i' vesnice bude prvni' v Pr'i'zni Zvi'r'eci'ch Bohu''.
+
+Hrajte s omezuji'ci'mi pravidly, vysve'tluj v por'adi':
+<I0>
+<I>Sce''na'r' hry vyhraje kmen ktery' prvni' dosa'hne obou ci'lu'', postavi' ve vesnici aspon' 5 budov a bude v pr'i'zni bohu''. Hra'c' je v pr'i'zni, ma' li souc'et pr'i'zne' a oc'ek na ruce alespon' 5. V tomto pr'i'pade' nepouz'i'vejte alternativni' za've'ry, jen tenhle. - Ukaz' s'ka'lu vy'hry, budovy i pr'i'zen' jsou na u'rovni 0 a mi'n' ji't nemu'z'ou.
+<I>Bude potr'eba prozkouma'vat okoli' vesnice, aby ste zi'skali potr'ebne'' suroviny na stavbu. - Ukaz' krajinu vesnice a bali'c'ek krajin.
+<I>Samotna' vesnice zac'i'na' se 2 postavami. - Ukaz' desku vesnice, vysve'tli co na ni' je co, ukaz' z'etony ji'dla a kosti' a nech hra'c'e vybrat kameny postav. Vysve'tli poc'i'tadlo c'asu.
+<I>Kolo hry se skla'da' z pr'i'pravne'' fa'ze, pla'nova'ni', stavby budovy a za've'rec'ne''ho hodnoceni'. - Dej hra'c'u''m lamakartu kola. Ukaz' bali'c'ek za'kladni'ch budov. Vysve'tli stavbu.
+<I>Pokud je postava dane'' kolo ve vesnici pr'ide'li' ji' hra'c' u'kol. Sluz'bu bohu'm, Tre''nink, Flirtova'ni' nebo Pra'ci. - Ukaz' bali'c'ek Oc'ek. Vysve'tli tre''nova'ni' pro zac'a'tec'ni'ky - a jen za'klad. Vysve'tli flirt.
+<I>A ted' k akci'm. Funkc'ni' budou Zber Bobuli, Zber Klesti a Pruzkum. Zbytek je smeti co proted prekazi na ruce. - Prozati'm bez hladu. Ukaz' bali'c'ek za'kladni'ch akci'. Vysvetli tyto tri akce. At' si ho kaz'dy' zami'cha'.
+<I>A podrobne'ji k tre''ninku. Proted' jde tre''novat postavy na ryba'r'e, lovce nebo s'amana. Bez bonusu' za roli. - Rozdej lamakarty tre''ninkovy'ch roli'. Ukaz' co ty karty znamenaji' a dej pr'i'klad tre''ninku.
+<I>Pr'i'prava kola. Co vs'e tedy. - Prozati'm bez poc'asi'. Zi'ska'ni' surovin z budov, Na'vrat postav, Zami'cha'ni' bali'c'ku praci'.
+<I>Pla'novaci' fa'ze, zati'm postupne', ale at' ve'di' z'e v plne'' hr'e mu'z'ou najednou. - Nova' postava. Po tre''ninku. Po li'znuti' oc'ka. Po pra'ci hod na zve'r'. Zve'r' ano, Znic'eni' krajiny zati'm ne. Oc'ka vysve'tli'me na za've'r.
+<I>Vy'stavba. Zati'm bez rezervace, jen rovnou stavba. Postupne'.
+<I>Za've'r kola, vyhra'l ne'kdo? Pokud ne, nastanou fa'ze balancova'ni' surovin, volba hne'vu bohu' (spi's' pomluv v tomhle sce''na'r'i) a balancova'ni' oc'ek a nakonec se posune zac'i'naji'ci' hra'c' a jede se dals'i' kolo. - Jak funguje skladova'ni' oc'ek a surovin. Oc'ka a hne'v za chvi'li. Zati'm bez rotaci' budov.
+<I>A ted' ta oc'ka. Jak se zi'ska'vaji'. Dve' strany oc'ka. Hne'v bohu'. Zpoz'de'ni' oc'ek. Proted' neplatne'' symboly jsou Stavba, U'tok, Obrana a Poc'asi'. Lze je zahra't jako pomluvu a pr'ipravit souper'e o pr'i'zen'. Nezapomi'nej z'e kaz'de'' oc'ko na ruce se poc'i'ta' do pr'i'zne' ve vyhodnocova'ni' za've'ru kola.
+<I>Hra skonc'i' ve vyhodnocovaci' fa'zi kola, kdy prvni' hra'c' dosa'hne 5 budov a 5 pr'i'zne'. Je be'z'ne'' z'e takovy'ch hra'c'u' je vi'c najednou. Pak je konec'ny' vi'te'z ten co ma' tu pr'i'zen' nejvys's'i' a v pr'i'pade' rovnosti mu zbylo nejvi'c surovin.
+<I1>
+
+
 <C1>Rozvoj Osady
 Kompetitivni' sce''na'r' pro zkus'ene'js'i' hra'c'e. Agresivita a obti'z'nost hry je plne' v rukou hra'c'u'.
 <I0>
