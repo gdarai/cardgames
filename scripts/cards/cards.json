@@ -100,6 +100,16 @@
     "_out":"_OUT_A.tex"
   },
   {
+    "_process":"ADD_TEXT",
+    "_out":"_OUT_A.tex",
+    "_text":"Trocha textu k doplneni",
+    "_size":"Large"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_A.tex"
+  },
+  {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_A.tex",
     "_card":"png/card_100x150",

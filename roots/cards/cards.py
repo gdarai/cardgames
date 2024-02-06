@@ -34,6 +34,7 @@ ALLOWED_PROCESSES = [
 	'PRINT_A_CARD',
 	'COMBINE_PNGS',
 	'SPLIT_TEX',
+	'ADD_TEXT',
 	'TERMINATE',
 ];
 
@@ -594,6 +595,16 @@ def addPrintSeparator(setting):
 	IMAGES[setting['_out']].append(imageDict)
 	return
 
+def addPrintText(setting):
+	imageDict = dict()
+	imageDict['file'] = setting['_out']
+	imageDict['task'] = 'text'
+	imageDict['text'] = setting['_text']
+	imageDict['size'] = checkFieldRaw('TextPrint', '??', setting, '_size', 'string', 'Large')
+	IMAGES[setting['_out']].append(imageDict)
+	return
+
+
 ########
 # Process
 
@@ -760,6 +771,11 @@ def readParameters(setting, source):
 	if setting['_process'] == 'SPLIT_TEX':
 		readSimpleParameter(setting, source, '_out')
 
+	if setting['_process'] == 'ADD_TEXT':
+		readSimpleParameter(setting, source, '_out')
+		readSimpleParameter(setting, source, '_size')
+		readSimpleParameter(setting, source, '_text')
+
 	if setting['_process'] == 'PRINT_CARDS':
 		for paramName in setting['_cardParamNames']:
 			if paramName in source:
@@ -850,6 +866,10 @@ def readAndProcess(level, name, source, setting):
 			addPrintSeparator(setting)
 			return
 
+		if setting['_process'] == 'ADD_TEXT':
+			addPrintText(setting)
+			return
+
 		if setting['_card'] == '':
 			print('!! Should do the printing now, but still missing the mandatory "_card" key.')
 			exit()
@@ -889,10 +909,15 @@ def printImages(IMAGES):
 	onOneLine = IMAGES[0]['onOneLine']
 	doRandom = IMAGES[0]['randomize']
 	for IMG in IMAGES:
-		if(IMG['onOneLine'] == onOneLine and IMG['randomize'] == doRandom and IMG['task'] == 'print'):
+		if(IMG['task'] == 'print' and IMG['onOneLine'] == onOneLine and IMG['randomize'] == doRandom):
 			pick.append(IMG)
 		else:
 			printImagesSelection(pick)
+			if IMG['task'] == 'text':
+				print('\nPrinting a text')
+				writeLine(f,0,'{\\'+IMG['size']+' '+IMG['text']+'}')
+				continue
+
 			pick = list()
 			if IMG['task'] == 'print':
 				pick.append(IMG)

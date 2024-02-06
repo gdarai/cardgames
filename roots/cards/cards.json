@@ -128,6 +128,30 @@
     "table":1
   },
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_akce_lama_s1.csv",
+    "sheet":"Akce Novy Lama Mala",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_akce_lama_s2.csv",
+    "sheet":"Akce Novy Lama Mala",
+    "skipTitle":1,
+    "table":2
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_akce_lama_s3.csv",
+    "sheet":"Akce Novy Lama Mala",
+    "skipTitle":1,
+    "table":3
+  },
+  {
     "_process":"CONVERT_SVGS"
   },
   {
@@ -552,6 +576,24 @@
     "_out":"_OUT_lama.tex"
   },
   {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"ADD_TEXT",
+    "_out":"_OUT_lama.tex",
+    "_text":"zkladni akce: RYBAR",
+    "_size":"Large"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
     "_process":"PRINT_CARDS",
     "_out":"_OUT_lama.tex",
     "_card":"png/card_300x50_lama",
@@ -572,11 +614,81 @@
         "main"
       ]
     },
-    "values":"csv_akce_lama.csv"
+    "values":"csv_akce_lama_s1.csv"
   },
   {
     "_process":"SPLIT_TEX",
     "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"ADD_TEXT",
+    "_out":"_OUT_lama.tex",
+    "_text":"zkladni akce: LOVEC",
+    "_size":"Large"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_lama.tex",
+    "_card":"png/card_300x50_lama",
+    "_onOneLine":3,
+    "_randomize":"False",
+    "typeImg":{ "reg": "?{type}{}png/{type}.png" },
+    "roleImg":{ "reg": "?{role}{}png/{role}.png" },
+    "whereImg":{ "reg": "?{where}{}png/{where}.png" },
+    "costImg":{ "reg": "?{cost}{}png/{cost}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "type",
+        "roleText",
+        "role",
+        "where",
+        "cost",
+        "main"
+      ]
+    },
+    "values":"csv_akce_lama_s2.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"ADD_TEXT",
+    "_out":"_OUT_lama.tex",
+    "_text":"zkladni akce: SAMAN",
+    "_size":"Large"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_lama.tex",
+    "_card":"png/card_300x50_lama",
+    "_onOneLine":3,
+    "_randomize":"False",
+    "typeImg":{ "reg": "?{type}{}png/{type}.png" },
+    "roleImg":{ "reg": "?{role}{}png/{role}.png" },
+    "whereImg":{ "reg": "?{where}{}png/{where}.png" },
+    "costImg":{ "reg": "?{cost}{}png/{cost}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "type",
+        "roleText",
+        "role",
+        "where",
+        "cost",
+        "main"
+      ]
+    },
+    "values":"csv_akce_lama_s3.csv"
   },
   {
     "_process":"PRINT_CARDS",
