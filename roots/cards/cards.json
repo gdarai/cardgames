@@ -152,6 +152,14 @@
     "table":3
   },
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_akce_lama_s4.csv",
+    "sheet":"Akce Novy Lama Mala",
+    "skipTitle":1,
+    "table":4
+  },
+  {
     "_process":"CONVERT_SVGS"
   },
   {
@@ -586,7 +594,7 @@
   {
     "_process":"ADD_TEXT",
     "_out":"_OUT_lama.tex",
-    "_text":"zkladni akce: RYBAR",
+    "_text":"zkladni akce: ZAKLAD",
     "_size":"Large"
   },
   {
@@ -623,7 +631,7 @@
   {
     "_process":"ADD_TEXT",
     "_out":"_OUT_lama.tex",
-    "_text":"zkladni akce: LOVEC",
+    "_text":"zkladni akce: RYBAR",
     "_size":"Large"
   },
   {
@@ -660,7 +668,7 @@
   {
     "_process":"ADD_TEXT",
     "_out":"_OUT_lama.tex",
-    "_text":"zkladni akce: SAMAN",
+    "_text":"zkladni akce: LOVEC",
     "_size":"Large"
   },
   {
@@ -689,6 +697,43 @@
       ]
     },
     "values":"csv_akce_lama_s3.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"ADD_TEXT",
+    "_out":"_OUT_lama.tex",
+    "_text":"zkladni akce: SAMAN",
+    "_size":"Large"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_lama.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_lama.tex",
+    "_card":"png/card_300x50_lama",
+    "_onOneLine":3,
+    "_randomize":"False",
+    "typeImg":{ "reg": "?{type}{}png/{type}.png" },
+    "roleImg":{ "reg": "?{role}{}png/{role}.png" },
+    "whereImg":{ "reg": "?{where}{}png/{where}.png" },
+    "costImg":{ "reg": "?{cost}{}png/{cost}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "type",
+        "roleText",
+        "role",
+        "where",
+        "cost",
+        "main"
+      ]
+    },
+    "values":"csv_akce_lama_s4.csv"
   },
   {
     "_process":"PRINT_CARDS",
