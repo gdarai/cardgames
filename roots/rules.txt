@@ -2,12 +2,110 @@
 Pokus o Zvi'r'eci' bohy v2
 
 <C>Slovni'c'ek
+<C1>Pojmy
 <I0>
+<I>KKK - K, Kost, Klacek, Ku'z'e to je vs'e jedna surovina K.
 <I>Sce''na'r' - nastavuje obti'z'nost hry, obsahuje ci'le, omezeni' a dodatec'na' pravidla sce''na'r'e.
 <I1>
-
+<C1>C'inosti co nejsou akce
+De'laji' se ve vesnici a por'a'd se de'laji' postavami a tudi'z' se za kaz'dou plati' 1den c'asu postavy.
+<I0>
+<I>Z'a'dost bohu' - Zi'ska' oc'ko, zadarmo.
+<I>Tre''nink na u'rove'n 1 - Zi'ska' zvolenou dovednost a u'roven', stoji' 1 ji'dlo
+<I>Tre''nink na u'rove'n 2 - Pouze pokud uz' od dane''ho povola'ni' ma' u'roven' 1. Zi'ska' zvolenou dovednost a u'roven', stoji' 2 ji'dla a kost
+<I1>
+<C1>Akce Novic
+<I0>
+<I>Zbe'r bobuli' - Te'z'i' ve vesnici +2 ji'dla, c'as 1 den, zadarmo
+<I>Zbe'r klesti' - Te'z'i' mimo vesnici +2 kosti, c'as a ji'dlo dle vzda'lenosti
+<I>Pru'zkum - Na kraji mapy objevi' jedno nove'' poli'c'ko, c'as a ji'dlo dle vzda'lenosti
+<I>Obrana - Opravi' 1 obranu vesnice, c'as 2 dny ve vesnici, stoji' 2 kosti
+<I>U'tok - Da' 1 u'tok. Ve vesnici, c'as 2 dny, stoji' 2 ji'dla a 1 kost
+<I1>
+<C1>Akce Ryba'r'
+<I0>
+<I>Rybolov - Te'z'i' u vody +5 ji'dla, c'as dle vzda'lenosti, zadarmo
+<I>Vize vody - Pru'zkum na da'lku, vesnici za 2 dny, stoji' 2 ji'dla
+<I>Obe't' vode' - Prosi' o 2 oc'ka u vody. Stoji' c'as a ji'dlo dle vzda'lenosti
+<I>Leps'i' rybolov (Ryba'r' 2) - Lovi' 6 ji'del a 2 kosti, zadarmo u vody, stoji' c'as dle vzda'lenosti
+<I>Plaveni' kla'd (Ryba'r' 2) - Splavi' u vody kla'du a 3 klacky, stoji' c'as a ji'dlo dle vzda'lenosti
+<I1>
+<C1>Akce Lovec
+<I0>
+<I>Lov zve'r'e - V lese ulovi' 4 ji'dla a 2 kosti, stoji' c'as dle vzda'lenosti
+<I>Lov kosti' - V lese ulovi' 5 kosti', stoji' c'as a ji'dlo dle vzda'lenosti
+<I>Mistr zvi'r'at - Kde je tr'eba zaz'ene zve'r' a pos'le ji' jako pohromu souper'u'm, stoji' c'as a ji'dlo dle vzda'lenosti a kost
+<I>Lov dravcu' (Lovec 2) - V les ulovi' 2 ji'dla a 6 kosti', stoji' c'as dle vzda'lenosti
+<I>Za'ker'ny' u'tok (Lovec 2) - Vyvola' N u'toku' z vesnice za 2 dny, stoji' N+3 ji'dla.
+<I1>
+<C1>Akce Dr'evorubec
+<I0>
+<I>Ka'ceni' - Mimo ves, ska'ci' 1 kla'du, stoji' c'as a ji'dlo dle vzda'lenosti, +1 ji'dlo
+<I>Obrana doma - Opravi' (+1) obranu vesnice, za 1 den 2 ji'dla a klacek
+<I>Obe't' lesu - V lese zi'ska' oc'ko a 3 klacky, stoji' c'as a ji'dlo dle vzda'lenosti, +1 ji'dlo
+<I>Leps'i' ka'ceni' (Dr'evorubec 2) - V lese ska'ci' 2 kla'dy, stoji' c'as a ji'dlo dle vzda'lenosti, +1 ji'dlo
+<I>Obrana kdekoliv (Dr'evorubec 2) - Kde je tr'eba (ve vesnici nebo mimo) vyrobi' obranu +1, stoji' to c'as a ji'dlo dle vzda'lenosti +1 klacek
+<I1>
+<C1>Akce Va'lec'ni'k
+<I0>
+<I>Hruby' u'tok - Z vesnice vede N u'toku' na souper'e, trva' 3 dny a stoji' N+1 ji'dla a kost
+<I>Obranny' boj - Kde je tr'eba (ve vesnici nebo mimo) vyrobi' obranu +1, stoji' to c'as a ji'dlo dle vzda'lenosti +2 klacky
+<I>Vola'ni' bohu' - Ve vesnici zi'ska' 2 oc'ka, stoji' ho to 2 ji'dla
+<I>Zvi'r'eci' hru'za (Va'lec'ni'k 2) - Kde je tr'eba zaz'ene zve'r' a pos'le ji' jako pohromu souper'u'm, navi'c zi'ska' oc'ko, stoji' c'as a ji'dlo dle vzda'lenosti a sebere popularitu
+<I>Leps'i' u'tok (Va'lec'ni'k 2) - Vyvola' N u'toku' z vesnice za 2 dny, stoji' N ji'dla a 1 kost.
+<I1>
+<C1>Akce S'aman
+<I0>
+<I>Zvi'r'eci' oc'i - Pru'zkum na da'lku za 1 den z vesnice, stoji' ji'dlo a kost
+<I>Zbe'r klesti' - Ve vesnici zi'ska' 3 kosti a popularitu, za 1 den, stoji' to 1 ji'dlo
+<I>Strach - Na da'lku vyz'ene dravce, nebo pos'le zve'r' jako pohromu na souper'e. Vyvola'va' se za 1 den ve vesnici, stoji' 2 ji'dla a 1 kost
+<I>Oma'meni' pr'i'rody (S'aman 2) - Zi'ska' 4 ji'dla a oc'ko, vyvola'va' 1 den ve vesnici a stoji' to kost
+<I>Vize bohu' (S'aman 2) - Magicky provede 2 pru'zkumy najednou. Kouzlo vyvola'va' ve vesnici, za 1 den a stoji' to ji'dlo a kost
+<I1>
+<C1>Soukrome'' budovy (Kovadlina)
+<I0>
+<I>Sklad - 2 kosti, kapacita skladu +5
+<I>Strom - Ji'dlo a kost, jde zka'cet (vra'tit do nabi'dky) a zi'skat kla'du
+<I>Val - 3 kosti, +1 obrana (a +1 max obrana)
+<I>Hra'z - 2 kosti, generuje kost kaz'dy' den
+<I1>
+<C1>Za'kladni' budovy (Novic)
+<I0>
+<I>Druhy' sklad - kla'da a 2 kosti, +5 kapacita skladu
+<I>Pole - tr'i kosti, generuje ji'dlo kaz'dy' den
+<I>Hli'dka - tr'i kosti, +1 obrana (a +1 max obrana)
+<I>Pe's'iny - 2 kosti, kaz'da' cesta mimo vesnici -1 den a -1 ji'dlo
+<I>Cvic'is'te' - kla'da, kaz'dy' vy'cvik je o 1 ji'dlo levne'js'i'
+<I>Velke'' ohnis'te' - 2 kosti, +1 ji'dlo pokaz'de' kdyz' zi'ska's' oc'ko
+<I>Lazaret - 2 ji'dla a 2 kosti, +1 oc'ko pokaz'de'' kdyz'se toto kolo bra'ni's' u'toku
+<I>Mi'sto zasve'ceni' - 2 ji'dla a 4 kosti, +Popularita pr'i flirtu
+<I>Pila - ji'dlo a 2 kosti, jde sme'nit 2 kosti za 1 kla'du
+<I>Pasti - 2 ji'dla a kost, Pokaz'de'' kdyz' zaha'ni's' zve'r', zi'skej ji'dlo
+<I>Ja'ma - ji'dlo a kost, sme'n' 1 ji'dlo za 1 kost
+<I>Stolec stars'i'ch - 3 kosti, ma's' na ruce o 2 karty akci' navi'c
+<I1>
+<C1>Pokroc'ile'' budovy 1 (Sekera)
+<I0>
+<I>Ohradni'ky - 2 kosti a 2 kla'dy, Na krajina'ch v te'sne''m okoli' vesnice nemu'z'e by't zve'r', znic'ena' krajina by't sta'le mu'z'e
+<I>Chov - 2 kosti a kla'da, Kaz'dy' den +1 ji'dlo
+<I>Obe'tis'te' - 3 kosti a kla'da, Kdyz' zi'ska's' oc'ko, zi'ska's' i popularitu
+<I>Slunec'ni' pec - 3 kosti, pr'i kaz'de' ceste' mimo vesnici -1 ji'dlo
+<I>Stra'z'nice - kost a kla'da, +1 obrana (a +1 max obrana)
+<I>Sauna - ji'dlo a 2 klacky, kaz'da' populace je o 1 flirt levne'js'i'
+<I>Sklad di'lu' - 2 klacky a kla'da, +1 obrana (a +1 max obrana)
+<I>Skry's'e - kost a kla'da, Pokaz'de'' kdyz' zau'toc'i's' +2 ji'dla
+<I>Pame'tnice - 3 kosti, Kapacita oc'ek na ruce +3
+<I1>
+<C1>Pokroc'ile'' budovy 2 (Hu'l)
+<I0>
+<I>Sad - 5 klacku', Kaz'dy' den +1 Ji'dlo a +1 klacek
+<I>Modla - 3 kosti a 2 kla'dy, Kaz'de'' kolo +1 popularita
+<I>Palisa'da - kost a 2 kla'dy, +2 obrany (a +2 max obrana)
+<I>Velka' si'n' - kost a 2 kla'dy, kaz'de'' kolo mu'z'es' discardnout 1 zahozenou kartu akce
+<I>Ve'c'ny' ohen' - 2 ji'dla a 2 kla'dy, pokaz'de'' kdyz' zi'ska's' oc'ko, zi'ska's' jedno navi'c
+<I1>
 <C>Ci'l Hry - Sce''na'r'e
-Vyhraje hra'c' co dosa'hne ci'lu' sce''na'r'e.
+Vyhraje hra'c' co dosa'hne ci'lu' sce''na'r'e. Zac'ni c'teni'm obecny'ch pravidel a pak teprve pr'ec'ti sce''na'r' co chces' hra't.
 
 <C1>Uvodni' Sce''na'r' - Pr'i'chod
 Tr'enice mezi stars'i'mi tve''ho kmene a postupuji'ci' ledovec va's minulou zimu poslali na tuhle pout'. Po u'trapa'ch cestova'ni' jste v ne'kolika skupina'ch dorazili do u'doli' r'eky. Zelene''ho ra'je ktery' jen c'eka' na prozkouma'ni' a osi'dleni'. Zac'al za'vod o to, c'i' vesnice bude prvni' v Pr'i'zni Zvi'r'eci'ch Bohu''.
@@ -68,6 +166,36 @@ Kompetitivni' sce''na'r' pro zkus'ene'js'i' hra'c'e zame'r'eny' na vy'stavbu.
 <I>Hra'c' vypadne ze soute'z'e, pokud mu klesne pr'i'zen' na nula.
 <I1>
 
+<C>Pr'i'prava stolu
+<C1>Bali'c'ek karet dovednosti'
+(FIG A) Samostatny' bali'c'ek karet. To jsou velke' karty s velky'm na'pisem role, jako tr'eba Va'lec'i'k, nebo Ryba'r'. Ten se pr'ipravi' na kraj hraci' plochy rozde'leny' do bali'c'ku' podle jednotlivy'ch roli'. Tr'eba v bali'c'ku va'lec'ni'ka budou zepr'edu akce Va'lec'ni'k I (za'kladni') a zezadu Va'lec'ni'k II (pokroc'ile''). Pr'ed bali'c'ek kaz'de'' role se pr'ipravi' oba bali'c'ky ribbonu' pro danou roli. U bali'c'ku ribbonu' je jes'te' bali'c'ek amuletu'. Ty se poznaji' s'edy'm podbarveni'm a patr'i' doprostr'ed desky na'kupu'.
+<C1>Bali'c'ek na'kupu'
+Tenhle bali'cek obsahuje Za'kladni' budovy (C'tvercove'' karty se symbolem karet v rohu), Pokroc'ile'' budovy (C'tvercove'' karty se symboly Sekery nebo Magicke'' hu'lky v rohu), Amulety (Viz bali'c'ek dovednosti'), karta ceny amuletu, Oc'ka (Velke' karty) a Krajiny (Podlouhle'' karty). Oc'ka a Krajiny dej jako li'zaci' bali'c'ky li'cem dolu'. Amulety, Za'kladni' budovy a Pokroc'ile'' budovy dej jako li'zaci' bali'cky li'cem nahoru s 2 nabi'dnuty'ma kartama. Vedle nabi'dky amuletu' dej i pr'ipomi'nkovou kartu ceny amuletu.
+<C1>Poc'i'tadlo
+Uprostr'ed spolec'ne''ho stolu sestav poc'i'tadlo. Tady budou hra'c'i poc'i'tat svu'j u''spe'ch.Na FigC je vide't pro kaz'de''ho hra'c'e kostka ukazuji'ci' technologickou u''roven' hra'c'e a figurka ukazuji'ci' pr'i'zen' bohu'. Pak je tu karta Pohrom, kam hra'c'i budou da'vat karty oc'ek pouz'ite'' jako pohromy.
+<C1>Pr'i'prava desky hra'c'e
+Kaz'dy' hra'c' ma' svu'j bali'c'ek. V ne'm ma' bali'k za'kladni'ch akci' a soukromy'ch budov. A hlavni' krajinu - vesnici. (Plus krajinu kr'iz'ovatka ktera' se pokud vi'm zati'm nepouz'i'va') Umi'sti desku hra'c'e, nalevo dej li'zaci' bali'c'ek karet akci' a vz'dy kdyz' budes' mi't nali'zane'' akce na ruce, da'vej je na pravo. Pod desku dej sva' poc'i'tadla (Flirt, Obranu a U'tok), svou za'sobu budov a pak me'r'a'k spoz'de'ni' postav. Vezmi si svou za'sobu 6 barevny'ch krystalu' jako figurek postav, sve'' dva za'kladni' z'etony surovin 1/2 ty co maji' tec'ky a kostku poc'asi'.
+<C>Vysve'tleni' co je co
+<C1>Deska hra'c'e FigC
+Na horni'm okraji ma' 6 chli'vku', jeden pro kaz'dou postavu. Nad ne' se da'vaji' nauc'ene'' dovednosti (ribbony) c'i pr'ir'azeny' amulet. Na karte' jsou pr'ipomenute'' za'kladni' ceny (c'tu z leva). Vycvic'eni' postavy na u'rove"n 1 stoji' 1 ji'dlo. Na u''roven' 2 2 ji'dla a kost. Na ruku se kaz'de'' kolo li'z'e X+2 karet kde X je aktua'lni' poc'et postav ve vesnici. Oc'ek mu'z'e mi't hra'c' na ruce 5 a nestoji' ta akce nic. Flirtu' na dals'i' postavu je potr'eba X-1 (co je X uz' jsem napsal). Surovin mu'z'e by't ve vesnici 10. Zde maji' lez'et karty nali'zane'' Na Ruce.
+<C1>Kolem Desky FigC
+Bali'c'ky akci' jsou ve'ts'inou tr'i, z leva Odhazovaci' (li'c), Li'zaci' (Rub) a na prave'' strane' desky pak Na Ruce. Pod deskou pak mu'z'e by't podobny' bali'c'ek nali'zany'ch Oc'ek. Poc'i'tadla maji' stranu 0 a pak strany 1-4, plati' c'i'slo co je nahor'e. Pokud se da' poc'i'tadlo proste' posunout akci' (Flirt) pak je cena napsana' uprostr'ed (2 ji'dla). Flirt tedy ukazuje kolik flirtu se uz' vesnice ude'lala, kdyz' je ho dost, strhne se to na 0 a pr'ida' se do pr'i's'ti'ho kola nova' postava. (Pro kmen se 3 postavama to je Flirt 2) Obrana ukazuje kolik kol mu'z'e by't vesnice pod u''tokem a vydrz'i' to. U'tok ukazuje kolik kol jes'te' vesnice pod u'tokem bude.
+<C1>Karta krajiny
+Ma' na sobe' 2 za'kladni' informace. Co je to za krajinu (les/louka/voda) a jak dlouho se na ni' jde. Objevuje se akci' pru'zkum. Kdyz' uz' je jednou objevena' tak uz' tam proste' je. Mu'z'e na ni' lez'et modry' z'eton s X (znic'ena' krajina) a nebo c'isty' (divoka' zve'r')
+<C1>Ribbon dovednosti
+Ma' na sobe' ke ktere'' roli patr'i' a jakou propu'jc'uje sve''mu nositeli dovednost. Ribbon je nepr'enosny' a neodstranitelny'. Kaz'da' postava mu'z'e mi't 2. Zi'ska' se pr'i vy'cviku postavy.
+<C1>Amulet
+Amulet propu'jc'uje postave' ne'jakou dovednost. Je nepr'enosny' a kaz'da' postava mu'z'e mi't jeden. Stavi' se ve fa'zi stave'ni'.
+<C1>Stavba
+C'tvercova' kartic'ka. Pod c'arou je cena stavby, nad c'arou pak efekt. V leve''m horni'm rohu pak u''roven' budovy. Tedy koho musi's' mi't aby si mohl budovu postavit. Kohokoliv, ale navi'c to jsou tve'' vlastni' budovy, nikoliv obecna' nabi'dka (symbol kovadliny), Kohokoliv (symbol karet stejne' jako novic), Dr'evorubce (symbol sekery) c'i S'aman II (symbol kouzelne'' hu'lky). Na FigC je jako pr'i'klad Hra'z z bali'ku s kovadlinou. Sta'la na postaveni' 2 kosti a kaz'dy' den vyrobi' kost.
+<C1>Akce
+Velke'' kartic'ky. Do zac'a'tku ma' kaz'dy' hra'c' stejnou hroma'dku za'kladni'ch karet akci' a nove'' se pr'ida'vaji' ti'm z'e se tre''nuji' dovednosti u postav. Kaz'de'' kolo si hra'c' ta'hne z li'zaci' hroma'dky dany' poc'et karet ktere'' pak mu'z'e zahra't, ale je omezeny' ti'm kolik postav je ve vesnici ( a nikoliv ne'kde venku) a jake'' dovednosti ty postavy maji'. Vs'echny karty akci' z ruky se na konci kola zahazuji' na odhazovaci' hroma'dku. V Pr'i'kladu FigC je vide't karta obrany. v leve''m horni'm rohu je vide't symbol karet ktery' r'i'ka' z'e je to za'kladni' karta a nepotr'ebujes' na ni' dovednost. Mu'z'e to zahra't ktera'koliv postava. Pod c'arou je vide't cena zahra'ni' 2 kosti. V prave''m horni'm rohu je vide't c'asova' na'roc'nost akce 2 dny. A uprostr'ed je vide't effekt zvy's'eni' obrany (o 1).
+<C1>Karta oc'ka
+Velka' karta, bohuz'el ji' tu nikde nema'me jako pr'i'klad. Ma' 2 c'a'sti - pouz'iti'. Tu s vykr'ic'ni'ky kdy se pouz'ije jako katastrofa a symboly co tam jsou ubli'z'i' vs'em hra'c'u'm krome' sesilatele. Ta druha' pu'lka je pak druhe'' pouz'iti' - bonus. To mu'z'e hra'c' pr'idat sobe', pokud tu kartu tak pouz'ije.
+<C1>Kostka poc'asi'
+Kaz'dy' hra'c' si pr'ed kaz'dy'm kolem hodi' poc'asi'. To ovlivn'uje akce mimo vesnici. Jsou tam symboly Slunce - kaz'da' akce mimo vesnici je o 1 den rychlejs'i', Bour'ky - o 1 den pomalejs'i', +J kaz'da' cesta pr'es louku pr'ida' jedno ji'dlo, +K pr'ida' kost.
+<C1>Poc'i'tadlo c'asu
+Krystalky v prave''m spodni'm rohu na FigC jsou postavy. Ty pod poc'i'tadlem jsou ve vesnici. Ty na poc'i'tadle se teprve vraceji' a nejsou k dispozici. Kaz'da' postava se kterou hra'c' ne'co ude'la' se poloz'i' na tomhle poc'i'tadle tak vysoko jak dlouho ji' bude trvat se vra'tit. Za flirt, nebo vy'cvik nebo modleni' za oc'ko na nejniz's'i' stupen' (1 den) pokud jde ne'kam mimo vesnici, mu'z'e to trvat dy'l (2 - 4 dny), na konci dne se vs'echny postavy posunou o jeden stupen' dolu'.
 <C>Pru'be'h Hry
 Hra se hraje na kola. Ve'ts'ina se da' hra't najednou, ne'ktere'' c'a'sti je pak potr'eba odehra't postupne' od zac'i'naji'ci'ho hra'c'e. Na konci kaz'de''ho kola se pak vyhodnocuje jestli ne'ktery' hra'c' nevypadl, c'i jestli ne'ktery' hra'c' nevyhra'l.
 
@@ -104,6 +232,7 @@ Hra'c' mu'z'e pr'epla'nova'vat sve'' akce, dokud je nezac'ne uskutec'n'ovat. Nap
 <I>Novy' c'len kmene je k dispozici az' pr'i's'ti' kolo.
 <I>Kaz'da' postava mu'z'e mi't bud' dve' role u''rovne' jedna, nebo jednu roli u''rovne' jedna a dva.
 <I>Kaz'da' akce ktera' ma' v cene' botu jde de'lat i hladove', bez zaplaceni' ji'dla za botu. Pak ale vesnice hladovi' a hra'c' ztra'ci' pr'i'zen' dle pravidel sce'na'r'e.
+<I>Kdyz' ma'te budovu nebo dovednost co da'va' +1 J/K kdyz' de'la'te AB, tak to jde bra't i jako slevu na tu akci AB
 <I1>
 
 <C1>Stavba Budov
