@@ -11,8 +11,8 @@ Pokus o Zvi'r'eci' bohy v2
 De'laji' se ve vesnici a por'a'd se de'laji' postavami a tudi'z' se za kaz'dou plati' 1den c'asu postavy.
 <I0>
 <I>Z'a'dost bohu' - Zi'ska' oc'ko, zadarmo.
-<I>Tre''nink na u'rove'n 1 - Zi'ska' zvolenou dovednost a u'roven', stoji' 1 ji'dlo
-<I>Tre''nink na u'rove'n 2 - Pouze pokud uz' od dane''ho povola'ni' ma' u'roven' 1. Zi'ska' zvolenou dovednost a u'roven', stoji' 2 ji'dla a kost
+<I>Tre''nink na u''roven' 1 - Zi'ska' zvolenou dovednost a u''roven', stoji' 1 ji'dlo
+<I>Tre''nink na u''roven' 2 - Pouze pokud uz' od dane''ho povola'ni' ma' u''roven' 1. Zi'ska' zvolenou dovednost a u''roven', stoji' 2 ji'dla a kost
 <I1>
 <C1>Akce Novic
 <I0>
@@ -20,7 +20,7 @@ De'laji' se ve vesnici a por'a'd se de'laji' postavami a tudi'z' se za kaz'dou p
 <I>Zbe'r klesti' - Te'z'i' mimo vesnici +2 kosti, c'as a ji'dlo dle vzda'lenosti
 <I>Pru'zkum - Na kraji mapy objevi' jedno nove'' poli'c'ko, c'as a ji'dlo dle vzda'lenosti
 <I>Obrana - Opravi' 1 obranu vesnice, c'as 2 dny ve vesnici, stoji' 2 kosti
-<I>U'tok - Da' 1 u'tok. Ve vesnici, c'as 2 dny, stoji' 2 ji'dla a 1 kost
+<I>U'tok - Da' 1 u''tok. Ve vesnici, c'as 2 dny, stoji' 2 ji'dla a 1 kost
 <I1>
 <C1>Akce Ryba'r'
 <I0>
@@ -36,7 +36,7 @@ De'laji' se ve vesnici a por'a'd se de'laji' postavami a tudi'z' se za kaz'dou p
 <I>Lov kosti' - V lese ulovi' 5 kosti', stoji' c'as a ji'dlo dle vzda'lenosti
 <I>Mistr zvi'r'at - Kde je tr'eba zaz'ene zve'r' a pos'le ji' jako pohromu souper'u'm, stoji' c'as a ji'dlo dle vzda'lenosti a kost
 <I>Lov dravcu' (Lovec 2) - V les ulovi' 2 ji'dla a 6 kosti', stoji' c'as dle vzda'lenosti
-<I>Za'ker'ny' u'tok (Lovec 2) - Vyvola' N u'toku' z vesnice za 2 dny, stoji' N+3 ji'dla.
+<I>Za'ker'ny' u''tok (Lovec 2) - Vyvola' N u''toku' z vesnice za 2 dny, stoji' N+3 ji'dla.
 <I1>
 <C1>Akce Dr'evorubec
 <I0>
@@ -48,11 +48,11 @@ De'laji' se ve vesnici a por'a'd se de'laji' postavami a tudi'z' se za kaz'dou p
 <I1>
 <C1>Akce Va'lec'ni'k
 <I0>
-<I>Hruby' u'tok - Z vesnice vede N u'toku' na souper'e, trva' 3 dny a stoji' N+1 ji'dla a kost
+<I>Hruby' u'''tok - Z vesnice vede N u''toku' na souper'e, trva' 3 dny a stoji' N+1 ji'dla a kost
 <I>Obranny' boj - Kde je tr'eba (ve vesnici nebo mimo) vyrobi' obranu +1, stoji' to c'as a ji'dlo dle vzda'lenosti +2 klacky
 <I>Vola'ni' bohu' - Ve vesnici zi'ska' 2 oc'ka, stoji' ho to 2 ji'dla
 <I>Zvi'r'eci' hru'za (Va'lec'ni'k 2) - Kde je tr'eba zaz'ene zve'r' a pos'le ji' jako pohromu souper'u'm, navi'c zi'ska' oc'ko, stoji' c'as a ji'dlo dle vzda'lenosti a sebere popularitu
-<I>Leps'i' u'tok (Va'lec'ni'k 2) - Vyvola' N u'toku' z vesnice za 2 dny, stoji' N ji'dla a 1 kost.
+<I>Leps'i' u''tok (Va'lec'ni'k 2) - Vyvola' N u''toku' z vesnice za 2 dny, stoji' N ji'dla a 1 kost.
 <I1>
 <C1>Akce S'aman
 <I0>
@@ -76,8 +76,8 @@ De'laji' se ve vesnici a por'a'd se de'laji' postavami a tudi'z' se za kaz'dou p
 <I>Hli'dka - tr'i kosti, +1 obrana (a +1 max obrana)
 <I>Pe's'iny - 2 kosti, kaz'da' cesta mimo vesnici -1 den a -1 ji'dlo
 <I>Cvic'is'te' - kla'da, kaz'dy' vy'cvik je o 1 ji'dlo levne'js'i'
-<I>Velke'' ohnis'te' - 2 kosti, +1 ji'dlo pokaz'de' kdyz' zi'ska's' oc'ko
-<I>Lazaret - 2 ji'dla a 2 kosti, +1 oc'ko pokaz'de'' kdyz'se toto kolo bra'ni's' u'toku
+<I>Velke'' ohnis'te' - 2 kosti, +1 ji'dlo pokaz'de'' kdyz' zi'ska's' oc'ko
+<I>Lazaret - 2 ji'dla a 2 kosti, +1 oc'ko pokaz'de'' kdyz'se toto kolo bra'ni's' u''toku
 <I>Mi'sto zasve'ceni' - 2 ji'dla a 4 kosti, +Popularita pr'i flirtu
 <I>Pila - ji'dlo a 2 kosti, jde sme'nit 2 kosti za 1 kla'du
 <I>Pasti - 2 ji'dla a kost, Pokaz'de'' kdyz' zaha'ni's' zve'r', zi'skej ji'dlo
@@ -89,7 +89,7 @@ De'laji' se ve vesnici a por'a'd se de'laji' postavami a tudi'z' se za kaz'dou p
 <I>Ohradni'ky - 2 kosti a 2 kla'dy, Na krajina'ch v te'sne''m okoli' vesnice nemu'z'e by't zve'r', znic'ena' krajina by't sta'le mu'z'e
 <I>Chov - 2 kosti a kla'da, Kaz'dy' den +1 ji'dlo
 <I>Obe'tis'te' - 3 kosti a kla'da, Kdyz' zi'ska's' oc'ko, zi'ska's' i popularitu
-<I>Slunec'ni' pec - 3 kosti, pr'i kaz'de' ceste' mimo vesnici -1 ji'dlo
+<I>Slunec'ni' pec - 3 kosti, pr'i kaz'de'' ceste' mimo vesnici -1 ji'dlo
 <I>Stra'z'nice - kost a kla'da, +1 obrana (a +1 max obrana)
 <I>Sauna - ji'dlo a 2 klacky, kaz'da' populace je o 1 flirt levne'js'i'
 <I>Sklad di'lu' - 2 klacky a kla'da, +1 obrana (a +1 max obrana)
@@ -108,15 +108,15 @@ De'laji' se ve vesnici a por'a'd se de'laji' postavami a tudi'z' se za kaz'dou p
 Vyhraje hra'c' co dosa'hne ci'lu' sce''na'r'e. Zac'ni c'teni'm obecny'ch pravidel a pak teprve pr'ec'ti sce''na'r' co chces' hra't.
 
 <C1>Uvodni' Sce''na'r' - Pr'i'chod
-Tr'enice mezi stars'i'mi tve''ho kmene a postupuji'ci' ledovec va's minulou zimu poslali na tuhle pout'. Po u'trapa'ch cestova'ni' jste v ne'kolika skupina'ch dorazili do u'doli' r'eky. Zelene''ho ra'je ktery' jen c'eka' na prozkouma'ni' a osi'dleni'. Zac'al za'vod o to, c'i' vesnice bude prvni' v Pr'i'zni Zvi'r'eci'ch Bohu''.
+Tr'enice mezi stars'i'mi tve''ho kmene a postupuji'ci' ledovec va's minulou zimu poslali na tuhle pout'. Po u''trapa'ch cestova'ni' jste v ne'kolika skupina'ch dorazili do u''doli' r'eky. Zelene''ho ra'je ktery' jen c'eka' na prozkouma'ni' a osi'dleni'. Zac'al za'vod o to, c'i' vesnice bude prvni' v Pr'i'zni Zvi'r'eci'ch Bohu'.
 
 Hrajte s omezuji'ci'mi pravidly, vysve'tluj v por'adi':
 <I0>
-<I>Sce''na'r' hry vyhraje kmen ktery' prvni' dosa'hne obou ci'lu'', postavi' ve vesnici aspon' 5 budov a bude v pr'i'zni bohu''. Hra'c' je v pr'i'zni, ma' li souc'et pr'i'zne' a oc'ek na ruce alespon' 5. V tomto pr'i'pade' nepouz'i'vejte alternativni' za've'ry, jen tenhle. - Ukaz' s'ka'lu vy'hry, budovy i pr'i'zen' jsou na u'rovni 0 a mi'n' ji't nemu'z'ou.
+<I>Sce''na'r' hry vyhraje kmen ktery' prvni' dosa'hne obou ci'lu', postavi' ve vesnici aspon' 5 budov a bude v pr'i'zni bohu'. Hra'c' je v pr'i'zni, ma' li souc'et pr'i'zne' a oc'ek na ruce alespon' 5. V tomto pr'i'pade' nepouz'i'vejte alternativni' za've'ry, jen tenhle. - Ukaz' s'ka'lu vy'hry, budovy i pr'i'zen' jsou na u''rovni 0 a mi'n' ji't nemu'z'ou.
 <I>Bude potr'eba prozkouma'vat okoli' vesnice, aby ste zi'skali potr'ebne'' suroviny na stavbu. - Ukaz' krajinu vesnice a bali'c'ek krajin.
 <I>Samotna' vesnice zac'i'na' se 2 postavami. - Ukaz' desku vesnice, vysve'tli co na ni' je co, ukaz' z'etony ji'dla a kosti' a nech hra'c'e vybrat kameny postav. Vysve'tli poc'i'tadlo c'asu.
-<I>Kolo hry se skla'da' z pr'i'pravne'' fa'ze, pla'nova'ni', stavby budovy a za've'rec'ne''ho hodnoceni'. - Dej hra'c'u''m lamakartu kola. Ukaz' bali'c'ek za'kladni'ch budov. Vysve'tli stavbu.
-<I>Pokud je postava dane'' kolo ve vesnici pr'ide'li' ji' hra'c' u'kol. Sluz'bu bohu'm, Tre''nink, Flirtova'ni' nebo Pra'ci. - Ukaz' bali'c'ek Oc'ek. Vysve'tli tre''nova'ni' pro zac'a'tec'ni'ky - a jen za'klad. Vysve'tli flirt.
+<I>Kolo hry se skla'da' z pr'i'pravne'' fa'ze, pla'nova'ni', stavby budovy a za've'rec'ne''ho hodnoceni'. - Dej hra'c'u'm lamakartu kola. Ukaz' bali'c'ek za'kladni'ch budov. Vysve'tli stavbu.
+<I>Pokud je postava dane'' kolo ve vesnici pr'ide'li' ji' hra'c' u''kol. Sluz'bu bohu'm, Tre''nink, Flirtova'ni' nebo Pra'ci. - Ukaz' bali'c'ek Oc'ek. Vysve'tli tre''nova'ni' pro zac'a'tec'ni'ky - a jen za'klad. Vysve'tli flirt.
 <I>A ted' k akci'm. Funkc'ni' budou Zber Bobuli, Zber Klesti a Pruzkum. Zbytek je smeti co proted prekazi na ruce. - Prozati'm bez hladu. Ukaz' bali'c'ek za'kladni'ch akci'. Vysvetli tyto tri akce. At' si ho kaz'dy' zami'cha'.
 <I>A podrobne'ji k tre''ninku. Proted' jde tre''novat postavy na ryba'r'e, lovce nebo s'amana. Bez bonusu' za roli. - Rozdej lamakarty tre''ninkovy'ch roli'. Ukaz' co ty karty znamenaji' a dej pr'i'klad tre''ninku.
 <I>Pr'i'prava kola. Co vs'e tedy. - Prozati'm bez poc'asi'. Zi'ska'ni' surovin z budov, Na'vrat postav, Zami'cha'ni' bali'c'ku praci'.
@@ -177,9 +177,9 @@ Uprostr'ed spolec'ne''ho stolu sestav poc'i'tadlo. Tady budou hra'c'i poc'i'tat 
 Kaz'dy' hra'c' ma' svu'j bali'c'ek. V ne'm ma' bali'k za'kladni'ch akci' a soukromy'ch budov. A hlavni' krajinu - vesnici. (Plus krajinu kr'iz'ovatka ktera' se pokud vi'm zati'm nepouz'i'va') Umi'sti desku hra'c'e, nalevo dej li'zaci' bali'c'ek karet akci' a vz'dy kdyz' budes' mi't nali'zane'' akce na ruce, da'vej je na pravo. Pod desku dej sva' poc'i'tadla (Flirt, Obranu a U'tok), svou za'sobu budov a pak me'r'a'k spoz'de'ni' postav. Vezmi si svou za'sobu 6 barevny'ch krystalu' jako figurek postav, sve'' dva za'kladni' z'etony surovin 1/2 ty co maji' tec'ky a kostku poc'asi'.
 <C>Vysve'tleni' co je co
 <C1>Deska hra'c'e FigC
-Na horni'm okraji ma' 6 chli'vku', jeden pro kaz'dou postavu. Nad ne' se da'vaji' nauc'ene'' dovednosti (ribbony) c'i pr'ir'azeny' amulet. Na karte' jsou pr'ipomenute'' za'kladni' ceny (c'tu z leva). Vycvic'eni' postavy na u'rove"n 1 stoji' 1 ji'dlo. Na u''roven' 2 2 ji'dla a kost. Na ruku se kaz'de'' kolo li'z'e X+2 karet kde X je aktua'lni' poc'et postav ve vesnici. Oc'ek mu'z'e mi't hra'c' na ruce 5 a nestoji' ta akce nic. Flirtu' na dals'i' postavu je potr'eba X-1 (co je X uz' jsem napsal). Surovin mu'z'e by't ve vesnici 10. Zde maji' lez'et karty nali'zane'' Na Ruce.
+Na horni'm okraji ma' 6 chli'vku', jeden pro kaz'dou postavu. Nad ne' se da'vaji' nauc'ene'' dovednosti (ribbony) c'i pr'ir'azeny' amulet. Na karte' jsou pr'ipomenute'' za'kladni' ceny (c'tu z leva). Vycvic'eni' postavy na u''roven' 1 stoji' 1 ji'dlo. Na u''roven' 2 2 ji'dla a kost. Na ruku se kaz'de'' kolo li'z'e X+2 karet kde X je aktua'lni' poc'et postav ve vesnici. Oc'ek mu'z'e mi't hra'c' na ruce 5 a nestoji' ta akce nic. Flirtu' na dals'i' postavu je potr'eba X-1 (co je X uz' jsem napsal). Surovin mu'z'e by't ve vesnici 10. Zde maji' lez'et karty nali'zane'' Na Ruce.
 <C1>Kolem Desky FigC
-Bali'c'ky akci' jsou ve'ts'inou tr'i, z leva Odhazovaci' (li'c), Li'zaci' (Rub) a na prave'' strane' desky pak Na Ruce. Pod deskou pak mu'z'e by't podobny' bali'c'ek nali'zany'ch Oc'ek. Poc'i'tadla maji' stranu 0 a pak strany 1-4, plati' c'i'slo co je nahor'e. Pokud se da' poc'i'tadlo proste' posunout akci' (Flirt) pak je cena napsana' uprostr'ed (2 ji'dla). Flirt tedy ukazuje kolik flirtu se uz' vesnice ude'lala, kdyz' je ho dost, strhne se to na 0 a pr'ida' se do pr'i's'ti'ho kola nova' postava. (Pro kmen se 3 postavama to je Flirt 2) Obrana ukazuje kolik kol mu'z'e by't vesnice pod u''tokem a vydrz'i' to. U'tok ukazuje kolik kol jes'te' vesnice pod u'tokem bude.
+Bali'c'ky akci' jsou ve'ts'inou tr'i, z leva Odhazovaci' (li'c), Li'zaci' (Rub) a na prave'' strane' desky pak Na Ruce. Pod deskou pak mu'z'e by't podobny' bali'c'ek nali'zany'ch Oc'ek. Poc'i'tadla maji' stranu 0 a pak strany 1-4, plati' c'i'slo co je nahor'e. Pokud se da' poc'i'tadlo proste' posunout akci' (Flirt) pak je cena napsana' uprostr'ed (2 ji'dla). Flirt tedy ukazuje kolik flirtu se uz' vesnice ude'lala, kdyz' je ho dost, strhne se to na 0 a pr'ida' se do pr'i's'ti'ho kola nova' postava. (Pro kmen se 3 postavama to je Flirt 2) Obrana ukazuje kolik kol mu'z'e by't vesnice pod u''tokem a vydrz'i' to. U'tok ukazuje kolik kol jes'te' vesnice pod u''tokem bude.
 <C1>Karta krajiny
 Ma' na sobe' 2 za'kladni' informace. Co je to za krajinu (les/louka/voda) a jak dlouho se na ni' jde. Objevuje se akci' pru'zkum. Kdyz' uz' je jednou objevena' tak uz' tam proste' je. Mu'z'e na ni' lez'et modry' z'eton s X (znic'ena' krajina) a nebo c'isty' (divoka' zve'r')
 <C1>Ribbon dovednosti
