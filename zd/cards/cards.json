@@ -1,0 +1,166 @@
+[
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons1.csv",
+    "sheet":"weapons",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons2.csv",
+    "sheet":"weapons",
+    "skipTitle":1,
+    "table":2
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons3.csv",
+    "sheet":"weapons",
+    "skipTitle":1,
+    "table":3
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons4.csv",
+    "sheet":"weapons",
+    "skipTitle":1,
+    "table":4
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons5.csv",
+    "sheet":"weapons",
+    "skipTitle":1,
+    "table":5
+  },  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"maps.csv",
+    "sheet":"maps",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"CONVERT_SVGS"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons.tex",
+    "_card":"png/card_150x150_weapon",
+    "_onOneLine":5,
+    "_randomize":"True",
+    "package":{ "reg": "png/{package_x}.png" },
+    "weapon":{ "reg": "png/{weapon_x}.png" },
+    "_list":{
+      "values":[
+        "color",
+        "package_x",
+        "weapon_x"
+      ]
+    },
+    "values":"weapons1.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_weapons.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons.tex",
+    "_card":"png/card_150x150_weapon",
+    "_onOneLine":5,
+    "_randomize":"True",
+    "package":{ "reg": "png/{package_x}.png" },
+    "weapon":{ "reg": "png/{weapon_x}.png" },
+    "_list":{
+      "values":[
+        "color",
+        "package_x",
+        "weapon_x"
+      ]
+    },
+    "values":"weapons2.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_weapons.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons.tex",
+    "_card":"png/card_150x150_weapon",
+    "_onOneLine":5,
+    "_randomize":"True",
+    "package":{ "reg": "png/{package_x}.png" },
+    "weapon":{ "reg": "png/{weapon_x}.png" },
+    "_list":{
+      "values":[
+        "color",
+        "package_x",
+        "weapon_x"
+      ]
+    },
+    "values":"weapons3.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_weapons.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons.tex",
+    "_card":"png/card_150x150_weapon",
+    "_onOneLine":5,
+    "_randomize":"True",
+    "package":{ "reg": "png/{package_x}.png" },
+    "weapon":{ "reg": "png/{weapon_x}.png" },
+    "_list":{
+      "values":[
+        "color",
+        "package_x",
+        "weapon_x"
+      ]
+    },
+    "values":"weapons4.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_weapons.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons.tex",
+    "_card":"png/card_150x150_weapon",
+    "_onOneLine":5,
+    "_randomize":"True",
+    "package":{ "reg": "png/{package_x}.png" },
+    "weapon":{ "reg": "png/{weapon_x}.png" },
+    "_list":{
+      "values":[
+        "color",
+        "package_x",
+        "weapon_x"
+      ]
+    },
+    "values":"weapons5.csv"
+  },  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_maps.tex",
+    "_card":"png/card_150x150_map",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "weapon":{ "reg": "png/{weapon_x}.png" },
+    "_list":{
+      "values":[
+        "weapon_x"
+      ]
+    },
+    "values":"maps.csv"
+  }
+]
