@@ -1,0 +1,14 @@
+<T>Kmeny z U'doli' - addon
+Pokus o Zvi'r'eci' bohy v2
+Dodatek
+<C>Reakce krajiny
+Pokaz'de'' kdyz' ne'jaka' postava de'la' akci mimo vesnici, ha'zi' si na odolnost dane''ho poli'c'ka krajiny, jedni'm hodem kostkou znic'eni'. Neza'visle na tom co mu padne, vz'dy akci co de'la' dokonc'i' a zi'ska' pro co tam s'el. Padne-li:
+<I0>
+<I>Nic - Pak je krajina v por'a'dku a nic se nede'je
+<I>X Znic'eni' - Krajina je pos'kozena'. Doc'asne'. Dosta'va' modry' z'eton s X.
+<I>Dravci - C'innost lidi' pr'ila'kala dravce. Hra'c' ztra'ci' jednu popularitu a dosta'va' trvaly' modry' z'eton bez X.
+<I1>
+<C1>Te'z'ba ve znic'ene'' krajine'
+Pr'i's'te' az' budes' te'z'it ne'jake'' suroviny na znic'ene'' krajine', vyte'z'i's' o jednu me''ne'. Pokud vyte'z'i's' vi'c druhu' dostanes' o jednu me''ne' te'' nejdraz's'i'. Pokud je to z'eton s X, tak je jednora'zovy'. Po prvni'm takove''m postihu se krajina vzpamatuje a z'eton se odstrani'.
+<C1>Z'eton divoke'' zve'r'e
+Modry' z'eton bez X funguje jako z'eton s X, ve smyslu z'e sniz'uje vy'nos krajinny, ale z'eton sa'm nezmizi'. Je ho tr'eba odstranit akci' co ma' na sobe' luk.
