@@ -1,0 +1,30 @@
+{
+  "name":{
+    "type":"text",
+    "position":[[30, 0],[150, 30]],
+    "padding":[[5,5], [5,5]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "lvl":{
+    "type":"text",
+    "position":[[0, 0],[30, 30]],
+    "padding":[[5,5], [5,5]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":1,
+    "color":[0,0,0],
+    "align":"center"
+  },
+  "starter":{
+    "type":"img",
+    "position":[[3, 30],[147, 98]]
+  },
+  "cost":{
+    "type":"img",
+    "position":[[3, 102],[147, 147]]
+  }
+}

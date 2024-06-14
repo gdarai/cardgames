@@ -1,3 +1,105 @@
 [
-
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_kombinace.csv",
+    "sheet":"Kombinace",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"csv_ukoly.csv",
+    "sheet":"Ukoly",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"CONVERT_SVGS"
+  },
+  {
+    "_resize":400,
+    "_process":"PRINT_A_CARD",
+    "_out":{ "reg": "png/{name}.png" },
+    "_card":"png/white_150x150",
+    "_list": {
+      "values": [
+        "name",
+        "text"
+      ]
+    },
+    "values": [
+      { "list": ["two", "three", "four", "five", "six", "plus", "minus", "or"] },
+      { "list": ["2", "3", "4", "5", "6", "+", "-", ":"] }
+    ]
+  },
+  {
+    "_resize":400,
+    "_process":"PRINT_A_CARD",
+    "_out":{ "reg": "png/{out0}.png" },
+    "_card":"png/twoImg_150x150",
+    "base":{ "reg": "png/{base0}.png" },
+    "extraL":{ "reg": "?{extra0L}{}png/{extra0L}.png" },
+    "extraR":{ "reg": "?{extra0R}{}png/{extra0R}.png" },
+    "_list": {
+      "values": [
+        "out0",
+        "base0",
+        "extra0L",
+        "extra0R"
+      ]
+    },
+    "values": [
+      { "list": ["axe2", "sword2", "wand2", "hook2", "spear2", "card", "discard", "favourstore", "binocular2", "swords2", "shield2", "walk2","ribbon2","hammer2"] },
+      { "list": ["axe", "sword", "wand", "hook", "spear", "cards", "cards", "favour", "binocular", "swords", "shield", "walk","ribbon","hammer"] },
+      { "list": ["", "", "crown", "", "", "", "", "", "largeplus", "largeplus", "largeplus", "largeplus", "largeplus", "largeplus"] },
+      { "list": ["crown", "crown", "", "crown", "crown", "plus", "minus", "storage", "largeplus", "largeplus", "largeplus", "largeplus", "largeplus", "largeplus"] }
+    ]
+  },
+  {
+    "_process":"COMBINE_PNGS",
+    "_formula":["Ax", "Bx", "Cx", "Dx"],
+    "_skipMissing":"True",
+    "_align":"center",
+    "_shape":"row",
+    "_skip":[ "" ],
+    "_out":{ "reg": "png/{name}.png" },
+    "Ax":{ "reg": "png/{colA}.png" },
+    "Bx":{ "reg": "?{colB}{}png/{colB}.png" },
+    "Cx":{ "reg": "?{colC}{}png/{colC}.png" },
+    "Dx":{ "reg": "?{colD}{}png/{colD}.png" },
+    "_list":{
+      "values":[
+        "colA",
+        "colB",
+        "colC",
+        "colD",
+        "name",
+        "x",
+        "x",
+        "x",
+        "x"
+      ]
+    },
+    "values":"csv_kombinace.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_ukoly.tex",
+    "_card":"png/card_150x150_ukol",
+    "_onOneLine":5,
+    "_randomize":"True",
+    "cost":{ "reg": "png/{cost0}.png" },
+    "starter":{ "reg": "png/{starter0}.png" },
+    "_list":{
+      "values":[
+        "name",
+        "lvl",
+        "cost0",
+        "starter0"
+      ]
+    },
+    "values":"csv_ukoly.csv"
+  }
 ]
