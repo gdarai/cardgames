@@ -9,6 +9,11 @@
     "mask":[5, 50],
     "position":[[40, 40],[145, 145]]
   },
+  "rear":{
+    "type":"img",
+    "mask":[5, 50],
+    "position":[[157, 5],[297, 145]]
+  },
   "color":{
     "type":"text",
     "position":[[0, 117],[150, 147]],

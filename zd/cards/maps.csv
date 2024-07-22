@@ -1,5 +1,11 @@
-1,start
-6,wpn1
-6,wpn2
-6,wpn3
-6,wpn4
+2,,start,Start,---
+4,,wpn1,,---
+4,,wpn2,,---
+4,,wpn3,,---
+4,,wpn4,,---
+6,wall,,Klid,---
+3,,hole,Dira,---
+4,wall,wpn1,,---
+4,wall,wpn2,,---
+4,wall,wpn3,,---
+4,wall,wpn4,,---

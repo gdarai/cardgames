@@ -53,9 +53,10 @@
     "_process":"PRINT_CARDS",
     "_out":"_OUT_weapons.tex",
     "_card":"png/card_150x150_weapon",
-    "_onOneLine":5,
+    "_onOneLine":3,
     "_randomize":"True",
     "package":{ "reg": "png/{package_x}.png" },
+    "rear":{ "reg": "png/{package_x}.png" },
     "weapon":{ "reg": "png/{weapon_x}.png" },
     "_list":{
       "values":[
@@ -74,9 +75,10 @@
     "_process":"PRINT_CARDS",
     "_out":"_OUT_weapons.tex",
     "_card":"png/card_150x150_weapon",
-    "_onOneLine":5,
+    "_onOneLine":3,
     "_randomize":"True",
     "package":{ "reg": "png/{package_x}.png" },
+    "rear":{ "reg": "png/{package_x}.png" },
     "weapon":{ "reg": "png/{weapon_x}.png" },
     "_list":{
       "values":[
@@ -95,9 +97,10 @@
     "_process":"PRINT_CARDS",
     "_out":"_OUT_weapons.tex",
     "_card":"png/card_150x150_weapon",
-    "_onOneLine":5,
+    "_onOneLine":3,
     "_randomize":"True",
     "package":{ "reg": "png/{package_x}.png" },
+    "rear":{ "reg": "png/{package_x}.png" },
     "weapon":{ "reg": "png/{weapon_x}.png" },
     "_list":{
       "values":[
@@ -116,9 +119,10 @@
     "_process":"PRINT_CARDS",
     "_out":"_OUT_weapons.tex",
     "_card":"png/card_150x150_weapon",
-    "_onOneLine":5,
+    "_onOneLine":3,
     "_randomize":"True",
     "package":{ "reg": "png/{package_x}.png" },
+    "rear":{ "reg": "png/{package_x}.png" },
     "weapon":{ "reg": "png/{weapon_x}.png" },
     "_list":{
       "values":[
@@ -137,9 +141,10 @@
     "_process":"PRINT_CARDS",
     "_out":"_OUT_weapons.tex",
     "_card":"png/card_150x150_weapon",
-    "_onOneLine":5,
+    "_onOneLine":3,
     "_randomize":"True",
     "package":{ "reg": "png/{package_x}.png" },
+    "rear":{ "reg": "png/{package_x}.png" },
     "weapon":{ "reg": "png/{weapon_x}.png" },
     "_list":{
       "values":[
@@ -155,10 +160,14 @@
     "_card":"png/card_150x150_map",
     "_onOneLine":4,
     "_randomize":"True",
-    "weapon":{ "reg": "png/{weapon_x}.png" },
+    "weapon":{ "reg": "?{weapon_x}{}png/{weapon_x}.png" },
+    "background":{ "reg": "?{bg}{}png/bg_{bg}.png" },
     "_list":{
       "values":[
-        "weapon_x"
+        "bg",
+        "weapon_x",
+        "name",
+        "term"
       ]
     },
     "values":"maps.csv"
