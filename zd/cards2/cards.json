@@ -1,0 +1,87 @@
+[
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons1.csv",
+    "sheet":"weapons2",
+    "skipTitle":1,
+    "table":2
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons2.csv",
+    "sheet":"weapons2",
+    "skipTitle":1,
+    "table":3
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons3.csv",
+    "sheet":"weapons2",
+    "skipTitle":1,
+    "table":4
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons4.csv",
+    "sheet":"weapons2",
+    "skipTitle":1,
+    "table":5
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"maps.csv",
+    "sheet":"maps2",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"CONVERT_SVGS"
+  },
+  {
+    "_process":"COMBINE_PNGS",
+    "_formula":["base", "extra"],
+    "_skipMissing":"True",
+    "_align":"center",
+    "_shape":"row",
+    "_skip":[ "" ],
+    "_out":{ "reg": "png/{base0}-{extra0}.png" },
+    "base":{ "reg": "png/{base0}.png" },
+    "extra":{ "reg": "?{extra0}{}png/{extra0}.png" },
+    "_list": {
+      "values": [
+        "base0",
+        "extra0"
+      ]
+    },
+    "values": [
+      { "list": ["spear",  "hammer", "bow",   "sword"] },
+      { "list": ["hammer", "bow",    "sword", "spear"] }
+    ]
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_maps.tex",
+    "_card":"png/card_400x400_map",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "bg":{ "reg": "?{bg0}{}png/bg_{bg0}.png" },
+    "fg":{ "reg": "?{fg0}{}png/fg_{fg0}.png" },
+    "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
+    "_list":{
+      "values":[
+        "bg0",
+        "fg0",
+        "ico0",
+        "wpnText",
+        "text",
+        "close"
+      ]
+    },
+    "values":"maps.csv"
+  }
+]
