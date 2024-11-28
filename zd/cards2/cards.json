@@ -40,6 +40,14 @@
     "table":1
   },
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"tasks.csv",
+    "sheet":"tasks2",
+    "skipTitle":1,
+    "table":1
+  },
+  {
     "_process":"CONVERT_SVGS"
   },
   {
@@ -61,6 +69,30 @@
     "values": [
       { "list": ["spear",  "hammer", "bow",   "sword", "broken", "teleport", "call",  "broken", "teleport", "call",   "broken", "teleport", "call", "broken", "teleport", "call"] },
       { "list": ["hammer", "bow",    "sword", "spear", "spear",  "spear",    "spear", "hammer", "hammer",   "hammer", "bow",    "bow",      "bow",  "sword",  "sword",    "sword"] }
+    ]
+  },
+  {
+    "_process":"COMBINE_PNGS",
+    "_formula":["A", "B", "C"],
+    "_skipMissing":"True",
+    "_align":"center",
+    "_shape":"row",
+    "_skip":[ "" ],
+    "_out":{ "reg": "png/{A0}-{B0}-{C0}.png" },
+    "A":{ "reg": "png/{A0}.png" },
+    "B":{ "reg": "png/{B0}.png" },
+    "C":{ "reg": "png/{C0}.png" },
+    "_list": {
+      "values": [
+        "A0",
+        "B0",
+        "C0"
+      ]
+    },
+    "values": [
+      { "list": ["spear", "hammer", "bow", "sword", "you",   "you",    "you", "you",   "spear", "hammer", "bow", "sword"] },
+      { "list": ["spear", "hammer", "bow", "sword", "spear", "hammer", "bow", "sword", "you",   "you",    "you", "you"] },
+      { "list": ["spear", "hammer", "bow", "sword", "spear", "hammer", "bow", "sword", "spear", "hammer", "bow", "sword"] }
     ]
   },
   {
@@ -208,5 +240,25 @@
       ]
     },
     "values":"weapons4.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_tasks.tex",
+    "_card":"png/card_600x450_task",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
+    "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
+    "color":{ "reg": "?{color0}{}({color0})" },
+    "_list":{
+      "values":[
+        "ico0",
+        "text",
+        "name",
+        "pic0",
+        "color0"
+      ]
+    },
+    "values":"tasks.csv"
   }
 ]
