@@ -1,13 +1,13 @@
-1,4,Zluta,na zombika,Drtiva,,spear,hammer1
+1,4,Zluta,na nemrtveho,Drtiva,,spear,hammer1
 1,6,Modra,na carodeje,Secna,,spear,sword1
 1,5,Cervena,na demona,Palna,,spear,bow1
 1,7,Jakakoliv,na vsechny,Bomba,,spear,bomb1
 1,7,Jakakoliv,na vsechny,Bomba,,spear,bomb2
-2,3,Zelena,na priseru,Bodna,zlomena,spear,broken-spear
-1,3,Zelena,na priseru,Bodna,teleport,spear,teleport-spear
-1,3,Zelena,na priseru,Bodna,privolani,spear,call-spear
+2,3,Zelena,na priseru,Bodna,Obludu nezabije,spear,broken-spear
+1,3,Zelena,na priseru,Bodna,Prohod se s jinym hracem,spear,teleport-spear
+1,3,Zelena,na priseru,Bodna,Nejdriv prohod obludu,spear,call-spear
 2,3,Zelena,na priseru,Bodna,,spear,spear1
 2,3,Zelena,na priseru,Bodna,,spear,spear2
 2,3,Zelena,na priseru,Bodna,,spear,spear3
 2,3,Zelena,na priseru,Bodna,,spear,spear4
-2,3,Zelena,na priseru,Bodna,,spear,spear5
+3,3,Zelena,na priseru,Bodna,,spear,spear5

@@ -1,13 +1,13 @@
-1,4,Zluta,na zombika,Drtiva,,sword,hammer2
+1,4,Zluta,na nemrtveho,Drtiva,,sword,hammer2
 1,3,Zelena,na priseru,Bodna,,sword,spear2
 1,5,Cervena,na demona,Palna,,sword,bow3
 1,7,Jakakoliv,na vsechny,Bomba,,sword,bomb3
 1,7,Jakakoliv,na vsechny,Bomba,,sword,bomb4
-2,6,Modra,na carodeje,Secna,zlomena,sword,broken-sword
-1,6,Modra,na carodeje,Secna,teleport,sword,teleport-sword
-1,6,Modra,na carodeje,Secna,privolani,sword,call-sword
+2,6,Modra,na carodeje,Secna,Zbran zahod ale obludu nezabij,sword,broken-sword
+1,6,Modra,na carodeje,Secna,Nejdriv se prohod s jinym hracem,sword,teleport-sword
+1,6,Modra,na carodeje,Secna,Nejdriv prohod obludu s jinou,sword,call-sword
 2,6,Modra,na carodeje,Secna,,sword,sword1
 2,6,Modra,na carodeje,Secna,,sword,sword2
 2,6,Modra,na carodeje,Secna,,sword,sword3
 2,6,Modra,na carodeje,Secna,,sword,sword4
-2,6,Modra,na carodeje,Secna,,sword,sword5
+3,6,Modra,na carodeje,Secna,,sword,sword5

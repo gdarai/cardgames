@@ -3,11 +3,11 @@
 1,5,Cervena,na demona,Palna,,hammer,bow2
 1,7,Jakakoliv,na vsechny,Bomba,,hammer,bomb3
 1,7,Jakakoliv,na vsechny,Bomba,,hammer,bomb2
-2,4,Zluta,na zombika,Drtiva,zlomena,hammer,broken-hammer
-1,4,Zluta,na zombika,Drtiva,teleport,hammer,teleport-hammer
-1,4,Zluta,na zombika,Drtiva,privolani,hammer,call-hammer
-2,4,Zluta,na zombika,Drtiva,,hammer,hammer1
-2,4,Zluta,na zombika,Drtiva,,hammer,hammer2
-2,4,Zluta,na zombika,Drtiva,,hammer,hammer3
-2,4,Zluta,na zombika,Drtiva,,hammer,hammer4
-2,4,Zluta,na zombika,Drtiva,,hammer,hammer5
+2,4,Zluta,na nemrtveho,Drtiva,Zbran zahod ale obludu nezabij,hammer,broken-hammer
+1,4,Zluta,na nemrtveho,Drtiva,Nejdriv se prohod s jinym hracem,hammer,teleport-hammer
+1,4,Zluta,na nemrtveho,Drtiva,Nejdriv prohod obludu s jinou,hammer,call-hammer
+2,4,Zluta,na nemrtveho,Drtiva,,hammer,hammer1
+2,4,Zluta,na nemrtveho,Drtiva,,hammer,hammer2
+2,4,Zluta,na nemrtveho,Drtiva,,hammer,hammer3
+2,4,Zluta,na nemrtveho,Drtiva,,hammer,hammer4
+3,4,Zluta,na nemrtveho,Drtiva,,hammer,hammer5

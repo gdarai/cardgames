@@ -1,20 +1,21 @@
-2,,camp,start,Jakakoliv,Start,---
-2,,chest,spear,Bodna,,---
-2,,chest,hammer,Drtiva,,---
-2,,chest,bow,Palna,,---
-2,,chest,sword,Secna,,---
-2,,grass,spear,Bodna,,---
-2,,grass,hammer,Drtiva,,---
-2,,grass,bow,Palna,,---
-2,,grass,sword,Secna,,---
-1,,cave,spear-hammer,Bodna / Drtiva,,---
-1,,cave,hammer-bow,Drtiva / Palna,,---
-1,,cave,bow-sword,Palna / Secna,,---
-1,,cave,sword-spear,Secna / Bodna,,---
-4,,camp,camp,Jakakoliv,Tabor,---
-2,,hole,hole,sem nemuzes,Dira,---
-2,wall,dirt,spear-hammer,Bodna / Drtiva,,---
-2,wall,dirt,hammer-bow,Drtiva / Palna,,---
-2,wall,dirt,bow-sword,Palna / Secna,,---
-2,wall,dirt,sword-spear,Secna / Bodna,,---
-3,wall,cave,teleport_black,premisti se,Teleport,---
+2,,camp,start,spawn-no,Jakakoliv,Start,---
+2,,chest,spear,,Bodna,,---
+2,,chest,hammer,,Drtiva,,---
+2,,chest,bow,,Palna,,---
+2,,chest,sword,,Secna,,---
+2,,grass,spear,,Bodna,,---
+2,,grass,hammer,,Drtiva,,---
+2,,grass,bow,,Palna,,---
+2,,grass,sword,,Secna,,---
+1,,cave,spear-hammer,,Bodna / Drtiva,,---
+1,,cave,hammer-bow,,Drtiva / Palna,,---
+1,,cave,bow-sword,,Palna / Secna,,---
+1,,cave,sword-spear,,Secna / Bodna,,---
+4,,camp,camp,spawn-no,Jakakoliv,Tabor,---
+2,,hole,hole,spawn-no,sem nemuzes,Dira,---
+2,wall,dirt,spear-hammer,,Bodna / Drtiva,,---
+2,wall,dirt,hammer-bow,,Drtiva / Palna,,---
+2,wall,dirt,bow-sword,,Palna / Secna,,---
+2,wall,dirt,sword-spear,,Secna / Bodna,,---
+3,wall,cave,teleport_black,spawn-no,premisti se,Teleport,---
+1,,camp,fort,spawn-spawn,Dvojita straz,Hrad,---

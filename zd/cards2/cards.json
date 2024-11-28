@@ -59,8 +59,42 @@
       ]
     },
     "values": [
-      { "list": ["spear",  "hammer", "bow",   "sword"] },
-      { "list": ["hammer", "bow",    "sword", "spear"] }
+      { "list": ["spear",  "hammer", "bow",   "sword", "broken", "teleport", "call",  "broken", "teleport", "call",   "broken", "teleport", "call", "broken", "teleport", "call"] },
+      { "list": ["hammer", "bow",    "sword", "spear", "spear",  "spear",    "spear", "hammer", "hammer",   "hammer", "bow",    "bow",      "bow",  "sword",  "sword",    "sword"] }
+    ]
+  },
+  {
+    "_process":"PRINT_A_CARD",
+    "_card":"png/imgOnImg_150x150",
+    "_out":{ "reg": "png/{base0}-{extra0}.png" },
+    "base":{ "reg": "png/{base0}.png" },
+    "extra":{ "reg": "?{extra0}{}png/{extra0}.png" },
+    "_list": {
+      "values": [
+        "base0",
+        "extra0"
+      ]
+    },
+    "values": [
+      { "list": ["spawn"] },
+      { "list": ["no"] }
+    ]
+  },
+  {
+    "_process":"PRINT_A_CARD",
+    "_card":"png/twoImg_150x150",
+    "_out":{ "reg": "png/{base0}-{extra0}.png" },
+    "base":{ "reg": "png/{base0}.png" },
+    "extra":{ "reg": "?{extra0}{}png/{extra0}.png" },
+    "_list": {
+      "values": [
+        "base0",
+        "extra0"
+      ]
+    },
+    "values": [
+      { "list": ["spawn"] },
+      { "list": ["spawn"] }
     ]
   },
   {
@@ -72,16 +106,107 @@
     "bg":{ "reg": "?{bg0}{}png/bg_{bg0}.png" },
     "fg":{ "reg": "?{fg0}{}png/fg_{fg0}.png" },
     "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
+    "smallIcoL":{ "reg": "?{smallIco0}{}png/{smallIco0}.png" },
+    "smallIcoR":{ "reg": "?{smallIco0}{}png/{smallIco0}.png" },
     "_list":{
       "values":[
         "bg0",
         "fg0",
         "ico0",
+        "smallIco0",
         "wpnText",
         "text",
         "close"
       ]
     },
     "values":"maps.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons1.tex",
+    "_card":"png/card_600x450_weapon",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
+    "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
+    "color":{ "reg": "?{color0}{}({color0})" },
+    "_list":{
+      "values":[
+        "id0",
+        "color0",
+        "target",
+        "type",
+        "text",
+        "ico0",
+        "pic0"
+      ]
+    },
+    "values":"weapons1.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons2.tex",
+    "_card":"png/card_600x450_weapon",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
+    "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
+    "color":{ "reg": "?{color0}{}({color0})" },
+    "_list":{
+      "values":[
+        "id0",
+        "color0",
+        "target",
+        "type",
+        "text",
+        "ico0",
+        "pic0"
+      ]
+    },
+    "values":"weapons2.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons3.tex",
+    "_card":"png/card_600x450_weapon",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
+    "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
+    "color":{ "reg": "?{color0}{}({color0})" },
+    "_list":{
+      "values":[
+        "id0",
+        "color0",
+        "target",
+        "type",
+        "text",
+        "ico0",
+        "pic0"
+      ]
+    },
+    "values":"weapons3.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons4.tex",
+    "_card":"png/card_600x450_weapon",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
+    "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
+    "color":{ "reg": "?{color0}{}({color0})" },
+    "_list":{
+      "values":[
+        "id0",
+        "color0",
+        "target",
+        "type",
+        "text",
+        "ico0",
+        "pic0"
+      ]
+    },
+    "values":"weapons4.csv"
   }
 ]
