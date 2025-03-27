@@ -4,3 +4,4 @@
 **/png/*.png
 **/print/*.png
 *.ods#
+/.idea/
