@@ -74,8 +74,8 @@
       ]
     },
     "values": [
-      { "list": ["spear",  "hammer", "bow",   "sword", "broken", "teleport", "call",  "broken", "teleport", "call",   "broken", "teleport", "call", "broken", "teleport", "call"] },
-      { "list": ["hammer", "bow",    "sword", "spear", "spear",  "spear",    "spear", "hammer", "hammer",   "hammer", "bow",    "bow",      "bow",  "sword",  "sword",    "sword"] }
+      { "list": ["spear",  "hammer", "bow",   "sword", "broken", "teleport", "call",  "berserk", "broken", "teleport", "call",   "berserk", "broken", "teleport", "call", "berserk", "broken", "teleport", "call",  "berserk"] },
+      { "list": ["hammer", "bow",    "sword", "spear", "spear",  "spear",    "spear", "spear",   "hammer", "hammer",   "hammer", "hammer",  "bow",    "bow",      "bow",  "bow",     "sword",  "sword",    "sword", "sword"] }
     ]
   },
   {
@@ -97,9 +97,9 @@
       ]
     },
     "values": [
-      { "list": ["animal", "undead", "daemon", "human", "you",    "you",    "you",    "you",   "animal", "undead", "daemon", "human"] },
-      { "list": ["animal", "undead", "daemon", "human", "animal", "undead", "daemon", "human", "you",    "you",    "you",    "you"] },
-      { "list": ["animal", "undead", "daemon", "human", "animal", "undead", "daemon", "human", "animal",  "undead", "daemon", "human"] }
+      { "list": ["animal", "undead", "daemon", "human", "animal", "undead", "human","daemon","you",    "you",    "you",    "you",   "animal", "undead", "daemon", "human"] },
+      { "list": ["animal", "undead", "daemon", "human", "undead", "human","daemon","animal", "animal", "undead", "daemon", "human", "you",    "you",    "you",    "you"] },
+      { "list": ["animal", "undead", "daemon", "human", "human","daemon", "animal", "undead","animal", "undead", "daemon", "human", "animal",  "undead", "daemon", "human"] }
     ]
   },
   {

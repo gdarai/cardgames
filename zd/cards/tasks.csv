@@ -1,7 +1,11 @@
-1,camp,Mej trofeje 3 zvirat,Velky lov,animal-animal-animal,Zelena
-1,camp,Mej trofeje 3 nemrtvych,Cisteni hrbitovu,undead-undead-undead,Zluta
-1,camp,Mej trofeje 3 lidi,Hon na carodeje,human-human-human,Modra
-1,camp,Mej trofeje 3 demonu,Pro klid duse,daemon-daemon-daemon,Cervena
+2,camp,Mej trofeje 3 zvirat,Velky lov,animal-animal-animal,Zelena
+2,camp,Mej trofeje 3 nemrtvych,Cisteni hrbitovu,undead-undead-undead,Zluta
+2,camp,Mej trofeje 3 lidi,Hon na carodeje,human-human-human,Modra
+2,camp,Mej trofeje 3 demonu,Pro klid duse,daemon-daemon-daemon,Cervena
+2,camp,Mej zobrazene tri trofeje,Prizracny jezdec,animal-undead-human,Mix
+2,camp,Mej zobrazene tri trofeje,Pekelna parta,undead-human-daemon,Mix
+2,camp,Mej zobrazene tri trofeje,Honak demonu,human-daemon-animal,Mix
+2,camp,Mej zobrazene tri trofeje,Spiknuti,daemon-animal-undead,Mix
 1,camp,Stuj mezi 2 zviraty,Uvnitr smecky,animal-you-animal,Zelena
 1,camp,Stuj mezi 2 nemrtvymi,Doupe nemrtvych,undead-you-undead,Zluta
 1,camp,Stuj mezi 2 lidmi,Magicky rej,human-you-human,Modra
