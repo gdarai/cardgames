@@ -1,0 +1,85 @@
+[
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"weapons1.csv",
+    "sheet":"weapons2",
+    "skipTitle":1,
+    "table":2
+  },
+  {
+    "_process":"CONVERT_SVGS"
+  },
+  {
+    "_process":"COMBINE_PNGS",
+    "_formula":["base", "extra"],
+    "_skipMissing":"True",
+    "_align":"center",
+    "_shape":"row",
+    "_skip":[ "" ],
+    "_out":{ "reg": "png/{base0}-{extra0}.png" },
+    "base":{ "reg": "png/{base0}.png" },
+    "extra":{ "reg": "?{extra0}{}png/{extra0}.png" },
+    "_list": {
+      "values": [
+        "base0",
+        "extra0"
+      ]
+    },
+    "values": [
+      { "list": ["spear",  "hammer", "bow",   "sword", "broken", "teleport", "call",  "berserk", "broken", "teleport", "call",   "berserk", "broken", "teleport", "call", "berserk", "broken", "teleport", "call",  "berserk"] },
+      { "list": ["hammer", "bow",    "sword", "spear", "spear",  "spear",    "spear", "spear",   "hammer", "hammer",   "hammer", "hammer",  "bow",    "bow",      "bow",  "bow",     "sword",  "sword",    "sword", "sword"] }
+    ]
+  },
+  {
+    "_process":"COMBINE_PNGS",
+    "_formula":["A", "B", "C"],
+    "_skipMissing":"True",
+    "_align":"center",
+    "_shape":"row",
+    "_skip":[ "" ],
+    "_out":{ "reg": "png/{A0}-{B0}-{C0}.png" },
+    "A":{ "reg": "png/{A0}.png" },
+    "B":{ "reg": "png/{B0}.png" },
+    "C":{ "reg": "png/{C0}.png" },
+    "_list": {
+      "values": [
+        "A0",
+        "B0",
+        "C0"
+      ]
+    },
+    "values": [
+      { "list": ["animal", "undead", "daemon", "human", "animal", "undead", "human","daemon","you",    "you",    "you",    "you",   "animal", "undead", "daemon", "human"] },
+      { "list": ["animal", "undead", "daemon", "human", "undead", "human","daemon","animal", "animal", "undead", "daemon", "human", "you",    "you",    "you",    "you"] },
+      { "list": ["animal", "undead", "daemon", "human", "human","daemon", "animal", "undead","animal", "undead", "daemon", "human", "animal",  "undead", "daemon", "human"] }
+    ]
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_weapons1.tex",
+    "_card":"png/card_600x450_weapon",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
+    "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
+    "targetPic":{ "reg": "?{tgtPic0}{}png/{tgtPic0}.png" },
+    "color":{ "reg": "?{color0}{}{color0}" },
+    "citation":{ "reg": "?{citation0}{}- {citation0} -" },
+    "type":{ "reg": "?{type0}{}== {type0} ==" },
+    "_list":{
+      "values":[
+        "id0",
+        "color0",
+        "tgtPic0",
+        "type0",
+        "ico0",
+        "text",
+        "citation0",
+        "name",
+        "pic0"
+      ]
+    },
+    "values":"weapons1.csv"
+  }
+]

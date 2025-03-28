@@ -169,15 +169,19 @@
     "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
     "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
     "targetPic":{ "reg": "?{tgtPic0}{}png/{tgtPic0}.png" },
-    "color":{ "reg": "?{color0}{}({color0})" },
+    "color":{ "reg": "?{color0}{}{color0}" },
+    "citation":{ "reg": "?{citation0}{}- {citation0} -" },
+    "type":{ "reg": "?{type0}{}== {type0} ==" },
     "_list":{
       "values":[
         "id0",
         "color0",
         "tgtPic0",
-        "type",
+        "type0",
         "ico0",
         "text",
+        "citation0",
+        "name",
         "pic0"
       ]
     },
@@ -192,15 +196,19 @@
     "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
     "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
     "targetPic":{ "reg": "?{tgtPic0}{}png/{tgtPic0}.png" },
-    "color":{ "reg": "?{color0}{}({color0})" },
+    "color":{ "reg": "?{color0}{}{color0}" },
+    "citation":{ "reg": "?{citation0}{}- {citation0} -" },
+    "type":{ "reg": "?{type0}{}== {type0} ==" },
     "_list":{
       "values":[
         "id0",
         "color0",
         "tgtPic0",
-        "type",
+        "type0",
         "ico0",
         "text",
+        "citation0",
+        "name",
         "pic0"
       ]
     },
@@ -215,15 +223,19 @@
     "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
     "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
     "targetPic":{ "reg": "?{tgtPic0}{}png/{tgtPic0}.png" },
-    "color":{ "reg": "?{color0}{}({color0})" },
+    "color":{ "reg": "?{color0}{}{color0}" },
+    "citation":{ "reg": "?{citation0}{}- {citation0} -" },
+    "type":{ "reg": "?{type0}{}== {type0} ==" },
     "_list":{
       "values":[
         "id0",
         "color0",
         "tgtPic0",
-        "type",
+        "type0",
         "ico0",
         "text",
+        "citation0",
+        "name",
         "pic0"
       ]
     },
@@ -238,15 +250,19 @@
     "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
     "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
     "targetPic":{ "reg": "?{tgtPic0}{}png/{tgtPic0}.png" },
-    "color":{ "reg": "?{color0}{}({color0})" },
+    "color":{ "reg": "?{color0}{}{color0}" },
+    "citation":{ "reg": "?{citation0}{}- {citation0} -" },
+    "type":{ "reg": "?{type0}{}== {type0} ==" },
     "_list":{
       "values":[
         "id0",
         "color0",
         "tgtPic0",
-        "type",
+        "type0",
         "ico0",
         "text",
+        "citation0",
+        "name",
         "pic0"
       ]
     },
