@@ -1,74 +1,90 @@
 <T>Zombies Doom
 Pokus o rychlejs'i' a za'bavne'js'i' zombi'ky.
 
+<C>Mys'lenka hry
+Hra'c' posouva' svou figurku po herni' desce a zbi'ra' trofeje. Za kaz'dou poraz'enou pr'i's'eru c'i splne'ny' u'kol je jedna. Kdo prvni' dosa'hne urcite'ho po'ctu trofeji, vyhra'l.
+
 <C>Herni' prvky
-<C1>Symboly vs barvy
-Ve hr'e odpovi'da' barva zombi'ka barve' zbrane' ktera' ho umi' zlikvidovat. Ma'me tedy 4 barvy zombi'ku' a 4 odpovi'daji'ci' barvy zbrani'. Kaz'da' barva odpovi'da' symbolu pr'i'slus'ne''ho elementu.
+
+<C1>Z'etony
+Po mape' se pohybuji' figurky, jedna pro kaz'de''ho hra'c'e. A pak jsou na mape' poloz'ene'' vi'te'zne'' tokeny o ktere'' hra'c'u'm jde.
+
+<C1>Zbrane' vs barvy
+Ve hr'e jsou 4 druhy zbrani' / pr'i's'er / barev kde kaz'da' zbran' je na jeden druh pr'i's'ery a kaz'dy' druh pr'i's'ery ma' konkre''tni' barvu.
+
 <I0>
-<I>Ohen' - c'ervena'
-<I>Voda - Modra'
-<I>Blesk - Z'luta'
-<I>Vi'tr - Zelena'
+<I>Luk - C'ervena' - De''mon
+<I>Mec' - Modra' - C'love'k
+<I>Palice - Z'luta' - Nemrtvy'
+<I>Kopi' - Zelena' - Zvi'r'e
 <I1>
-Zombi'k jako z'eton ma' barvu. Di'lek mapy jako tisk ma' symbol. Karta zbrane' je pak spojovaci' prvek a ma' na sobe' oboje.
+
+<C1>Karty kouzel
+Ve hr'e existuji' karty, ktere'' posiluji' vybranou zbran'. Kaz'de'' kouzlo je jednora'zove''. Bud' je na samostatne'' karte', pak si hra'c' vybi'ra' ke ktere'' zbrani ho pouz'ije a nebo je na karte' zbrane' a pak jde pouz'i't jen na svou zbran'. Pouz'iti' kouzla je vz'dy dobrovolne''. Na kaz'dou zbran' jde pouz'i't jen jedno kouzlo. Kaz'da' zbran' jde pouz'i't i jako obyc'ejna', bez kouzla.
+
+<I0>
+<I>Tvrzena' zbran' - Zbran' zabije jednu pr'i's'eru aniz' by se musela odhodit.
+<I>Teleport - Pr'ed u'tokem se hra'c'ova figurka prohodi' s jiny'm hra'c'em ve hr'e.
+<I>Va'bnic'ka - Pr'ed u'tokem se jedna pr'i's'era na ci'love''m poli'c'ku prohodi' s jinou, kdekoliv na mape'.
+<I>Berserk - U'tok touto zbrani' neukonc'i' hra'c'u''v tah. Pokud chce a doka'z'e, mu''z'e druhou zbrani' zau'toc'it na dals'i' pr'i's'eru.
+<I1>
+
+<C1>Karty u'kolu''
+Bali'c'ek karet, ze ktery'ch jsou vz'dy tr'i vyloz'ene''. Kdyz' na konci sve''ho tahu hra'c' spln'uje podmi'nky ne'ktery'ch vyloz'eny'ch karet u'kolu'', mu'z'e si je vzi't a pro dals'i'ho hra'c'e doli'znout u'koly nove''. Kaz'dy' splne'ny' u'kol ma' hodnotu jednoho vi'te'zne''ho tokenu.
+
+<I0>
+<I>U'kol stu'j ne'kde - Hra'c' ma' za u'kol dostat se na mape' do urc'ite'' polohy vu'c'i okol'ni'm pr'i's'era'm. Vertika'lne' i horizont'a'lne', na pr'i'padny'ch ska'la'ch nesejde.
+<I>U'kol me'j trofeje - Hra'c' sbi'ra' trofeje poraz'eny'ch pr'i's'er. Pokud ma' na stole danou kombinaci, splnil u'kol.
+<I1>
 
 <C1>Karty zbrani'
-Ke kaz'de'' barve' zbrane' ma'me hroma'dku karet s odpovi'daji'ci' rubovou stranou. Kaz'da' karta zbrane' ma' stejny' symbol i v rohu aby bylo jo jasne'' do ktere'' hroma'dky zbrani' patr'i'. Jinak je na kaz'de'' karte' pouze jeden symbol ktery' je pro hru du'lez'ity' a to ten uprostr'ed. Pro jistotu je jme'no symbolu napsa'no dole i textem.
+Ke kaz'de''mu druhu zbrane' ma'me hroma'dku karet s odpovi'daji'ci' rubovou stranou. Na li'ci je pak napsa'no, pro jistotu barvou, i symbolem pr'i's'ery, i druhem zbrane' i jeji' ikonou, co to vlastne' je za zbran' a na koho funguje. To z'e jsme v bali'c'ku mec'u'' neznamena' z'e jsou to vs'echno mec'e. Obc'as se do toho bali'c'ku zami'cha' i ne'co jine''ho.
+
 <I0>
-<I>Zombi'k - Pr'idej ihned po li'znuti' kam chces' na mapu +1 zombi'ka, kartu zahod' a li'zni si novou.
-<I>Z'oli'k - Funguje na jednoho zombi'ka jake'koliv barvy.
-<I>Barva zbrane' - Funguje na jednoho zombi'ka dane'' barvy
+<I>Zbran' - Funguje na jednu pr'i's'eru dane'' barvy
+<I>Bomba, aka. Z'oli'k - Funguje na jednu libovolnou pr'i's'eru.
+<I>Zbran' s Kouzlem - Alternativa hry ve ktere'' si jde li'znout zbran' co ma' na sobe' rovnou i kouzlo.
 <I1>
 
 <C1>Di'lky mapy
-Mapa se skla'da' z di'lku'. Na kaz'de''m di'lku jsou 2 infomace. Zed' ano/ne a druh poli'cka. Druh poli'c'ka je pro jistotu napsa'n i textem. Pokud je na poli'cku zed', znamena' to z'e ti'm sme'rem jednodus'e nejde na poli'c'ko pr'iji't ani odeji't. Druhy jsou tyto:
+Mapa se skla'da' z di'lku'. Na kaz'de''m di'lku mu''z'e by't nakreslena' na okraji Ska'la, c'ili sme'r ktery'm na/z poli'c'ko(a) nejde vstoupit. Pak je tam druh poli'cka, a to obra'zkem i textem. Pak je u okraje poli'c'ka naznac'eno zda se na'hodnou nejedna' o specia'lni' poli'c'ko kde neni' z'a'dna' pr'i's'era, nebo kde jsou naopak pr'i's'ery 2.
 <I0>
-<I>Start - Na poli'cku neni' ani vi'te'zny' token, hra'c' kdyz' sem pr'i'jde mu'z'e zahodit jednu svou kartu a li'znout si novou z libovolne'' hroma'dky.
-<I>Di'ra - Neda' se pr'ez ni' chodit a neda' se na ni' s'la'pnout. Neni' na ni' zombi'k ani vi'te'zny' token.
-<I>Klid - Klidny' kout, neni' tu vi'te'zny' token, ale ani zombi'k. Jde tudy probe'hnout a ihned pokrac'ovat na dals'i' sousedi'ci' poli'c'ko, bez vi'me'ny karet.
-<I>Nic - Symbol zbrane' - Jsou zde zombi'ci i vi'te'zny' token. Kdo tu zombi'ky porazi' doli'z'e si karty dle norma'lni'ch pravidel.
+<I>Start - Na poli'cku neni' ani pr'i's'era ani vi'te'zny' token. Pouz'i'va' se jako startovni' lokace. (Moz'na' se bude muset pr'ejmenovat)
+<I>Ska'la - Neda' se pr'ez ni' chodit a neda' se na ni' s'la'pnout. Neni' na ni' ani pr'i's'era ani token. Proste' pr'eka'z'i'.
+<I>Rozcesti' - Funguje jako teleport. Neni' na ne'm pr'i's'era ani token. Neda' se na ne'm zastavit, ale kdykoliv na ktere''koliv rozcesti' hra'c' vstoupi', okamz'ite' z libovolne''ho rozcesti' i vystoupi', jako by vy'chozi' a konec'ne'' poli'c'ko spolu pr'i'mo sousedili.
+<I>Ta'bor - Neni' zde ani pr'i's'era ani token. Ale kdykoliv sem hra'c' vstoupi' mu'z'e si li'znout dals'i' kouzlo a mu''z'e vyme'nit u'koly (sa'm voli' kolik).
+<I>Hrad - Hli'daji' ho dve' pr'i's'ery. Pokud je hra'c' doka'z'e porazit (musi' obe' v jednom tahu) tak zi'ska' odme'nu obou vi'te'zny'ch tokenu''.
 <I1>
-
-<C1>Fronta zombi'ku'
-Na poli'cku vz'dy lez'i' jen 1 zombi'k pokud se tam se zombi'ky bojuje, nebo z'a'dny' pokud je poli'c'ko pr'ed zombi'ky chra'ne'ne''. Mu'z'e se sta't z'e tam lez'i' 2 pokud je poli'c'ko posi'lene''. Vz'dy se dobi'ra' N zombi'ku' (0 a vi'ce) z fronty. Fronta obsahuje M hroma'dek o N zombi'ka'ch. Hroma'dky jsou vide't aby s nimi mohl kaz'dy' hra'c' poc'i'tat.
-
-- Souc'asna' verze je z'e fronta obsahuje tolik hroma'dek kolik je hra'c'u' (M) 2 - 4. A kaz'da' ma' (N) jednoho zombi'ka.
-
-Po boji se zombi'ky hra'c' vz'dy doplni' na konec fronty novou hroma'dku ze za'soby.
 
 <C>Jak na hru
 
 <C1>Setup
-Na zac'a'tku hry se postavi' mapa podle dane''ho zada'ni' a umi'sti' se na ni' zombi'ci a vi'te'zne'' tokeny. Vedle pla'nku se umi'sti' zami'chane'' hroma'dky zbrani' a mi'sto na odhazovaci' hroma'dku. Hra'c'i se umi'sti' na startovni' pole a nali'z'ou si poc'a'tec'ni' karty. Vedle desky pr'iprav frontu zombi'ku' domluvene'' velikosti. Ten po leve'' ruce od posledni'ho vi'te'ze a nebo nejmlads'i' hra'c' zac'ne hru.
+Na zac'a'tku hry se postavi' mapa podle dane''ho zada'ni' a umi'sti' se na ni' pr'i's'ery a vi'te'zne'' tokeny. Vedle pla'nku se umi'sti' zami'chane'' hroma'dky zbrani' a mi'sto na odhazovaci' hroma'dku. Urc'i' se zac'i'naji'ci' hra'c'. Hra'c'i se str'i'daji'. Nejprve si kaz'dy' li'zne kouzlo. Pak se umi'sti' na startovni' pole, mohou i na stejne''. Pak si nali'z'ou poc'a'tec'ni' 2 karty. A nakonec se ta'hnou zac'i'naji'ci' u'koly.
 
-- Souc'asny' setup. Dej si stranou 2 di'lky start. Postav diamant 4, 6, 8, 8, 8, 6, 4 a v prostr'edni' r'ade' me'j jako 3 a 6 di'lek di'lky start. Na kaz'dy' di'lek ktery' neni' Di'ra, Klid nebo Start dej vi'te'zny' token a na'hodny' z'eton zombi'ka.
-
-Od zac'i'naji'ci'ho hra'c'e si kaz'dy' umi'sti' svou figurku na libovolny' start a li'zne si 3 karty z libovolny'ch hroma'dek zbrani'. Pokud si ne'kdo li'zne Zombi'ka, hned ho zahraje viz kapitola Kolo hry - Li'znuti' zombi'ka.
+- Setup mapy: Doprostr'ed dej r'adu Start, Ska'la, Hrad, Ska'la, Start. Kolem postav diamant 3, 5, 7, 9, 7, 5, 3. Jeden di'lek ti pr'ebyde. Na kaz'dy' di'lek ktery' neni' Ska'la, Ta'bor, Rozcesti' nebo Start dej vi'te'zny' token a na'hodny' z'eton pr'i's'ery. Na hrad dej 2 pr'i's'ery a 2 z'etony.
 
 <C1>Kdo vyhra'va'
-Ci'l hry je zbi'rat vi'te'zne'' tokeny ktere'' jsou na poli'c'ka'ch kde jes'te' nikdo nebyl. Vyhra'va' prvni' hra'c' ktery' nashroma'z'di' X vi'te'zny'ch tokenu'.
+Ci'l hry je zbi'rat vi'te'zne'' tokeny ktere'' jsou na poli'c'ka'ch kde jes'te' nikdo nebyl (Nedopln'uji' se, nikdy). Vyhra'va' prvni' hra'c' ktery' nashroma'z'di' Ci'leny' poc'et vi'te'zny'ch tokenu'.
 
-- V souc'asne'' verzi to je 7 tokenu' pro 4 hra'c'e, 8 pro 3 hra'c'e a 11 pro 2 hra'c'e.
+- Ci'l je 7 tokenu' pro 4 hra'c'e, 8 pro 3 hra'c'e a 10 pro 2 hra'c'e.
 
 <C1>Kolo hry
-Kolo se skla'da' z Boje, Pr'i'chodu novy'ch zombi'ku' a Dobi'ra'ni' karet.
+Kolo hra'ce se skla'da' z Boje a Vyhodnoceni'.
 
 <C2>Co je vi'te'zstvi' v boji
-Na poli'c'ka'ch mapy se bojuje se zombi'ky. Zombi'ci jsou barevne'' terc'i'ky a vz'dy se bere dohromady to co je na poli'c'ku mapy co hra'c' doby'va' a co je v prvni' hroma'dce ve fronte' zombi'ku'. Hra'c' proti nim bojuje kartami na ruce. Karet ma' mi't vz'dy o jednu vi'c nez' kolik je zombi'ku'. Pouze pokud na poli'c'ku byli zombi'ci dva tak je karet stejne'. Pak se pr'ed bojem jedna karta doli'za'va' z hroma'dky podle symbolu na mape' kde Te'z'ci' zombi'ci jsou. Hra'c' souboj se zombi'ky vyhra'va' pokud ma' na ruce kartu pr'i'slus'ne'' barvy pro kaz'de''ho zombi'ka na ci'love''m poli'c'ku. Pkud tam jsou tedy 2 zeleni' a 1 c'erveny', musi' mi't na ruce take' alespon' 2 zelene'' a 1 c'ervenou kartu.
+Na poli'c'ka'ch mapy se bojuje spr'i's'erami. Pr'i's'ery jsou barevne'' terc'i'ky. Hra'c' proti nim bojuje kartami na ruce. Hra'c' souboj s pr'i's'erou vyhra'va' pokud odhodi' kartu pr'i'slus'ne'' barvy pro kaz'dou pr'i's'eru na ci'love''m poli'c'ku. Pkud tam je tedy zelena' a c'ervena' pr'i's'era, musi' mi't na ruce take' zelenou a c'ervenou zbran' (kopi' a luk) a nebo ne'jakou ze zbrani' nahradit bombou. Pokud pouz'ije na ne'kterou svou zbran' kouzlo tvrzene'' zbrane', zbran' nezahazuje.
 
 <C2>Boj
-Hra'c' na tahu se podi'va' na sve'' karty a na c'tyr'i poli'c'ka kolem sebe. (Mi'n' pokud je na kraji mapy, nebo stoji' vedle zdi) Zhodnoti' na ktere'' poli'c'ko pu'jde, nebo jestli boj prohraje.
+Hra'c' na tahu se podi'va' na sve'' karty a na c'tyr'i poli'c'ka kolem sebe. (Mi'n' pokud je na kraji mapy, nebo stoji' vedle zdi. Vi'c pokud stoji' vedle Rozcesti') Zhodnoti' na ktere'' poli'c'ko pu'jde, nebo jestli boj prohraje. Da'le se mu''z'e rozhodnout pouz'i't kouzlo a pr'ed bojem prohodit sebe, nebo zombi'ka na ci'love'm poli'c'ku.
+
 <I0>
 <I>Pokud je ve sme'ru ve ktere''m chce ji't zed' at' uz' na jeho nebo na ci'love''m poli'c'ku, ji't tam nemu'z'e.
-<I>Nelze jentak ji't a zu'stat na poli'cku Klid, ti'm se pouze procha'zi'.
-<I>Pokud tam je poli'c'ko Klid, mu'z'e se podi'vat i na poli'c'ka kolem ne'j vc'etne' toho ze ktere''ho ted' vycha'zi'. A vybi'rat si ci'love' poli'c'ko i z nich.
-<I>Pokud na ci'love''m poli'c'ku neni' zombi'k, mu'z'e tam ji't a mu'z'e (a nemusi') u toho zahodit 1 kartu aby mohl zahra't fa'zi doli'za'ni'.
-<I>Pokud je na ci'love''m poli'c'ku zombi'k pr'ibere si k tomu hra'c' prvni' hroma'dku zombi'ku' z Fronty. Pokud ma' hra'c' na ruce kombinaci karet, ktera' barvami odpovi'da' te'' kombinaci zombi'ku' (vc'etne' pr'i'padne''ho z'oli'ka), mu'z'e hra'c' tyto karty odhodit a na poli'c'ko ji't.
-<I>Pokud jsou na ci'love''m poli'c'ku zombi'ci 2, nevi' hra'c' jestli tam vyhraje. Mu'z'e se tam rozhodnout ji't ale pokud neuspe'je, uz' boj prohra'l a nemu'z'e na jine''. Pokud se tam rozhodne ji't, ope't si pr'ibere prvni' hroma'dku zombi'ku' z fronty a li'zne si do ruky jednu kartu navi'c podle poli'c'ka na ktere''m Ti zombi'ci stoji'. Pokud li'zne kartu Zombi'ka, viz Li'znuti' zombi'ka. Pokud na poraz'eni' zombi'ku' ma', odhazuje karty a postupuje na poli'c'ko.
-<I>V pr'i'pade' z'e hra'c' nema' kam postoupit, nebo prohra'l boj s te'z'ky'm zombi'kem a nebo nikam postoupit nechce, vzda'va' tah. Zahazuje vs'echny karty z ruky a pr'echa'zi' rovnou na fa'zi doli'za'va'ni'.
+<I>Pokud na ci'love''m poli'c'ku neni' pr'i's'era, mu'z'e tam ji't a mu'z'e (a nemusi') u toho zahodit 1 kartu zbrane'.
+<I>Pokud je na ci'love''m poli'c'ku pr'i's'era, nasta'va' boj. Pokud ho hra'c' nemu'z'e vyhra't, nemu'z'e na poli'c'ko ji't.
+<I>V pr'i'pade' z'e hra'c' nema' kam postoupit, nebo nechce postoupi, vzda'va' tah. Zahazuje vs'echny karty z ruky a pr'echa'zi' rovnou na fa'zi s'i'r'eni' pr'i's'er.
 <I1>
 <C2>Po boji
-Pokud hra'c' nevzdal tah, tak se ne'kam pohnul. Poraz'ene'' zombi'ky vra'til do za'soby, pouz'ite'' zbrane' dal na odhazovaci' hroma'dku. Pokud byl na ci'love''m poli'c'ku vi'te'zny' token, vzal si ho.
+Pokud hra'c' nevzdal tah, tak se ne'kam pohnul. Zi'skal pr'i'padne' tokeny na sve''m nove''m poli'c'ku a z'etony poraz'eny'ch pr'i's'er pr'idal do sve'' zbi'rky. Z'a'dny' hra'c' ale nesmi' mi't vi'c z'etonu'' nez' tr'i, takz'e pr'ebyky musi' vra'tit do za'soby.
 <C2>Pr'i'chod novy'ch zombi'ku'
 Pokud se hra'c' pohnul, je tr'eba se podi'vat na poli'c'ko odkud odes'el. Pokud tam ted' nikdo nestoji' a neni' to specia'lni' poli'c'ko (Start, nebo Klid) je tr'eba tam doplnit nove'ho na'hodne'ho zombi'ka. Take' je potr'eba do fronty zombi'ku' doplnit novou hroma'dku. Pozor, vi'te'zne'' tokeny se na mapu nedopln'uji'.
 <C2>Doplne'ni' karet
