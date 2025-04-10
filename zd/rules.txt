@@ -54,6 +54,7 @@ Mapa se skla'da' z di'lku'. Na kaz'de''m di'lku mu'z'e by't nakreslena' na okraj
 <I>Rozcesti' - Funguje jako teleport. Neni' na ne'm pr'i's'era ani token. Neda' se na ne'm zastavit, ale kdykoliv na ktere''koliv rozcesti' hra'c' vstoupi', okamz'ite' z libovolne''ho rozcesti' i vystoupi', jako by vy'chozi' a konec'ne'' poli'c'ko spolu pr'i'mo sousedili. Pozor, ska'ly na hrana'ch rozcesti' por'a'd pr'eka'z'eji'.
 <I>Ta'bor - Neni' zde ani pr'i's'era ani token. Ale kdykoliv sem hra'c' vstoupi' mu'z'e si li'znout dals'i' kouzlo a mu'z'e zahodit nevhodne'' nesplne'ne'' u''koly (sa'm voli' jestli a kolik).
 <I>Hrad - Hli'daji' ho dve' pr'i's'ery. Pokud je hra'c' doka'z'e porazit (musi' obe' v jednom tahu) tak zi'ska' odme'nu obou vi'te'zny'ch tokenu'.
+<I> Norma'lni' poli'c'ko - Ma' jednu pr'i's'eru a jeden vi'te'zny' token. Na poli jsou nakresleny jedna nebo dve' zbrane', ktere'' omezuji' dobi'ra'ni' zbrani' hráče v příštím tahu; při dvou zbraních si hráč vybírá z těchto dvou druhů.
 <I1>
 
 <C>Jak na hru
