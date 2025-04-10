@@ -2,43 +2,43 @@
 Pokus o rychlejs'i' a za'bavne'js'i' zombi'ky.
 
 <C>Mys'lenka hry
-Hra'c' posouva' svou figurku po herni' desce a zbi'ra' trofeje. Za kaz'dou poraz'enou pr'i's'eru c'i splne'ny' u'kol je jedna. Kdo prvni' dosa'hne urcite'ho po'ctu trofeji, vyhra'l.
+Hra'c'i se str'i'daji' na tazi'ch. Tahy by me'ly by't celkem rychle''. Hra'c' na tahu posouva' svou figurku po herni' desce, pora'z'i' pr'i's'ery v epicky'ch souboji'ch a zbi'ra' trofeje. Za kaz'dou poraz'enou pr'i's'eru c'i splne'ny' u''kol je jedna. Kdo prvni' dosa'hne urcite'ho po'ctu trofeji, vyhra'l.
 
 <C>Herni' prvky
 
 <C1>Z'etony
-Po mape' se pohybuji' figurky, jedna pro kaz'de''ho hra'c'e. A pak jsou na mape' poloz'ene'' vi'te'zne'' tokeny o ktere'' hra'c'u'm jde.
+Po mape' se pohybuji' figurky, jedna pro kaz'de''ho hra'c'e. Pak jsou na mape' barevne'' terc'i'ky pr'i's'er. A pak jsou na mape' poloz'ene'' vi'te'zne'' tokeny o ktere'' hra'c'u'm jde.
 
 <C1>Zbrane' vs barvy
 Ve hr'e jsou 4 druhy zbrani' / pr'i's'er / barev kde kaz'da' zbran' je na jeden druh pr'i's'ery a kaz'dy' druh pr'i's'ery ma' konkre''tni' barvu.
 
 <I0>
-<I>Luk - C'ervena' - De''mon
-<I>Mec' - Modra' - C'love'k
-<I>Palice - Z'luta' - Nemrtvy'
-<I>Kopi' - Zelena' - Zvi'r'e
+<I>Luk - C'ervena' - De''mon (C'ert)
+<I>Mec' - Modra' - C'love'k (C'arode'j)
+<I>Palice - Z'luta' - Nemrtvy' (Zombi'k)
+<I>Kopi' - Zelena' - Zvi'r'e (Medve'd)
 <I1>
 
 <C1>Karty kouzel
-Ve hr'e existuji' karty, ktere'' posiluji' vybranou zbran'. Kaz'de'' kouzlo je jednora'zove''. Bud' je na samostatne'' karte', pak si hra'c' vybi'ra' ke ktere'' zbrani ho pouz'ije a nebo je na karte' zbrane' a pak jde pouz'i't jen na svou zbran'. Pouz'iti' kouzla je vz'dy dobrovolne''. Na kaz'dou zbran' jde pouz'i't jen jedno kouzlo. Kaz'da' zbran' jde pouz'i't i jako obyc'ejna', bez kouzla.
+Ve hr'e existuji' karty kouzel, ktere'' posiluji' vybranou zbran'. Kaz'de'' kouzlo je jednora'zove''. Bud' je na samostatne'' karte', pak si hra'c' vybi'ra' ke ktere'' zbrani ho pouz'ije a nebo je na karte' zbrane' a pak jde pouz'i't jen na svou zbran'. Pouz'iti' kouzla je vz'dy dobrovolne''. Na kaz'dou zbran' jde pouz'i't jen jedno kouzlo. Kaz'da' zbran' jde pouz'i't i jako obyc'ejna', bez kouzla.
 
 <I0>
 <I>Tvrzena' zbran' - Zbran' zabije jednu pr'i's'eru aniz' by se musela odhodit.
-<I>Teleport - Pr'ed u'tokem se hra'c'ova figurka prohodi' s jiny'm hra'c'em ve hr'e.
-<I>Va'bnic'ka - Pr'ed u'tokem se jedna pr'i's'era na ci'love''m poli'c'ku prohodi' s jinou, kdekoliv na mape'.
-<I>Berserk - U'tok touto zbrani' neukonc'i' hra'c'u''v tah. Pokud chce a doka'z'e, mu''z'e druhou zbrani' zau'toc'it na dals'i' pr'i's'eru.
+<I>Teleport - Pr'ed u''tokem se hra'c'ova figurka prohodi' s jiny'm hra'c'em ve hr'e.
+<I>Va'bnic'ka - Pr'ed u''tokem se jedna pr'i's'era na ci'love''m poli'c'ku prohodi' s jinou, kdekoliv na mape'.
+<I>Berserk - U'tok touto zbrani' neukonc'i' hra'c'u'v tah. Pokud chce a doka'z'e, mu'z'e pokrac'ovat v pohybu na dals'i' poli'c'ko, at' uz' tam bude take'' bojovat c'i ne.
 <I1>
 
-<C1>Karty u'kolu''
-Bali'c'ek karet, ze ktery'ch jsou vz'dy tr'i vyloz'ene''. Kdyz' na konci sve''ho tahu hra'c' spln'uje podmi'nky ne'ktery'ch vyloz'eny'ch karet u'kolu'', mu'z'e si je vzi't a pro dals'i'ho hra'c'e doli'znout u'koly nove''. Kaz'dy' splne'ny' u'kol ma' hodnotu jednoho vi'te'zne''ho tokenu.
+<C1>Karty u''kolu'
+Bali'c'ek karet, ze ktery'ch jsou vz'dy tr'i vyloz'ene''. Kdyz' na konci sve''ho tahu hra'c' spln'uje podmi'nky ne'ktery'ch vyloz'eny'ch karet u''kolu', mu'z'e si je vzi't a pro dals'i'ho hra'c'e doli'znout u''koly nove''. Kaz'dy' splne'ny' u''kol ma' hodnotu jednoho vi'te'zne''ho tokenu.
 
 <I0>
-<I>U'kol stu'j ne'kde - Hra'c' ma' za u'kol dostat se na mape' do urc'ite'' polohy vu'c'i okol'ni'm pr'i's'era'm. Vertika'lne' i horizont'a'lne', na pr'i'padny'ch ska'la'ch nesejde.
-<I>U'kol me'j trofeje - Hra'c' sbi'ra' trofeje poraz'eny'ch pr'i's'er. Pokud ma' na stole danou kombinaci, splnil u'kol.
+<I>U'kol stu'j ne'kde - Hra'c' ma' za u''kol dostat se na mape' do urc'ite'' polohy vu'c'i okolni'm pr'i's'era'm. Vertika'lne' i horizonta'lne', na pr'i'padny'ch ska'la'ch nesejde.
+<I>U'kol me'j trofeje - Hra'c' sbi'ra' trofeje poraz'eny'ch pr'i's'er. Pokud ma' na stole danou kombinaci, splnil u''kol.
 <I1>
 
 <C1>Karty zbrani'
-Ke kaz'de''mu druhu zbrane' ma'me hroma'dku karet s odpovi'daji'ci' rubovou stranou. Na li'ci je pak napsa'no, pro jistotu barvou, i symbolem pr'i's'ery, i druhem zbrane' i jeji' ikonou, co to vlastne' je za zbran' a na koho funguje. To z'e jsme v bali'c'ku mec'u'' neznamena' z'e jsou to vs'echno mec'e. Obc'as se do toho bali'c'ku zami'cha' i ne'co jine''ho.
+Ke kaz'de''mu druhu zbrane' ma'me hroma'dku karet s odpovi'daji'ci' rubovou stranou. Na li'ci je pak napsa'no, pro jistotu barvou, i symbolem pr'i's'ery, i druhem zbrane' i jeji' ikonou, co to vlastne' je za zbran' a na koho funguje. To z'e jsme v bali'c'ku mec'u' neznamena' z'e jsou to vs'echno mec'e. Obc'as se do toho bali'c'ku zami'cha' i ne'co jine''ho.
 
 <I0>
 <I>Zbran' - Funguje na jednu pr'i's'eru dane'' barvy
@@ -47,21 +47,21 @@ Ke kaz'de''mu druhu zbrane' ma'me hroma'dku karet s odpovi'daji'ci' rubovou stra
 <I1>
 
 <C1>Di'lky mapy
-Mapa se skla'da' z di'lku'. Na kaz'de''m di'lku mu''z'e by't nakreslena' na okraji Ska'la, c'ili sme'r ktery'm na/z poli'c'ko(a) nejde vstoupit. Pak je tam druh poli'cka, a to obra'zkem i textem. Pak je u okraje poli'c'ka naznac'eno zda se na'hodnou nejedna' o specia'lni' poli'c'ko kde neni' z'a'dna' pr'i's'era, nebo kde jsou naopak pr'i's'ery 2.
+Mapa se skla'da' z di'lku'. Na kaz'de''m di'lku mu'z'e by't nakreslena' na okraji Ska'la, c'ili sme'r ktery'm na/z poli'c'ko(a) nejde vstoupit. Pak je tam druh poli'cka, a to obra'zkem i textem. Pak je u okraje poli'c'ka naznac'eno zda se na'hodnou nejedna' o specia'lni' poli'c'ko kde neni' z'a'dna' pr'i's'era, nebo kde jsou naopak pr'i's'ery dve'.
 <I0>
 <I>Start - Na poli'cku neni' ani pr'i's'era ani vi'te'zny' token. Pouz'i'va' se jako startovni' lokace. (Moz'na' se bude muset pr'ejmenovat)
-<I>Ska'la - Neda' se pr'ez ni' chodit a neda' se na ni' s'la'pnout. Neni' na ni' ani pr'i's'era ani token. Proste' pr'eka'z'i'.
-<I>Rozcesti' - Funguje jako teleport. Neni' na ne'm pr'i's'era ani token. Neda' se na ne'm zastavit, ale kdykoliv na ktere''koliv rozcesti' hra'c' vstoupi', okamz'ite' z libovolne''ho rozcesti' i vystoupi', jako by vy'chozi' a konec'ne'' poli'c'ko spolu pr'i'mo sousedili.
-<I>Ta'bor - Neni' zde ani pr'i's'era ani token. Ale kdykoliv sem hra'c' vstoupi' mu'z'e si li'znout dals'i' kouzlo a mu''z'e vyme'nit u'koly (sa'm voli' kolik).
-<I>Hrad - Hli'daji' ho dve' pr'i's'ery. Pokud je hra'c' doka'z'e porazit (musi' obe' v jednom tahu) tak zi'ska' odme'nu obou vi'te'zny'ch tokenu''.
+<I>Ska'la - Neda' se pr'es ni' chodit a neda' se na ni' s'la'pnout. Neni' na ni' ani pr'i's'era ani token. Proste' pr'eka'z'i'.
+<I>Rozcesti' - Funguje jako teleport. Neni' na ne'm pr'i's'era ani token. Neda' se na ne'm zastavit, ale kdykoliv na ktere''koliv rozcesti' hra'c' vstoupi', okamz'ite' z libovolne''ho rozcesti' i vystoupi', jako by vy'chozi' a konec'ne'' poli'c'ko spolu pr'i'mo sousedili. Pozor, ska'ly na hrana'ch rozcesti' por'a'd pr'eka'z'eji'.
+<I>Ta'bor - Neni' zde ani pr'i's'era ani token. Ale kdykoliv sem hra'c' vstoupi' mu'z'e si li'znout dals'i' kouzlo a mu'z'e zahodit nevhodne'' nesplne'ne'' u''koly (sa'm voli' jestli a kolik).
+<I>Hrad - Hli'daji' ho dve' pr'i's'ery. Pokud je hra'c' doka'z'e porazit (musi' obe' v jednom tahu) tak zi'ska' odme'nu obou vi'te'zny'ch tokenu'.
 <I1>
 
 <C>Jak na hru
 
 <C1>Setup
-Na zac'a'tku hry se postavi' mapa podle dane''ho zada'ni' a umi'sti' se na ni' pr'i's'ery a vi'te'zne'' tokeny. Vedle pla'nku se umi'sti' zami'chane'' hroma'dky zbrani' a mi'sto na odhazovaci' hroma'dku. Urc'i' se zac'i'naji'ci' hra'c'. Hra'c'i se str'i'daji'. Nejprve si kaz'dy' li'zne kouzlo. Pak se umi'sti' na startovni' pole, mohou i na stejne''. Pak si nali'z'ou poc'a'tec'ni' 2 karty. A nakonec se ta'hnou zac'i'naji'ci' u'koly.
+Na zac'a'tku hry se postavi' mapa podle dane''ho zada'ni' a umi'sti' se na ni' pr'i's'ery a vi'te'zne'' tokeny. Vedle pla'nku se umi'sti' zami'chane'' hroma'dky zbrani' a mi'sto na odhazovaci' hroma'dku. Urc'i' se zac'i'naji'ci' hra'c'. Hra'c'i se v jednotlivy'ch kroci'ch setupu str'i'daji'. Nejprve si kaz'dy' li'zne kouzlo. Pak se umi'sti' na startovni' pole, mohou i na stejne''. Pak se ta'hnou zac'i'naji'ci' u''koly. A nakonec si nali'z'ou poc'a'tec'ni' dve' karty.
 
-- Setup mapy: Doprostr'ed dej r'adu Start, Ska'la, Hrad, Ska'la, Start. Kolem postav diamant 3, 5, 7, 9, 7, 5, 3. Jeden di'lek ti pr'ebyde. Na kaz'dy' di'lek ktery' neni' Ska'la, Ta'bor, Rozcesti' nebo Start dej vi'te'zny' token a na'hodny' z'eton pr'i's'ery. Na hrad dej 2 pr'i's'ery a 2 z'etony.
+- Setup mapy: Doprostr'ed dej r'adu Start, Ska'la, Hrad, Ska'la, Start. Kolem postav diamant z poli'c'ek mapy v poc'tech 3, 5, 7, 9, 7, 5, 3 v jednotlivy'ch r'a'dci'ch. Jeden di'lek ti pr'ebyde. Na kaz'dy' di'lek ktery' neni' Ska'la, Ta'bor, Rozcesti' nebo Start dej vi'te'zny' token a na'hodny' z'eton pr'i's'ery. Na hrad dej dve' pr'i's'ery a dva z'etony.
 
 <C1>Kdo vyhra'va'
 Ci'l hry je zbi'rat vi'te'zne'' tokeny ktere'' jsou na poli'c'ka'ch kde jes'te' nikdo nebyl (Nedopln'uji' se, nikdy). Vyhra'va' prvni' hra'c' ktery' nashroma'z'di' Ci'leny' poc'et vi'te'zny'ch tokenu'.
@@ -69,25 +69,60 @@ Ci'l hry je zbi'rat vi'te'zne'' tokeny ktere'' jsou na poli'c'ka'ch kde jes'te' 
 - Ci'l je 7 tokenu' pro 4 hra'c'e, 8 pro 3 hra'c'e a 10 pro 2 hra'c'e.
 
 <C1>Kolo hry
-Kolo hra'ce se skla'da' z Boje a Vyhodnoceni'.
+Kolo hra'ce se skla'da' z Boje, Oddechu pr'i'ser a Konce tahu.
 
 <C2>Co je vi'te'zstvi' v boji
-Na poli'c'ka'ch mapy se bojuje spr'i's'erami. Pr'i's'ery jsou barevne'' terc'i'ky. Hra'c' proti nim bojuje kartami na ruce. Hra'c' souboj s pr'i's'erou vyhra'va' pokud odhodi' kartu pr'i'slus'ne'' barvy pro kaz'dou pr'i's'eru na ci'love''m poli'c'ku. Pkud tam je tedy zelena' a c'ervena' pr'i's'era, musi' mi't na ruce take' zelenou a c'ervenou zbran' (kopi' a luk) a nebo ne'jakou ze zbrani' nahradit bombou. Pokud pouz'ije na ne'kterou svou zbran' kouzlo tvrzene'' zbrane', zbran' nezahazuje.
+Na poli'c'ka'ch mapy se bojuje spr'i's'erami. Pr'i's'ery jsou barevne'' terc'i'ky. Hra'c' proti nim bojuje kartami na ruce. Hra'c' souboj s pr'i's'erou vyhra'va' pokud odhodi' kartu pr'i'slus'ne'' barvy pro kaz'dou pr'i's'eru na ci'love''m poli'c'ku. Pokud tam je tedy zelena' a c'ervena' pr'i's'era (zvi'r'e a de''mon), musi' mi't na ruce take'' zelenou a c'ervenou zbran' (kopi' a luk) a nebo ne'jakou ze zbrani' nahradit bombou. Pokud pouz'ije na ne'kterou svou zbran' kouzlo tvrzene'' zbrane', zbran' nezahazuje. Pokud ke zbrani pouz'il kouzlo va'bnic'ky, prohazuje pr'ed bojem pr'i's'eru s libovolnou jinou pr'i's'erou na mape'.
 
 <C2>Boj
-Hra'c' na tahu se podi'va' na sve'' karty a na c'tyr'i poli'c'ka kolem sebe. (Mi'n' pokud je na kraji mapy, nebo stoji' vedle zdi. Vi'c pokud stoji' vedle Rozcesti') Zhodnoti' na ktere'' poli'c'ko pu'jde, nebo jestli boj prohraje. Da'le se mu''z'e rozhodnout pouz'i't kouzlo a pr'ed bojem prohodit sebe, nebo zombi'ka na ci'love'm poli'c'ku.
+Hra'c' na tahu se podi'va' na sve'' karty a na c'tyr'i poli'c'ka kolem sebe. (Mi'n' pokud je na kraji mapy, nebo stoji' vedle Ska'ly. Vi'c pokud stoji' vedle Rozcesti') Zhodnoti' na ktere'' poli'c'ko pu'jde. Da'le se mu'z'e rozhodnout pouz'i't kouzlo a pr'ed bojem prohodit sebe, nebo pr'i's'eru na ci'love'm poli'c'ku.
 
 <I0>
-<I>Pokud je ve sme'ru ve ktere''m chce ji't zed' at' uz' na jeho nebo na ci'love''m poli'c'ku, ji't tam nemu'z'e.
-<I>Pokud na ci'love''m poli'c'ku neni' pr'i's'era, mu'z'e tam ji't a mu'z'e (a nemusi') u toho zahodit 1 kartu zbrane'.
-<I>Pokud je na ci'love''m poli'c'ku pr'i's'era, nasta'va' boj. Pokud ho hra'c' nemu'z'e vyhra't, nemu'z'e na poli'c'ko ji't.
-<I>V pr'i'pade' z'e hra'c' nema' kam postoupit, nebo nechce postoupi, vzda'va' tah. Zahazuje vs'echny karty z ruky a pr'echa'zi' rovnou na fa'zi s'i'r'eni' pr'i's'er.
+<I>Pokud je ve sme'ru ve ktere''m chce ji't ska'la at' uz' na jeho nebo na ci'love''m poli'c'ku, ji't tam nemu'z'e.
+<I>Pokud na ci'love''m poli'c'ku neni' pr'i's'era, mu'z'e tam ji't a mu'z'e (a nemusi') u toho zahodit 1 kartu zbrane'. Vyuz'ije poli'c'ko ale nasta'va' Oddech Pr'i's'er.
+<I>Pokud je na ci'love''m poli'c'ku pr'i's'era, nasta'va' boj. Kdyz' ho hra'c' vyhraje, odhodi' pr'i'padne'' zbrane', postoupi' na dobyte'' pole, sebere vi'te'zny' tokeny a z'etony poraz'eny'ch pr'i's'er. A vyuz'ije poli'c'ko (je li to Ta'bor).
+<I>Pokud boj hra'c' nemu'z'e vyhra't, nemu'z'e na poli'c'ko ji't.
+<I>V pr'i'pade' z'e hra'c' nema' kam postoupit, nebo nechce postoupi, vzda'va' tah, umi'ra'. Zahazuje vs'echny karty z ruky a vybi'ra' si zda zu'stane kde byl a nebo odcha'zi' na ne'jake'' ze startovni'ch poli'c'ek. Nasta'va' Oddech Pr'i's'er.
 <I1>
-<C2>Po boji
-Pokud hra'c' nevzdal tah, tak se ne'kam pohnul. Zi'skal pr'i'padne' tokeny na sve''m nove''m poli'c'ku a z'etony poraz'eny'ch pr'i's'er pr'idal do sve'' zbi'rky. Z'a'dny' hra'c' ale nesmi' mi't vi'c z'etonu'' nez' tr'i, takz'e pr'ebyky musi' vra'tit do za'soby.
-<C2>Pr'i'chod novy'ch zombi'ku'
-Pokud se hra'c' pohnul, je tr'eba se podi'vat na poli'c'ko odkud odes'el. Pokud tam ted' nikdo nestoji' a neni' to specia'lni' poli'c'ko (Start, nebo Klid) je tr'eba tam doplnit nove'ho na'hodne'ho zombi'ka. Take' je potr'eba do fronty zombi'ku' doplnit novou hroma'dku. Pozor, vi'te'zne'' tokeny se na mapu nedopln'uji'.
-<C2>Doplne'ni' karet
-Nakonec si hra'c' doli'zne nove' karty tak aby jich me'l zase o jednu vi'c nez' je obti'z'nost hry. Prvni' kartu si musi' bra't z hroma'dky zbrani' dle poli'c'ka kde ted' stoji'. Ostatni' si mu'z'e bra't odkud chce. A je na tahu dals'i' hra'c'.
-<C2>Li'znuti' zombi'ka
-Kdykoliv kdyz' si hra'c' li'zne mi'sto zbrane' kartu Zombi'ka, ihned ji' uka'z'e ostatni'm hra'c'u'm a na libovolne'' poli'c'ko kde je pouze 1 zombi'k pr'ida' druhe''ho na'hodne''ho zombi'ka. Pak si li'zne dals'i' novou kartu zbrane'.
+
+<C2>Oddech pr'i's'er
+Pokud nastal oddech pr'i's'er (hra'c' nebojoval nebo prohra'l boj), pr'i's'ery vylezou ze svy'ch doupat a ope't zaplni' vs'echna pole mapy.
+
+<I0>
+<I>Nevra'ti' se na pole kde nemaji' co de'lat. (viz setup mapy)
+<I>Nevra'ti' se na pole kde stoji' ne'jaky' hra'c'.
+<I>Nevra'ti' se na hrad pokud uz' je tam ne'kdo porazil.
+<I>Nikdy se nedopln'uje z'a'dny' vi'te'zny' token, pouze pr'i's'ery.
+<I1>
+
+<C2>Na konci tahu
+V prvni' r'ade' mu'z'e mi't hra'c u sebe jen 3 trofeje pr'i's'er. V tento moment tedy zahazuje pokud jich ma' vi'c. Da'l se ted' vyhodnocuje zda na'hodou nesplnil ne'ktere'' z vyloz'eny'ch u''kolu'. Pokud ano, vezme si je. Da'le doli'zne nove' u''koly aby byly v nabi'dce ope't tr'i. Ty uz' ale ihned splnit nemu'z'e. Pak si hra'c' dopln'uje zbrane' na ruce tak aby me'l ope't dve'. Zac'i'na' zbrani' z konkre''tni' hroma'dky pokud to diktuje di'lek mapy. Pokud si ma' zbrane' li'znout obe', druhou si mu'z'e vz'it libovolnou.
+
+<C2>Vi'te'zstvi'?
+Pokud ma' v tomto okamz'iku dost vi'te'zny'ch tokenu', vyhra'l a konc'i' hra.
+
+<C1>Varianty hry
+Pro zati'm nevi'me jestli chceme hra't s kouzly pr'edtis'te'ny'mi na karta'ch zbrani'. Lze se domluvit a hra't s nimi a nebo bez nich.
+
+<C1>FAQ
+A ted' ota'zky a odpove'di na ne'.
+
+<I0>
+<I>Pr'i setupu neni' dovoleno aby ne'jake'' pole bylo nedostupne''. Pokud se to stane, ota'c'ejte kartou se ska'lou co to zpu'sobila po sme'ru hodinovy'ch ruc'ic'ek az' uz' to nebude platit.
+<I>Pokud hra'c' nechce umr'i't a zahodit obe' zbrane', musi' se toto kolo pohnout.
+<I>Pokud hra'c' neporazil z'a'dnou pr'i's'eru, nasta'va' Oddech Pr'i's'er.
+<I>Vz'dy se hra'c' nejdr'i'v postavi', pak se ta'hnou nove' u''koly a nakonec se li'z'ou zbrane' na pr'i's'ti' kolo.
+<I>Nelze vli'zt pr'es Ska'lu ani na Ska'lu. Nelze zu'stat sta't na Rozcesti'.
+<I>Na kaz'dou zbran' jde pouz'i't jen jedno kouzlo. Nejde se teleportovat za jine''ho hra'c'e a za'roven' vyhla'sit tr'eba berserka. Ale lze ji't na hrad kde jsou potr'eba zbrane' dve' a na jednu da't berserka a na druhou tvrzenou zbran'.
+<I>Berserk je sta'le jen jeden tah i kdyz' se jde o dve' poli'c'ka. Pokud na prvni'm poli'c'ku neni' pr'i's'era, musi' se tam ne'jaka' zbran' s ti'm berserkem zahodit. Pokud se bojovalo alespon' na jednom poli'c'ku, neni' Oddech Pr'i's'er.
+<I>Plne'ni' u''kolu' nasta'va' az' na konci tahu. Tedy i u berserka az' na koncove''m poli'c'ku.
+<I>Na cestu skrz rozcesti' neni' potr'eba nic specia'lni'ho, jen aby hra'c' na zac'a'tku sta'l vedle libovolne''ho rozcesti' a vedle libovolne''ho rozcesti' bylo take'' ci'love'' poli'c'ko na ktere'' chce doji't (vc'etne' splne'ni' pravidel pr'i'padne''ho boje).
+<I>Hra'c' co umi'ra' nikdy nezahazuje kouzla, zato vz'dy zahazuje obe' zbrane'. Mu'z'e si vybrat zu'stat kde je a nebo se vra'tit na libovolny' start. Pokud ale zu'stane, mu'z'e to omezit jeho vy'be'r prvni' zbrane' do pr'i's'ti'ho tahu.
+<I>Pokud hra'c' umi'ra', mu'z'e ti'm i splnit ne'jaky' u''kol. Zato vy'hody ta'bora zi'ska'va' pouze pr'i pr'i'chodu, tedy pouhou smrti' ne.
+<I>I zbran' co ma' na sobe' pr'edtis'te'ne'' kouzlo lze pouz'i't bez kouzla.
+<I>Ani zbran' s pr'edtis'te'ny'm kouzlem nemu'z'e pouz'i't kouzla dve' najednou.
+<I>Nelze pouz'i't kouzlo, tr'eba teleport, a umr'i't. Smrt je vz'dy mi'rumilovna', je to vzda'ni' se tahu.
+<I>Zato lze pouz'i't kouzlo a pak zau''toc'it na pra'zdne'' poli'c'ko, to je zcela regule''rni'.
+<I>Kouzlo co hra'c' ted' zi'skal mu'z'e toto kolo pouz'i't leda pr'i berserkovi na druhou zbran' pokud Ta'bor byl prvni' pole. Jinak az' dals'i' tah.
+<I>U'koly stu'j v r'ade' c'i stu'j mezi je mys'leno hned vedle, bez mezer.
+<I1>
