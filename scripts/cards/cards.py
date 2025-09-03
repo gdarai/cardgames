@@ -16,6 +16,7 @@ from six import string_types
 canPrint = True
 
 SETTING = 'cards.json'
+TASK = 'prototype'
 DIRECTORY = 'print'
 BREAK_CHAR = '|'
 FIXED_SPACE = '_'
@@ -932,6 +933,8 @@ def printImages(IMAGES):
 # Settings file
 if(len(sys.argv) > 1):
 	SETTING = sys.argv[1]
+if(len(sys.argv) > 2):
+	TASK = sys.argv[2]
 
 print('\nReading input file --> '+SETTING)
 files = getFiles(SETTING)
