@@ -54,6 +54,8 @@ FONTS['HERSHEY_COMPLEX_SMALL'] = cv2.FONT_HERSHEY_COMPLEX_SMALL
 FONTS['HERSHEY_SCRIPT_SIMPLEX'] = cv2.FONT_HERSHEY_SCRIPT_SIMPLEX
 FONTS['HERSHEY_SCRIPT_COMPLEX'] = cv2.FONT_HERSHEY_SCRIPT_COMPLEX
 
+printLog = dict();
+
 def ALIGN_LEFT(xmin, xmax, imgwidth):
 	return xmin
 def ALIGN_RIGHT(xmin, xmax, imgwidth):
@@ -469,6 +471,13 @@ def printCsvTable(setting, name):
 def printCardFile(setting, name, single = False):
 	cardName = setting['_card']
 	img = fixRGBA(cv2.imread(cardName+'.png'))
+
+	# --- Print log entry for this card ---
+	log_entry = dict()
+	log_entry['cardName'] = cardName + '.png'
+	log_entry['outDict'] = setting['_out'] if '_out' in setting else None
+	log_entry['components'] = []
+
 	for fieldName in setting['_cardParamNames']:
 		if fieldName not in setting:
 			continue
@@ -522,6 +531,15 @@ def printCardFile(setting, name, single = False):
 				finSize, _ = cv2.getTextSize(ln, font, imgScale, thickness)
 				finPos = (align(tgtPos[0][0], tgtPos[1][0], finSize[0]), ALIGN_CENTER(tgtPos[0][1], tgtPos[1][1], finSizeY)+shiftY)
 				img = cv2.putText(img, ln, finPos, font, imgScale, color, thickness, cv2.LINE_AA)
+				# --- Log this text component ---
+				log_entry['components'].append({
+					'type': 'text',
+					'text': ln,
+					'font': props['font'],
+					'thickness': thickness,
+					'align': props['align'],
+					'position': finPos
+				})
 				shiftY = shiftY + oneSizeY
 		elif props['type'] == 'img':
 			fileName = setting[fieldName].nextVal()
@@ -534,7 +552,7 @@ def printCardFile(setting, name, single = False):
 			checkField(cardName, props, 'useMask', 'string', 'True')
 			pos = props['position']
 			size = [pos[1][0]-pos[0][0], pos[1][1]-pos[0][1]]
-			pos = pos[0]
+			pos0 = pos[0]
 			if os.path.exists(fileName) == False:
 				print('Trying to read file '+fileName+' which does not exist')
 				print(props)
@@ -543,9 +561,9 @@ def printCardFile(setting, name, single = False):
 			imgScale = min(float(size[0])/imgSize[1], float(size[1])/imgSize[0])
 			theImg = cv2.resize(theImg, None, fx=imgScale, fy=imgScale)
 			imgSize = theImg.shape[:2]
-			pos = [pos[0]+int((size[0]-imgSize[1])/2), pos[1]+int((size[1]-imgSize[0])/2)]
+			pastePos = [pos0[0]+int((size[0]-imgSize[1])/2), pos0[1]+int((size[1]-imgSize[0])/2)]
 			thePaste = np.zeros((img.shape[0], img.shape[1], 4), np.uint8)
-			thePaste[pos[1]:pos[1]+imgSize[0], pos[0]:pos[0]+imgSize[1]] = theImg
+			thePaste[pastePos[1]:pastePos[1]+imgSize[0], pastePos[0]:pastePos[0]+imgSize[1]] = theImg
 			if props['useMask'] == 'True':
 				maskPos = props['mask']
 				maskTol = props['maskTolerance']
@@ -558,14 +576,32 @@ def printCardFile(setting, name, single = False):
 				theMask = np.full((img.shape[0], img.shape[1]), 4, dtype=np.uint8)
 				hsvImg = cv2.cvtColor(theImg, cv2.COLOR_BGR2HSV)
 				subMask = cv2.bitwise_not(cv2.inRange(hsvImg, thePixel0, thePixel1))
-				theMask[pos[1]:pos[1]+imgSize[0], pos[0]:pos[0]+imgSize[1]] = subMask
+				theMask[pastePos[1]:pastePos[1]+imgSize[0], pastePos[0]:pastePos[0]+imgSize[1]] = subMask
 
 				maskedImg = cv2.bitwise_or(thePaste, thePaste, mask=theMask)
 				maskedMainImg = cv2.bitwise_or(img, img, mask=cv2.bitwise_not(theMask))
 
 				img = cv2.bitwise_or(maskedMainImg, maskedImg)
+				# --- Log this image component with mask ---
+				log_entry['components'].append({
+					'type': 'img',
+					'file': fileName,
+					'position': pastePos,
+					'size': imgSize,
+					'useMask': True,
+					'maskPos': maskPos,
+					'maskTolerance': maskTol
+				})
 			else:
-				img[pos[1]:pos[1]+imgSize[0], pos[0]:pos[0]+imgSize[1]] = theImg
+				img[pastePos[1]:pastePos[1]+imgSize[0], pastePos[0]:pastePos[0]+imgSize[1]] = theImg
+				# --- Log this image component without mask ---
+				log_entry['components'].append({
+					'type': 'img',
+					'file': fileName,
+					'position': pastePos,
+					'size': imgSize,
+					'useMask': False
+				})
 		else:
 			print('!! Card '+setting['_card']+' field '+fieldName+' is of unknown type.')
 			exit()
@@ -585,6 +621,16 @@ def printCardFile(setting, name, single = False):
 		imageDict['randomize'] = setting['_randomize']
 		imageDict['task'] = 'print'
 		IMAGES[setting['_out']].append(imageDict)
+
+	# --- Store the log entry for this card ---
+	if name not in printLog:
+		printLog[name] = log_entry
+	else:
+		# If multiple cards with same name, append as a list
+		if isinstance(printLog[name], list):
+			printLog[name].append(log_entry)
+		else:
+			printLog[name] = [printLog[name], log_entry]
 	return
 
 def addPrintSeparator(setting):
@@ -643,8 +689,10 @@ def readOneParameter(setting, paramName, paramSource):
 
 def printSvgFile(setting, fileName):
 	pngFileName = fileName[:-3]+'png'
-	print(SVG_DIRECTORY+'/'+fileName+' --> '+PNG_DIRECTORY+'/'+pngFileName)
-	command = 'inkscape --export-png="'+PNG_DIRECTORY+'/'+pngFileName+'" '+SVG_DIRECTORY+'/'+fileName
+	pngPath = PNG_DIRECTORY+'/'+pngFileName
+	svgPath = SVG_DIRECTORY+'/'+fileName
+	print(svgPath+' --> '+pngPath)
+	command = f'inkscape "{svgPath}" --export-type=png --export-filename="{pngPath}"'
 	if setting["_resize"] != 0:
 		command = command + " --export-width="+str(setting["_resize"])
 	os.system(command)

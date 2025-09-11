@@ -1,5 +1,12 @@
 # Documentation: `scripts/cards/cards.py`
 
+# Install dependencies
+sudo apt-get install python3-opencv
+sudo apt-get install python3-numpy
+sudo apt-get install python3-pyexcel-ods
+sudo apt-get install inkscape
+sudo apt-get install texlive-latex-base
+
 ## Overview
 
 This script is a card/image processing and printing tool, designed to automate the creation, combination, and export of card images and related assets. It uses configuration files (primarily JSON) to define tasks, card layouts, and data sources. The script supports various operations such as exporting tables, converting SVGs, printing cards, combining PNGs, and generating LaTeX files for PDF output.
