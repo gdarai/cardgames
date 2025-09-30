@@ -8,32 +8,63 @@
     "target": "img"
   },
   {
+    "task": "CLEAN",
+    "target": "out"
+  },
+  {
     "task": "FONT",
     "name": "DejaVu-32",
     "source": "usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-    "fill": "white",
+    "fill": "black",
     "pointSize": 32,
     "rowHeight": 40
+  },
+  {
+    "task": "BUILD",
+    "name": "ExampleBuild",
+    "elements": [
+      {
+        "source": "img/titles_[0].png",
+        "position": "+20+20"
+      },
+      {
+        "source": "img/texts_[1].png",
+        "centered": true,
+        "position": "+170+250"
+      },
+      {
+        "source": "img/values_[2].png",
+        "position": "+20+380"
+      }
+    ]
   },
   {
     "task": "TEXTS",
     "source": "text/titles.txt",
     "target": "img/titles",
     "font": "DejaVu-32",
-    "size": "400x200 xc:none"
+    "size": "300x100 xc:none"
   },
   {
     "task": "TEXTS",
     "source": "text/texts.txt",
     "target": "img/texts",
     "font": "DejaVu-32",
-    "size": "400x200 xc:none"
+    "size": "300x200 xc:none"
   },
   {
     "task": "TEXTS",
     "source": "text/values.txt",
     "target": "img/values",
     "font": "DejaVu-32",
-    "size": "400x200 xc:none"
+    "firstIsName": true,
+    "size": "300x100 xc:none"
+  },
+  {
+    "task": "CARDS",
+    "source": "src/cards.txt",
+    "base": "src/card.png",
+    "target": "out/card",
+    "build": "ExampleBuild"
   }
 ]

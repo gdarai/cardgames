@@ -6,3 +6,4 @@
 *.ods#
 /.idea/
 /scripts/fineprint/img/*
+/scripts/fineprint/out/*
