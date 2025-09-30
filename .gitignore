@@ -5,3 +5,4 @@
 **/print/*.png
 *.ods#
 /.idea/
+/scripts/fineprint/img/*

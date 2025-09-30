@@ -626,7 +626,6 @@ def printCardFile(setting, name, single = False):
 	if name not in printLog:
 		printLog[name] = log_entry
 	else:
-		# If multiple cards with same name, append as a list
 		if isinstance(printLog[name], list):
 			printLog[name].append(log_entry)
 		else:
@@ -1014,6 +1013,8 @@ setting['_process'] = 'PRINT_CARDS'
 setting['_exportTableParams'] = ['sheet', 'table', 'target', '_opp', 'skipTitle']
 
 readAndProcessList(0, "INPUT", source, setting)
+
+print(printLog)
 
 for fileName in IMAGES.keys():
 	IMGS = IMAGES[fileName]

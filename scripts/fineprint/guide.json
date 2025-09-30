@@ -1,0 +1,39 @@
+[
+  {
+    "task": "SETUP",
+    "separator": "|"
+  },
+  {
+    "task": "CLEAN",
+    "target": "img"
+  },
+  {
+    "task": "FONT",
+    "name": "DejaVu-32",
+    "source": "usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "fill": "white",
+    "pointSize": 32,
+    "rowHeight": 40
+  },
+  {
+    "task": "TEXTS",
+    "source": "text/titles.txt",
+    "target": "img/titles",
+    "font": "DejaVu-32",
+    "size": "400x200 xc:none"
+  },
+  {
+    "task": "TEXTS",
+    "source": "text/texts.txt",
+    "target": "img/texts",
+    "font": "DejaVu-32",
+    "size": "400x200 xc:none"
+  },
+  {
+    "task": "TEXTS",
+    "source": "text/values.txt",
+    "target": "img/values",
+    "font": "DejaVu-32",
+    "size": "400x200 xc:none"
+  }
+]
