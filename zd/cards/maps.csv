@@ -1,21 +1,17 @@
-2,,camp,start,spawn-no,Jakakoliv,Start,---
-2,,chest,spear,,Kopi,,---
-2,,chest,hammer,,Palice,,---
-2,,chest,bow,,Luk,,---
-2,,chest,sword,,Mec,,---
-2,,grass,spear,,Kopi,,---
-2,,grass,hammer,,Palice,,---
-2,,grass,bow,,Luk,,---
-2,,grass,sword,,Mec,,---
-1,,cave,spear-hammer,,Kopi / Palice,,---
-1,,cave,hammer-bow,,Palice / Luk,,---
-1,,cave,bow-sword,,Luk / Mec,,---
-1,,cave,sword-spear,,Mec / Kopi,,---
-4,,camp,camp,spawn-no,+Kouzlo,Tabor,---
-2,wall4,,,spawn-no,,Skala,---
-2,wall,dirt,spear-hammer,,Kopi / Palice,,---
-2,wall,dirt,hammer-bow,,Palice / Luk,,---
-2,wall,dirt,bow-sword,,Luk / Mec,,---
-2,wall,dirt,sword-spear,,Mec / Kopi,,---
-3,wall,cave,crossroads,spawn-no,premisti se,Rozcesti,---
-1,,camp,fort,spawn-spawn,Dvojita odmena,Hrad,---
+2,,camp,start,spawn-no,spawn-no,Jakakoliv,Start,---
+4,,grass,,spear,spear,Kopi,,---
+4,,grass,,hammer,hammer,Palice,,---
+4,,grass,,bow,bow,Luk,,---
+4,,grass,,sword,sword,Mec,,---
+1,,cave,,spear,hammer,Kopi / Palice,,---
+1,,cave,,hammer,bow,Palice / Luk,,---
+1,,cave,,bow,sword,Luk / Mec,,---
+1,,cave,,sword,spear,Mec / Kopi,,---
+4,,camp,camp,spawn-no,spawn-no,,Tabor,---
+2,wall4,,rock,spawn-no,spawn-no,,Skala,---
+2,wall,dirt,,spear,hammer,Kopi / Palice,,---
+2,wall,,,hammer,bow,Palice / Luk,,---
+2,wall,,,bow,sword,Luk / Mec,,---
+2,wall,,,sword,spear,Mec / Kopi,,---
+3,wall,cave,crossroads,spawn-no,spawn-no,,Rozcesti,---
+1,,camp,fort,spawn-spawn,spawn-spawn,,Hrad,---

@@ -1,4 +1,5 @@
-4,you,broken,Tvrzena,Pouzij zbran_ale nezahod
-5,you,teleport,Teleport,Nejdriv_se prohod s_hracem
+4,you,hard,Tvrzena,Pouzij zbran_ale nezahod
+4,you,teleport,Teleport,Nejdriv_se prohod s_hracem
 4,you,call,Vabnicka,Nejdriv prohod priseru
-5,you,berserk,Berserk,Zautoc i_druhou zbrani
+4,you,berserk,Berserk,Zautoc i_druhou zbrani
+2,you,steal,Kradez,Novou_zbran tahni_od hrace_vedle

@@ -11,22 +11,22 @@
   },
   "ico":{
     "type":"img",
-    "position":[[25, 140],[375, 305]],
+    "position":[[25, 150],[375, 305]],
     "mask":[1, 149]
   },
   "smallIcoL":{
     "type":"img",
-    "position":[[20, 160],[120, 260]],
+    "position":[[20, 260],[150, 380]],
     "mask":[1, 1]
   },
   "smallIcoR":{
     "type":"img",
-    "position":[[280, 160],[380, 260]],
+    "position":[[250, 260],[380, 380]],
     "mask":[1, 1]
   },
   "wpnText":{
     "type":"text",
-    "position":[[25, 290],[375, 360]],
+    "position":[[25, 100],[375, 160]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -36,7 +36,7 @@
   },
   "text":{
     "type":"text",
-    "position":[[25, 70],[375, 130]],
+    "position":[[25, 50],[375, 130]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,

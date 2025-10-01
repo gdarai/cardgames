@@ -1,8 +1,13 @@
 {
-  "ico":{
+  "ico1":{
     "type":"img",
     "mask":[1, 1],
-    "position":[[320, 0],[580, 450]]
+    "position":[[320, 100],[580, 450]]
+  },
+  "ico2":{
+    "type":"img",
+    "mask":[1, 1],
+    "position":[[340, 20],[560, 140]]
   },
   "pic":{
     "type":"img",
