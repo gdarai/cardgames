@@ -1,15 +1,15 @@
-1,4,Zluta,undead,Palice,bow,daemon,,neni luk,Zhavy Zavoj,hammer
-1,6,Modra,human,Mec,bow,daemon,,neni luk,Uder Snu,sword
-1,3,Zelena,animal,Kopi,bow,daemon,,neni luk,Popel Predku,spear
+1,4,Nemrtvy,undead,Palice,bow,daemon,,neni luk,Zhavy Zavoj,hammer
+1,6,Clovek,human,Mec,bow,daemon,,neni luk,Uder Snu,sword
+1,3,Zvire,animal,Kopi,bow,daemon,,neni luk,Popel Predku,spear
 2,7,Vsechny,any,Bomba,bow,daemon,,hod me!,Stinovy Plamen,bomb4
 2,7,Vsechny,any,Bomba,bow,daemon,,hod me!,Ohniva Boure,bomb1
-2,5,Cervena,daemon,Luk,bow,daemon,Tvrzena,,Nocni Kovar,hard-bow
-2,5,Cervena,daemon,Luk,bow,daemon,Teleport,,Strep Krystalu,teleport-bow
-2,5,Cervena,daemon,Luk,bow,daemon,Vabnicka,,Dest Odlesku,call-bow
-2,5,Cervena,daemon,Luk,bow,daemon,Berserk,,Hnev Boure,berserk-bow
-2,5,Cervena,daemon,Luk,bow,daemon,,natahni me,Plamenne Kridlo,bow
-2,5,Cervena,daemon,Luk,bow,daemon,,natahni me,Svazovac Dusi,bow
-2,5,Cervena,daemon,Luk,bow,daemon,,natahni me,Mraziva Opona,bow
-2,5,Cervena,daemon,Luk,bow,daemon,,natahni me,Vetrnne Srdce,bow
-2,5,Cervena,daemon,Luk,bow,daemon,,natahni me,Trn Vecnosti,bow
-2,5,Cervena,daemon,Luk,bow,daemon,Kradez,,Svazovac Dusi,steal-bow
+2,5,Demon,daemon,Luk,bow,daemon,Tvrzena,,Nocni Kovar,hard-bow
+2,5,Demon,daemon,Luk,bow,daemon,Teleport,,Strep Krystalu,teleport-bow
+2,5,Demon,daemon,Luk,bow,daemon,Vabnicka,,Dest Odlesku,call-bow
+2,5,Demon,daemon,Luk,bow,daemon,Berserk,,Hnev Boure,berserk-bow
+2,5,Demon,daemon,Luk,bow,daemon,,natahni me,Plamenne Kridlo,bow
+2,5,Demon,daemon,Luk,bow,daemon,,natahni me,Svazovac Dusi,bow
+2,5,Demon,daemon,Luk,bow,daemon,,natahni me,Mraziva Opona,bow
+2,5,Demon,daemon,Luk,bow,daemon,,natahni me,Vetrnne Srdce,bow
+2,5,Demon,daemon,Luk,bow,daemon,,natahni me,Trn Vecnosti,bow
+2,5,Demon,daemon,Luk,bow,daemon,Kradez,,Svazovac Dusi,steal-bow

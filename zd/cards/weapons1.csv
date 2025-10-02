@@ -1,15 +1,15 @@
-1,4,Zluta,undead,Palice,spear,animal,,neni kopi,Drtic Bouri,hammer
-1,6,Modra,human,Mec,spear,animal,,neni kopi,Krvavy Trn,sword
-1,5,Cervena,daemon,Luk,spear,animal,,neni kopi,Okraj Boure,bow
+1,4,Nemrtvy,undead,Palice,spear,animal,,neni kopi,Drtic Bouri,hammer
+1,6,Clovek,human,Mec,spear,animal,,neni kopi,Krvavy Trn,sword
+1,5,Demon,daemon,Luk,spear,animal,,neni kopi,Okraj Boure,bow
 2,7,Vsechny,any,Bomba,spear,animal,,hod me!,Hvezdny Ohen,bomb1
 2,7,Vsechny,any,Bomba,spear,animal,,hod me!,Strep Beznadeje,bomb2
-2,3,Zelena,animal,Kopi,spear,animal,Tvrzena,,Popelovy Tesak,hard-spear
-2,3,Zelena,animal,Kopi,spear,animal,Teleport,,Tkalec Stinu,teleport-spear
-2,3,Zelena,animal,Kopi,spear,animal,Vabnicka,,Volac Prazdnoty,call-spear
-2,3,Zelena,animal,Kopi,spear,animal,Berserk,,Krystalovy Hrot,berserk-spear
-2,3,Zelena,animal,Kopi,spear,animal,,dlouhe kopi,Kopi Hruzy,spear
-2,3,Zelena,animal,Kopi,spear,animal,,dlouhe kopi,Hromobijec,spear
-2,3,Zelena,animal,Kopi,spear,animal,,dlouhe kopi,Mesicni Zare,spear
-2,3,Zelena,animal,Kopi,spear,animal,,dlouhe kopi,Naseptavac Trnu,spear
-2,3,Zelena,animal,Kopi,spear,animal,,dlouhe kopi,Reravy Spar,spear
-2,3,Zelena,animal,Kopi,spear,animal,Kradez,,Hromobijec,steal-spear
+2,3,Zvire,animal,Kopi,spear,animal,Tvrzena,,Popelovy Tesak,hard-spear
+2,3,Zvire,animal,Kopi,spear,animal,Teleport,,Tkalec Stinu,teleport-spear
+2,3,Zvire,animal,Kopi,spear,animal,Vabnicka,,Volac Prazdnoty,call-spear
+2,3,Zvire,animal,Kopi,spear,animal,Berserk,,Krystalovy Hrot,berserk-spear
+2,3,Zvire,animal,Kopi,spear,animal,,ostrej klacek,Kopi Hruzy,spear
+2,3,Zvire,animal,Kopi,spear,animal,,ostrej klacek,Hromobijec,spear
+2,3,Zvire,animal,Kopi,spear,animal,,ostrej klacek,Mesicni Zare,spear
+2,3,Zvire,animal,Kopi,spear,animal,,ostrej klacek,Naseptavac Trnu,spear
+2,3,Zvire,animal,Kopi,spear,animal,,ostrej klacek,Reravy Spar,spear
+2,3,Zvire,animal,Kopi,spear,animal,Kradez,,Hromobijec,steal-spear

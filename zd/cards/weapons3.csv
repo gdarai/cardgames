@@ -1,15 +1,15 @@
-1,4,Zluta,undead,Palice,sword,human,,neni mec,Zkazonos,hammer
-1,3,Zelena,animal,Kopi,sword,human,,neni mec,Mrazivy Zavoj,spear
-1,5,Cervena,daemon,Luk,sword,human,,neni mec,Prichod Tmy,bow
+1,4,Nemrtvy,undead,Palice,sword,human,,neni mec,Zkazonos,hammer
+1,3,Zvire,animal,Kopi,sword,human,,neni mec,Mrazivy Zavoj,spear
+1,5,Demon,daemon,Luk,sword,human,,neni mec,Prichod Tmy,bow
 2,7,Vsechny,any,Bomba,sword,human,,hod me!,Popelavy Prival,bomb3
 2,7,Vsechny,any,Bomba,sword,human,,hod me!,Hromovy Hnev,bomb4
-2,6,Modra,human,Mec,sword,human,Tvrzena,,Zelezny Stin,hard-sword
-2,6,Modra,human,Mec,sword,human,Teleport,,Strep Viru,teleport-sword
-2,6,Modra,human,Mec,sword,human,Vabnicka,,Kovar Duse,call-sword
-2,6,Modra,human,Mec,sword,human,Berserk,,Nebesky Strazce,berserk-sword
-2,6,Modra,human,Mec,sword,human,,nabrouseny,Zhavy Uder,sword
-2,6,Modra,human,Mec,sword,human,,nabrouseny,Privolavac Duchu,sword
-2,6,Modra,human,Mec,sword,human,,nabrouseny,Hrot Boure,sword
-2,6,Modra,human,Mec,sword,human,,nabrouseny,Mrazivy Sepot,sword
-2,6,Modra,human,Mec,sword,human,,nabrouseny,Krvavy Ohen,sword
-2,6,Modra,human,Mec,sword,human,Kradez,,Privolavac Duchu,steal-sword
+2,6,Clovek,human,Mec,sword,human,Tvrzena,,Zelezny Stin,hard-sword
+2,6,Clovek,human,Mec,sword,human,Teleport,,Strep Viru,teleport-sword
+2,6,Clovek,human,Mec,sword,human,Vabnicka,,Kovar Duse,call-sword
+2,6,Clovek,human,Mec,sword,human,Berserk,,Nebesky Strazce,berserk-sword
+2,6,Clovek,human,Mec,sword,human,,nabrouseny,Zhavy Uder,sword
+2,6,Clovek,human,Mec,sword,human,,nabrouseny,Privolavac Duchu,sword
+2,6,Clovek,human,Mec,sword,human,,nabrouseny,Hrot Boure,sword
+2,6,Clovek,human,Mec,sword,human,,nabrouseny,Mrazivy Sepot,sword
+2,6,Clovek,human,Mec,sword,human,,nabrouseny,Krvavy Ohen,sword
+2,6,Clovek,human,Mec,sword,human,Kradez,,Privolavac Duchu,steal-sword

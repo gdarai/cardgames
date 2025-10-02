@@ -1,24 +1,24 @@
-1,camp,Mej trofeje 2 zvirat,Velky lov,animal-animal,Zelena
-1,camp,Mej trofeje 2 nemrtvych,Cisteni hrbitovu,undead-undead,Zluta
-1,camp,Mej trofeje 2 lidi,Hon na carodeje,human-human,Modra
-1,camp,Mej trofeje 2 demonu,Pro klid duse,daemon-daemon,Cervena
-1,camp,Mej zobrazene tri trofeje,Prizracny jezdec,animal-undead-human,Mix
-1,camp,Mej zobrazene tri trofeje,Pekelna parta,undead-human-daemon,Mix
-1,camp,Mej zobrazene tri trofeje,Honak demonu,human-daemon-animal,Mix
-1,camp,Mej zobrazene tri trofeje,Spiknuti,daemon-animal-undead,Mix
-1,camp,Stuj mezi 2 zviraty,Uvnitr smecky,animal-you-animal,Zelena
-1,camp,Stuj mezi 2 nemrtvymi,Doupe nemrtvych,undead-you-undead,Zluta
-1,camp,Stuj mezi 2 lidmi,Magicky rej,human-you-human,Modra
-1,camp,Stuj mezi 2 demony,Uprostred tlupy,daemon-you-daemon,Cervena
-1,camp,Stuj v rade dvou zvirat,Kral stada,you-animal-animal,Zelena
-1,camp,Stuj v rade dvou nemrtvych,Vyssi nemrtvy,you-undead-undead,Zluta
-1,camp,Stuj v rade dvou lidi,Carodejuv ucen,you-human-human,Modra
-1,camp,Stuj v rade dvou demonu,Posel demonu,you-daemon-daemon,Cervena
-1,camp,Stuj mezi vesnici a zviretem,Zdivocela smecka,camp-you-animal,Zelena
-1,camp,Stuj mezi vesnici a nemrtvym,Happening nemrtvych,camp-you-undead,Zluta
-1,camp,Stuj mezi vesnici a lidmi,Pomsta banditu,camp-you-human,Modra
-1,camp,Stuj mezi vesnici a demonem,Najezd demonu,camp-you-daemon,Cervena
-1,camp,Zazen zvire ke skale,Ustvani koristi,you-animal-rock,Zelena
-1,camp,Zazen nemrtve ke skale,Cisteni hrobu,you-undead-rock,Zluta
-1,camp,Zazen cloveka ke skale,Vypsana odmena,you-human-rock,Modra
-1,camp,Zazen demona ke skale,Ritual vymitani,you-daemon-rock,Cervena
+1,you,Mej trofeje 2 zvirat,Velky lov,animal-animal,Zvire
+1,you,Mej trofeje 2 nemrtvych,Cisteni hrbitovu,undead-undead,Nemrtvy
+1,you,Mej trofeje 2 lidi,Hon na carodeje,human-human,Clovek
+1,you,Mej trofeje 2 demonu,Pro klid duse,daemon-daemon,Demon
+1,you,Mej zobrazene tri trofeje,Prizracny jezdec,animal-undead-human,Mix
+1,you,Mej zobrazene tri trofeje,Pekelna parta,undead-human-daemon,Mix
+1,you,Mej zobrazene tri trofeje,Honak demonu,human-daemon-animal,Mix
+1,you,Mej zobrazene tri trofeje,Spiknuti,daemon-animal-undead,Mix
+1,you,Stuj mezi 2 zviraty,Uvnitr smecky,animal-you-animal,Zvire
+1,you,Stuj mezi 2 nemrtvymi,Doupe nemrtvych,undead-you-undead,Nemrtvy
+1,you,Stuj mezi 2 lidmi,Magicky rej,human-you-human,Clovek
+1,you,Stuj mezi 2 demony,Uprostred tlupy,daemon-you-daemon,Demon
+1,you,Stuj v rade dvou zvirat,Kral stada,you-animal-animal,Zvire
+1,you,Stuj v rade dvou nemrtvych,Vyssi nemrtvy,you-undead-undead,Nemrtvy
+1,you,Stuj v rade dvou lidi,Carodejuv ucen,you-human-human,Clovek
+1,you,Stuj v rade dvou demonu,Posel demonu,you-daemon-daemon,Demon
+1,you,Stuj mezi vesnici a zviretem,Zdivocela smecka,camp-you-animal,Zvire
+1,you,Stuj mezi vesnici a nemrtvym,Happening nemrtvych,camp-you-undead,Nemrtvy
+1,you,Stuj mezi vesnici a lidmi,Pomsta banditu,camp-you-human,Clovek
+1,you,Stuj mezi vesnici a demonem,Najezd demonu,camp-you-daemon,Demon
+1,you,Zazen zvire ke skale,Ustvani koristi,you-animal-rock,Zvire
+1,you,Zazen nemrtve ke skale,Cisteni hrobu,you-undead-rock,Nemrtvy
+1,you,Zazen cloveka ke skale,Vypsana odmena,you-human-rock,Clovek
+1,you,Zazen demona ke skale,Ritual vymitani,you-daemon-rock,Demon

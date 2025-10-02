@@ -1,15 +1,15 @@
-1,3,Zelena,animal,Kopi,hammer,undead,,neni kladivo,Ostep Ozveny,spear
-1,6,Modra,human,Mec,hammer,undead,,neni kladivo,Probleskujici Cepel,sword
-1,5,Cervena,daemon,Luk,hammer,undead,,neni kladivo,Hadi Zub,bow
+1,3,Zvire,animal,Kopi,hammer,undead,,neni kladivo,Ostep Ozveny,spear
+1,6,Clovek,human,Mec,hammer,undead,,neni kladivo,Probleskujici Cepel,sword
+1,5,Demon,daemon,Luk,hammer,undead,,neni kladivo,Hadi Zub,bow
 2,7,Vsechny,any,Bomba,hammer,undead,,hod me!,Propast Nicoty,bomb3
 2,7,Vsechny,any,Bomba,hammer,undead,,hod me!,Zvest Boure,bomb2
-2,4,Zluta,undead,Palice,hammer,undead,Tvrzena,,Stinovy Kovar,hard-hammer
-2,4,Zluta,undead,Palice,hammer,undead,Teleport,,Lamac Reality,teleport-hammer
-2,4,Zluta,undead,Palice,hammer,undead,Vabnicka,,Planouci Led,call-hammer
-2,4,Zluta,undead,Palice,hammer,undead,Berserk,,Zhavy Zavoj,berserk-hammer
-2,4,Zluta,undead,Palice,hammer,undead,,padna zbran,Nebesky Palcat,hammer
-2,4,Zluta,undead,Palice,hammer,undead,,padna zbran,Nocni Stin,hammer
-2,4,Zluta,undead,Palice,hammer,undead,,padna zbran,Hromovy Uder,hammer
-2,4,Zluta,undead,Palice,hammer,undead,,padna zbran,Krvavy Mesic,hammer
-2,4,Zluta,undead,Palice,hammer,undead,,padna zbran,Rozbijec Snu,hammer
-2,4,Zluta,undead,Palice,hammer,undead,Kradez,,Nocni Stin,steal-hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,Tvrzena,,Stinovy Kovar,hard-hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,Teleport,,Lamac Reality,teleport-hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,Vabnicka,,Planouci Led,call-hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,Berserk,,Zhavy Zavoj,berserk-hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,,drtim vse,Nebesky Palcat,hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,,drtim vse,Nocni Stin,hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,,drtim vse,Hromovy Uder,hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,,drtim vse,Krvavy Mesic,hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,,drtim vse,Rozbijec Snu,hammer
+2,4,Nemrtvy,undead,Palice,hammer,undead,Kradez,,Nocni Stin,steal-hammer

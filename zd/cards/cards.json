@@ -64,6 +64,30 @@
     "table":1
   },
   {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"dream.csv",
+    "sheet":"Dream",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"lama_3r.csv",
+    "sheet":"Lama",
+    "skipTitle":1,
+    "table":1
+  },
+  {
+    "_process":"EXPORT_TABLE",
+    "_sourceOds":"cards.ods",
+    "target":"lama_5r.csv",
+    "sheet":"Lama",
+    "skipTitle":1,
+    "table":2
+  },
+  {
     "_process":"CONVERT_SVGS"
   },
   {
@@ -305,5 +329,79 @@
       ]
     },
     "values":"boons.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_600x450_dream",
+    "_onOneLine":3,
+    "_randomize":"True",
+    "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
+    "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
+    "_list":{
+      "values":[
+        "ico0",
+        "pic0",
+        "name",
+        "type"
+      ]
+    },
+    "values":"dream.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_na_ruku.tex"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_100x150_3r",
+    "_onOneLine":4,
+    "_randomize":"False",
+    "img1":{ "reg": "?{img01}{}png/{img01}.png" },
+    "img2":{ "reg": "?{img02}{}png/{img02}.png" },
+    "img3":{ "reg": "?{img03}{}png/{img03}.png" },
+    "_list":{
+      "values":[
+        "img01",
+        "title1",
+        "text1",
+        "img02",
+        "title2",
+        "text2",
+        "img03",
+        "title3",
+        "text3",
+        "x"
+      ]
+    },
+    "values":"lama_3r.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_100x150_5r",
+    "_onOneLine":4,
+    "_randomize":"True",
+    "img1":{ "reg": "?{img01}{}png/{img01}.png" },
+    "img2":{ "reg": "?{img02}{}png/{img02}.png" },
+    "img3":{ "reg": "?{img03}{}png/{img03}.png" },
+    "img4":{ "reg": "?{img04}{}png/{img04}.png" },
+    "img5":{ "reg": "?{img05}{}png/{img05}.png" },
+    "_list":{
+      "values":[
+        "img01",
+        "text1",
+        "img02",
+        "text2",
+        "img03",
+        "text3",
+        "img04",
+        "text4",
+        "img05",
+        "text5"
+      ]
+    },
+    "values":"lama_5r.csv"
   }
 ]

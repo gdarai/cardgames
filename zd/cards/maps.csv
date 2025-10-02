@@ -1,4 +1,4 @@
-2,,camp,start,spawn-no,spawn-no,Jakakoliv,Start,---
+2,circles,camp,start,spawn-no,spawn-no,,Start,---
 4,,grass,,spear,spear,Kopi,,---
 4,,grass,,hammer,hammer,Palice,,---
 4,,grass,,bow,bow,Luk,,---
@@ -13,5 +13,5 @@
 2,wall,,,hammer,bow,Palice / Luk,,---
 2,wall,,,bow,sword,Luk / Mec,,---
 2,wall,,,sword,spear,Mec / Kopi,,---
-3,wall,cave,crossroads,spawn-no,spawn-no,,Rozcesti,---
-1,,camp,fort,spawn-spawn,spawn-spawn,,Hrad,---
+3,wall_a_circle,cave,crossroads,spawn-no,spawn-no,,Rozcesti,---
+1,circles,camp,fort,spawn-spawn,spawn-spawn,,Hrad,---
