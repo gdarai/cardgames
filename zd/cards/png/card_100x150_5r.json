@@ -6,7 +6,7 @@
   "text1":{
     "type":"text",
     "position":[[30, 0],[100, 30]],
-    "padding":[[2,2], [2,2]],
+    "padding":[[15,5], [15,5]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
@@ -21,7 +21,7 @@
   "text2":{
     "type":"text",
     "position":[[30, 30],[100, 60]],
-    "padding":[[2,2], [2,2]],
+    "padding":[[15,5], [15,5]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
@@ -36,7 +36,7 @@
   "text3":{
     "type":"text",
     "position":[[30, 60],[100, 90]],
-    "padding":[[2,2], [2,2]],
+    "padding":[[15,5], [15,5]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
@@ -51,7 +51,7 @@
   "text4":{
     "type":"text",
     "position":[[30, 90],[100, 120]],
-    "padding":[[2,2], [2,2]],
+    "padding":[[15,5], [15,5]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,
@@ -66,7 +66,7 @@
   "text5":{
     "type":"text",
     "position":[[30, 120],[100, 150]],
-    "padding":[[2,2], [2,2]],
+    "padding":[[15,5], [15,5]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":1,

@@ -1,56 +1,78 @@
 [
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_maps.tex",
-    "_card":"png/card_400x400_map",
-    "_onOneLine":4,
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_600x450_dream",
+    "_onOneLine":3,
     "_randomize":"True",
-    "bg":{ "reg": "?{bg0}{}png/bg_{bg0}.png" },
-    "fg":{ "reg": "?{fg0}{}" },
     "ico":{ "reg": "?{ico0}{}png/{ico0}.png" },
-    "smallIcoL":{ "reg": "?{smallIco1}{}png/{smallIco1}.png" },
-    "smallIcoR":{ "reg": "?{smallIco2}{}png/{smallIco2}.png" },
+    "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
     "_list":{
       "values":[
-        "bg0",
-        "fg0",
         "ico0",
-        "smallIco1",
-        "smallIco2",
-        "wpnText",
-        "text",
-        "close"
+        "pic0",
+        "name",
+        "type"
       ]
     },
-    "values":"maps.csv"
+    "values":"dream.csv"
+  },
+  {
+    "_process":"SPLIT_TEX",
+    "_out":"_OUT_na_ruku.tex"
   },
   {
     "_process":"PRINT_CARDS",
-    "_out":"_OUT_weapons1.tex",
-    "_card":"png/card_600x450_weapon",
-    "_onOneLine":3,
-    "_randomize":"True",
-    "ico1":{ "reg": "?{ico01}{}png/{ico01}.png" },
-    "ico2":{ "reg": "?{ico02}{}png/{ico02}.png" },
-    "pic":{ "reg": "?{pic0}{}png/{pic0}.png" },
-    "targetPic":{ "reg": "?{tgtPic0}{}png/{tgtPic0}.png" },
-    "color":{ "reg": "?{color0}{}{color0}" },
-    "citation":{ "reg": "?{citation0}{}- {citation0} -" },
-    "type":{ "reg": "?{type0}{}== {type0} ==" },
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_100x150_3r",
+    "_resize":400,
+    "_onOneLine":4,
+    "_randomize":"False",
+    "img1":{ "reg": "?{img01}{}png/{img01}.png" },
+    "img2":{ "reg": "?{img02}{}png/{img02}.png" },
+    "img3":{ "reg": "?{img03}{}png/{img03}.png" },
     "_list":{
       "values":[
-        "id0",
-        "color0",
-        "tgtPic0",
-        "type0",
-        "ico01",
-        "ico02",
-        "text",
-        "citation0",
-        "name",
-        "pic0"
+        "img01",
+        "title1",
+        "text1",
+        "img02",
+        "title2",
+        "text2",
+        "img03",
+        "title3",
+        "text3",
+        "x"
       ]
     },
-    "values":"weapons1.csv"
+    "values":"lama_3r.csv"
+  },
+  {
+    "_process":"PRINT_CARDS",
+    "_out":"_OUT_na_ruku.tex",
+    "_card":"png/card_100x150_5r",
+    "_onOneLine":4,
+    "_resize":400,
+    "_randomize":"True",
+    "img1":{ "reg": "?{img01}{}png/{img01}.png" },
+    "img2":{ "reg": "?{img02}{}png/{img02}.png" },
+    "img3":{ "reg": "?{img03}{}png/{img03}.png" },
+    "img4":{ "reg": "?{img04}{}png/{img04}.png" },
+    "img5":{ "reg": "?{img05}{}png/{img05}.png" },
+    "_list":{
+      "values":[
+        "img01",
+        "text1",
+        "img02",
+        "text2",
+        "img03",
+        "text3",
+        "img04",
+        "text4",
+        "img05",
+        "text5"
+      ]
+    },
+    "values":"lama_5r.csv"
   }
 ]
