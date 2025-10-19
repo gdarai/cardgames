@@ -1,5 +1,20 @@
-4,magic,hard,Tvrzena,Pouzij zbran_ale nezahod
-4,magic,teleport,Teleport,Nejdriv_se prohod s_hracem
-4,magic,call,Vabnicka,Nejdriv prohod priseru
-4,magic,berserk,Berserk,Zautoc i_druhou zbrani
-2,magic,steal,Kradez,Novou_zbran tahni od_hrace
+1,magic,hard,Tvrzena,Pouzij zbran_ale nezahod,Prasek vecnosti
+1,magic,hard,Tvrzena,Pouzij zbran_ale nezahod,Kamen veku
+1,magic,hard,Tvrzena,Pouzij zbran_ale nezahod,Svitek odolnosti
+1,magic,hard,Tvrzena,Pouzij zbran_ale nezahod,Glazura kralu
+1,magic,teleport,Teleport,Nejdriv_se prohod s_hracem,Kouzlo zameny
+1,magic,teleport,Teleport,Nejdriv_se prohod s_hracem,Mlha zmateni
+1,magic,teleport,Teleport,Nejdriv_se prohod s_hracem,Privesek iluze
+1,magic,teleport,Teleport,Nejdriv_se prohod s_hracem,Svitek jmena
+1,magic,call,Vabnicka,Nejdriv prohod priseru,Svitek volani
+1,magic,call,Vabnicka,Nejdriv prohod priseru,Prsten vabeni
+1,magic,call,Vabnicka,Nejdriv prohod priseru,Vyvolavaci kamen
+1,magic,call,Vabnicka,Nejdriv prohod priseru,Ankh duse
+1,magic,berserk,Berserk,Zautoc i_druhou zbrani,Lektvar zurivosti
+1,magic,berserk,Berserk,Zautoc i_druhou zbrani,Odlesk besneni
+1,magic,berserk,Berserk,Zautoc i_druhou zbrani,Ruda mlha
+1,magic,berserk,Berserk,Zautoc i_druhou zbrani,Svitek rychlosti
+1,magic,steal,Kradez,Novou_zbran tahni od_hrace,Svitek kradeze
+1,magic,steal,Kradez,Novou_zbran tahni od_hrace,Lektvar neviditelnosti
+1,magic,jump,Skok,Zautoc_i pres_skalu,Prsten teleportace
+1,magic,jump,Skok,Zautoc_i pres_skalu,Kouzelny koberec

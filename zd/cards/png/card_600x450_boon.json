@@ -11,7 +11,7 @@
   },
   "name":{
     "type":"text",
-    "position":[[10, 160],[290, 210]],
+    "position":[[10, 250],[290, 280]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
@@ -21,11 +21,22 @@
   },
   "text":{
     "type":"text",
-    "position":[[10, 220],[290, 440]],
+    "position":[[10, 275],[290, 440]],
     "padding":[[2,2], [2,2]],
     "font":"HERSHEY_PLAIN",
     "size":4,
     "line":3,
+    "fixed":0,
+    "color":[100,100,100],
+    "align":"center"
+  },
+  "title":{
+    "type":"text",
+    "position":[[10, 160],[290, 240]],
+    "padding":[[2,2], [2,2]],
+    "font":"HERSHEY_PLAIN",
+    "size":4,
+    "line":4,
     "fixed":0,
     "color":[100,100,100],
     "align":"center"
