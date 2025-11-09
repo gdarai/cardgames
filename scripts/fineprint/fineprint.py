@@ -100,6 +100,14 @@ def parse_texts(task):
     font_source = str(font['source'])
     font_pointsize = int(font['pointSize'])
     font_rowheight = int(font['rowHeight'])
+    font_gravity = str(task.get('gravity', 'Center'))
+    font_vert = 0
+    font_row_step = font_rowheight
+    if 'North' in font_gravity:
+        font_vert = -1
+    elif 'South' in font_gravity:
+        font_vert = 1
+        font_row_step = -font_rowheight
     with open(source_path, encoding='utf-8') as f:
         for idx, line in enumerate(f):
             line = line.strip('\n').strip('\r')
@@ -116,14 +124,19 @@ def parse_texts(task):
                 output_file = os.path.join(base_dir, f"{base_name}_{idx+1}.png")
                 text_parts = parts
             annotates = []
-            y_offset = -(len(text_parts)-1)*font_rowheight//2
+            y_offset = 0
+            if font_vert == 0:
+                y_offset = -(len(text_parts)-1)*font_rowheight//2
+            if font_vert == 1:
+                y_offset = (len(text_parts)-1)*font_rowheight
+            
             for i, part in enumerate(text_parts):
-                offset = y_offset + i*font_rowheight
+                offset = y_offset + i*font_row_step
                 annotates.extend(['-annotate', f'+0+{offset}', part])
             cmd = [
                 'convert',
                 '-size', *size_args,
-                '-gravity', 'center',
+                '-gravity', font_gravity,
                 '-fill', font_fill,
                 '-font', font_source,
                 '-pointsize', str(font_pointsize)
@@ -145,6 +158,9 @@ def parse_cards(task):
     base_img = task['base']
     target = task['target']
     build_name = task['build']
+    crop_str = task.get('crop', None)
+    print_limit = task.get('printLimit', -1)
+    first_is_name = task.get('firstIsName', False)
     if build_name not in config['builds']:
         error(f"Build '{build_name}' not registered.")
         return
@@ -152,25 +168,56 @@ def parse_cards(task):
     sep = config.get('separator', '|')
     if not check_file_exists(txt_source):
         return
+    # Check if base_img is a string like '999x999' (width x height)
+    size_match = re.match(r'^(\d+)x(\d+)$', str(base_img))
+    if size_match:
+        width, height = int(size_match.group(1)), int(size_match.group(2))
+        base_img_path = f'_base_white_{width}x{height}.png'
+        if not os.path.isfile(base_img_path):
+            img = Image.new('RGBA', (width, height), (255, 255, 255, 255))
+            img.save(base_img_path)
+        base_img = base_img_path
     if not check_file_exists(base_img):
         return
     os.makedirs(os.path.dirname(target), exist_ok=True)
     with open(txt_source, encoding='utf-8') as f:
         for idx, line in enumerate(f):
+            if 0 < print_limit <= idx:
+                log(f"Print limit reached ({print_limit}), stopping.")
+                break
             line = line.strip('\n').strip('\r')
             if not line:
                 continue
             values = [p.strip() for p in line.split(sep)]
+            # Determine output file name and values for placeholders
+            if first_is_name:
+                if len(values) < 2:
+                    error(f"Line {idx+1} in {txt_source} does not have enough parts for firstIsName.")
+                    continue
+                output_file = f"{target}_{values[0]}.png"
+                values_for_build = values[1:]
+            else:
+                output_file = f"{target}_{idx+1}.png"
+                values_for_build = values
             # Start with base image
             current_img = base_img
             for el_idx, element in enumerate(build_elements):
                 src_template = element['source']
+                skip_print = False
                 # Replace placeholders [0], [1], ...
                 src_img = src_template
-                for i, val in enumerate(values):
+                src_mem = src_img
+                for i, val in enumerate(values_for_build):
                     src_img = src_img.replace(f'[{i}]', val)
-                if not check_file_exists(src_img):
+                    if src_mem != src_img and val == '':
+                        skip_print = True
+                        log(f"Element source results in empty string, skipping element {el_idx+1} for line {idx+1}")
+                        continue
+                    src_mem = src_img
+                if not skip_print and not check_file_exists(src_img):
                     error(f"Element source not found: {src_img}")
+                    continue
+                if skip_print:
                     continue
                 position = element.get('position', '+0+0')
                 centered = element.get('centered', False)
@@ -203,9 +250,21 @@ def parse_cards(task):
                     break
                 current_img = interm
             # Save final result
-            out_file = f"{target}_{idx+1}.png"
-            shutil.copy(current_img, out_file)
-            log(f"Created card: {out_file}")
+            if crop_str:
+                # Crop the image using ImageMagick
+                crop_cmd = [
+                    'convert', current_img, '-crop', crop_str, output_file
+                ]
+                log(f"Cropping image: {current_img} with crop '{crop_str}' -> {output_file}")
+                try:
+                    subprocess.run(crop_cmd, check=True)
+                except subprocess.CalledProcessError as e:
+                    error(f"ImageMagick crop failed: {e}")
+                    # fallback: just copy
+                    shutil.copy(current_img, output_file)
+            else:
+                shutil.copy(current_img, output_file)
+            log(f"Created card: {output_file}")
 
 def parse_clean(task):
     log(f"Processing CLEAN task: {task.get('target', '[no target]')}")

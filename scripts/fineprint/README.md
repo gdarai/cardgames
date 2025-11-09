@@ -59,12 +59,15 @@ The input JSON file is an array of task objects. Each task must have a `task` fi
 - `font` (string): Registered font name.
 - `size` (string): Image size and background (e.g., `300x100 xc:none`).
 - `firstIsName` (bool, optional): Use the first field as the output file name (default: false).
+- `gravity` (string, optional): Setup how the text should be placed in the image (West, NorthWest, default: Center).
 
 ### CARDS
-- `source` (string): Path to the input data file (text, separated by `separator`).
+- `source` (string): Path to the input data file (text, separated by `separator`). Can be also string '999x999' which will create a new image of the given size for you.
 - `base` (string): Path to the base image for composition.
 - `target` (string): Output image prefix/directory.
 - `build` (string): Registered build name to use for composition.
+- `crop` (string, optional): Crop geometry string (e.g., `"10x20+50+100"`). If present, the output image will be cropped to this rectangle using ImageMagick. If not present, no cropping is performed.
+- `firstIsName` (bool, optional): Use the first field as the output file name (default: false).
 
 ## Example guide.json
 ```json
@@ -80,7 +83,8 @@ The input JSON file is an array of task objects. Each task must have a `task` fi
   { "task": "TEXTS", "source": "text/titles.txt", "target": "img/titles", "font": "DejaVu-32", "size": "300x100 xc:none" },
   { "task": "TEXTS", "source": "text/texts.txt", "target": "img/texts", "font": "DejaVu-32", "size": "300x200 xc:none" },
   { "task": "TEXTS", "source": "text/values.txt", "target": "img/values", "font": "DejaVu-32", "firstIsName": true, "size": "300x100 xc:none" },
-  { "task": "CARDS", "source": "src/cards.txt", "base": "src/card.png", "target": "out/card", "build": "ExampleBuild" }
+  { "task": "CARDS", "source": "src/cards.txt", "base": "src/card.png", "target": "out/card", "build": "ExampleBuild" },
+  { "task": "CARDS", "source": "src/cards.txt", "base": "src/card.png", "target": "out/card-crop", "build": "ExampleBuild", "crop": "10x20+50+100" }
 ]
 ```
 

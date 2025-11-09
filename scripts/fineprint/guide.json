@@ -66,5 +66,13 @@
     "base": "src/card.png",
     "target": "out/card",
     "build": "ExampleBuild"
+  },
+  {
+    "task": "CARDS",
+    "source": "src/cards.txt",
+    "base": "src/card.png",
+    "target": "out/card-crop",
+    "build": "ExampleBuild",
+    "crop": "240x400+50+50"
   }
 ]
