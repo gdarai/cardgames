@@ -41,6 +41,7 @@
   {
     "task": "TEXTS",
     "source": "text/titles.txt",
+    "subset": "0:-1",
     "target": "img/titles",
     "font": "DejaVu-32",
     "size": "300x100 xc:none"
@@ -70,6 +71,7 @@
   {
     "task": "CARDS",
     "source": "src/cards.txt",
+    "subset": "2:4",
     "base": "src/card.png",
     "target": "out/card-crop",
     "build": "ExampleBuild",

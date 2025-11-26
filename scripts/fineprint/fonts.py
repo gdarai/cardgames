@@ -12,6 +12,7 @@ def list_fonts(font_dir):
     return font_files
 
 def show_font(font_path, sample_text="The quick brown fox jumps over the lazy dog"):
+    print(f"Selected font: {font_path}")  # Print the full path to the command line
     font_prop = FontProperties(fname=font_path)
     plt.figure(figsize=(10, 2))
     plt.text(0.01, 0.5, sample_text, fontproperties=font_prop, fontsize=24)
@@ -30,16 +31,36 @@ def gui_font_browser(font_dir):
     root = tk.Tk()
     root.title("Font Browser")
     root.geometry("900x300")
-    # Listbox for font names
+    # Frame for filter and listbox
     frame = ttk.Frame(root)
     frame.pack(side=tk.LEFT, fill=tk.Y)
+    # Filter input
+    filter_var = tk.StringVar()
+    filter_entry = ttk.Entry(frame, textvariable=filter_var, foreground="#228B22")  # Middle green
+    filter_entry.pack(side=tk.TOP, fill=tk.X)
+    filter_entry.insert(0, "Filter fonts...")
+    # Listbox for font names
     listbox = tk.Listbox(frame, width=50, height=20)
     listbox.pack(side=tk.LEFT, fill=tk.Y)
     scrollbar = ttk.Scrollbar(frame, orient="vertical", command=listbox.yview)
     scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
     listbox.config(yscrollcommand=scrollbar.set)
-    for font_path in font_files:
-        listbox.insert(tk.END, os.path.basename(font_path))
+    # Store filtered font files
+    filtered_fonts = font_files.copy()
+    def update_listbox():
+        nonlocal filtered_fonts
+        filter_text = filter_var.get().strip().lower()
+        listbox.delete(0, tk.END)
+        if filter_text == '' or filter_text == 'filter fonts...':
+            filtered_fonts = font_files.copy()
+        else:
+            filtered_fonts = [f for f in font_files if filter_text in os.path.basename(f).lower()]
+        for font_path in filtered_fonts:
+            listbox.insert(tk.END, os.path.basename(font_path))
+        # Select first font if available
+        if filtered_fonts:
+            listbox.selection_set(0)
+            listbox.event_generate('<<ListboxSelect>>')
     # Matplotlib figure
     fig, ax = plt.subplots(figsize=(7, 2))
     canvas = FigureCanvasTkAgg(fig, master=root)
@@ -48,9 +69,16 @@ def gui_font_browser(font_dir):
     def update_plot(event):
         selection = listbox.curselection()
         if not selection:
+            ax.clear()
+            ax.text(0.01, 0.5, "No font selected", fontsize=12, color='gray')
+            ax.axis('off')
+            canvas.draw()
             return
         idx = selection[0]
-        font_path = font_files[idx]
+        if idx >= len(filtered_fonts):
+            return
+        font_path = filtered_fonts[idx]
+        print(f"Selected font: {font_path}")  # Print the full path to the command line
         ax.clear()
         try:
             font_prop = FontProperties(fname=font_path)
@@ -62,10 +90,17 @@ def gui_font_browser(font_dir):
             ax.axis('off')
         canvas.draw()
     listbox.bind('<<ListboxSelect>>', update_plot)
-    # Select the first font by default
-    if font_files:
-        listbox.selection_set(0)
-        listbox.event_generate('<<ListboxSelect>>')
+    # Filter callback
+    def on_filter_change(*args):
+        update_listbox()
+    filter_var.trace_add('write', on_filter_change)
+    # Remove placeholder text on focus
+    def clear_placeholder(event):
+        if filter_entry.get() == 'Filter fonts...':
+            filter_entry.delete(0, tk.END)
+    filter_entry.bind('<FocusIn>', clear_placeholder)
+    # Populate listbox initially
+    update_listbox()
     root.mainloop()
 
 def interactive_font_browser(font_dir):

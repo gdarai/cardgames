@@ -108,44 +108,59 @@ def parse_texts(task):
     elif 'South' in font_gravity:
         font_vert = 1
         font_row_step = -font_rowheight
+    # Subset logic
+    subset = task.get('subset', None)
     with open(source_path, encoding='utf-8') as f:
-        for idx, line in enumerate(f):
-            line = line.strip('\n').strip('\r')
-            if not line:
+        lines = [line.strip('\n').strip('\r') for line in f if line.strip()]  # skip empty lines
+    if subset:
+        try:
+            fromto = subset.split(':')
+            from_idx = int(fromto[0]) if fromto[0] else None
+            to_idx = int(fromto[1]) if len(fromto) > 1 and fromto[1] else None
+            total = len(lines)
+            # Handle negative indices
+            from_idx = from_idx if from_idx is not None else 0
+            to_idx = to_idx if to_idx is not None else total
+            if from_idx < 0:
+                from_idx = total + from_idx
+            if to_idx < 0:
+                to_idx = total + to_idx
+            lines = lines[from_idx:to_idx]
+        except Exception as e:
+            error(f"Invalid subset parameter: {subset} ({e})")
+    for idx, line in enumerate(lines):
+        parts = [p.strip() for p in line.split(sep)]
+        if first_is_name:
+            if len(parts) < 2:
+                error(f"Line {idx+1} in {source_path} does not have enough parts for firstIsName.")
                 continue
-            parts = [p.strip() for p in line.split(sep)]
-            if first_is_name:
-                if len(parts) < 2:
-                    error(f"Line {idx+1} in {source_path} does not have enough parts for firstIsName.")
-                    continue
-                output_file = os.path.join(base_dir, f"{base_name}_{parts[0]}.png")
-                text_parts = parts[1:]
-            else:
-                output_file = os.path.join(base_dir, f"{base_name}_{idx+1}.png")
-                text_parts = parts
-            annotates = []
-            y_offset = 0
-            if font_vert == 0:
-                y_offset = -(len(text_parts)-1)*font_rowheight//2
-            if font_vert == 1:
-                y_offset = (len(text_parts)-1)*font_rowheight
-            
-            for i, part in enumerate(text_parts):
-                offset = y_offset + i*font_row_step
-                annotates.extend(['-annotate', f'+0+{offset}', part])
-            cmd = [
-                'convert',
-                '-size', *size_args,
-                '-gravity', font_gravity,
-                '-fill', font_fill,
-                '-font', font_source,
-                '-pointsize', str(font_pointsize)
-            ] + annotates + [output_file]
-            log(f"Creating image: {output_file}")
-            try:
-                subprocess.run(cmd, check=True)
-            except subprocess.CalledProcessError as e:
-                error(f"ImageMagick convert failed for {output_file}: {e}")
+            output_file = os.path.join(base_dir, f"{base_name}_{parts[0]}.png")
+            text_parts = parts[1:]
+        else:
+            output_file = os.path.join(base_dir, f"{base_name}_{idx+1}.png")
+            text_parts = parts
+        annotates = []
+        y_offset = 0
+        if font_vert == 0:
+            y_offset = -(len(text_parts)-1)*font_rowheight//2
+        if font_vert == 1:
+            y_offset = (len(text_parts)-1)*font_rowheight
+        for i, part in enumerate(text_parts):
+            offset = y_offset + i*font_row_step
+            annotates.extend(['-annotate', f'+0+{offset}', part])
+        cmd = [
+            'convert',
+            '-size', *size_args,
+            '-gravity', font_gravity,
+            '-fill', font_fill,
+            '-font', font_source,
+            '-pointsize', str(font_pointsize)
+        ] + annotates + [output_file]
+        log(f"Creating image: {output_file}")
+        try:
+            subprocess.run(cmd, check=True)
+        except subprocess.CalledProcessError as e:
+            error(f"ImageMagick convert failed for {output_file}: {e}")
 
 def parse_cards(task):
     log(f"Processing CARDS task: {task.get('source', '[no source]')}")
@@ -161,6 +176,7 @@ def parse_cards(task):
     crop_str = task.get('crop', None)
     print_limit = task.get('printLimit', -1)
     first_is_name = task.get('firstIsName', False)
+    subset = task.get('subset', None)
     if build_name not in config['builds']:
         error(f"Build '{build_name}' not registered.")
         return
@@ -168,103 +184,114 @@ def parse_cards(task):
     sep = config.get('separator', '|')
     if not check_file_exists(txt_source):
         return
-    # Check if base_img is a string like '999x999' (width x height)
     size_match = re.match(r'^(\d+)x(\d+)$', str(base_img))
     if size_match:
         width, height = int(size_match.group(1)), int(size_match.group(2))
-        base_img_path = f'_base_white_{width}x{height}.png'
+        base_img_path = f'_base_image_{width}x{height}.png'
         if not os.path.isfile(base_img_path):
-            img = Image.new('RGBA', (width, height), (255, 255, 255, 255))
+            img = Image.new('RGBA', (width, height), (255, 255, 255, 0))
             img.save(base_img_path)
         base_img = base_img_path
     if not check_file_exists(base_img):
         return
     os.makedirs(os.path.dirname(target), exist_ok=True)
+    # Subset logic
     with open(txt_source, encoding='utf-8') as f:
-        for idx, line in enumerate(f):
-            if 0 < print_limit <= idx:
-                log(f"Print limit reached ({print_limit}), stopping.")
-                break
-            line = line.strip('\n').strip('\r')
-            if not line:
+        lines = [line.strip('\n').strip('\r') for line in f if line.strip()]
+    if subset:
+        try:
+            fromto = subset.split(':')
+            from_idx = int(fromto[0]) if fromto[0] else None
+            to_idx = int(fromto[1]) if len(fromto) > 1 and fromto[1] else None
+            total = len(lines)
+            from_idx = from_idx if from_idx is not None else 0
+            to_idx = to_idx if to_idx is not None else total
+            if from_idx < 0:
+                from_idx = total + from_idx
+            if to_idx < 0:
+                to_idx = total + to_idx
+            lines = lines[from_idx:to_idx]
+        except Exception as e:
+            error(f"Invalid subset parameter: {subset} ({e})")
+    for idx, line in enumerate(lines):
+        if 0 < print_limit <= idx:
+            log(f"Print limit reached ({print_limit}), stopping.")
+            break
+        values = [p.strip() for p in line.split(sep)]
+        # Determine output file name and values for placeholders
+        if first_is_name:
+            if len(values) < 2:
+                error(f"Line {idx+1} in {txt_source} does not have enough parts for firstIsName.")
                 continue
-            values = [p.strip() for p in line.split(sep)]
-            # Determine output file name and values for placeholders
-            if first_is_name:
-                if len(values) < 2:
-                    error(f"Line {idx+1} in {txt_source} does not have enough parts for firstIsName.")
+            output_file = f"{target}_{values[0]}.png"
+            values_for_build = values[1:]
+        else:
+            output_file = f"{target}_{idx+1}.png"
+            values_for_build = values
+        # Start with base image
+        current_img = base_img
+        for el_idx, element in enumerate(build_elements):
+            src_template = element['source']
+            skip_print = False
+            # Replace placeholders [0], [1], ...
+            src_img = src_template
+            src_mem = src_img
+            for i, val in enumerate(values_for_build):
+                src_img = src_img.replace(f'[{i}]', val)
+                if src_mem != src_img and val == '':
+                    skip_print = True
+                    log(f"Element source results in empty string, skipping element {el_idx+1} for line {idx+1}")
                     continue
-                output_file = f"{target}_{values[0]}.png"
-                values_for_build = values[1:]
-            else:
-                output_file = f"{target}_{idx+1}.png"
-                values_for_build = values
-            # Start with base image
-            current_img = base_img
-            for el_idx, element in enumerate(build_elements):
-                src_template = element['source']
-                skip_print = False
-                # Replace placeholders [0], [1], ...
-                src_img = src_template
                 src_mem = src_img
-                for i, val in enumerate(values_for_build):
-                    src_img = src_img.replace(f'[{i}]', val)
-                    if src_mem != src_img and val == '':
-                        skip_print = True
-                        log(f"Element source results in empty string, skipping element {el_idx+1} for line {idx+1}")
-                        continue
-                    src_mem = src_img
-                if not skip_print and not check_file_exists(src_img):
-                    error(f"Element source not found: {src_img}")
-                    continue
-                if skip_print:
-                    continue
-                position = element.get('position', '+0+0')
-                centered = element.get('centered', False)
-                geometry = position
-                if centered:
-                    # Get overlay size
-                    try:
-                        with Image.open(src_img) as im:
-                            w, h = im.size
-                        # Parse position
-                        m = re.match(r'([+-]?\d+)([+-]\d+)', position)
-                        if m:
-                            x = int(m.group(1))
-                            y = int(m.group(2))
-                            x -= w // 2
-                            y -= h // 2
-                            geometry = f'+{x}+{y}' if x >= 0 and y >= 0 else f'{x:+d}{y:+d}'
-                    except Exception as e:
-                        error(f"Failed to get image size for centering: {src_img}: {e}")
-                # Compose images
-                interm = config['intermediate']
-                cmd = [
-                    'convert', current_img, src_img, '-geometry', geometry, '-composite', interm
-                ]
-                log(f"Compositing: {current_img} + {src_img} at {geometry} -> {interm}")
+            if not skip_print and not check_file_exists(src_img):
+                error(f"Element source not found: {src_img}")
+                continue
+            if skip_print:
+                continue
+            position = element.get('position', '+0+0')
+            centered = element.get('centered', False)
+            geometry = position
+            if centered:
+                # Get overlay size
                 try:
-                    subprocess.run(cmd, check=True)
-                except subprocess.CalledProcessError as e:
-                    error(f"ImageMagick composite failed: {e}")
-                    break
-                current_img = interm
-            # Save final result
-            if crop_str:
-                # Crop the image using ImageMagick
-                crop_cmd = [
-                    'convert', current_img, '-crop', crop_str, output_file
-                ]
-                log(f"Cropping image: {current_img} with crop '{crop_str}' -> {output_file}")
-                try:
-                    subprocess.run(crop_cmd, check=True)
-                except subprocess.CalledProcessError as e:
-                    error(f"ImageMagick crop failed: {e}")
-                    # fallback: just copy
-                    shutil.copy(current_img, output_file)
-            else:
+                    with Image.open(src_img) as im:
+                        w, h = im.size
+                    # Parse position
+                    m = re.match(r'([+-]?\d+)([+-]\d+)', position)
+                    if m:
+                        x = int(m.group(1))
+                        y = int(m.group(2))
+                        x -= w // 2
+                        y -= h // 2
+                        geometry = f'+{x}+{y}' if x >= 0 and y >= 0 else f'{x:+d}{y:+d}'
+                except Exception as e:
+                    error(f"Failed to get image size for centering: {src_img}: {e}")
+            # Compose images
+            interm = config['intermediate']
+            cmd = [
+                'convert', current_img, src_img, '-geometry', geometry, '-composite', interm
+            ]
+            log(f"Compositing: {current_img} + {src_img} at {geometry} -> {interm}")
+            try:
+                subprocess.run(cmd, check=True)
+            except subprocess.CalledProcessError as e:
+                error(f"ImageMagick composite failed: {e}")
+                break
+            current_img = interm
+        # Save final result
+        if crop_str:
+            crop_cmd = [
+                'convert', current_img, '-crop', crop_str, output_file
+            ]
+            log(f"Cropping image: {current_img} with crop '{crop_str}' -> {output_file}")
+            try:
+                subprocess.run(crop_cmd, check=True)
+            except subprocess.CalledProcessError as e:
+                error(f"ImageMagick crop failed: {e}")
                 shutil.copy(current_img, output_file)
-            log(f"Created card: {output_file}")
+        else:
+            shutil.copy(current_img, output_file)
+        log(f"Created card: {output_file}")
 
 def parse_clean(task):
     log(f"Processing CLEAN task: {task.get('target', '[no target]')}")

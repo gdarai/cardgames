@@ -55,6 +55,7 @@ The input JSON file is an array of task objects. Each task must have a `task` fi
 
 ### TEXTS
 - `source` (string): Path to the input text file.
+- `subset` (string, optional): Restrict which lines should be printed. (e.g. `0:5` print first five, `0:-2` print all but last two).
 - `target` (string): Output image prefix/directory.
 - `font` (string): Registered font name.
 - `size` (string): Image size and background (e.g., `300x100 xc:none`).
@@ -63,6 +64,7 @@ The input JSON file is an array of task objects. Each task must have a `task` fi
 
 ### CARDS
 - `source` (string): Path to the input data file (text, separated by `separator`). Can be also string '999x999' which will create a new image of the given size for you.
+- `subset` (string, optional): Restrict which lines should be printed. (e.g. `0:5` print first five, `0:-2` print all but last two).
 - `base` (string): Path to the base image for composition.
 - `target` (string): Output image prefix/directory.
 - `build` (string): Registered build name to use for composition.
@@ -84,7 +86,7 @@ The input JSON file is an array of task objects. Each task must have a `task` fi
   { "task": "TEXTS", "source": "text/texts.txt", "target": "img/texts", "font": "DejaVu-32", "size": "300x200 xc:none" },
   { "task": "TEXTS", "source": "text/values.txt", "target": "img/values", "font": "DejaVu-32", "firstIsName": true, "size": "300x100 xc:none" },
   { "task": "CARDS", "source": "src/cards.txt", "base": "src/card.png", "target": "out/card", "build": "ExampleBuild" },
-  { "task": "CARDS", "source": "src/cards.txt", "base": "src/card.png", "target": "out/card-crop", "build": "ExampleBuild", "crop": "10x20+50+100" }
+  { "task": "CARDS", "source": "src/cards.txt", "base": "src/card.png", "subset": "0:-1", "target": "out/card-crop", "build": "ExampleBuild", "crop": "10x20+50+100" }
 ]
 ```
 
