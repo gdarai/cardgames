@@ -52,6 +52,7 @@ The input JSON file is an array of task objects. Each task must have a `task` fi
   - `source` (string): Path template for the image (use `[0]`, `[1]`, ... for placeholders).
   - `position` (string): Offset for placement (e.g., `+20+20`).
   - `centered` (bool, optional): Center the element at the position (default: false).
+  - `onlyIf` (int, optional): Column index to check. If the value at this index is empty, `0`, or `false` (case-insensitive), the element is skipped.
 
 ### TEXTS
 - `source` (string): Path to the input text file.

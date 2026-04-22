@@ -231,6 +231,22 @@ def parse_cards(task):
         # Start with base image
         current_img = base_img
         for el_idx, element in enumerate(build_elements):
+            # Check onlyIf condition
+            if 'onlyIf' in element:
+                try:
+                    col_idx = int(element['onlyIf'])
+                    if col_idx < len(values_for_build):
+                        val = values_for_build[col_idx].strip()
+                        # Check if value is "negative" (empty, 0, or 'false' in any form)
+                        if val == '' or val == '0' or val.lower() == 'false' or val.lower() == 'no':
+                            log(f"Element {el_idx+1} skipped for line {idx+1} due to onlyIf condition")
+                            continue
+                    else:
+                        log(f"Element {el_idx+1} skipped for line {idx+1}, onlyIf condition index out of range")
+                        continue
+                except (ValueError, TypeError) as e:
+                    error(f"Element {el_idx+1} has invalid onlyIf value on line {idx+1}: {e}")
+
             src_template = element['source']
             skip_print = False
             # Replace placeholders [0], [1], ...
